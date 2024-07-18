@@ -562,16 +562,6 @@ enum {
 	HOME,
 	END, };
 
-td_state_t cur_dance(tap_dance_state_t *state);
-void d_finished(tap_dance_state_t *state, void *user_data);
-void d_reset(tap_dance_state_t *state, void *user_data);
-void q_finished(tap_dance_state_t *state, void *user_data);
-void q_reset(tap_dance_state_t *state, void *user_data);
-void h_finished(tap_dance_state_t *state, void *user_data);
-void h_reset(tap_dance_state_t *state, void *user_data);
-void e_finished(tap_dance_state_t *state, void *user_data);
-void e_reset(tap_dance_state_t *state, void *user_data);
-
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case TD(DASH):
