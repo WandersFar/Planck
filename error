@@ -1,6 +1,3 @@
-Ψ Compiling keymap with make -r -R -f builddefs/build_keyboard.mk -s KEYBOARD=planck/rev6_drop KEYMAP=wf KEYBOARD_FILESAFE=planck_rev6_drop TARGET=planck_rev6_drop_wf INTERMEDIATE_OUTPUT=.build/obj_planck_rev6_drop_wf VERBOSE=false COLOR=true SILENT=false QMK_BIN="qmk"
-
-
 arm-none-eabi-gcc.exe (GCC) 12.2.0
 Copyright (C) 2022 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
@@ -119,7 +116,6 @@ quantum/keymap_introspection.h:62:10: note: previous declaration of 'combo_count
    62 | uint16_t combo_count(void);
       |          ^~~~~~~~~~~
 quantum/keymap_introspection.c:104:10: error: static declaration of 'combo_get_raw' follows non-static declaration
-
   104 | combo_t* combo_get_raw(uint16_t combo_idx) {
       |          ^~~~~~~~~~~~~
 quantum/keymap_introspection.h:65:10: note: previous declaration of 'combo_get_raw' with type 'combo_t *(uint16_t)' {aka 'combo_t *(short unsigned int)'}
