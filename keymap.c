@@ -358,12 +358,12 @@ bool process_record_unicode(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
-const uint16_t PROGMEM l_scroll_up[] = {LT(3,KC_E), KC_R, COMBO_END};
-const uint16_t PROGMEM r_scroll_up[] = {KC_U, LT(3,KC_I), COMBO_END};
+const uint16_t PROGMEM l_scroll_up[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM r_scroll_up[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM l_vol_down[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM r_vol_down[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM l_vol_up[] = {KC_W, LT(3,KC_E), COMBO_END};
-const uint16_t PROGMEM r_vol_up[] = {LT(3,KC_I), KC_O, COMBO_END};
+const uint16_t PROGMEM l_vol_up[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM r_vol_up[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM scroll_left[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM scroll_right[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
@@ -473,8 +473,8 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
-		case LT(3,KC_E):
-		case LT(3,KC_I):
+		case LT(3,KC_Z):
+		case LT(3,KC_SLSH):
 		case LT(2,KC_V):
 		case LT(2,KC_M):
 		case LGUI_T(KC_A):
@@ -680,7 +680,7 @@ tap_dance_action_t tap_dance_actions[] = {
 	[END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH), KC_BSPC, KC_Q, KC_W, LT(3,KC_E), KC_R, KC_T, KC_Y, KC_U, LT(3,KC_I), KC_O, KC_P, KC_TAB, TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT, LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DEL),
+	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH), KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB, TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT, LT(1,KC_MUTE), LT(3,KC_Z), KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, LT(3,KC_SLSH), KC_DEL),
 	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL), KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB, KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT, DF(0), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, QK_BOOT),
 	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_LBRC, LCTL(KC_PPLS), LALT(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), LGUI(KC_PSCR), KC_RBRC, KC_GRV, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_SCLN, KC_BSLS, DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
 	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_SAD, U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR, KC_QUOT, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK, DF(1), U_AG, U_AT, U_CL, U_CK, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, U_HAP) };
