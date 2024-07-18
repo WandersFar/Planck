@@ -276,7 +276,7 @@ bool process_record_unicode(uint16_t keycode, keyrecord_t *record) {
 		case UC_IDKT: if (record->event.pressed) { send_unicode_string("¯\\_(ツ)_/¯"); } break;
 		case UC_IDKH: if (record->event.pressed) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); } break;
 		case UC_HAPT: if (record->event.pressed) { send_unicode_string(":þ"); } break;
-		case UC_HAPH: if (record->event.pressed) { send_unicode_string("( ͡° ͜ʖ ͡°)"); } break; } }
+		case UC_HAPH: if (record->event.pressed) { send_unicode_string("( ͡° ͜ʖ ͡°)"); } break; } return false; }
 
 #define U_DEG UM(UC_DEGREE)	// °
 #define U_ONE UM(UC_SUPONE)	// ¹
