@@ -13,6 +13,12 @@ bool led_update_user(led_t led_state) {
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
+	case 3:
+		autoshift_enable();
+		break;
+	case 2:
+		autoshift_enable();
+		break;
 	case 1:
 		autoshift_disable();
 		PLAY_SONG(lock);
@@ -352,12 +358,12 @@ bool process_record_unicode(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
-const uint16_t PROGMEM l_scroll_up[] = {KC_E, KC_R, COMBO_END};
-const uint16_t PROGMEM r_scroll_up[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM l_scroll_up[] = {LT(3,KC_E), KC_R, COMBO_END};
+const uint16_t PROGMEM r_scroll_up[] = {KC_U, LT(3,KC_I), COMBO_END};
 const uint16_t PROGMEM l_vol_down[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM r_vol_down[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM l_vol_up[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM r_vol_up[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM l_vol_up[] = {KC_W, LT(3,KC_E), COMBO_END};
+const uint16_t PROGMEM r_vol_up[] = {LT(3,KC_I), KC_O, COMBO_END};
 const uint16_t PROGMEM scroll_left[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM scroll_right[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
