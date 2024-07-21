@@ -288,49 +288,49 @@ const uint32_t unicode_map[] PROGMEM = {
 #define U_VXT UM(UC_FIVESIXTHS)	// ⅚
 #define U_VGT UM(UC_FIVEEIGHTHS)	// ⅝
 #define U_SGT UM(UC_SEVENEIGHTHS)	// ⅞
-#define U_EQ UP(UC_EQT, UC_EQH)	// ≠ and ¡
-#define U_AD UP(UC_ADT, UC_ADH)	// ä and Ä
-#define U_AR UP(UC_ART, UC_ARH)	// å and Å
-#define U_ED UP(UC_EDT, UC_EDH)	// ë and Ë
-#define U_DG UP(UC_DGT, UC_DGH)	// † and ‡
-#define U_ST UP(UC_STT, UC_STH)	// ★ and ☆
-#define U_YD UP(UC_YDT, UC_YDH)	// ÿ and Ÿ
-#define U_UD UP(UC_UDT, UC_UDH)	// ü and Ü
-#define U_ID UP(UC_IDT, UC_IDH)	// ï and Ï
-#define U_OD UP(UC_ODT, UC_ODH)	// ö and Ö
-#define U_OS UP(UC_OST, UC_OSH)	// ø and Ø
-#define U_GL UP(UC_GLT, UC_GLH)	// « and ‹
-#define U_AC UP(UC_ACT, UC_ACH)	// â and Â
-#define U_AE UP(UC_AET, UC_AEH)	// æ and Æ
-#define U_EA UP(UC_EAT, UC_EAH)	// é and É
-#define U_EC UP(UC_ECT, UC_ECH)	// ê and Ê
-#define U_HV UP(UC_HVT, UC_HVH)	// ↔ and ↕
-#define U_YA UP(UC_YAT, UC_YAH)	// ý and Ý
-#define U_UA UP(UC_UAT, UC_UAH)	// ú and Ú
-#define U_IA UP(UC_IAT, UC_IAH)	// í and Í
-#define U_OA UP(UC_OAT, UC_OAH)	// ó and Ó
-#define U_OE UP(UC_OET, UC_OEH)	// œ and Œ
-#define U_GR UP(UC_GRT, UC_GRH)	// » and ›
-#define U_AA UP(UC_AAT, UC_AAH)	// á and Á
-#define U_SS UP(UC_SST, UC_SSH)	// ß and ẞ
-#define U_EG UP(UC_EGT, UC_EGH)	// è and È
-#define U_DT UP(UC_DTT, UC_DTH)	// … and ·
-#define U_LU UP(UC_LUT, UC_LUH)	// ← and ↑
-#define U_RD UP(UC_RDT, UC_RDH)	// → and ↓
-#define U_UG UP(UC_UGT, UC_UGH)	// ù and Ù
-#define U_IG UP(UC_IGT, UC_IGH)	// ì and Ì
-#define U_OG UP(UC_OGT, UC_OGH)	// ò and Ò
-#define U_OT UP(UC_OTT, UC_OTH)	// õ and Õ
-#define U_AG UP(UC_AGT, UC_AGH)	// à and À
-#define U_AT UP(UC_ATT, UC_ATH)	// ã and Ã
-#define U_CL UP(UC_CLT, UC_CLH)	// ç and Ç
-#define U_CK UP(UC_CKT, UC_CKH)	// ✓ and §
-#define U_BU UP(UC_BUT, UC_BUH)	// • and ◦
-#define U_NT UP(UC_NTT, UC_NTH)	// ñ and Ñ
-#define U_UC UP(UC_UCT, UC_UCH)	// û and Û
-#define U_IC UP(UC_ICT, UC_ICH)	// î and Î
-#define U_OC UP(UC_OCT, UC_OCH)	// ô and Ô
-#define U_QU UP(UC_QUT, UC_QUH)	// ‽ and ¿
+#define U_EQ UM(UC_EQT)	// ≠
+#define U_AD UM(UC_ADT)	// ä
+#define U_AR UM(UC_ART)	// å
+#define U_ED UM(UC_EDT)	// ë
+#define U_DG UM(UC_DGT)	// †
+#define U_ST UM(UC_STT)	// ★
+#define U_YD UM(UC_YDT)	// ÿ
+#define U_UD UM(UC_UDT)	// ü
+#define U_ID UM(UC_IDT)	// ï
+#define U_OD UM(UC_ODT)	// ö
+#define U_OS UM(UC_OST)	// ø
+#define U_GL UM(UC_GLT)	// «
+#define U_AC UM(UC_ACT)	// â
+#define U_AE UM(UC_AET)	// æ
+#define U_EA UM(UC_EAT)	// é
+#define U_EC UM(UC_ECT)	// ê
+#define U_HV UM(UC_HVT)	// ↔
+#define U_YA UM(UC_YAT)	// ý
+#define U_UA UM(UC_UAT)	// ú
+#define U_IA UM(UC_IAT)	// í
+#define U_OA UM(UC_OAT)	// ó
+#define U_OE UM(UC_OET)	// œ
+#define U_GR UM(UC_GRT)	// »
+#define U_AA UM(UC_AAT)	// á
+#define U_SS UM(UC_SST)	// ß
+#define U_EG UM(UC_EGT)	// è
+#define U_DT UM(UC_DTT)	// …
+#define U_LU UM(UC_LUT)	// ←
+#define U_RD UM(UC_RDT)	// →
+#define U_UG UM(UC_UGT)	// ù
+#define U_IG UM(UC_IGT)	// ì
+#define U_OG UM(UC_OGT)	// ò
+#define U_OT UM(UC_OTT)	// õ
+#define U_AG UM(UC_AGT)	// à
+#define U_AT UM(UC_ATT)	// ã
+#define U_CL UM(UC_CLT)	// ç
+#define U_CK UM(UC_CKT)	// ✓
+#define U_BU UM(UC_BUT)	// •
+#define U_NT UM(UC_NTT)	// ñ
+#define U_UC UM(UC_UCT)	// û
+#define U_IC UM(UC_ICT)	// î
+#define U_OC UM(UC_OCT)	// ô
+#define U_QU UM(UC_QUT)	// ‽
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
