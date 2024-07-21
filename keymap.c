@@ -469,6 +469,49 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 		case KC_BTN3:
 		case KC_COLN:
 		case KC_DQT:
+		case U_EQ:
+		case U_AD:
+		case U_AR:
+		case U_ED:
+		case U_DG:
+		case U_ST:
+		case U_YD:
+		case U_UD:
+		case U_ID:
+		case U_OD:
+		case U_OS:
+		case U_GL:
+		case U_AC:
+		case U_AE:
+		case U_EA:
+		case U_EC:
+		case U_HV:
+		case U_YA:
+		case U_UA:
+		case U_IA:
+		case U_OA:
+		case U_OE:
+		case U_GR:
+		case U_AA:
+		case U_SS:
+		case U_EG:
+		case U_DT:
+		case U_LU:
+		case U_RD:
+		case U_UG:
+		case U_IG:
+		case U_OG:
+		case U_OT:
+		case U_AG:
+		case U_AT:
+		case U_CL:
+		case U_CK:
+		case U_BU:
+		case U_NT:
+		case U_UC:
+		case U_IC:
+		case U_OC:
+		case U_QU:
 			return true;
 		default:
 			return false; } }
@@ -484,6 +527,49 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 		case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
 		case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: register_code16((!shifted) ? KC_DQT : KC_QUOT); break;
+		case U_EQ: register_unicodemap((!shifted) ? UC_EQT : UC_EQH); break;
+		case U_AD: register_unicodemap((!shifted) ? UC_ADT : UC_ADH); break;
+		case U_AR: register_unicodemap((!shifted) ? UC_ART : UC_ARH); break;
+		case U_ED: register_unicodemap((!shifted) ? UC_EDT : UC_EDH); break;
+		case U_DG: register_unicodemap((!shifted) ? UC_DGT : UC_DGH); break;
+		case U_ST: register_unicodemap((!shifted) ? UC_STT : UC_STH); break;
+		case U_YD: register_unicodemap((!shifted) ? UC_YDT : UC_YDH); break;
+		case U_UD: register_unicodemap((!shifted) ? UC_UDT : UC_UDH); break;
+		case U_ID: register_unicodemap((!shifted) ? UC_IDT : UC_IDH); break;
+		case U_OD: register_unicodemap((!shifted) ? UC_ODT : UC_ODH); break;
+		case U_OS: register_unicodemap((!shifted) ? UC_OST : UC_OSH); break;
+		case U_GL: register_unicodemap((!shifted) ? UC_GLT : UC_GLH); break;
+		case U_AC: register_unicodemap((!shifted) ? UC_ACT : UC_ACH); break;
+		case U_AE: register_unicodemap((!shifted) ? UC_AET : UC_AEH); break;
+		case U_EA: register_unicodemap((!shifted) ? UC_EAT : UC_EAH); break;
+		case U_EC: register_unicodemap((!shifted) ? UC_ECT : UC_ECH); break;
+		case U_HV: register_unicodemap((!shifted) ? UC_HVT : UC_HVH); break;
+		case U_YA: register_unicodemap((!shifted) ? UC_YAT : UC_YAH); break;
+		case U_UA: register_unicodemap((!shifted) ? UC_UAT : UC_UAH); break;
+		case U_IA: register_unicodemap((!shifted) ? UC_IAT : UC_IAH); break;
+		case U_OA: register_unicodemap((!shifted) ? UC_OAT : UC_OAH); break;
+		case U_OE: register_unicodemap((!shifted) ? UC_OET : UC_OEH); break;
+		case U_GR: register_unicodemap((!shifted) ? UC_GRT : UC_GRH); break;
+		case U_AA: register_unicodemap((!shifted) ? UC_AAT : UC_AAH); break;
+		case U_SS: register_unicodemap((!shifted) ? UC_SST : UC_SSH); break;
+		case U_EG: register_unicodemap((!shifted) ? UC_EGT : UC_EGH); break;
+		case U_DT: register_unicodemap((!shifted) ? UC_DTT : UC_DTH); break;
+		case U_LU: register_unicodemap((!shifted) ? UC_LUT : UC_LUH); break;
+		case U_RD: register_unicodemap((!shifted) ? UC_RDT : UC_RDH); break;
+		case U_UG: register_unicodemap((!shifted) ? UC_UGT : UC_UGH); break;
+		case U_IG: register_unicodemap((!shifted) ? UC_IGT : UC_IGH); break;
+		case U_OG: register_unicodemap((!shifted) ? UC_OGT : UC_OGH); break;
+		case U_OT: register_unicodemap((!shifted) ? UC_OTT : UC_OTH); break;
+		case U_AG: register_unicodemap((!shifted) ? UC_AGT : UC_AGH); break;
+		case U_AT: register_unicodemap((!shifted) ? UC_ATT : UC_ATH); break;
+		case U_CL: register_unicodemap((!shifted) ? UC_CLT : UC_CLH); break;
+		case U_CK: register_unicodemap((!shifted) ? UC_CKT : UC_CKH); break;
+		case U_BU: register_unicodemap((!shifted) ? UC_BUT : UC_BUH); break;
+		case U_NT: register_unicodemap((!shifted) ? UC_NTT : UC_NTH); break;
+		case U_UC: register_unicodemap((!shifted) ? UC_UCT : UC_UCH); break;
+		case U_IC: register_unicodemap((!shifted) ? UC_ICT : UC_ICH); break;
+		case U_OC: register_unicodemap((!shifted) ? UC_OCT : UC_OCH); break;
+		case U_QU: register_unicodemap((!shifted) ? UC_QUT : UC_QUH); break;
 		default:
 			if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
 			register_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); } }
@@ -499,6 +585,49 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 		case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
 		case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: unregister_code16((!shifted) ? KC_DQT : KC_QUOT); break;
+		case U_EQ: break;
+		case U_AD: break;
+		case U_AR: break;
+		case U_ED: break;
+		case U_DG: break;
+		case U_ST: break;
+		case U_YD: break;
+		case U_UD: break;
+		case U_ID: break;
+		case U_OD: break;
+		case U_OS: break;
+		case U_GL: break;
+		case U_AC: break;
+		case U_AE: break;
+		case U_EA: break;
+		case U_EC: break;
+		case U_HV: break;
+		case U_YA: break;
+		case U_UA: break;
+		case U_IA: break;
+		case U_OA: break;
+		case U_OE: break;
+		case U_GR: break;
+		case U_AA: break;
+		case U_SS: break;
+		case U_EG: break;
+		case U_DT: break;
+		case U_LU: break;
+		case U_RD: break;
+		case U_UG: break;
+		case U_IG: break;
+		case U_OG: break;
+		case U_OT: break;
+		case U_AG: break;
+		case U_AT: break;
+		case U_CL: break;
+		case U_CK: break;
+		case U_BU: break;
+		case U_NT: break;
+		case U_UC: break;
+		case U_IC: break;
+		case U_OC: break;
+		case U_QU: break;
 		default:
 			unregister_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode);
 			clear_weak_mods(); } }
