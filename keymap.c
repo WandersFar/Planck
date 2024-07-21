@@ -13,12 +13,6 @@ bool led_update_user(led_t led_state) {
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
-	case 3:
-		autoshift_enable();
-		break;
-	case 2:
-		autoshift_enable();
-		break;
 	case 1:
 		autoshift_disable();
 		PLAY_SONG(lock);
@@ -147,12 +141,6 @@ enum unicode_names {
 	UC_OCH,
 	UC_QUT,
 	UC_QUH,
-	UC_SADT,
-	UC_SADH,
-	UC_IDKT,
-	UC_IDKH,
-	UC_HAPT,
-	UC_HAPH,
 };
 
 const uint32_t unicode_map[] PROGMEM = {
@@ -275,15 +263,6 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_QUH] = 0x00BF,	// ¿
 };
 
-bool process_record_unicode(uint16_t keycode, keyrecord_t *record) {
-	switch (keycode) {
-		case UC_SADT: if (record->event.pressed) { send_unicode_string("ಠ_ಠ"); } break;
-		case UC_SADH: if (record->event.pressed) { send_unicode_string("ಥ_ಥ"); } break;
-		case UC_IDKT: if (record->event.pressed) { send_unicode_string("¯\\_(ツ)_/¯"); } break;
-		case UC_IDKH: if (record->event.pressed) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); } break;
-		case UC_HAPT: if (record->event.pressed) { send_unicode_string(":þ"); } break;
-		case UC_HAPH: if (record->event.pressed) { send_unicode_string("( ͡° ͜ʖ ͡°)"); } break; } return false; }
-
 #define U_DEG UM(UC_DEGREE)	// °
 #define U_ONE UM(UC_SUPONE)	// ¹
 #define U_TWO UM(UC_SUPTWO)	// ²
@@ -352,9 +331,6 @@ bool process_record_unicode(uint16_t keycode, keyrecord_t *record) {
 #define U_IC UP(UC_ICT, UC_ICH)	// î and Î
 #define U_OC UP(UC_OCT, UC_OCH)	// ô and Ô
 #define U_QU UP(UC_QUT, UC_QUH)	// ‽ and ¿
-#define U_SAD UP(UC_SADT, UC_SADH)	// ಠ_ಠ and ಥ_ಥ
-#define U_IDK UP(UC_IDKT, UC_IDKH)	// ¯\\_(ツ)_/¯ and ¯\\\\\\_(ツ)\\_/¯
-#define U_HAP UP(UC_HAPT, UC_HAPH)	// :þ and ( ͡° ͜ʖ ͡°)
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
@@ -491,60 +467,38 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 		case KC_BTN1:
 		case KC_BTN2:
 		case KC_BTN3:
+		case KC_COLN:
+		case KC_DQT:
 			return true;
 		default:
 			return false; } }
 
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 	switch(keycode) {
-		case KC_BSPC:
-			register_code16((!shifted) ? KC_BSPC : C(KC_BSPC));
-			break;
-		case KC_TAB:
-			register_code16((!shifted) ? KC_TAB : C(KC_DEL));
-			break;
-		case KC_ENT:
-			register_code16((!shifted) ? KC_ENT : S(KC_DEL));
-			break;
-		case KC_DEL:
-			register_code((!shifted) ? KC_DEL : KC_ESC);
-			break;
-		case KC_BTN1:
-			register_code((!shifted) ? KC_BTN1 : KC_BTN1);
-			break;
-		case KC_BTN2:
-			register_code((!shifted) ? KC_BTN2 : KC_BTN2);
-			break;
-		case KC_BTN3:
-			register_code((!shifted) ? KC_BTN3 : KC_BTN3);
-			break;
+		case KC_BSPC: register_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
+		case KC_TAB: register_code16((!shifted) ? KC_TAB : C(KC_DEL)); break;
+		case KC_ENT: register_code16((!shifted) ? KC_ENT : S(KC_DEL)); break;
+		case KC_DEL: register_code((!shifted) ? KC_DEL : KC_ESC); break;
+		case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
+		case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
+		case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
+		case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
+		case KC_DQT: register_code16((!shifted) ? KC_DQT : KC_QUOT); break;
 		default:
 			if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
 			register_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); } }
 
 void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 	switch(keycode) {
-		case KC_BSPC:
-			unregister_code16((!shifted) ? KC_BSPC : C(KC_BSPC));
-			break;
-		case KC_TAB:
-			unregister_code16((!shifted) ? KC_TAB : C(KC_DEL));
-			break;
-		case KC_ENT:
-			unregister_code16((!shifted) ? KC_ENT : S(KC_DEL));
-			break;
-		case KC_DEL:
-			unregister_code((!shifted) ? KC_DEL : KC_ESC);
-			break;
-		case KC_BTN1:
-			unregister_code((!shifted) ? KC_BTN1 : KC_NO);
-			break;
-		case KC_BTN2:
-			unregister_code((!shifted) ? KC_BTN2 : KC_NO);
-			break;
-		case KC_BTN3:
-			unregister_code((!shifted) ? KC_BTN3 : KC_NO);
-			break;
+		case KC_BSPC: unregister_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
+		case KC_TAB: unregister_code16((!shifted) ? KC_TAB : C(KC_DEL)); break;
+		case KC_ENT: unregister_code16((!shifted) ? KC_ENT : S(KC_DEL)); break;
+		case KC_DEL: unregister_code((!shifted) ? KC_DEL : KC_ESC); break;
+		case KC_BTN1: unregister_code((!shifted) ? KC_BTN1 : KC_NO); break;
+		case KC_BTN2: unregister_code((!shifted) ? KC_BTN2 : KC_NO); break;
+		case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
+		case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
+		case KC_DQT: unregister_code16((!shifted) ? KC_DQT : KC_QUOT); break;
 		default:
 			unregister_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode);
 			clear_weak_mods(); } }
@@ -563,6 +517,9 @@ typedef struct {
 } td_tap_t;
 
 enum {
+	CRY,
+	IDK,
+	LEN,
 	DASH,
 	QUOTE,
 	HOME,
@@ -585,6 +542,18 @@ td_state_t cur_dance(tap_dance_state_t *state) {
 	} else if (state->pressed) return TD_2H;
 		else return TD_2T; }
 
+static td_tap_t ctap_state = {
+	.is_press_action = true,
+	.state = TD_NONE };
+
+static td_tap_t itap_state = {
+	.is_press_action = true,
+	.state = TD_NONE };
+
+static td_tap_t ltap_state = {
+	.is_press_action = true,
+	.state = TD_NONE };
+
 static td_tap_t dtap_state = {
 	.is_press_action = true,
 	.state = TD_NONE };
@@ -600,6 +569,60 @@ static td_tap_t htap_state = {
 static td_tap_t etap_state = {
 	.is_press_action = true,
 	.state = TD_NONE };
+
+void c_finished(tap_dance_state_t *state, void *user_data) {
+	ctap_state.state = cur_dance(state);
+	switch (ctap_state.state) {
+		case TD_1T: send_unicode_string("ಠ_ಠ"); break;
+		case TD_1H: send_unicode_string("ಥ_ಥ"); break;
+		case TD_2T: send_unicode_string("ಥ_ಥ"); break;
+		case TD_2H: send_unicode_string("ಥ_ಥ"); break;
+		case TD_NONE: break; } }
+
+void c_reset(tap_dance_state_t *state, void *user_data) {
+	switch (ctap_state.state) {
+		case TD_1T: break;
+		case TD_1H: break;
+		case TD_2T: break;
+		case TD_2H: break;
+		case TD_NONE: break; }
+	ctap_state.state = TD_NONE; }
+
+void i_finished(tap_dance_state_t *state, void *user_data) {
+	itap_state.state = cur_dance(state);
+	switch (itap_state.state) {
+		case TD_1T: send_unicode_string("¯\\_(ツ)_/¯"); break;
+		case TD_1H: send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); break;
+		case TD_2T: send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); break;
+		case TD_2H: send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); break;
+		case TD_NONE: break; } }
+
+void i_reset(tap_dance_state_t *state, void *user_data) {
+	switch (itap_state.state) {
+		case TD_1T: break;
+		case TD_1H: break;
+		case TD_2T: break;
+		case TD_2H: break;
+		case TD_NONE: break; }
+	itap_state.state = TD_NONE; }
+
+void l_finished(tap_dance_state_t *state, void *user_data) {
+	ltap_state.state = cur_dance(state);
+	switch (ltap_state.state) {
+		case TD_1T: send_unicode_string(":þ"); break;
+		case TD_1H: send_unicode_string("( ͡° ͜ʖ ͡°)"); break;
+		case TD_2T: send_unicode_string("( ͡° ͜ʖ ͡°)"); break;
+		case TD_2H: send_unicode_string("( ͡° ͜ʖ ͡°)"); break;
+		case TD_NONE: break; } }
+
+void l_reset(tap_dance_state_t *state, void *user_data) {
+	switch (ltap_state.state) {
+		case TD_1T: break;
+		case TD_1H: break;
+		case TD_2T: break;
+		case TD_2H: break;
+		case TD_NONE: break; }
+	ltap_state.state = TD_NONE; }
 
 void d_finished(tap_dance_state_t *state, void *user_data) {
 	dtap_state.state = cur_dance(state);
@@ -674,13 +697,28 @@ void e_reset(tap_dance_state_t *state, void *user_data) {
 	etap_state.state = TD_NONE; }
 
 tap_dance_action_t tap_dance_actions[] = {
+	[CRY] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, c_finished, c_reset),
+	[IDK] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, i_finished, i_reset),
+	[LEN] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, l_finished, l_reset),
 	[DASH] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, d_finished, d_reset),
 	[QUOTE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, q_finished, q_reset),
 	[HOME] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, h_finished, h_reset),
 	[END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH), KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB, TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT, LT(1,KC_MUTE), LT(3,KC_Z), KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, LT(3,KC_SLSH), KC_DEL),
-	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL), KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB, KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT, DF(0), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, QK_BOOT),
-	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_LBRC, LCTL(KC_PPLS), LALT(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), LGUI(KC_PSCR), KC_RBRC, KC_GRV, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_SCLN, KC_BSLS, DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
-	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_SAD, U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR, KC_QUOT, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK, DF(1), U_AG, U_AT, U_CL, U_CK, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, U_HAP) };
+	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
+	KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
+	TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
+	LT(1,KC_MUTE), LT(3,KC_Z), KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, LT(3,KC_SLSH), KC_DEL),
+	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL),
+	KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
+	KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
+	DF(0), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, QK_BOOT),
+	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
+	KC_LBRC, LCTL(KC_PPLS), LALT(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), LGUI(KC_PSCR), KC_RBRC,
+	KC_GRV, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
+	DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
+	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, TD(CRY),
+	U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR,
+	KC_DQT, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, TD(IDK),
+	DF(1), U_AG, U_AT, U_CL, U_CK, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, TD(LEN)) };
