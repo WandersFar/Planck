@@ -8,4 +8,4 @@ But I’m not looking forward to writing 40+ Tap Dances for á → Á, é → É
 
 ___
 
-Thanks to u/pgetreuer on r/olkb and elpekeñin, plodah, & drashna on the Discord for their invaluable advice.
+Thanks to u/pgetreuer on r/olkb and elpekeñin, plodah, drashna, & ceriinas on Discord for their helpful tips and advice.
