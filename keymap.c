@@ -290,49 +290,49 @@ const uint32_t unicode_map[] PROGMEM = {
 #define U_SGT UM(UC_SEVENEIGHTHS)	// ⅞
 
 enum autoshift_unicode {
-	U_EQ = SAFE_RANGE,	// ≠
-	U_AD,	// ä
-	U_AR,	// å
-	U_ED,	// ë
-	U_DG,	// †
-	U_ST,	// ★
-	U_YD,	// ÿ
-	U_UD,	// ü
-	U_ID,	// ï
-	U_OD,	// ö
-	U_OS,	// ø
-	U_GL,	// «
-	U_AC,	// â
-	U_AE,	// æ
-	U_EA,	// é
-	U_EC,	// ê
-	U_HV,	// ↔
-	U_YA,	// ý
-	U_UA,	// ú
-	U_IA,	// í
-	U_OA,	// ó
-	U_OE,	// œ
-	U_GR,	// »
-	U_AA,	// á
-	U_SS,	// ß
-	U_EG,	// è
-	U_DT,	// …
-	U_LU,	// ←
-	U_RD,	// →
-	U_UG,	// ù
-	U_IG,	// ì
-	U_OG,	// ò
-	U_OT,	// õ
-	U_AG,	// à
-	U_AT,	// ã
-	U_CL,	// ç
-	U_CK,	// ✓
-	U_BU,	// •
-	U_NT,	// ñ
-	U_UC,	// û
-	U_IC,	// î
-	U_OC,	// ô
-	U_QU,	// ‽
+	U_EQ = SAFE_RANGE,	// ≠ ¡
+	U_AD,	// ä Ä
+	U_AR,	// å Å
+	U_ED,	// ë Ë
+	U_DG,	// † ‡
+	U_ST,	// ★ ☆
+	U_YD,	// ÿ Ÿ
+	U_UD,	// ü Ü
+	U_ID,	// ï Ï
+	U_OD,	// ö Ö
+	U_OS,	// ø Ø
+	U_GL,	// « ‹
+	U_AC,	// â Â
+	U_AE,	// æ Æ
+	U_EA,	// é É
+	U_EC,	// ê Ê
+	U_HV,	// ↔ ↕
+	U_YA,	// ý Ý
+	U_UA,	// ú Ú
+	U_IA,	// í Í
+	U_OA,	// ó Ó
+	U_OE,	// œ Œ
+	U_GR,	// » ›
+	U_AA,	// á Á
+	U_SS,	// ß ẞ
+	U_EG,	// è È
+	U_DT,	// … ·
+	U_LU,	// ← ↑
+	U_RD,	// → ↓
+	U_UG,	// ù Ù
+	U_IG,	// ì Ì
+	U_OG,	// ò Ò
+	U_OT,	// õ Õ
+	U_AG,	// à À
+	U_AT,	// ã Ã
+	U_CL,	// ç Ç
+	U_CK,	// ✓ §
+	U_BU,	// • ◦
+	U_NT,	// ñ Ñ
+	U_UC,	// û Û
+	U_IC,	// î Î
+	U_OC,	// ô Ô
+	U_QU,	// ‽ ¿
 };
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
