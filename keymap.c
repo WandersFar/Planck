@@ -288,49 +288,52 @@ const uint32_t unicode_map[] PROGMEM = {
 #define U_VXT UM(UC_FIVESIXTHS)	// ⅚
 #define U_VGT UM(UC_FIVEEIGHTHS)	// ⅝
 #define U_SGT UM(UC_SEVENEIGHTHS)	// ⅞
-#define U_EQ UM(UC_EQT)	// ≠
-#define U_AD UM(UC_ADT)	// ä
-#define U_AR UM(UC_ART)	// å
-#define U_ED UM(UC_EDT)	// ë
-#define U_DG UM(UC_DGT)	// †
-#define U_ST UM(UC_STT)	// ★
-#define U_YD UM(UC_YDT)	// ÿ
-#define U_UD UM(UC_UDT)	// ü
-#define U_ID UM(UC_IDT)	// ï
-#define U_OD UM(UC_ODT)	// ö
-#define U_OS UM(UC_OST)	// ø
-#define U_GL UM(UC_GLT)	// «
-#define U_AC UM(UC_ACT)	// â
-#define U_AE UM(UC_AET)	// æ
-#define U_EA UM(UC_EAT)	// é
-#define U_EC UM(UC_ECT)	// ê
-#define U_HV UM(UC_HVT)	// ↔
-#define U_YA UM(UC_YAT)	// ý
-#define U_UA UM(UC_UAT)	// ú
-#define U_IA UM(UC_IAT)	// í
-#define U_OA UM(UC_OAT)	// ó
-#define U_OE UM(UC_OET)	// œ
-#define U_GR UM(UC_GRT)	// »
-#define U_AA UM(UC_AAT)	// á
-#define U_SS UM(UC_SST)	// ß
-#define U_EG UM(UC_EGT)	// è
-#define U_DT UM(UC_DTT)	// …
-#define U_LU UM(UC_LUT)	// ←
-#define U_RD UM(UC_RDT)	// →
-#define U_UG UM(UC_UGT)	// ù
-#define U_IG UM(UC_IGT)	// ì
-#define U_OG UM(UC_OGT)	// ò
-#define U_OT UM(UC_OTT)	// õ
-#define U_AG UM(UC_AGT)	// à
-#define U_AT UM(UC_ATT)	// ã
-#define U_CL UM(UC_CLT)	// ç
-#define U_CK UM(UC_CKT)	// ✓
-#define U_BU UM(UC_BUT)	// •
-#define U_NT UM(UC_NTT)	// ñ
-#define U_UC UM(UC_UCT)	// û
-#define U_IC UM(UC_ICT)	// î
-#define U_OC UM(UC_OCT)	// ô
-#define U_QU UM(UC_QUT)	// ‽
+
+enum autoshift_unicode {
+	U_EQ = SAFE_RANGE,	// ≠
+	U_AD,	// ä
+	U_AR,	// å
+	U_ED,	// ë
+	U_DG,	// †
+	U_ST,	// ★
+	U_YD,	// ÿ
+	U_UD,	// ü
+	U_ID,	// ï
+	U_OD,	// ö
+	U_OS,	// ø
+	U_GL,	// «
+	U_AC,	// â
+	U_AE,	// æ
+	U_EA,	// é
+	U_EC,	// ê
+	U_HV,	// ↔
+	U_YA,	// ý
+	U_UA,	// ú
+	U_IA,	// í
+	U_OA,	// ó
+	U_OE,	// œ
+	U_GR,	// »
+	U_AA,	// á
+	U_SS,	// ß
+	U_EG,	// è
+	U_DT,	// …
+	U_LU,	// ←
+	U_RD,	// →
+	U_UG,	// ù
+	U_IG,	// ì
+	U_OG,	// ò
+	U_OT,	// õ
+	U_AG,	// à
+	U_AT,	// ã
+	U_CL,	// ç
+	U_CK,	// ✓
+	U_BU,	// •
+	U_NT,	// ñ
+	U_UC,	// û
+	U_IC,	// î
+	U_OC,	// ô
+	U_QU,	// ‽
+};
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
