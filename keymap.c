@@ -3,14 +3,6 @@
 float lock[][2] = SONG(LOCK);
 float unlock[][2] = SONG(UNLOCK);
 
-bool led_update_user(led_t led_state) {
-	static bool caps = false;
-	if (caps != led_state.caps_lock) {
-		caps = led_state.caps_lock;
-		if (caps) { rgblight_enable_noeeprom(); }
-		else { rgblight_disable_noeeprom(); }
-	} return true; }
-
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
 	case 1:
@@ -22,6 +14,14 @@ layer_state_t default_layer_state_set_user(layer_state_t state) {
 		PLAY_SONG(unlock);
 		break;
 	} return state; }
+
+bool led_update_user(led_t led_state) {
+	static bool caps = false;
+	if (caps != led_state.caps_lock) {
+		caps = led_state.caps_lock;
+		if (caps) { rgblight_enable_noeeprom(); }
+		else { rgblight_disable_noeeprom(); }
+	} return true; }
 
 enum unicode_names {
 	UC_DEGREE,
@@ -789,7 +789,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
 		KC_LBRC, LCTL(KC_PPLS), LALT(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), LGUI(KC_PSCR), KC_RBRC,
 		KC_GRV, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
-		DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
+		RGB_TOG, RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
 	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_CRY,
 		U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR,
 		KC_DQT, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
