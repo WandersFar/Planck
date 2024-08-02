@@ -345,7 +345,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case U_QUOTE:
 			if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; break;
-			} else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; break; } return false;
+			} else if(state == CLOSE) { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; break;
+			} else return false;
 		default: return true; } return false; };
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
