@@ -344,9 +344,9 @@ enum states state = OPEN;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case U_QUOTE:
-			if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; return false;
-			} else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; return false; }
-		default: return true; } }
+			if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; break;
+			} else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; break; } return false;
+		default: return true; } return false; };
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
