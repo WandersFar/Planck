@@ -344,10 +344,11 @@ enum states state = OPEN;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case U_QUOTE:
-			if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; break;
-			} else if(state == CLOSE) { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; break;
+			if (record->event.pressed) {
+				if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
+				else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
 			} else return false;
-		default: return true; } return false; };
+		default: return true; } };
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
