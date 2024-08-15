@@ -434,6 +434,18 @@ combo_t key_combos[COMBO_COUNT] = {
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
+		case 3:
+			if (clockwise) { tap_code(KC_PGDN);
+			} else { tap_code(KC_PGUP); }
+			break;
+		case 2:
+			if (clockwise) { tap_code(KC_DOWN);
+			} else { tap_code(KC_UP); }
+			break;
+		case 1:
+			if (clockwise) { tap_code_delay(KC_VOLU, 10);
+			} else { tap_code_delay(KC_VOLD, 10); }
+			break;
 		case 0:
 			if (get_mods() & MOD_MASK_CTRL) {
 					if (clockwise) { tap_code(KC_Y);
