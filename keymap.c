@@ -23,10 +23,6 @@ bool led_update_user(led_t led_state) {
 		else { rgblight_disable_noeeprom(); }
 	} return true; }
 
-void oneshot_layer_changed_user(uint8_t layer) {
-	if (layer == 3) { rgblight_enable_noeeprom(); }
-	if (!layer) { rgblight_disable_noeeprom(); } }
-
 enum unicode_names {
 	UC_DEGREE,
 	UC_SUPONE,
@@ -370,7 +366,6 @@ const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM word_right[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM caps_lock[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM shift_alt_esc[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM one_shot[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
 const uint16_t PROGMEM degree[] = {KC_EQL, KC_0, COMBO_END};
 const uint16_t PROGMEM sup_1[] = {KC_EQL, KC_1, COMBO_END};
 const uint16_t PROGMEM sup_2[] = {KC_EQL, KC_2, COMBO_END};
@@ -411,7 +406,6 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(word_right, C(KC_RGHT)),
 	COMBO(caps_lock, KC_CAPS),
 	COMBO(shift_alt_esc, LSA(KC_ESC)),
-	COMBO(one_shot, OSL(3)),
 	COMBO(degree, U_DEG),
 	COMBO(sup_1, U_ONE),
 	COMBO(sup_2, U_TWO),
