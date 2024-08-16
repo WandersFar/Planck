@@ -348,6 +348,7 @@ enum states { OPEN, CLOSE };
 enum states state = OPEN;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+	if (!double_tap(keycode, record)) { return false; }
 	static uint16_t TIMER;
 	switch (keycode) {
 		case U_QUOTE:
@@ -365,7 +366,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				remember_keycode = NO_KC; }
 				} return false; }
 		default: return true; }
-	if (!double_tap(keycode, record)) { return false; }
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
