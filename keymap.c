@@ -342,7 +342,7 @@ enum autoshift_unicode {
 static bool double_tap(uint16_t keycode, keyrecord_t *record) {
 	static uint16_t remember_keycode = NO_KC;
 	const uint16_t prev_keycode = remember_keycode;
-	if (record->event.pressed) { remember_keycode = keycode; }
+if (record->event.pressed) { remember_keycode = keycode; } };
 
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
