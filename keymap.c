@@ -337,12 +337,14 @@ enum autoshift_unicode {
 	U_IDK,	// ¯\_(ツ)_/¯ ¯\\\_(ツ)\_/¯
 	U_LEN,	// :þ ( ͡° ͜ʖ ͡°)
 	U_QUOTE,
+	NO_KC,
 };
 
 static bool double_tap(uint16_t keycode, keyrecord_t *record) {
 	static uint16_t remember_keycode = NO_KC;
 	const uint16_t prev_keycode = remember_keycode;
-if (record->event.pressed) { remember_keycode = keycode; } };
+	if (record->event.pressed) { remember_keycode = keycode; }
+	return true; };
 
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
@@ -364,8 +366,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			} else {
 				register_unicodemap(registered_key);
 				remember_keycode = NO_KC; }
-				} return false; }
-		default: return true; }
+				} return false;
+		default: return true; } };
 
 const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
