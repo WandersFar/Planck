@@ -340,14 +340,14 @@ enum autoshift_unicode {
 	NO_KC,
 };
 
+enum states { OPEN, CLOSE };
+enum states state = OPEN;
+
 static bool double_tap(uint16_t keycode, keyrecord_t *record) {
 	static uint16_t remember_keycode = NO_KC;
 	const uint16_t prev_keycode = remember_keycode;
 	if (record->event.pressed) { remember_keycode = keycode; }
 	return true; };
-
-enum states { OPEN, CLOSE };
-enum states state = OPEN;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	if (!double_tap(keycode, record)) { return false; }
@@ -369,12 +369,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				} return false;
 		default: return true; } };
 
-const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
-const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
+const uint16_t PROGMEM l_scroll_down[] = {LT(3,KC_C), LT(2,KC_V), COMBO_END};
+const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), LT(3,KC_COMM), COMBO_END};
 const uint16_t PROGMEM l_scroll_up[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM r_scroll_up[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM l_vol_down[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM r_vol_down[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM l_vol_down[] = {KC_X, LT(3,KC_C), COMBO_END};
+const uint16_t PROGMEM r_vol_down[] = {LT(3,KC_COMM), KC_DOT, COMBO_END};
 const uint16_t PROGMEM l_vol_up[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM r_vol_up[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM scroll_left[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
@@ -452,12 +452,12 @@ combo_t key_combos[COMBO_COUNT] = {
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
 		case 3:
-			if (clockwise) { tap_code(KC_PGDN);
-			} else { tap_code(KC_PGUP); }
-			break;
-		case 2:
 			if (clockwise) { tap_code(KC_DOWN);
 			} else { tap_code(KC_UP); }
+			break;
+		case 2:
+			if (clockwise) { tap_code(KC_PGDN);
+			} else { tap_code(KC_PGUP); }
 			break;
 		case 1:
 			if (clockwise) { tap_code_delay(KC_VOLU, 10);
@@ -490,8 +490,8 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
-		case LT(3,KC_G):
-		case LT(3,KC_H):
+		case LT(3,KC_C):
+		case LT(3,KC_COMM):
 		case LT(2,KC_V):
 		case LT(2,KC_M):
 		case LGUI_T(KC_A):
@@ -816,8 +816,8 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
-		TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(3,KC_G), LT(3,KC_H), RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
-		LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DEL),
+		TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
+		LT(1,KC_MUTE), KC_Z, KC_X, LT(3,KC_C), LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), LT(3,KC_COMM), KC_DOT, KC_SLSH, KC_DEL),
 	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
 		KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
