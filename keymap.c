@@ -343,21 +343,21 @@ enum autoshift_unicode {
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
 
-static uint16_t remember_keycode = NO_KC;
+static uint16_t memory = NO_KC;
 
 static bool double_tap(uint16_t keycode, keyrecord_t *record) {
-	if (record->event.pressed) { remember_keycode = keycode; }
+	if (record->event.pressed) { memory = keycode; }
 	return true; };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	const uint16_t prev_keycode = remember_keycode;
+	const uint16_t recent = memory;
 	if (!double_tap(keycode, record)) { return false; }
 	static uint16_t TIMER;
 	switch (keycode) {
 		case U_QUOTE:
 			static uint8_t registered_key = UC_QUOTERIGHTSINGLE;
 			if (record->event.pressed) {
-				registered_key = (prev_keycode == UC_QUOTERIGHTSINGLE)
+				registered_key = (recent == UC_QUOTERIGHTSINGLE)
 						? UC_QUOTELEFTSINGLE : UC_QUOTERIGHTSINGLE;
 				TIMER = timer_read();
 			} else {
@@ -366,7 +366,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
 			} else {
 				register_unicodemap(registered_key);
-				remember_keycode = NO_KC; }
+				memory = NO_KC; }
 				} return false;
 		default: return true; } };
 
