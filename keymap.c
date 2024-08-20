@@ -343,13 +343,14 @@ enum autoshift_unicode {
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
 
+static uint16_t remember_keycode = NO_KC;
+
 static bool double_tap(uint16_t keycode, keyrecord_t *record) {
-	static uint16_t remember_keycode = NO_KC;
-	const uint16_t prev_keycode = remember_keycode;
 	if (record->event.pressed) { remember_keycode = keycode; }
 	return true; };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+	const uint16_t prev_keycode = remember_keycode;
 	if (!double_tap(keycode, record)) { return false; }
 	static uint16_t TIMER;
 	switch (keycode) {
@@ -756,18 +757,18 @@ void d_reset(tap_dance_state_t *state, void *user_data) {
 void q_finished(tap_dance_state_t *state, void *user_data) {
 	qtap_state.state = cur_dance(state);
 	switch (qtap_state.state) {
-		case TD_1T: register_unicodemap(UC_QUOTERIGHTSINGLE); break;
-		case TD_1H: register_code16(S(KC_QUOT)); break;
+		case TD_1T: register_code16(S(KC_QUOT)); break;
+		case TD_1H: register_code(KC_QUOT); break;
 		case TD_2T: register_unicodemap(UC_QUOTELEFTSINGLE); break;
-		case TD_2H: register_code(KC_QUOT); break;
+		case TD_2H: register_unicodemap(UC_QUOTELEFTSINGLE); break;
 		case TD_NONE: break; } }
 
 void q_reset(tap_dance_state_t *state, void *user_data) {
 	switch (qtap_state.state) {
-		case TD_1T: break;
-		case TD_1H: unregister_code16(S(KC_QUOT)); break;
+		case TD_1T: unregister_code16(S(KC_QUOT)); break;
+		case TD_1H: unregister_code(KC_QUOT); break;
 		case TD_2T: break;
-		case TD_2H: unregister_code(KC_QUOT); break;
+		case TD_2H: break;
 		case TD_NONE: break; }
 	qtap_state.state = TD_NONE; }
 
@@ -816,7 +817,7 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
-		TD(QUOTE), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
+		U_QUOTE, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
 		LT(1,KC_MUTE), KC_Z, KC_X, LT(3,KC_C), LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), LT(3,KC_COMM), KC_DOT, KC_SLSH, KC_DEL),
 	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
@@ -828,5 +829,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		RGB_TOG, RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
 	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_CRY,
 		U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR,
-		U_QUOTE, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
+		TD(QUOTE), U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
 		DF(1), U_AG, U_AT, U_CL, U_CK, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, U_LEN) };
