@@ -337,32 +337,26 @@ enum autoshift_unicode {
 	U_IDK,	// ¯\_(ツ)_/¯ ¯\\\_(ツ)\_/¯
 	U_LEN,	// :þ ( ͡° ͜ʖ ͡°)
 	U_QUOTE,
-	WIPE,
 };
 
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
-static uint16_t memory = WIPE;
+static uint16_t recent = KC_NO;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case U_QUOTE:
 			static uint16_t TIMER;
-			static uint8_t double_tap = UC_QUOTERIGHTSINGLE;
 			if (record->event.pressed) {
 				TIMER = timer_read();
-				memory = keycode;
-				const uint16_t recent = memory;
-				double_tap = (recent == UC_QUOTERIGHTSINGLE)
-						? UC_QUOTELEFTSINGLE : UC_QUOTERIGHTSINGLE;
 			} else {
 				if (timer_elapsed(TIMER) > TAPPING_TERM) {
 				if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
 				else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
 			} else {
-				register_unicodemap(double_tap);
-				memory = WIPE; }
+				if (recent == UC_QUOTERIGHTSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_QUOTELEFTSINGLE); recent = KC_NO; }
+				else { register_unicodemap(UC_QUOTERIGHTSINGLE); recent = UC_QUOTERIGHTSINGLE; } }
 				} return false;
-		default: return true; } };
+		default: if (record->event.pressed) { recent = keycode; } return true; } };
 
 const uint16_t PROGMEM l_scroll_down[] = {LT(3,KC_C), LT(2,KC_V), COMBO_END};
 const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), LT(3,KC_COMM), COMBO_END};
