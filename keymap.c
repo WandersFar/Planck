@@ -686,14 +686,12 @@ typedef struct {
 
 enum {
 	DASH,
-	QUOTE,
 	HOME,
 	END, };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case TD(DASH):
-		case TD(QUOTE):
 			return 200;
 		case TD(HOME):
 		case TD(END):
@@ -709,10 +707,6 @@ td_state_t cur_dance(tap_dance_state_t *state) {
 		else return TD_2T; }
 
 static td_tap_t dtap_state = {
-	.is_press_action = true,
-	.state = TD_NONE };
-
-static td_tap_t qtap_state = {
 	.is_press_action = true,
 	.state = TD_NONE };
 
@@ -741,24 +735,6 @@ void d_reset(tap_dance_state_t *state, void *user_data) {
 		case TD_2H: break;
 		case TD_NONE: break; }
 	dtap_state.state = TD_NONE; }
-
-void q_finished(tap_dance_state_t *state, void *user_data) {
-	qtap_state.state = cur_dance(state);
-	switch (qtap_state.state) {
-		case TD_1T: register_code16(S(KC_QUOT)); break;
-		case TD_1H: register_code(KC_QUOT); break;
-		case TD_2T: register_unicodemap(UC_QUOTELEFTSINGLE); break;
-		case TD_2H: register_unicodemap(UC_QUOTELEFTSINGLE); break;
-		case TD_NONE: break; } }
-
-void q_reset(tap_dance_state_t *state, void *user_data) {
-	switch (qtap_state.state) {
-		case TD_1T: unregister_code16(S(KC_QUOT)); break;
-		case TD_1H: unregister_code(KC_QUOT); break;
-		case TD_2T: break;
-		case TD_2H: break;
-		case TD_NONE: break; }
-	qtap_state.state = TD_NONE; }
 
 void h_finished(tap_dance_state_t *state, void *user_data) {
 	htap_state.state = cur_dance(state);
@@ -798,7 +774,6 @@ void e_reset(tap_dance_state_t *state, void *user_data) {
 
 tap_dance_action_t tap_dance_actions[] = {
 	[DASH] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, d_finished, d_reset),
-	[QUOTE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, q_finished, q_reset),
 	[HOME] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, h_finished, h_reset),
 	[END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
 
@@ -817,5 +792,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		RGB_TOG, RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
 	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_CRY,
 		U_GL, U_AC, U_AE, U_EA, U_EC, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR,
-		TD(QUOTE), U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
+		KC_DQT, U_AA, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
 		DF(1), U_AG, U_AT, U_CL, U_CK, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, U_LEN) };
