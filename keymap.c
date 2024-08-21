@@ -337,36 +337,30 @@ enum autoshift_unicode {
 	U_IDK,	// ¯\_(ツ)_/¯ ¯\\\_(ツ)\_/¯
 	U_LEN,	// :þ ( ͡° ͜ʖ ͡°)
 	U_QUOTE,
-	NO_KC,
+	WIPE,
 };
 
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
-
-static uint16_t memory = NO_KC;
-
-static bool double_tap(uint16_t keycode, keyrecord_t *record) {
-	if (record->event.pressed) { memory = keycode; }
-	return true; };
-
+static uint16_t memory = WIPE;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	const uint16_t recent = memory;
-	if (!double_tap(keycode, record)) { return false; }
-	static uint16_t TIMER;
 	switch (keycode) {
 		case U_QUOTE:
-			static uint8_t registered_key = UC_QUOTERIGHTSINGLE;
+			static uint16_t TIMER;
+			static uint8_t double_tap = UC_QUOTERIGHTSINGLE;
 			if (record->event.pressed) {
-				registered_key = (recent == UC_QUOTERIGHTSINGLE)
-						? UC_QUOTELEFTSINGLE : UC_QUOTERIGHTSINGLE;
 				TIMER = timer_read();
+				memory = keycode;
+				const uint16_t recent = memory;
+				double_tap = (recent == UC_QUOTERIGHTSINGLE)
+						? UC_QUOTELEFTSINGLE : UC_QUOTERIGHTSINGLE;
 			} else {
 				if (timer_elapsed(TIMER) > TAPPING_TERM) {
 				if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
 				else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
 			} else {
-				register_unicodemap(registered_key);
-				memory = NO_KC; }
+				register_unicodemap(double_tap);
+				memory = WIPE; }
 				} return false;
 		default: return true; } };
 
