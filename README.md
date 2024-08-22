@@ -1,11 +1,11 @@
-Four|Layers|
+Four|Layers||
 ---|---|---
 0|Base|alphas
 1|Game|disables Auto Shift for key repeat
 2|Main|navigation, function keys, punctuation, RGB
 3|Sym|diacritics, symbols
 ___
-Base|Combos|
+Base|Combos||
 ---|---|---
 15|Vulgar Fractions
 10|Superscripts
@@ -26,14 +26,14 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 *I only use Shift for hotkeys. For regular typing I use Auto Shift.*
 ___
-Auto Shift|Custom Values|
+Auto Shift|Custom Values||
 ---|---|---
 Backspace|Ctrl Backspace|Erase Previous Word
 Tab|Shift Tab|Navigate Backwards
 Enter|Escape
 Delete|Shift Delete|Delete File
 ___
-||Auto Shift Mouse Dragging|
+||Auto Shift Mouse Dragging
 ---|---
 **VM**|Activate mouse layer. This is the only key that must be held.
 **RTG**|Long-press a mouse button to click-hold.
@@ -50,7 +50,7 @@ Gui||Horizontal
 Main|Light|Fast|Page Up/Down
 Sym|Game|Slow|Up/Down
 ___
-Legend||(*e.g., !F4 = Alt F4*)
+Legend||(*e.g., !F4 = Alt F4*)||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
 **CLM**|Ctrl Numpad Plus|Column Arrangement
