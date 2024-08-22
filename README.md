@@ -1,11 +1,11 @@
-Four|Layers
+Four|Layers|
 ---|---|---
 0|Base|alphas
 1|Game|disables Auto Shift for key repeat
 2|Main|navigation, function keys, punctuation, RGB
 3|Sym|diacritics, symbols
 ___
-Base|Combos
+Base|Combos|
 ---|---|---
 15|Vulgar Fractions
 10|Superscripts
@@ -33,7 +33,7 @@ Tab|Shift Tab|Navigate Backwards
 Enter|Escape
 Delete|Shift Delete|Delete File
 ___
-|Auto Shift Mouse Dragging|
+||Auto Shift Mouse Dragging|
 ---|---
 **VM**|Activate mouse layer. This is the only key that must be held.
 **RTG**|Long-press a mouse button to click-hold.
@@ -57,4 +57,4 @@ Legend||(*e.g., !F4 = Alt F4*)
 **\#PRINT**|Gui Print Screen|Save Screencap As File
 **!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
 ___
-^(Thanks to u/pgetreuer on r/olkb and elpekeñin, plodah, drashna, & ceriinas on Discord for their tips and advice.)
+Thanks to u/pgetreuer on r/olkb and elpekeñin, plodah, drashna, & ceriinas on Discord for their tips and advice.
