@@ -1,4 +1,4 @@
-![[SA Vilebloom.png]]
+![](SA Vilebloom.png)
 ___
 Four|Layers||
 ---|---|---
