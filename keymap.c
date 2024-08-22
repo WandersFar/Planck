@@ -350,12 +350,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				TIMER = timer_read();
 			} else {
 				if (timer_elapsed(TIMER) > TAPPING_TERM) {
-				if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
-				else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
-			} else {
-				if (recent == UC_QUOTERIGHTSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_QUOTELEFTSINGLE); recent = KC_NO; }
-				else { register_unicodemap(UC_QUOTERIGHTSINGLE); recent = UC_QUOTERIGHTSINGLE; } }
-				} return false;
+					if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
+					else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
+				} else {
+					if (recent == UC_QUOTERIGHTSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_QUOTELEFTSINGLE); recent = KC_NO; }
+					else { register_unicodemap(UC_QUOTERIGHTSINGLE); recent = UC_QUOTERIGHTSINGLE; } }
+			} return false;
 		default: if (record->event.pressed) { recent = keycode; } return true; } };
 
 const uint16_t PROGMEM l_scroll_down[] = {LT(3,KC_C), LT(2,KC_V), COMBO_END};
