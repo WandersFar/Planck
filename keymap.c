@@ -346,9 +346,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case U_QUOTE:
 			static uint16_t TIMER;
-			if (record->event.pressed) {
-				TIMER = timer_read();
-			} else {
+			if (record->event.pressed) { TIMER = timer_read(); }
+			else {
 				if (timer_elapsed(TIMER) > TAPPING_TERM) {
 					if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
 					else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
@@ -441,39 +440,39 @@ combo_t key_combos[COMBO_COUNT] = {
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
 		case 3:
-			if (clockwise) { tap_code(KC_DOWN);
-			} else { tap_code(KC_UP); }
+			if (clockwise) { tap_code(KC_DOWN); }
+			else { tap_code(KC_UP); }
 			break;
 		case 2:
-			if (clockwise) { tap_code(KC_PGDN);
-			} else { tap_code(KC_PGUP); }
+			if (clockwise) { tap_code(KC_PGDN); }
+			else { tap_code(KC_PGUP); }
 			break;
 		case 1:
-			if (clockwise) { tap_code_delay(KC_VOLU, 10);
-			} else { tap_code_delay(KC_VOLD, 10); }
+			if (clockwise) { tap_code_delay(KC_VOLU, 10); }
+			else { tap_code_delay(KC_VOLD, 10); }
 			break;
 		case 0:
 			if (get_mods() & MOD_MASK_CTRL) {
-					if (clockwise) { tap_code(KC_Y);
-					} else { tap_code(KC_Z); }
+					if (clockwise) { tap_code(KC_Y); }
+					else { tap_code(KC_Z); }
 			} else if (get_mods() & MOD_MASK_SHIFT) {
 					del_mods(MOD_MASK_SHIFT);
-					if (clockwise) { tap_code(KC_F3);
-					} else { tap_code16(S(KC_F3)); }
+					if (clockwise) { tap_code(KC_F3); }
+					else { tap_code16(S(KC_F3)); }
 			} else if (get_mods() & MOD_MASK_ALT) {
 					del_mods(MOD_MASK_ALT);
-					if (clockwise) { tap_code16(C(KC_EQL));
-					} else { tap_code16(C(KC_MINS)); }
+					if (clockwise) { tap_code16(C(KC_EQL)); }
+					else { tap_code16(C(KC_MINS)); }
 			} else if (get_mods() & MOD_MASK_GUI) {
 					del_mods(MOD_MASK_GUI);
-					if (clockwise) { tap_code(KC_WH_R);
-					} else { tap_code(KC_WH_L); }
-			} else if (clockwise) { tap_code(KC_WH_D);
-			} else { tap_code(KC_WH_U); }
+					if (clockwise) { tap_code(KC_WH_R); }
+					else { tap_code(KC_WH_L); }
+			} else if (clockwise) { tap_code(KC_WH_D); }
+			else { tap_code(KC_WH_U); }
 			break;
 		default:
-			if (clockwise) { tap_code_delay(KC_VOLU, 10);
-			} else { tap_code_delay(KC_VOLD, 10); }
+			if (clockwise) { tap_code_delay(KC_VOLU, 10); }
+			else { tap_code_delay(KC_VOLD, 10); }
 			break;
 	} return false; }
 
@@ -684,10 +683,7 @@ typedef struct {
 	td_state_t state;
 } td_tap_t;
 
-enum {
-	DASH,
-	HOME,
-	END, };
+enum { DASH, HOME, END };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
@@ -702,9 +698,9 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 td_state_t cur_dance(tap_dance_state_t *state) {
 	if (state->count == 1) {
 		if (state->pressed) return TD_1H;
-		else return TD_1T;
-	} else if (state->pressed) return TD_2H;
-		else return TD_2T; }
+		else return TD_1T; }
+	else if (state->pressed) return TD_2H;
+	else return TD_2T; }
 
 static td_tap_t dtap_state = {
 	.is_press_action = true,
