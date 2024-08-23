@@ -58,4 +58,4 @@ Legend||(*e.g., !F4 = Alt F4*)||
 **\#PRINT**|Gui Print Screen|Save Screencap As File
 **!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
 ___
-*Thanks to u/pgetreuer on r/olkb and smog, elpekeñin, plodah, drashna, & ceriinas on Discord for their advice.*
+*Thanks to u/pgetreuer on r/olkb and smog, ceriinas drashna, elpekeñin, & plodah on Discord for their advice.*
