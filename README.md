@@ -27,12 +27,12 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 *I only use Shift for hotkeys. For regular typing I use Auto Shift.*
 ___
-Auto Shift|Custom Values||
+Custom|Auto Shift|Values
 ---|---|---
-Backspace|Ctrl Backspace|Erase Previous Word
-Tab|Shift Tab|Navigate Backwards
-Enter|Escape
-Delete|Shift Delete|Delete File
+Ctrl|Backspace|Erase Previous Word
+Shift|Tab|Navigate Backwards
+Escape|Enter
+Shift|Delete|Delete File
 ___
 ||Auto Shift Mouse Dragging
 ---|---
