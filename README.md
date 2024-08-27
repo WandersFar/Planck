@@ -40,16 +40,16 @@ ___
 **RTG**|Long-press a mouse button to click-hold.
 **ESDF**|Drag pointer around.
 ___
-Rotary|Tap|Spin|Hotkeys
+Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
-Base|Mute|Vertical
-Game|Base|Volume
-Ctrl||Undo|Ctrl Z/Y
-Shift||Find|Shift/F3
-Alt||Zoom|Ctrl +/-
-Gui||Horizontal
-Main|Light|Fast|Page Up/Down
-Sym|Game|Slow|Up/Down
+Base|Vertical||Mute
+Game|Volume||Base
+Ctrl|Undo|Ctrl Z/Y
+Shift|Find|Shift/F3
+Alt|Zoom|Ctrl +/-
+Gui|Horizontal
+Main|Fast|PgUp/Dn|Light
+Sym|Slow|Up/Dn|Game
 ___
 Legend||(*e.g., !F4 = Alt F4*)||
 ---|---|---|---
