@@ -1,4 +1,4 @@
-![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
+![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Piano.png)
 Four|Layers||
 ---|---|---
 0|Base|alphas
