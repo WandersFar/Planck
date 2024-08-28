@@ -1,4 +1,4 @@
-![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Piano.png)
+![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Four|Layers||
 ---|---|---
 0|Base|alphas
@@ -15,10 +15,10 @@ Base|Combos||
 ___
 Dance|Dash|Quote|Home & End
 ---|---|---|---
-**Tap**|Hyphen|Right Single|Jump line start or end
-**Hold**|Underscore|Dialogue|**+** Select line start or end
-**Tap-Tap**|Em Dash|Left Single|**^** Jump file start or end
-**Tap-Hold**|En Dash||**+^** Select file start or end
+**Tap**|Hyphen|Right Single|Jump to line start or end
+**Hold**|Underscore|Dialogue|**+** Select to line start or end
+**Tap-Tap**|Em Dash|Left Single|**^** Jump to file start or end
+**Tap-Hold**|En Dash||**+^** Select to file start or end
 ___
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
