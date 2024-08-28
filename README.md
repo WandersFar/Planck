@@ -54,8 +54,8 @@ ___
 Legend||(*e.g., !F4 = Alt F4*)||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
-**CLM**|Ctrl Numpad Plus|Column Arrangement
-**\#PRINT**|Gui Print Screen|Save Screencap As File
+**CLM**|Ctrl NumPlus|Column Arrangement
+**\#PRINT**|Gui PrintScrn|Save Screencap As File
 **!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
 ___
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
