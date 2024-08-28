@@ -11,14 +11,14 @@ Base|Combos||
 15|Unicode|Vulgar Fractions
 10|Unicode|Superscripts
 10|Bridge|Scroll, Volume
-4|Home|App Switch, Caps, Word Left & Right
+4|Home|Switch, Caps, Word Left & Right
 ___
 Dance|Dash|Quote|Home & End
 ---|---|---|---
-**Tap**|Hyphen|Right Single|Jump line start/end
-**Hold**|Underscore|Dialogue|**+** Select line start/end
-**Tap-Tap**|Em Dash|Left Single|**^** Jump file start/end
-**Tap-Hold**|En Dash||**+^** Select file start/end
+**Tap**|Hyphen|Right Single|Jump line start or end
+**Hold**|Underscore|Dialogue|**+** Select line start or end
+**Tap-Tap**|Em Dash|Left Single|**^** Jump file start or end
+**Tap-Hold**|En Dash||**+^** Select file start or end
 ___
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
@@ -54,8 +54,8 @@ ___
 Legend||(*e.g., !F4 = Alt F4*)||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
-**CLM**|Ctrl NumPlus|Fit Columns
-**\#PRINT**|Gui PrintScrn|Screencap To File
-**!SET–!OFF**|Alt Numbers|Global Media|AIMP
+**CLM**|Ctrl Numpad Plus|Column Arrangement
+**\#PRINT**|Gui Print Screen|Save Screencap As File
+**!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
 ___
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
