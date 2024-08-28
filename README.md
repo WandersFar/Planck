@@ -3,22 +3,22 @@ Four|Layers||
 ---|---|---
 0|Base|alphas
 1|Game|disables Auto Shift for key repeat
-2|Main|navigation, function keys, punctuation, RGB
+2|Main|navigation, F-keys, punctuation, RGB
 3|Sym|diacritics, symbols
 ___
 Base|Combos||
 ---|---|---
-15|Vulgar Fractions
-10|Superscripts
+15|Unicode|Vulgar Fractions
+10|Unicode|Superscripts
 10|Bridge|Scroll, Volume
-4|Home Block|Word Left, Word Right, App Switch, Caps Lock
+4|Home Block|App Switch, Caps, Word Left & Right
 ___
-Tap Dance|Dash|Quote|Home & End
+Dance|Dash|Quote|Home & End
 ---|---|---|---
-**Tap**|Hyphen|Right Single|Jump line start or end
-**Hold**|Underscore|Dialogue|**Shift** Select line start or end
-**Tap-Tap**|Em Dash|Left Single|**Ctrl** Jump file start or end
-**Tap-Hold**|En Dash||**Ctrl Shift** Select file start or end
+**Tap**|Hyphen|Right Single|Jump line start/end
+**Hold**|Underscore|Dialogue|**Shift** Select line start/end
+**Tap-Tap**|Em Dash|Left Single|**Ctrl** Jump file start/end
+**Tap-Hold**|En Dash||**Ctrl Shift** Select file start/end
 ___
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
@@ -34,9 +34,9 @@ Shift|Tab|Navigate Backwards
 Escape|Enter
 Shift|Delete|Delete File
 ___
-||Auto Shift Mouse Dragging
+Keys|Auto Shift Mouse Dragging
 ---|---
-**VM**|Activate mouse layer. This is the only key that must be held.
+**VM**|Activate mouse layer. Only key that must be held.
 **RTG**|Long-press a mouse button to click-hold.
 **ESDF**|Drag pointer around.
 ___
@@ -54,8 +54,8 @@ ___
 Legend||(*e.g., !F4 = Alt F4*)||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
-**CLM**|Ctrl Numpad Plus|Column Arrangement
-**\#PRINT**|Gui Print Screen|Save Screencap As File
+**CLM**|Ctrl NumPlus|Column Arrangement
+**\#PRINT**|Gui PrintScrn|Save Screencap As File
 **!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
 ___
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
