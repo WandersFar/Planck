@@ -9,7 +9,6 @@ ___
 Base|Combos||
 ---|---|---
 15|Unicode|Vulgar Fractions
-10|Unicode|Superscripts
 10|Bridge|Scroll, Volume
 4|Home|Switch, Caps, Word Left & Right
 ___
@@ -27,12 +26,13 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 *Shift is only for hotkeys. For regular typing I use Auto Shift.*
 ___
-Custom|Auto Shift|Values
+Custom|Auto|Shift
 ---|---|---
 Ctrl|Backspace|Erase Previous Word
 Shift|Tab|Navigate Backwards
 Escape|Enter
 Shift|Delete|Delete File
+Superscripts|F-keys
 ___
 Keys|Auto Shift Mouse Dragging
 ---|---
