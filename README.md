@@ -15,7 +15,7 @@ ___
 Dance|Dash|Quote|Home & End
 ---|---|---|---
 **Tap**|Hyphen|Right Single|Jump to line start or end
-**Hold**|Underscore|Dialogue|**+** Select to line start or end
+**Hold**|Underscore|Dialog|**+** Select to line start or end
 **Tap-Tap**|Em Dash|Left Single|**^** Jump to file start or end
 **Tap-Hold**|En Dash||**+^** Select to file start or end
 ___
