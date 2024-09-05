@@ -14,10 +14,10 @@ Base|Combos||
 ___
 Dance|Dash|Quote|Home & End
 ---|---|---|---
-**Tap**|Hyphen|Right Single|Jump to line start / end
-**Hold**|Underscore|Dialog|**+** Select to line start / end
-**Tap-Tap**|Em Dash|Left Single|**^** Jump to file start / end
-**Tap-Hold**|En Dash||**+^** Select to file start / end
+**Tap**|Hyphen|Right Single|Jump line start or end
+**Hold**|Underscore|Dialog|**+** Select line start or end
+**Tap-Tap**|Em Dash|Left Single|**^** Jump file start or end
+**Tap-Hold**|En Dash||**+^** Select file start or end
 ___
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
