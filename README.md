@@ -2,7 +2,7 @@
 Four|Layers||
 ---|---|---
 0|Base|alphas
-1|Game|disables Auto Shift for key repeat
+1|Game|disable Auto Shift
 2|Main|navigate, F-keys, punctuation, RGB
 3|Sym|diacritics, symbols
 ___
