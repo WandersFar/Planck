@@ -51,7 +51,7 @@ Gui|Horizontal
 Main|Fast|PgUp/Dn|Light
 Sym|Slow|Up/Dn|Game
 ___
-Legend||(*e.g., !F4 = Alt F4*)||
+Legend||*e.g., !F4 = Alt F4*||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
 **CLM**|Ctrl NumPlus|Column Arrangement
