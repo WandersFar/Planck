@@ -24,7 +24,6 @@ bool led_update_user(led_t led_state) {
 	} return true; }
 
 enum unicode_names {
-	UC_DEGREE,
 	UC_SUPONE,
 	UC_SUPTWO,
 	UC_SUPTHREE,
@@ -34,6 +33,7 @@ enum unicode_names {
 	UC_SUPSEVEN,
 	UC_SUPEIGHT,
 	UC_SUPNINE,
+	UC_DEGREE,
 	UC_ONEHALF,
 	UC_ONETHIRD,
 	UC_ONEQUARTER,
@@ -144,7 +144,6 @@ enum unicode_names {
 };
 
 const uint32_t unicode_map[] PROGMEM = {
-	[UC_DEGREE] = 0x00B0,	// °
 	[UC_SUPONE] = 0x00B9,	// ¹
 	[UC_SUPTWO] = 0x00B2,	// ²
 	[UC_SUPTHREE] = 0x00B3,	// ³
@@ -154,6 +153,7 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_SUPSEVEN] = 0x2077,	// ⁷
 	[UC_SUPEIGHT] = 0x2078,	// ⁸
 	[UC_SUPNINE] = 0x2079,	// ⁹
+	[UC_DEGREE] = 0x00B0,	// °
 	[UC_ONEHALF] = 0x00BD,	// ½
 	[UC_ONETHIRD] = 0x2153,	// ⅓
 	[UC_ONEQUARTER] = 0x00BC,	// ¼
@@ -263,16 +263,6 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_QUH] = 0x00BF,	// ¿
 };
 
-#define U_DEG UM(UC_DEGREE)	// °
-#define U_ONE UM(UC_SUPONE)	// ¹
-#define U_TWO UM(UC_SUPTWO)	// ²
-#define U_TRE UM(UC_SUPTHREE)	// ³
-#define U_FOR UM(UC_SUPFOUR)	// ⁴
-#define U_FVE UM(UC_SUPFIVE)	// ⁵
-#define U_SIX UM(UC_SUPSIX)	// ⁶
-#define U_SVN UM(UC_SUPSEVEN)	// ⁷
-#define U_EGT UM(UC_SUPEIGHT)	// ⁸
-#define U_NIN UM(UC_SUPNINE)	// ⁹
 #define U_HLF UM(UC_ONEHALF)	// ½
 #define U_TRD UM(UC_ONETHIRD)	// ⅓
 #define U_QTR UM(UC_ONEQUARTER)	// ¼
@@ -371,16 +361,6 @@ const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM word_right[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM caps_lock[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM shift_alt_esc[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM degree[] = {KC_EQL, KC_0, COMBO_END};
-const uint16_t PROGMEM sup_1[] = {KC_EQL, KC_1, COMBO_END};
-const uint16_t PROGMEM sup_2[] = {KC_EQL, KC_2, COMBO_END};
-const uint16_t PROGMEM sup_3[] = {KC_EQL, KC_3, COMBO_END};
-const uint16_t PROGMEM sup_4[] = {KC_EQL, KC_4, COMBO_END};
-const uint16_t PROGMEM sup_5[] = {KC_EQL, KC_5, COMBO_END};
-const uint16_t PROGMEM sup_6[] = {KC_EQL, KC_6, COMBO_END};
-const uint16_t PROGMEM sup_7[] = {KC_EQL, KC_7, COMBO_END};
-const uint16_t PROGMEM sup_8[] = {KC_EQL, KC_8, COMBO_END};
-const uint16_t PROGMEM sup_9[] = {KC_EQL, KC_9, COMBO_END};
 const uint16_t PROGMEM one_half[] = {KC_1, KC_2, COMBO_END};
 const uint16_t PROGMEM one_third[] = {KC_1, KC_3, COMBO_END};
 const uint16_t PROGMEM one_quarter[] = {KC_1, KC_4, COMBO_END};
@@ -411,16 +391,6 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(word_right, C(KC_RGHT)),
 	COMBO(caps_lock, KC_CAPS),
 	COMBO(shift_alt_esc, LSA(KC_ESC)),
-	COMBO(degree, U_DEG),
-	COMBO(sup_1, U_ONE),
-	COMBO(sup_2, U_TWO),
-	COMBO(sup_3, U_TRE),
-	COMBO(sup_4, U_FOR),
-	COMBO(sup_5, U_FVE),
-	COMBO(sup_6, U_SIX),
-	COMBO(sup_7, U_SVN),
-	COMBO(sup_8, U_EGT),
-	COMBO(sup_9, U_NIN),
 	COMBO(one_half, U_HLF),
 	COMBO(one_third, U_TRD),
 	COMBO(one_quarter, U_QTR),
@@ -470,10 +440,6 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 			} else if (clockwise) { tap_code(KC_WH_D); }
 			else { tap_code(KC_WH_U); }
 			break;
-		default:
-			if (clockwise) { tap_code_delay(KC_VOLU, 10); }
-			else { tap_code_delay(KC_VOLD, 10); }
-			break;
 	} return false; }
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
@@ -498,6 +464,16 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 		case KC_BTN3:
 		case KC_COLN:
 		case KC_DQT:
+		case KC_F1:
+		case KC_F2:
+		case KC_F3:
+		case KC_F4:
+		case KC_F5:
+		case KC_F6:
+		case KC_F7:
+		case KC_F8:
+		case KC_F9:
+		case KC_F10:
 		case U_EQ:
 		case U_AD:
 		case U_AR:
@@ -559,6 +535,16 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 		case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
 		case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: register_code16((!shifted) ? KC_DQT : KC_QUOT); break;
+		case KC_F1: (!shifted) ? tap_code(KC_F1) : register_unicodemap(UC_SUPONE); break;
+		case KC_F2: (!shifted) ? tap_code(KC_F2) : register_unicodemap(UC_SUPTWO); break;
+		case KC_F3: (!shifted) ? tap_code(KC_F3) : register_unicodemap(UC_SUPTHREE); break;
+		case KC_F4: (!shifted) ? tap_code(KC_F4) : register_unicodemap(UC_SUPFOUR); break;
+		case KC_F5: (!shifted) ? tap_code(KC_F5) : register_unicodemap(UC_SUPFIVE); break;
+		case KC_F6: (!shifted) ? tap_code(KC_F6) : register_unicodemap(UC_SUPSIX); break;
+		case KC_F7: (!shifted) ? tap_code(KC_F7) : register_unicodemap(UC_SUPSEVEN); break;
+		case KC_F8: (!shifted) ? tap_code(KC_F8) : register_unicodemap(UC_SUPEIGHT); break;
+		case KC_F9: (!shifted) ? tap_code(KC_F9) : register_unicodemap(UC_SUPNINE); break;
+		case KC_F10: (!shifted) ? tap_code(KC_F10) : register_unicodemap(UC_DEGREE); break;
 		case U_EQ: register_unicodemap((!shifted) ? UC_EQT : UC_EQH); break;
 		case U_AD: register_unicodemap((!shifted) ? UC_ADT : UC_ADH); break;
 		case U_AR: register_unicodemap((!shifted) ? UC_ART : UC_ARH); break;
@@ -620,6 +606,16 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 		case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
 		case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: unregister_code16((!shifted) ? KC_DQT : KC_QUOT); break;
+		case KC_F1: break;
+		case KC_F2: break;
+		case KC_F3: break;
+		case KC_F4: break;
+		case KC_F5: break;
+		case KC_F6: break;
+		case KC_F7: break;
+		case KC_F8: break;
+		case KC_F9: break;
+		case KC_F10: break;
 		case U_EQ: break;
 		case U_AD: break;
 		case U_AR: break;
