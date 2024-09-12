@@ -5,20 +5,13 @@ float unlock[][2] = SONG(UNLOCK);
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
-	case 1:
-		autoshift_disable();
-		PLAY_SONG(lock);
-		break;
-	case 0:
-		autoshift_enable();
-		PLAY_SONG(unlock);
-		break;
+	case 1: autoshift_disable(); PLAY_SONG(lock); break;
+	case 0: autoshift_enable(); PLAY_SONG(unlock); break;
 	} return state; }
 
 bool led_update_user(led_t led_state) {
 	static bool caps = false;
-	if (caps != led_state.caps_lock) {
-		caps = led_state.caps_lock;
+	if (caps != led_state.caps_lock) { caps = led_state.caps_lock;
 		(!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
 	} return true; }
 
@@ -50,10 +43,10 @@ enum unicode_names {
 	UC_SEVENEIGHTHS,
 	UC_DASHEM,
 	UC_DASHEN,
-	UC_QUOTELEFTSINGLE,
-	UC_QUOTELEFTDOUBLE,
-	UC_QUOTERIGHTSINGLE,
-	UC_QUOTERIGHTDOUBLE,
+	UC_LSINGLE,
+	UC_LDOUBLE,
+	UC_RSINGLE,
+	UC_RDOUBLE,
 	UC_EQT,
 	UC_EQH,
 	UC_ADT,
@@ -170,10 +163,10 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_SEVENEIGHTHS] = 0x215E,	// ⅞
 	[UC_DASHEM] = 0x2014,	// —
 	[UC_DASHEN] = 0x2013,	// –
-	[UC_QUOTELEFTSINGLE] = 0x2018,	// ‘
-	[UC_QUOTELEFTDOUBLE] = 0x201C,	// “
-	[UC_QUOTERIGHTSINGLE] = 0x2019,	// ’
-	[UC_QUOTERIGHTDOUBLE] = 0x201D,	// ”
+	[UC_LSINGLE] = 0x2018,	// ‘
+	[UC_LDOUBLE] = 0x201C,	// “
+	[UC_RSINGLE] = 0x2019,	// ’
+	[UC_RDOUBLE] = 0x201D,	// ”
 	[UC_EQT] = 0x2260,	// ≠
 	[UC_EQH] = 0x00A1,	// ¡
 	[UC_ADT] = 0x00E4,	// ä
@@ -338,11 +331,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			if (record->event.pressed) { TIMER = timer_read(); }
 			else {
 				if (timer_elapsed(TIMER) > TAPPING_TERM) {
-					if(state == OPEN) { register_unicodemap(UC_QUOTELEFTDOUBLE); state = CLOSE; }
-					else { register_unicodemap(UC_QUOTERIGHTDOUBLE); state = OPEN; }
+					if(state == OPEN) { register_unicodemap(UC_LDOUBLE); state = CLOSE; }
+					else { register_unicodemap(UC_RDOUBLE); state = OPEN; }
 				} else {
-					if (recent == UC_QUOTERIGHTSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_QUOTELEFTSINGLE); recent = KC_NO; }
-					else { register_unicodemap(UC_QUOTERIGHTSINGLE); recent = UC_QUOTERIGHTSINGLE; } }
+					if (recent == UC_RSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_LSINGLE); recent = KC_NO; }
+					else { register_unicodemap(UC_RSINGLE); recent = UC_RSINGLE; } }
 			} return false;
 		default: if (record->event.pressed) { recent = keycode; } return true; } };
 
