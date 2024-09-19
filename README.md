@@ -28,7 +28,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 ___
 Custom|Auto|Shift
 ---|---|---
-Ctrl|Backspace|Erase Previous Word
+Ctrl|Backspace|Erase Word
 Shift|Tab|Navigate Backwards
 Escape|Enter
 Shift|Delete|Delete File
