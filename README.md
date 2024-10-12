@@ -62,5 +62,5 @@ Legend||*e.g., !F4 = Alt F4*||
 **CLM**|Ctrl NumPlus|Column Arrangement
 **\#PRINT**|Gui PrintScrn|Save Screencap As File
 **!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
-___
+
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
