@@ -40,7 +40,8 @@ Keys|Auto Shift Mouse Dragging
 **VM**|Activate mouse layer. Only key that is held.
 **RTG**|Long-press a mouse button to click-hold.
 **ESDF**|Drag pointer around.
-___
+
+![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
 Base|Vertical||Mute
