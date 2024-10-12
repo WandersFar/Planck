@@ -26,7 +26,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 **Home**|Ctrl|Shift †|Alt|Gui
 **Bottom**|Main|Sym
 
-† *Shift is only for hotkeys. For regular typing I use Auto Shift.*
+† *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/SA%20Vilebloom.png)
 Custom|Auto|Shift
 ---|---|---
