@@ -1,11 +1,11 @@
-![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Four|Layers||
 ---|---|---
 0|Base|alphas
 1|Game|disable Auto Shift
 2|Main|navigate, F-keys, punctuation, RGB
 3|Sym|diacritics, symbols
-___
+
+![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
 15|Unicode|Vulgar Fractions
