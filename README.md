@@ -52,7 +52,8 @@ Alt|Zoom|Ctrl +/-
 Gui|Horizontal
 Main|Fast|PgUp/Dn|Light
 Sym|Slow|Up/Dn|Game
-___
+
+![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
