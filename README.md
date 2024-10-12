@@ -18,7 +18,7 @@ Dance|Dash|Quote|Home & End
 **Hold**|Underscore|Dialog|**+** Select line start or end
 **Tap-Tap**|Em Dash|Left Single|**^** Jump file start or end
 **Tap-Hold**|En Dash||**+^** Select file start or end
-___
+![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
 **Home**|Ctrl|Shift|Alt|Gui
