@@ -35,7 +35,8 @@ Shift|Tab|Navigate Backwards
 Escape|Enter
 Shift|Delete|Delete File
 Superscripts|F-keys
-___
+
+![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
 ---|---
 **VM**|Activate mouse layer. Only key that is held.
