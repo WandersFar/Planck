@@ -22,7 +22,7 @@ Dance|Dash|Quote|Home & End
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
 **Home**|Ctrl|Shift †|Alt|Gui
-**Bottom**|Main
+**Bottom**|Fn
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/SA%20Vilebloom.png)
