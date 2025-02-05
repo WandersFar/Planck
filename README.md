@@ -1,16 +1,14 @@
-Four|Layers||
+Three|Layers||
 ---|---|---
 0|Base|alphas
 1|Game|disable Auto Shift
-2|Main|navigate, F-keys, punctuation, RGB
-3|Sym|diacritics, symbols
+2|Fn|navigate, F-keys, punctuation, RGB
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
-15|Unicode|Vulgar Fractions
-10|Bridge|Scroll, Volume
-4|Home|Switch, Caps, Word Left & Right
+12|Bridge|Scroll, Volume, Word
+3|Home|Switch, Caps, Lock
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
@@ -24,7 +22,7 @@ Dance|Dash|Quote|Home & End
 Mod Taps|Index|Middle|Ring|Pinky
 ---|---|---|---|---
 **Home**|Ctrl|Shift †|Alt|Gui
-**Bottom**|Main|Sym
+**Bottom**|Main
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/SA%20Vilebloom.png)
@@ -33,13 +31,12 @@ Custom|Auto|Shift
 Ctrl|Backspace|Erase Word
 Shift|Tab|Navigate Backwards
 Escape|Enter
-Shift|Delete|Delete File
-Superscripts|F-keys
+Leader|Delete|Unicode
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
 ---|---
-**VM**|Activate mouse layer. Only key that is held.
+**VM**|Activate mouse. Only key that is held.
 **RTG**|Long-press a mouse button to click-hold.
 **ESDF**|Drag pointer around.
 
@@ -51,9 +48,8 @@ Shift|Find|Shift/F3
 Alt|Zoom|Ctrl +/-
 Gui|Horizontal
 Base|Vertical||Mute
-Game|Volume||Base
-Main|Fast|PgUp/Dn|Light
-Sym|Slow|Up/Dn|Game
+Game|Volume||Mute
+Fn|Word|Ctrl ↔|Game
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
@@ -61,6 +57,6 @@ Legend||*e.g., !F4 = Alt F4*||
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
 **CLM**|Ctrl NumPlus|Column Arrangement
 **\#PRINT**|Gui PrintScrn|Save Screencap As File
-**!SET–!OFF**|Alt Numbers|Global Media Hotkeys|AIMP
+**Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
