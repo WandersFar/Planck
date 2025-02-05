@@ -5,8 +5,9 @@ float unlock[][2] = SONG(UNLOCK);
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
-	case 1: autoshift_disable(); PLAY_SONG(lock); break;
-	case 0: autoshift_enable(); PLAY_SONG(unlock); break;
+	case 2: rgblight_enable_noeeprom(); autoshift_enable(); break;
+	case 1: rgblight_disable_noeeprom(); autoshift_disable(); PLAY_SONG(lock); break;
+	case 0: rgblight_disable_noeeprom(); autoshift_enable(); PLAY_SONG(unlock); break;
 	} return state; }
 
 bool led_update_user(led_t led_state) {
@@ -16,6 +17,46 @@ bool led_update_user(led_t led_state) {
 	} return true; }
 
 enum unicode_names {
+	UC_HEART,
+	UC_MER,
+	UC_VEN,
+	UC_MOO,
+	UC_MAR,
+	UC_JUP,
+	UC_SAT,
+	UC_URA,
+	UC_NEP,
+	UC_PLU,
+	UC_SUN,
+	UC_ARI,
+	UC_TAU,
+	UC_GEM,
+	UC_CAN,
+	UC_LEO,
+	UC_VIR,
+	UC_LIB,
+	UC_SCO,
+	UC_SAG,
+	UC_CAP,
+	UC_AQU,
+	UC_PIS,
+	UC_CER,
+	UC_VES,
+	UC_JUN,
+	UC_PAL,
+	UC_FOR,
+	UC_CHI,
+	UC_LIL,
+	UC_NOR,
+	UC_SOU,
+	UC_SEM,
+	UC_SEX,
+	UC_SQU,
+	UC_TRI,
+	UC_QUI,
+	UC_OPP,
+	UC_CON,
+	UC_SUPZERO,
 	UC_SUPONE,
 	UC_SUPTWO,
 	UC_SUPTHREE,
@@ -136,6 +177,46 @@ enum unicode_names {
 };
 
 const uint32_t unicode_map[] PROGMEM = {
+	[UC_HEART] = 0x2764,	// ❤
+	[UC_MER] = 0x263F,	// ☿
+	[UC_VEN] = 0x2640,	// ♀
+	[UC_MOO] = 0x263D,	// ☽
+	[UC_MAR] = 0x2642,	// ♂
+	[UC_JUP] = 0x2643,	// ♃
+	[UC_SAT] = 0x2644,	// ♄
+	[UC_URA] = 0x2645,	// ♅
+	[UC_NEP] = 0x2646,	// ♆
+	[UC_PLU] = 0x2647,	// ♇
+	[UC_SUN] = 0x2609,	// ☉
+	[UC_ARI] = 0x2648,	// ♈
+	[UC_TAU] = 0x2649,	// ♉
+	[UC_GEM] = 0x264A,	// ♊
+	[UC_CAN] = 0x264B,	// ♋
+	[UC_LEO] = 0x264C,	// ♌
+	[UC_VIR] = 0x264D,	// ♍
+	[UC_LIB] = 0x264E,	// ♎
+	[UC_SCO] = 0x264F,	// ♏
+	[UC_SAG] = 0x2650,	// ♐
+	[UC_CAP] = 0x2651,	// ♑
+	[UC_AQU] = 0x2652,	// ♒
+	[UC_PIS] = 0x2653,	// ♓
+	[UC_CER] = 0x26B3,	// ⚳
+	[UC_VES] = 0x26B6,	// ⚶
+	[UC_JUN] = 0x26B5,	// ⚵
+	[UC_PAL] = 0x26B4,	// ⚴
+	[UC_FOR] = 0x2297,	// ⊗
+	[UC_CHI] = 0x26B7,	// ⚷
+	[UC_LIL] = 0x26B8,	// ⚸
+	[UC_NOR] = 0x260A,	// ☊
+	[UC_SOU] = 0x260B,	// ☋
+	[UC_SEM] = 0x26BA,	// ⚺
+	[UC_SEX] = 0x26B9,	// ⚹
+	[UC_SQU] = 0x25A1,	// □
+	[UC_TRI] = 0x25B3,	// △
+	[UC_QUI] = 0x26BB,	// ⚻
+	[UC_OPP] = 0x260D,	// ☍
+	[UC_CON] = 0x260C,	// ☌
+	[UC_SUPZERO] = 0x2070,	// ⁰
 	[UC_SUPONE] = 0x00B9,	// ¹
 	[UC_SUPTWO] = 0x00B2,	// ²
 	[UC_SUPTHREE] = 0x00B3,	// ³
@@ -255,70 +336,8 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_QUH] = 0x00BF,	// ¿
 };
 
-#define U_HLF UM(UC_ONEHALF)	// ½
-#define U_TRD UM(UC_ONETHIRD)	// ⅓
-#define U_QTR UM(UC_ONEQUARTER)	// ¼
-#define U_FTH UM(UC_ONEFIFTH)	// ⅕
-#define U_XTH UM(UC_ONESIXTH)	// ⅙
-#define U_GTH UM(UC_ONEEIGHTH)	// ⅛
-#define U_WRD UM(UC_TWOTHIRDS)	// ⅔
-#define U_WFT UM(UC_TWOFIFTHS)	// ⅖
-#define U_TQT UM(UC_THREEQUARTERS)	// ¾
-#define U_TFT UM(UC_THREEFIFTHS)	// ⅗
-#define U_TGT UM(UC_THREEEIGHTHS)	// ⅜
-#define U_FFT UM(UC_FOURFIFTHS)	// ⅘
-#define U_VXT UM(UC_FIVESIXTHS)	// ⅚
-#define U_VGT UM(UC_FIVEEIGHTHS)	// ⅝
-#define U_SGT UM(UC_SEVENEIGHTHS)	// ⅞
-
-enum autoshift_unicode {
-	U_EQ = SAFE_RANGE,	// ≠ ¡
-	U_AD,	// ä Ä
-	U_AR,	// å Å
-	U_ED,	// ë Ë
-	U_DG,	// † ‡
-	U_ST,	// ★ ☆
-	U_YD,	// ÿ Ÿ
-	U_UD,	// ü Ü
-	U_ID,	// ï Ï
-	U_OD,	// ö Ö
-	U_OS,	// ø Ø
-	U_GL,	// « ‹
-	U_AC,	// â Â
-	U_AE,	// æ Æ
-	U_EA,	// é É
-	U_EC,	// ê Ê
-	U_HV,	// ↔ ↕
-	U_YA,	// ý Ý
-	U_UA,	// ú Ú
-	U_IA,	// í Í
-	U_OA,	// ó Ó
-	U_OE,	// œ Œ
-	U_GR,	// » ›
-	U_AA,	// á Á
-	U_SS,	// ß ẞ
-	U_EG,	// è È
-	U_DT,	// … ·
-	U_LU,	// ← ↑
-	U_RD,	// → ↓
-	U_UG,	// ù Ù
-	U_IG,	// ì Ì
-	U_OG,	// ò Ò
-	U_OT,	// õ Õ
-	U_AG,	// à À
-	U_AT,	// ã Ã
-	U_CL,	// ç Ç
-	U_CK,	// ✓ §
-	U_BU,	// • ◦
-	U_NT,	// ñ Ñ
-	U_UC,	// û Û
-	U_IC,	// î Î
-	U_OC,	// ô Ô
-	U_QU,	// ‽ ¿
-	U_CRY,	// ಠ_ಠ ಥ_ಥ
-	U_IDK,	// ¯\_(ツ)_/¯ ¯\\\_(ツ)\_/¯
-	U_LEN,	// :þ ( ͡° ͜ʖ ͡°)
-	U_QUOTE,
+enum unicode_custom {
+	U_QUOTE = SAFE_RANGE,
 };
 
 enum states { OPEN, CLOSE };
@@ -326,6 +345,8 @@ enum states state = OPEN;
 static uint16_t recent = KC_NO;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
+		case LT(0,KC_DEL):
+			if (!record->tap.count && record->event.pressed) { leader_start(); return false; } return true;
 		case U_QUOTE:
 			static uint16_t TIMER;
 			if (record->event.pressed) { TIMER = timer_read(); }
@@ -339,12 +360,174 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			} return false;
 		default: if (record->event.pressed) { recent = keycode; } return true; } };
 
-const uint16_t PROGMEM l_scroll_down[] = {LT(3,KC_C), LT(2,KC_V), COMBO_END};
-const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), LT(3,KC_COMM), COMBO_END};
+void leader_start_user(void) { rgblight_enable_noeeprom(); }
+void leader_end_user(void) {
+    if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
+    else if (leader_sequence_one_key(KC_C)) { register_unicodemap(UC_CLT); }
+    else if (leader_sequence_one_key(KC_N)) { register_unicodemap(UC_NTT); }
+    else if (leader_sequence_one_key(KC_S)) { register_unicodemap(UC_SST); }
+    else if (leader_sequence_one_key(KC_B)) { register_unicodemap(UC_BUT); }
+    else if (leader_sequence_one_key(KC_D)) { register_unicodemap(UC_DGT); }
+    else if (leader_sequence_one_key(KC_H)) { register_unicodemap(UC_HEART); }
+    else if (leader_sequence_one_key(KC_K)) { register_unicodemap(UC_CKT); }
+    else if (leader_sequence_one_key(KC_L)) { register_unicodemap(UC_CKH); }
+    else if (leader_sequence_one_key(KC_X)) { register_unicodemap(UC_STT); }
+    else if (leader_sequence_one_key(KC_EQL)) { register_unicodemap(UC_EQT); }
+    else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(UC_DTT); }
+    else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(UC_GLT); }
+    else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(UC_GRT); }
+    else if (leader_sequence_one_key(KC_SLSH)) { register_unicodemap(UC_QUT); }
+    else if (leader_sequence_one_key(KC_1)) { register_unicodemap(UC_SUPONE); }
+    else if (leader_sequence_one_key(KC_2)) { register_unicodemap(UC_SUPTWO); }
+    else if (leader_sequence_one_key(KC_3)) { register_unicodemap(UC_SUPTHREE); }
+    else if (leader_sequence_one_key(KC_4)) { register_unicodemap(UC_SUPFOUR); }
+    else if (leader_sequence_one_key(KC_5)) { register_unicodemap(UC_SUPFIVE); }
+    else if (leader_sequence_one_key(KC_6)) { register_unicodemap(UC_SUPSIX); }
+    else if (leader_sequence_one_key(KC_7)) { register_unicodemap(UC_SUPSEVEN); }
+    else if (leader_sequence_one_key(KC_8)) { register_unicodemap(UC_SUPEIGHT); }
+    else if (leader_sequence_one_key(KC_9)) { register_unicodemap(UC_SUPNINE); }
+    else if (leader_sequence_one_key(KC_0)) { register_unicodemap(UC_SUPZERO); }
+    else if (leader_sequence_two_keys(KC_A, KC_I)) { register_unicodemap(UC_LUH); }
+    else if (leader_sequence_two_keys(KC_A, KC_J)) { register_unicodemap(UC_LUT); }
+    else if (leader_sequence_two_keys(KC_A, KC_K)) { register_unicodemap(UC_RDH); }
+    else if (leader_sequence_two_keys(KC_A, KC_L)) { register_unicodemap(UC_RDT); }
+    else if (leader_sequence_two_keys(KC_A, KC_H)) { register_unicodemap(UC_HVT); }
+    else if (leader_sequence_two_keys(KC_A, KC_V)) { register_unicodemap(UC_HVH); }
+    else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(UC_BUH); }
+    else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(UC_DGH); }
+    else if (leader_sequence_two_keys(KC_X, KC_X)) { register_unicodemap(UC_STH); }
+    else if (leader_sequence_two_keys(KC_SPC, KC_SPC)) { register_unicodemap(UC_DTH); }
+    else if (leader_sequence_two_keys(KC_COMM, KC_COMM)) { register_unicodemap(UC_GLH); }
+    else if (leader_sequence_two_keys(KC_DOT, KC_DOT)) { register_unicodemap(UC_GRH); }
+    else if (leader_sequence_two_keys(KC_SLSH, KC_SLSH)) { register_unicodemap(UC_QUH); }
+    else if (leader_sequence_two_keys(KC_1, KC_1)) { register_unicodemap(UC_EQH); }
+    else if (leader_sequence_two_keys(KC_1, KC_2)) { register_unicodemap(UC_ONEHALF); }
+    else if (leader_sequence_two_keys(KC_1, KC_3)) { register_unicodemap(UC_ONETHIRD); }
+    else if (leader_sequence_two_keys(KC_1, KC_4)) { register_unicodemap(UC_ONEQUARTER); }
+    else if (leader_sequence_two_keys(KC_1, KC_5)) { register_unicodemap(UC_ONEFIFTH); }
+    else if (leader_sequence_two_keys(KC_1, KC_6)) { register_unicodemap(UC_ONESIXTH); }
+    else if (leader_sequence_two_keys(KC_1, KC_8)) { register_unicodemap(UC_ONEEIGHTH); }
+    else if (leader_sequence_two_keys(KC_2, KC_3)) { register_unicodemap(UC_TWOTHIRDS); }
+    else if (leader_sequence_two_keys(KC_2, KC_5)) { register_unicodemap(UC_TWOFIFTHS); }
+    else if (leader_sequence_two_keys(KC_3, KC_4)) { register_unicodemap(UC_THREEQUARTERS); }
+    else if (leader_sequence_two_keys(KC_3, KC_5)) { register_unicodemap(UC_THREEFIFTHS); }
+    else if (leader_sequence_two_keys(KC_3, KC_8)) { register_unicodemap(UC_THREEEIGHTHS); }
+    else if (leader_sequence_two_keys(KC_4, KC_5)) { register_unicodemap(UC_FOURFIFTHS); }
+    else if (leader_sequence_two_keys(KC_5, KC_6)) { register_unicodemap(UC_FIVESIXTHS); }
+    else if (leader_sequence_two_keys(KC_5, KC_8)) { register_unicodemap(UC_FIVEEIGHTHS); }
+    else if (leader_sequence_two_keys(KC_7, KC_8)) { register_unicodemap(UC_SEVENEIGHTHS); }
+    else if (leader_sequence_two_keys(KC_0, KC_0)) { register_unicodemap(UC_DEGREE); }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) { register_unicodemap(UC_CLH); }
+    else if (leader_sequence_two_keys(KC_N, KC_N)) { register_unicodemap(UC_NTH); }
+    else if (leader_sequence_two_keys(KC_S, KC_S)) { register_unicodemap(UC_SSH); }
+    else if (leader_sequence_two_keys(KC_A, KC_A)) { register_unicodemap(UC_AAT); }
+    else if (leader_sequence_two_keys(KC_E, KC_A)) { register_unicodemap(UC_EAT); }
+    else if (leader_sequence_two_keys(KC_I, KC_A)) { register_unicodemap(UC_IAT); }
+    else if (leader_sequence_two_keys(KC_O, KC_A)) { register_unicodemap(UC_OAT); }
+    else if (leader_sequence_two_keys(KC_U, KC_A)) { register_unicodemap(UC_UAT); }
+    else if (leader_sequence_two_keys(KC_Y, KC_A)) { register_unicodemap(UC_YAT); }
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { register_unicodemap(UC_ACT); }
+    else if (leader_sequence_two_keys(KC_E, KC_C)) { register_unicodemap(UC_ECT); }
+    else if (leader_sequence_two_keys(KC_I, KC_C)) { register_unicodemap(UC_ICT); }
+    else if (leader_sequence_two_keys(KC_O, KC_C)) { register_unicodemap(UC_OCT); }
+    else if (leader_sequence_two_keys(KC_U, KC_C)) { register_unicodemap(UC_UCT); }
+    else if (leader_sequence_two_keys(KC_A, KC_D)) { register_unicodemap(UC_ADT); }
+    else if (leader_sequence_two_keys(KC_E, KC_D)) { register_unicodemap(UC_EDT); }
+    else if (leader_sequence_two_keys(KC_I, KC_D)) { register_unicodemap(UC_IDT); }
+    else if (leader_sequence_two_keys(KC_O, KC_D)) { register_unicodemap(UC_ODT); }
+    else if (leader_sequence_two_keys(KC_U, KC_D)) { register_unicodemap(UC_UDT); }
+    else if (leader_sequence_two_keys(KC_Y, KC_D)) { register_unicodemap(UC_YDT); }
+    else if (leader_sequence_two_keys(KC_A, KC_E)) { register_unicodemap(UC_AET); }
+    else if (leader_sequence_two_keys(KC_O, KC_E)) { register_unicodemap(UC_OET); }
+    else if (leader_sequence_two_keys(KC_A, KC_G)) { register_unicodemap(UC_AGT); }
+    else if (leader_sequence_two_keys(KC_E, KC_G)) { register_unicodemap(UC_EGT); }
+    else if (leader_sequence_two_keys(KC_I, KC_G)) { register_unicodemap(UC_IGT); }
+    else if (leader_sequence_two_keys(KC_O, KC_G)) { register_unicodemap(UC_OGT); }
+    else if (leader_sequence_two_keys(KC_U, KC_G)) { register_unicodemap(UC_UGT); }
+    else if (leader_sequence_two_keys(KC_A, KC_R)) { register_unicodemap(UC_ART); }
+    else if (leader_sequence_two_keys(KC_O, KC_S)) { register_unicodemap(UC_OST); }
+    else if (leader_sequence_two_keys(KC_A, KC_T)) { register_unicodemap(UC_ATT); }
+    else if (leader_sequence_two_keys(KC_O, KC_T)) { register_unicodemap(UC_OTT); }
+    else if (leader_sequence_two_keys(KC_P, KC_P)) { send_unicode_string(":þ"); }
+    else if (leader_sequence_three_keys(KC_L, KC_E, KC_N)) { send_unicode_string("( ͡° ͜ʖ ͡°)"); }
+    else if (leader_sequence_three_keys(KC_C, KC_R, KC_Y)) { send_unicode_string("ಥ_ಥ"); }
+    else if (leader_sequence_three_keys(KC_D, KC_I, KC_S)) { send_unicode_string("ಠ_ಠ"); }
+    else if (leader_sequence_three_keys(KC_I, KC_D, KC_K)) { send_unicode_string("¯\\_(ツ)_/¯"); }
+    else if (leader_sequence_three_keys(KC_I, KC_D, KC_M)) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); }
+    else if (leader_sequence_three_keys(KC_A, KC_A, KC_A)) { register_unicodemap(UC_AAH); }
+    else if (leader_sequence_three_keys(KC_E, KC_A, KC_A)) { register_unicodemap(UC_EAH); }
+    else if (leader_sequence_three_keys(KC_I, KC_A, KC_A)) { register_unicodemap(UC_IAH); }
+    else if (leader_sequence_three_keys(KC_O, KC_A, KC_A)) { register_unicodemap(UC_OAH); }
+    else if (leader_sequence_three_keys(KC_U, KC_A, KC_A)) { register_unicodemap(UC_UAH); }
+    else if (leader_sequence_three_keys(KC_Y, KC_A, KC_A)) { register_unicodemap(UC_YAH); }
+    else if (leader_sequence_three_keys(KC_A, KC_C, KC_C)) { register_unicodemap(UC_ACH); }
+    else if (leader_sequence_three_keys(KC_E, KC_C, KC_C)) { register_unicodemap(UC_ECH); }
+    else if (leader_sequence_three_keys(KC_I, KC_C, KC_C)) { register_unicodemap(UC_ICH); }
+    else if (leader_sequence_three_keys(KC_O, KC_C, KC_C)) { register_unicodemap(UC_OCH); }
+    else if (leader_sequence_three_keys(KC_U, KC_C, KC_C)) { register_unicodemap(UC_UCH); }
+    else if (leader_sequence_three_keys(KC_A, KC_D, KC_D)) { register_unicodemap(UC_ADH); }
+    else if (leader_sequence_three_keys(KC_E, KC_D, KC_D)) { register_unicodemap(UC_EDH); }
+    else if (leader_sequence_three_keys(KC_I, KC_D, KC_D)) { register_unicodemap(UC_IDH); }
+    else if (leader_sequence_three_keys(KC_O, KC_D, KC_D)) { register_unicodemap(UC_ODH); }
+    else if (leader_sequence_three_keys(KC_U, KC_D, KC_D)) { register_unicodemap(UC_UDH); }
+    else if (leader_sequence_three_keys(KC_Y, KC_D, KC_D)) { register_unicodemap(UC_YDH); }
+    else if (leader_sequence_three_keys(KC_A, KC_E, KC_E)) { register_unicodemap(UC_AEH); }
+    else if (leader_sequence_three_keys(KC_O, KC_E, KC_E)) { register_unicodemap(UC_OEH); }
+    else if (leader_sequence_three_keys(KC_A, KC_G, KC_G)) { register_unicodemap(UC_AGH); }
+    else if (leader_sequence_three_keys(KC_E, KC_G, KC_G)) { register_unicodemap(UC_EGH); }
+    else if (leader_sequence_three_keys(KC_I, KC_G, KC_G)) { register_unicodemap(UC_IGH); }
+    else if (leader_sequence_three_keys(KC_O, KC_G, KC_G)) { register_unicodemap(UC_OGH); }
+    else if (leader_sequence_three_keys(KC_U, KC_G, KC_G)) { register_unicodemap(UC_UGH); }
+    else if (leader_sequence_three_keys(KC_A, KC_R, KC_R)) { register_unicodemap(UC_ARH); }
+    else if (leader_sequence_three_keys(KC_O, KC_S, KC_S)) { register_unicodemap(UC_OSH); }
+    else if (leader_sequence_three_keys(KC_A, KC_T, KC_T)) { register_unicodemap(UC_ATH); }
+    else if (leader_sequence_three_keys(KC_O, KC_T, KC_T)) { register_unicodemap(UC_OTH); }
+    else if (leader_sequence_three_keys(KC_M, KC_E, KC_R)) { register_unicodemap(UC_MER); }
+    else if (leader_sequence_three_keys(KC_V, KC_E, KC_N)) { register_unicodemap(UC_VEN); }
+    else if (leader_sequence_three_keys(KC_M, KC_O, KC_O)) { register_unicodemap(UC_MOO); }
+    else if (leader_sequence_three_keys(KC_M, KC_A, KC_R)) { register_unicodemap(UC_MAR); }
+    else if (leader_sequence_three_keys(KC_J, KC_U, KC_P)) { register_unicodemap(UC_JUP); }
+    else if (leader_sequence_three_keys(KC_S, KC_A, KC_T)) { register_unicodemap(UC_SAT); }
+    else if (leader_sequence_three_keys(KC_U, KC_R, KC_A)) { register_unicodemap(UC_URA); }
+    else if (leader_sequence_three_keys(KC_N, KC_E, KC_P)) { register_unicodemap(UC_NEP); }
+    else if (leader_sequence_three_keys(KC_P, KC_L, KC_U)) { register_unicodemap(UC_PLU); }
+    else if (leader_sequence_three_keys(KC_S, KC_U, KC_N)) { register_unicodemap(UC_SUN); }
+    else if (leader_sequence_three_keys(KC_A, KC_R, KC_I)) { register_unicodemap(UC_ARI); }
+    else if (leader_sequence_three_keys(KC_T, KC_A, KC_U)) { register_unicodemap(UC_TAU); }
+    else if (leader_sequence_three_keys(KC_G, KC_E, KC_M)) { register_unicodemap(UC_GEM); }
+    else if (leader_sequence_three_keys(KC_C, KC_A, KC_N)) { register_unicodemap(UC_CAN); }
+    else if (leader_sequence_three_keys(KC_L, KC_E, KC_O)) { register_unicodemap(UC_LEO); }
+    else if (leader_sequence_three_keys(KC_V, KC_I, KC_R)) { register_unicodemap(UC_VIR); }
+    else if (leader_sequence_three_keys(KC_L, KC_I, KC_B)) { register_unicodemap(UC_LIB); }
+    else if (leader_sequence_three_keys(KC_S, KC_C, KC_O)) { register_unicodemap(UC_SCO); }
+    else if (leader_sequence_three_keys(KC_S, KC_A, KC_G)) { register_unicodemap(UC_SAG); }
+    else if (leader_sequence_three_keys(KC_C, KC_A, KC_P)) { register_unicodemap(UC_CAP); }
+    else if (leader_sequence_three_keys(KC_A, KC_Q, KC_U)) { register_unicodemap(UC_AQU); }
+    else if (leader_sequence_three_keys(KC_P, KC_I, KC_S)) { register_unicodemap(UC_PIS); }
+    else if (leader_sequence_three_keys(KC_C, KC_E, KC_R)) { register_unicodemap(UC_CER); }
+    else if (leader_sequence_three_keys(KC_V, KC_E, KC_S)) { register_unicodemap(UC_VES); }
+    else if (leader_sequence_three_keys(KC_J, KC_U, KC_N)) { register_unicodemap(UC_JUN); }
+    else if (leader_sequence_three_keys(KC_P, KC_A, KC_L)) { register_unicodemap(UC_PAL); }
+    else if (leader_sequence_three_keys(KC_F, KC_O, KC_R)) { register_unicodemap(UC_FOR); }
+    else if (leader_sequence_three_keys(KC_C, KC_H, KC_I)) { register_unicodemap(UC_CHI); }
+    else if (leader_sequence_three_keys(KC_L, KC_I, KC_L)) { register_unicodemap(UC_LIL); }
+    else if (leader_sequence_three_keys(KC_N, KC_O, KC_R)) { register_unicodemap(UC_NOR); }
+    else if (leader_sequence_three_keys(KC_S, KC_O, KC_U)) { register_unicodemap(UC_SOU); }
+    else if (leader_sequence_three_keys(KC_S, KC_E, KC_M)) { register_unicodemap(UC_SEM); }
+    else if (leader_sequence_three_keys(KC_S, KC_E, KC_X)) { register_unicodemap(UC_SEX); }
+    else if (leader_sequence_three_keys(KC_S, KC_Q, KC_U)) { register_unicodemap(UC_SQU); }
+    else if (leader_sequence_three_keys(KC_T, KC_R, KC_I)) { register_unicodemap(UC_TRI); }
+    else if (leader_sequence_three_keys(KC_Q, KC_U, KC_I)) { register_unicodemap(UC_QUI); }
+    else if (leader_sequence_three_keys(KC_O, KC_P, KC_P)) { register_unicodemap(UC_OPP); }
+    else if (leader_sequence_three_keys(KC_C, KC_O, KC_N)) { register_unicodemap(UC_CON); }
+rgblight_disable_noeeprom(); }
+
+const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
+const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
 const uint16_t PROGMEM l_scroll_up[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM r_scroll_up[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM l_vol_down[] = {KC_X, LT(3,KC_C), COMBO_END};
-const uint16_t PROGMEM r_vol_down[] = {LT(3,KC_COMM), KC_DOT, COMBO_END};
+const uint16_t PROGMEM l_vol_down[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM r_vol_down[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM l_vol_up[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM r_vol_up[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM scroll_left[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
@@ -353,21 +536,7 @@ const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM word_right[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM caps_lock[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM shift_alt_esc[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM one_half[] = {KC_1, KC_2, COMBO_END};
-const uint16_t PROGMEM one_third[] = {KC_1, KC_3, COMBO_END};
-const uint16_t PROGMEM one_quarter[] = {KC_1, KC_4, COMBO_END};
-const uint16_t PROGMEM one_fifth[] = {KC_1, KC_5, COMBO_END};
-const uint16_t PROGMEM one_sixth[] = {KC_1, KC_6, COMBO_END};
-const uint16_t PROGMEM one_eighth[] = {KC_1, KC_8, COMBO_END};
-const uint16_t PROGMEM two_thirds[] = {KC_2, KC_3, COMBO_END};
-const uint16_t PROGMEM two_fifths[] = {KC_2, KC_5, COMBO_END};
-const uint16_t PROGMEM three_quarters[] = {KC_3, KC_4, COMBO_END};
-const uint16_t PROGMEM three_fifths[] = {KC_3, KC_5, COMBO_END};
-const uint16_t PROGMEM three_eighths[] = {KC_3, KC_8, COMBO_END};
-const uint16_t PROGMEM four_fifths[] = {KC_4, KC_5, COMBO_END};
-const uint16_t PROGMEM five_sixths[] = {KC_5, KC_6, COMBO_END};
-const uint16_t PROGMEM five_eighths[] = {KC_5, KC_8, COMBO_END};
-const uint16_t PROGMEM seven_eighths[] = {KC_7, KC_8, COMBO_END};
+const uint16_t PROGMEM fn_lock[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
 	COMBO(l_scroll_down, KC_WH_D),
 	COMBO(r_scroll_down, KC_WH_D),
@@ -383,26 +552,11 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(word_right, C(KC_RGHT)),
 	COMBO(caps_lock, KC_CAPS),
 	COMBO(shift_alt_esc, LSA(KC_ESC)),
-	COMBO(one_half, U_HLF),
-	COMBO(one_third, U_TRD),
-	COMBO(one_quarter, U_QTR),
-	COMBO(one_fifth, U_FTH),
-	COMBO(one_sixth, U_XTH),
-	COMBO(one_eighth, U_GTH),
-	COMBO(two_thirds, U_WRD),
-	COMBO(two_fifths, U_WFT),
-	COMBO(three_quarters, U_TQT),
-	COMBO(three_fifths, U_TFT),
-	COMBO(three_eighths, U_TGT),
-	COMBO(four_fifths, U_FFT),
-	COMBO(five_sixths, U_VXT),
-	COMBO(five_eighths, U_VGT),
-	COMBO(seven_eighths, U_SGT), };
+	COMBO(fn_lock, DF(2)), };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
-		case 3: tap_code((!clockwise) ? KC_UP : KC_DOWN); break;
-		case 2: tap_code((!clockwise) ? KC_PGUP : KC_PGDN); break;
+		case 2: tap_code16((!clockwise) ? C(KC_LEFT) : C(KC_RGHT)); break;
 		case 1: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
 		case 0:
 			if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y);
@@ -417,8 +571,6 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
-		case LT(3,KC_C):
-		case LT(3,KC_COMM):
 		case LT(2,KC_V):
 		case LT(2,KC_M):
 		case LGUI_T(KC_A):
@@ -431,68 +583,12 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 		case KC_BSPC:
 		case KC_TAB:
 		case KC_ENT:
-		case KC_DEL:
 		case KC_BTN1:
 		case KC_BTN2:
 		case KC_BTN3:
-		case KC_COLN:
 		case KC_DQT:
-		case KC_F1:
-		case KC_F2:
-		case KC_F3:
-		case KC_F4:
-		case KC_F5:
-		case KC_F6:
-		case KC_F7:
-		case KC_F8:
-		case KC_F9:
-		case KC_F10:
-		case U_EQ:
-		case U_AD:
-		case U_AR:
-		case U_ED:
-		case U_DG:
-		case U_ST:
-		case U_YD:
-		case U_UD:
-		case U_ID:
-		case U_OD:
-		case U_OS:
-		case U_GL:
-		case U_AC:
-		case U_AE:
-		case U_EA:
-		case U_EC:
-		case U_HV:
-		case U_YA:
-		case U_UA:
-		case U_IA:
-		case U_OA:
-		case U_OE:
-		case U_GR:
-		case U_AA:
-		case U_SS:
-		case U_EG:
-		case U_DT:
-		case U_LU:
-		case U_RD:
-		case U_UG:
-		case U_IG:
-		case U_OG:
-		case U_OT:
-		case U_AG:
-		case U_AT:
-		case U_CL:
-		case U_CK:
-		case U_BU:
-		case U_NT:
-		case U_UC:
-		case U_IC:
-		case U_OC:
-		case U_QU:
-		case U_CRY:
-		case U_IDK:
-		case U_LEN:
+		case KC_TILD:
+		case KC_COLN:
 			return true;
 		default:
 			return false; } }
@@ -501,69 +597,13 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 	switch(keycode) {
 		case KC_BSPC: register_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
 		case KC_TAB: register_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
-		case KC_ENT: register_code16((!shifted) ? KC_ENT : KC_ESC); break;
-		case KC_DEL: register_code16((!shifted) ? KC_DEL : S(KC_DEL)); break;
+		case KC_ENT: register_code((!shifted) ? KC_ENT : KC_ESC); break;
 		case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
 		case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
 		case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
-		case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: register_code16((!shifted) ? KC_DQT : KC_QUOT); break;
-		case KC_F1: (!shifted) ? tap_code(KC_F1) : register_unicodemap(UC_SUPONE); break;
-		case KC_F2: (!shifted) ? tap_code(KC_F2) : register_unicodemap(UC_SUPTWO); break;
-		case KC_F3: (!shifted) ? tap_code(KC_F3) : register_unicodemap(UC_SUPTHREE); break;
-		case KC_F4: (!shifted) ? tap_code(KC_F4) : register_unicodemap(UC_SUPFOUR); break;
-		case KC_F5: (!shifted) ? tap_code(KC_F5) : register_unicodemap(UC_SUPFIVE); break;
-		case KC_F6: (!shifted) ? tap_code(KC_F6) : register_unicodemap(UC_SUPSIX); break;
-		case KC_F7: (!shifted) ? tap_code(KC_F7) : register_unicodemap(UC_SUPSEVEN); break;
-		case KC_F8: (!shifted) ? tap_code(KC_F8) : register_unicodemap(UC_SUPEIGHT); break;
-		case KC_F9: (!shifted) ? tap_code(KC_F9) : register_unicodemap(UC_SUPNINE); break;
-		case KC_F10: (!shifted) ? tap_code(KC_F10) : register_unicodemap(UC_DEGREE); break;
-		case U_EQ: register_unicodemap((!shifted) ? UC_EQT : UC_EQH); break;
-		case U_AD: register_unicodemap((!shifted) ? UC_ADT : UC_ADH); break;
-		case U_AR: register_unicodemap((!shifted) ? UC_ART : UC_ARH); break;
-		case U_ED: register_unicodemap((!shifted) ? UC_EDT : UC_EDH); break;
-		case U_DG: register_unicodemap((!shifted) ? UC_DGT : UC_DGH); break;
-		case U_ST: register_unicodemap((!shifted) ? UC_STT : UC_STH); break;
-		case U_YD: register_unicodemap((!shifted) ? UC_YDT : UC_YDH); break;
-		case U_UD: register_unicodemap((!shifted) ? UC_UDT : UC_UDH); break;
-		case U_ID: register_unicodemap((!shifted) ? UC_IDT : UC_IDH); break;
-		case U_OD: register_unicodemap((!shifted) ? UC_ODT : UC_ODH); break;
-		case U_OS: register_unicodemap((!shifted) ? UC_OST : UC_OSH); break;
-		case U_GL: register_unicodemap((!shifted) ? UC_GLT : UC_GLH); break;
-		case U_AC: register_unicodemap((!shifted) ? UC_ACT : UC_ACH); break;
-		case U_AE: register_unicodemap((!shifted) ? UC_AET : UC_AEH); break;
-		case U_EA: register_unicodemap((!shifted) ? UC_EAT : UC_EAH); break;
-		case U_EC: register_unicodemap((!shifted) ? UC_ECT : UC_ECH); break;
-		case U_HV: register_unicodemap((!shifted) ? UC_HVT : UC_HVH); break;
-		case U_YA: register_unicodemap((!shifted) ? UC_YAT : UC_YAH); break;
-		case U_UA: register_unicodemap((!shifted) ? UC_UAT : UC_UAH); break;
-		case U_IA: register_unicodemap((!shifted) ? UC_IAT : UC_IAH); break;
-		case U_OA: register_unicodemap((!shifted) ? UC_OAT : UC_OAH); break;
-		case U_OE: register_unicodemap((!shifted) ? UC_OET : UC_OEH); break;
-		case U_GR: register_unicodemap((!shifted) ? UC_GRT : UC_GRH); break;
-		case U_AA: register_unicodemap((!shifted) ? UC_AAT : UC_AAH); break;
-		case U_SS: register_unicodemap((!shifted) ? UC_SST : UC_SSH); break;
-		case U_EG: register_unicodemap((!shifted) ? UC_EGT : UC_EGH); break;
-		case U_DT: register_unicodemap((!shifted) ? UC_DTT : UC_DTH); break;
-		case U_LU: register_unicodemap((!shifted) ? UC_LUT : UC_LUH); break;
-		case U_RD: register_unicodemap((!shifted) ? UC_RDT : UC_RDH); break;
-		case U_UG: register_unicodemap((!shifted) ? UC_UGT : UC_UGH); break;
-		case U_IG: register_unicodemap((!shifted) ? UC_IGT : UC_IGH); break;
-		case U_OG: register_unicodemap((!shifted) ? UC_OGT : UC_OGH); break;
-		case U_OT: register_unicodemap((!shifted) ? UC_OTT : UC_OTH); break;
-		case U_AG: register_unicodemap((!shifted) ? UC_AGT : UC_AGH); break;
-		case U_AT: register_unicodemap((!shifted) ? UC_ATT : UC_ATH); break;
-		case U_CL: register_unicodemap((!shifted) ? UC_CLT : UC_CLH); break;
-		case U_CK: register_unicodemap((!shifted) ? UC_CKT : UC_CKH); break;
-		case U_BU: register_unicodemap((!shifted) ? UC_BUT : UC_BUH); break;
-		case U_NT: register_unicodemap((!shifted) ? UC_NTT : UC_NTH); break;
-		case U_UC: register_unicodemap((!shifted) ? UC_UCT : UC_UCH); break;
-		case U_IC: register_unicodemap((!shifted) ? UC_ICT : UC_ICH); break;
-		case U_OC: register_unicodemap((!shifted) ? UC_OCT : UC_OCH); break;
-		case U_QU: register_unicodemap((!shifted) ? UC_QUT : UC_QUH); break;
-		case U_CRY: send_unicode_string((!shifted) ? ("ಠ_ಠ") : ("ಥ_ಥ")); break;
-		case U_IDK: send_unicode_string((!shifted) ? ("¯\\_(ツ)_/¯") : ("¯\\\\\\_(ツ)\\_/¯")); break;
-		case U_LEN: send_unicode_string((!shifted) ? (":þ") : ("( ͡° ͜ʖ ͡°)")); break;
+		case KC_TILD: register_code16((!shifted) ? KC_TILD : KC_GRV); break;
+		case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		default:
 			if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
 			register_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); } }
@@ -572,69 +612,13 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 	switch(keycode) {
 		case KC_BSPC: unregister_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
 		case KC_TAB: unregister_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
-		case KC_ENT: unregister_code16((!shifted) ? KC_ENT : KC_ESC); break;
-		case KC_DEL: unregister_code16((!shifted) ? KC_DEL : S(KC_DEL)); break;
+		case KC_ENT: unregister_code((!shifted) ? KC_ENT : KC_ESC); break;
 		case KC_BTN1: unregister_code((!shifted) ? KC_BTN1 : KC_NO); break;
 		case KC_BTN2: unregister_code((!shifted) ? KC_BTN2 : KC_NO); break;
 		case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
-		case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		case KC_DQT: unregister_code16((!shifted) ? KC_DQT : KC_QUOT); break;
-		case KC_F1: break;
-		case KC_F2: break;
-		case KC_F3: break;
-		case KC_F4: break;
-		case KC_F5: break;
-		case KC_F6: break;
-		case KC_F7: break;
-		case KC_F8: break;
-		case KC_F9: break;
-		case KC_F10: break;
-		case U_EQ: break;
-		case U_AD: break;
-		case U_AR: break;
-		case U_ED: break;
-		case U_DG: break;
-		case U_ST: break;
-		case U_YD: break;
-		case U_UD: break;
-		case U_ID: break;
-		case U_OD: break;
-		case U_OS: break;
-		case U_GL: break;
-		case U_AC: break;
-		case U_AE: break;
-		case U_EA: break;
-		case U_EC: break;
-		case U_HV: break;
-		case U_YA: break;
-		case U_UA: break;
-		case U_IA: break;
-		case U_OA: break;
-		case U_OE: break;
-		case U_GR: break;
-		case U_AA: break;
-		case U_SS: break;
-		case U_EG: break;
-		case U_DT: break;
-		case U_LU: break;
-		case U_RD: break;
-		case U_UG: break;
-		case U_IG: break;
-		case U_OG: break;
-		case U_OT: break;
-		case U_AG: break;
-		case U_AT: break;
-		case U_CL: break;
-		case U_CK: break;
-		case U_BU: break;
-		case U_NT: break;
-		case U_UC: break;
-		case U_IC: break;
-		case U_OC: break;
-		case U_QU: break;
-		case U_CRY: break;
-		case U_IDK: break;
-		case U_LEN: break;
+		case KC_TILD: unregister_code16((!shifted) ? KC_TILD : KC_GRV); break;
+		case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
 		default:
 			unregister_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode);
 			clear_weak_mods(); } }
@@ -746,16 +730,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
 		U_QUOTE, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
-		LT(1,KC_MUTE), KC_Z, KC_X, LT(3,KC_C), LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), LT(3,KC_COMM), KC_DOT, KC_SLSH, KC_DEL),
+		LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, LT(0,KC_DEL)),
 	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
 		KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
-		DF(0), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, QK_BOOT),
+		KC_MUTE, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(0)),
 	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
-		KC_LBRC, LCTL(KC_PPLS), LALT(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), LGUI(KC_PSCR), KC_RBRC,
-		KC_GRV, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
-		RGB_TOG, RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), RGB_VAD, RGB_VAI, C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, RCS(KC_ESC)),
-	[3] = LAYOUT_ortho_4x12(U_EQ, U_AD, U_AR, U_ED, U_DG, U_ST, U_YD, U_UD, U_ID, U_OD, U_OS, U_CRY,
-		U_GL, U_AA, U_AE, U_EA, U_CK, U_HV, U_YA, U_UA, U_IA, U_OA, U_OE, U_GR,
-		KC_DQT, U_AG, U_SS, U_EG, U_DT, U_LU, U_RD, U_UG, U_IG, U_OG, U_OT, U_IDK,
-		DF(1), U_AC, U_AT, U_CL, U_EC, U_BU, U_NT, U_UC, U_IC, U_OC, U_QU, U_LEN) };
+		KC_LBRC, KC_APP, A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), G(KC_PSCR), KC_RBRC,
+		KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
+		DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), C(KC_PPLS), RCS(KC_ESC), C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, DF(0)) };
