@@ -44,7 +44,7 @@ Keys|Auto Shift Mouse Dragging
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
 Ctrl|Undo|Ctrl Z/Y
-Shift|Find|Shift/F3
+Shift|Search|Shift/F3
 Alt|Zoom|Ctrl +/-
 Gui|Horizontal
 Base|Vertical||Mute
