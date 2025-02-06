@@ -56,6 +56,7 @@ Legend||*e.g., !F4 = Alt F4*||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
 **Column**|Ctrl NumPlus|Column Arrangement
+**TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScrn|Save Screencap As File
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
