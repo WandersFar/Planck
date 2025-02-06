@@ -55,8 +55,8 @@ Fn|Word|Ctrl ↔|Game
 Legend||*e.g., !F4 = Alt F4*||
 ---|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
-**CLM**|Ctrl NumPlus|Column Arrangement
-**\#PRINT**|Gui PrintScrn|Save Screencap As File
+**Column**|Ctrl NumPlus|Column Arrangement
+**\#Print**|Gui PrintScrn|Save Screencap As File
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
