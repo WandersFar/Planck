@@ -31,7 +31,7 @@ Custom|Auto|Shift
 Ctrl|Backspace|Erase Word
 Shift|Tab|Navigate Backwards
 Escape|Enter
-Leader|Delete|Unicode
+Leader|Delete|Unicode & Reset
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
