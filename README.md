@@ -2,7 +2,7 @@ Three|Layers||
 ---|---|---
 0|Base|alphas
 1|Game|disable Auto Shift
-2|Fn|navigate, F-keys, symbols, RGB
+2|Fn|navigate, symbols, F-keys, RGB
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Base|Combos||
