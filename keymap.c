@@ -1,13 +1,9 @@
 #include QMK_KEYBOARD_H
 
-float lock[][2] = SONG(LOCK);
-float unlock[][2] = SONG(UNLOCK);
-
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
-	case 2: rgblight_enable_noeeprom(); autoshift_enable(); break;
-	case 1: rgblight_disable_noeeprom(); autoshift_disable(); PLAY_SONG(lock); break;
-	case 0: rgblight_disable_noeeprom(); autoshift_enable(); PLAY_SONG(unlock); break;
+	case 1: rgblight_enable_noeeprom(); autoshift_disable(); break;
+	default: rgblight_enable_noeeprom(); autoshift_enable(); break;
 	} return state; }
 
 bool led_update_user(led_t led_state) {
@@ -337,17 +333,19 @@ const uint32_t unicode_map[] PROGMEM = {
 };
 
 enum unicode_custom {
-	U_QUOTE = SAFE_RANGE,
+	CURLY = SAFE_RANGE,
 };
 
 enum states { OPEN, CLOSE };
 enum states state = OPEN;
 static uint16_t recent = KC_NO;
+uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
-		case LT(0,KC_DEL):
-			if (!record->tap.count && record->event.pressed) { leader_start(); return false; } return true;
-		case U_QUOTE:
+		case DF(1): if (record->event.pressed) { defer_exec(5000, callback, NULL); } return true;
+		case DF(0): if (record->event.pressed) { defer_exec(1000, callback, NULL); } return true;
+		case LT(0,KC_DEL): if (!record->tap.count && record->event.pressed) { leader_start(); return false; } return true;
+		case CURLY:
 			static uint16_t TIMER;
 			if (record->event.pressed) { TIMER = timer_read(); }
 			else {
@@ -522,37 +520,42 @@ void leader_end_user(void) {
     else if (leader_sequence_three_keys(KC_C, KC_O, KC_N)) { register_unicodemap(UC_CON); }
 rgblight_disable_noeeprom(); }
 
-const uint16_t PROGMEM l_scroll_down[] = {KC_C, LT(2,KC_V), COMBO_END};
-const uint16_t PROGMEM r_scroll_down[] = {LT(2,KC_M), KC_COMM, COMBO_END};
-const uint16_t PROGMEM l_scroll_up[] = {KC_E, KC_R, COMBO_END};
-const uint16_t PROGMEM r_scroll_up[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM l_vol_down[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM r_vol_down[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM l_vol_up[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM r_vol_up[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM scroll_left[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM scroll_right[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM word_left[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
-const uint16_t PROGMEM word_right[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
-const uint16_t PROGMEM caps_lock[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
-const uint16_t PROGMEM shift_alt_esc[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM fn_lock[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
+const uint16_t PROGMEM L_SCR_DN[] = {KC_C, LT(2,KC_V), COMBO_END};
+const uint16_t PROGMEM R_SCR_DN[] = {LT(2,KC_M), KC_COMM, COMBO_END};
+const uint16_t PROGMEM L_SCR_UP[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM R_SCR_UP[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM L_VOL_DN[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM R_VOL_DN[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM L_VOL_UP[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM R_VOL_UP[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM SCR_LEFT[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
+const uint16_t PROGMEM SCR_RIGHT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM WORD_LEFT[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
+const uint16_t PROGMEM WORD_RIGHT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM CAPS_LOCK[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM TASK_SWITCH[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
+const uint16_t PROGMEM FN_LOCK[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-	COMBO(l_scroll_down, KC_WH_D),
-	COMBO(r_scroll_down, KC_WH_D),
-	COMBO(l_scroll_up, KC_WH_U),
-	COMBO(r_scroll_up, KC_WH_U),
-	COMBO(l_vol_down, KC_VOLD),
-	COMBO(r_vol_down, KC_VOLD),
-	COMBO(l_vol_up, KC_VOLU),
-	COMBO(r_vol_up, KC_VOLU),
-	COMBO(scroll_left, KC_WH_L),
-	COMBO(scroll_right, KC_WH_R),
-	COMBO(word_left, C(KC_LEFT)),
-	COMBO(word_right, C(KC_RGHT)),
-	COMBO(caps_lock, KC_CAPS),
-	COMBO(shift_alt_esc, LSA(KC_ESC)),
-	COMBO(fn_lock, DF(2)), };
+	COMBO(L_SCR_DN, KC_WH_D),					// 0 (an array begins counting at 0, not 1)
+	COMBO(R_SCR_DN, KC_WH_D),					// 1
+	COMBO(L_SCR_UP, KC_WH_U),					// 2 (disabled on game layer 1 below)
+	COMBO(R_SCR_UP, KC_WH_U),					// 3 (disabled on game layer 1 below)
+	COMBO(L_VOL_DN, KC_VOLD),						// 4 (we keep the four volume up and down for now)
+	COMBO(R_VOL_DN, KC_VOLD),					// 5 (once we solder the rotary encoder, we delete)
+	COMBO(L_VOL_UP, KC_VOLU),						// 6 (all the bridge combos along with)
+	COMBO(R_VOL_UP, KC_VOLU),					// 7 (the combo_should_trigger bool below)
+	COMBO(SCR_LEFT, KC_WH_L),						// 8
+	COMBO(SCR_RIGHT, KC_WH_R),					// 9
+	COMBO(WORD_LEFT, C(KC_LEFT)),				// 10
+	COMBO(WORD_RIGHT, C(KC_RGHT)),			// 11
+	COMBO(CAPS_LOCK, KC_CAPS),					// 12 (last three combos will be the only ones left after you solder)
+	COMBO(TASK_SWITCH, LSA(KC_ESC)),		// 13 (the rotary encoder; in config.h update COMBO_COUNT to 3)
+	COMBO(FN_LOCK, DF(2)), };							// 14 (and delete COMBO_SHOULD_TRIGGER; also the bool below)
+
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+    switch (combo_index) {	// delete this whole bool after soldering the rotary encoder; delete in config.h also
+        case 2:	// combo_index wants an integer; the place order in the array above, not the name of the combo
+        case 3: if (IS_LAYER_ON(1)) { return false; } break; } return true; }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
@@ -729,12 +732,12 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
-		U_QUOTE, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
+		CURLY, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
 		LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, LT(0,KC_DEL)),
-	[1] = LAYOUT_ortho_4x12(LT(2,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(2,KC_DEL),
+	[1] = LAYOUT_ortho_4x12(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
 		KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
 		KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
-		KC_MUTE, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(0)),
+		LT(2,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(0)),
 	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
 		KC_LBRC, KC_APP, A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), G(KC_PSCR), KC_RBRC,
 		KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
