@@ -320,7 +320,7 @@ const uint32_t unicode_map[] PROGMEM = {
 	[UC_OTILDE] = 0x00F5,						// õ
 };
 
-void leader_start_user(void) { rgblight_enable_noeeprom(); }
+void leader_start_user(void) { rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
 void leader_end_user(void) {
     if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
     else if (leader_sequence_one_key(KC_C)) { register_unicodemap(UC_CEDILLA); }
@@ -502,10 +502,10 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(R_SCR_DN, KC_WH_D),					// 1
 	COMBO(L_SCR_UP, KC_WH_U),					// 2 (disabled on game layer 1 below)
 	COMBO(R_SCR_UP, KC_WH_U),					// 3 (disabled on game layer 1 below)
-	COMBO(L_VOL_DN, KC_VOLD),					// 4 (we keep the four volume up and down for now)
-	COMBO(R_VOL_DN, KC_VOLD),					// 5 (once we solder the rotary encoder, we delete)
-	COMBO(L_VOL_UP, KC_VOLU),					// 6 (all the bridge combos, the bool below)
-	COMBO(R_VOL_UP, KC_VOLU),					// 7 (and combo_should_trigger in config.h)
+	COMBO(L_VOL_DN, KC_VOLD),					// 4 (we keep four volume up and down for now)
+	COMBO(R_VOL_DN, KC_VOLD),					// 5 (once we solder rotary encoder, we delete)
+	COMBO(L_VOL_UP, KC_VOLU),					// 6 (all bridge combos, the bool below, and)
+	COMBO(R_VOL_UP, KC_VOLU),					// 7 (COMBO_SHOULD_TRIGGER in config.h)
 	COMBO(SCR_LEFT, KC_WH_L),					// 8
 	COMBO(SCR_RIGHT, KC_WH_R),				// 9
 	COMBO(WORD_LEFT, C(KC_LEFT)),			// 10
@@ -669,15 +669,19 @@ tap_dance_action_t tap_dance_actions[] = {
 	[HOME] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, h_finished, h_reset),
 	[END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
 
+uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
+void keyboard_post_init_user(void) { rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD + 2); defer_exec(8000, callback, NULL); }
+
 bool led_update_user(led_t led_state) {
 	static bool caps = false;
 	if (caps != led_state.caps_lock) { caps = led_state.caps_lock;
-		(!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom(); } return true; }
+		(!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL + 5); } return true; }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
 	switch (get_highest_layer(state)) {
-	case 1: rgblight_enable_noeeprom(); autoshift_disable(); break;
-	default: rgblight_enable_noeeprom(); autoshift_enable(); break; } return state; }
+	case 2: rgblight_enable_noeeprom(); rgblight_reload_from_eeprom(); autoshift_enable(); break;
+	case 1: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL + 5); autoshift_disable(); break;
+	case 0: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); autoshift_enable(); break; } return state; }
 
 enum unicode_custom { CURLY = SAFE_RANGE };
 enum states { OPEN, CLOSE };
@@ -685,10 +689,9 @@ enum states state = OPEN;
 static uint16_t recent = KC_NO;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 	switch (keycode) {
 		case DF(1): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
-		case DF(0): if (record->event.pressed) { defer_exec(1000, callback, NULL); } return true;
+		case DF(0): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
 		case LT(0,KC_DEL): if (!record->tap.count && record->event.pressed) { leader_start(); return false; } return true;
 		case CURLY:
 			static uint16_t TIMER;

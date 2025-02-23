@@ -1,5 +1,4 @@
 SRC += muse.c
-AUDIO_ENABLE = yes
 AUTO_SHIFT_ENABLE = yes
 COMBO_ENABLE = yes
 DEFERRED_EXEC_ENABLE = yes
