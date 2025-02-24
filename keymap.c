@@ -670,7 +670,7 @@ tap_dance_action_t tap_dance_actions[] = {
 	[END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
 
 uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
-void keyboard_post_init_user(void) { rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD + 2); defer_exec(8000, callback, NULL); }
+void keyboard_post_init_user(void) { rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD + 2); defer_exec(7500, callback, NULL); }
 
 bool led_update_user(led_t led_state) {
 	static bool caps = false;
