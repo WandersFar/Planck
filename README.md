@@ -8,7 +8,7 @@ Three|Layers||
 Base|Combos||
 ---|---|---
 12|Bridge|Scroll, Volume, Word
-3|Home|Switch, Caps, Lock
+4|Home|Switch, Caps, Lock, Game
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
@@ -49,7 +49,7 @@ Alt|Zoom|Ctrl +/-
 Gui|Horizontal
 Base|Vertical||Mute
 Game|Volume||Mute
-Fn|Word|Ctrl ↔|Game
+Fn|Word|Ctrl ↔|Light
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
