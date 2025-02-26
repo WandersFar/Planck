@@ -497,6 +497,7 @@ const uint16_t PROGMEM WORD_RIGHT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
 const uint16_t PROGMEM FN_LOCK[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
+const uint16_t PROGMEM GAME_LOCK[] = {KC_G, KC_H, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
 	COMBO(L_SCR_DN, KC_WH_D),					// 0 (an array begins counting at 0, not 1)
 	COMBO(R_SCR_DN, KC_WH_D),					// 1
@@ -510,14 +511,16 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(SCR_RIGHT, KC_WH_R),				// 9
 	COMBO(WORD_LEFT, C(KC_LEFT)),			// 10
 	COMBO(WORD_RIGHT, C(KC_RGHT)),		// 11
-	COMBO(CAPS_LOCK, KC_CAPS),				// 12 (only these three combos will be left after you solder)
-	COMBO(TASK_SWITCH, LSA(KC_ESC)),		// 13 (the rotary encoder; config.h COMBO_COUNT to 3)
-	COMBO(FN_LOCK, DF(2)), };						// 14 (delete COMBO_SHOULD_TRIGGER; also the bool below)
+	COMBO(CAPS_LOCK, KC_CAPS),				// 12 (only these four combos will be left after you solder)
+	COMBO(TASK_SWITCH, LSA(KC_ESC)),		// 13 (the rotary encoder; config.h COMBO_COUNT to 4)
+	COMBO(FN_LOCK, DF(2)),							// 14 (delete COMBO_SHOULD_TRIGGER)
+	COMBO(GAME_LOCK, DF(1)), };					// 15 (also the bool below)
 
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
-    switch (combo_index) {	// delete this bool after soldering the rotary encoder; delete in config.h also
-        case 2:	// combo_index wants an integer; the place order in the array above, not combo name
-        case 3: if (IS_LAYER_ON(1)) { return false; } break; } return true; }
+    switch (combo_index) {	// delete this bool after soldering; delete in config.h also
+        case 2:	// combo_index wants an integer
+        case 3:	// the place order in the array above, not combo name
+        case 15: if (IS_LAYER_ON(1)) { return false; } break; } return true; }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
 	switch (get_highest_layer(layer_state|default_layer_state)) {
@@ -718,4 +721,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
 		KC_LBRC, KC_APP, A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), G(KC_PSCR), KC_RBRC,
 		KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
-		DF(1), RGB_RMOD, RGB_SAD, RGB_HUD, C(KC_PGUP), C(KC_PPLS), RCS(KC_ESC), C(KC_PGDN), RGB_HUI, RGB_SAI, RGB_MOD, DF(0)) };
+		UG_TOGG, UG_PREV, UG_SATD, UG_HUED, C(KC_PGUP), C(KC_PPLS), RCS(KC_ESC), C(KC_PGDN), UG_HUEU, UG_SATU, UG_NEXT, DF(0)) };
