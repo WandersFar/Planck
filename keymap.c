@@ -503,23 +503,23 @@ combo_t key_combos[COMBO_COUNT] = {
 	COMBO(R_SCR_DN, KC_WH_D),					// 1
 	COMBO(L_SCR_UP, KC_WH_U),					// 2 (disabled on game layer 1 below)
 	COMBO(R_SCR_UP, KC_WH_U),					// 3 (disabled on game layer 1 below)
-	COMBO(L_VOL_DN, KC_VOLD),					// 4 (we keep four volume up and down for now)
-	COMBO(R_VOL_DN, KC_VOLD),					// 5 (once we solder rotary encoder, we delete)
-	COMBO(L_VOL_UP, KC_VOLU),					// 6 (all bridge combos, the bool below, and)
-	COMBO(R_VOL_UP, KC_VOLU),					// 7 (COMBO_SHOULD_TRIGGER in config.h)
+	COMBO(L_VOL_DN, KC_VOLD),					// 4 (keep four volume up and down for now)
+	COMBO(R_VOL_DN, KC_VOLD),					// 5 (after we solder the rotary encoder)
+	COMBO(L_VOL_UP, KC_VOLU),					// 6 (we delete all bridge combos and)
+	COMBO(R_VOL_UP, KC_VOLU),					// 7 (cases 2 & 3 in the bool below)
 	COMBO(SCR_LEFT, KC_WH_L),					// 8
 	COMBO(SCR_RIGHT, KC_WH_R),				// 9
 	COMBO(WORD_LEFT, C(KC_LEFT)),			// 10
 	COMBO(WORD_RIGHT, C(KC_RGHT)),		// 11
-	COMBO(CAPS_LOCK, KC_CAPS),				// 12 (only these four combos will be left after you solder)
-	COMBO(TASK_SWITCH, LSA(KC_ESC)),		// 13 (the rotary encoder; config.h COMBO_COUNT to 4)
-	COMBO(FN_LOCK, DF(2)),							// 14 (delete COMBO_SHOULD_TRIGGER)
-	COMBO(GAME_LOCK, DF(1)), };					// 15 (also the bool below)
+	COMBO(CAPS_LOCK, KC_CAPS),				// 12 (only these four combos will remain after solder)
+	COMBO(TASK_SWITCH, LSA(KC_ESC)),		// 13 (update config.h COMBO_COUNT to 4)
+	COMBO(FN_LOCK, DF(2)),							// 14 (delete cases 2 & 3 in the bool below)
+	COMBO(GAME_LOCK, DF(1)), };					// 15 (disabled on game layer 1 below)
 
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
-    switch (combo_index) {	// delete this bool after soldering; delete in config.h also
-        case 2:	// combo_index wants an integer
-        case 3:	// the place order in the array above, not combo name
+    switch (combo_index) {
+        case 2:	// combo_index wants an integer; the place order in the array above, not combo name
+        case 3:	// delete cases 2 & 3 after soldering; keep case 15, but update the index number
         case 15: if (IS_LAYER_ON(1)) { return false; } break; } return true; }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
