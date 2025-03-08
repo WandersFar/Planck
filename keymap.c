@@ -320,7 +320,8 @@ const uint32_t unicode_map[] PROGMEM = {
   [UC_OTILDE] = 0x00F5,  // õ
 };
 
-void leader_start_user(void) { rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
+void leader_start_user(void) { rgblight_enable_noeeprom();
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
 void leader_end_user(void) {
   if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
   else if (leader_sequence_one_key(KC_C)) { register_unicodemap(UC_CEDILLA); }
@@ -516,7 +517,8 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(FN_LOCK, DF(2)),  // 14 (delete cases 2 & 3 in the bool below)
   COMBO(GAME_LOCK, DF(1)), };  // 15 (disabled on game layer 1 below)
 
-bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo,
+  uint16_t keycode, keyrecord_t *record) {
   switch (combo_index) {
     case 2:  // combo_index wants an integer; the place order in the array above, not combo name
     case 3:  // delete cases 2 & 3 after soldering; keep case 15, but update the index number
@@ -673,8 +675,8 @@ uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeepr
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD + 2); defer_exec(7500, callback, NULL); }
 
-bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock)
-  { caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
+bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock) {
+  caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL + 5); } return true; }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
@@ -695,7 +697,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case DF(1): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
     case DF(0): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
     case LT(0,KC_DEL): if (!record->tap.count && record->event.pressed)
-	  { leader_start(); return false; } return true;
+      { leader_start(); return false; } return true;
     case CURLY:
       static uint16_t TIMER;
       if (record->event.pressed) { TIMER = timer_read(); }
