@@ -348,6 +348,18 @@ void leader_end_user(void) {
   else if (leader_sequence_one_key(KC_8)) { register_unicodemap(UC_SUPEIGHT); }
   else if (leader_sequence_one_key(KC_9)) { register_unicodemap(UC_SUPNINE); }
   else if (leader_sequence_one_key(KC_0)) { register_unicodemap(UC_SUPZERO); }
+  else if (leader_sequence_one_key(KC_J)) { tap_code(KC_NOMODE); }
+  else if (leader_sequence_two_keys(KC_O, KC_Z)) { tap_code(KC_AUSS); }
+  else if (leader_sequence_two_keys(KC_J, KC_A)) { tap_code(KC_AUSS); }
+  else if (leader_sequence_two_keys(KC_J, KC_B)) { tap_code(KC_BLCK); }
+  else if (leader_sequence_two_keys(KC_J, KC_C)) { tap_code(KC_COMC); }
+  else if (leader_sequence_two_keys(KC_J, KC_D)) { tap_code(KC_DBSK); }
+  else if (leader_sequence_two_keys(KC_J, KC_F)) { tap_code(KC_FRAK); }
+  else if (leader_sequence_two_keys(KC_J, KC_R)) { tap_code(KC_REG); }
+  else if (leader_sequence_two_keys(KC_J, KC_S)) { tap_code(KC_SCPT); }
+  else if (leader_sequence_two_keys(KC_J, KC_U)) { tap_code(KC_SUPR); }
+  else if (leader_sequence_two_keys(KC_J, KC_W)) { tap_code(KC_WIDE); }
+  else if (leader_sequence_two_keys(KC_J, KC_Z)) { tap_code(KC_ZALG); }
   else if (leader_sequence_two_keys(KC_A, KC_I)) { register_unicodemap(UC_ARROWUP); }
   else if (leader_sequence_two_keys(KC_A, KC_J)) { register_unicodemap(UC_ARROWLEFT); }
   else if (leader_sequence_two_keys(KC_A, KC_K)) { register_unicodemap(UC_ARROWDOWN); }
