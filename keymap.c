@@ -82,14 +82,33 @@ enum unicode_names {
   UC_INTERROBANG,
   UC_QUESTION,
   UC_EXCLAIM,
+  UC_CENTAMERICAN,
+  UC_EUROEUROPEAN,
+  UC_POUNDBRITISH,
+  UC_YENJAPANESE,
   UC_UNEQUAL,
   UC_DAGGER,
   UC_DAGGERDOUBLE,
+  UC_SNOWFLAKEIN,
+  UC_SNOWFLAKEOUT,
   UC_STAR,
   UC_STARHOLLOW,
+  UC_STARPINWHEEL,
+  UC_STAROUTLINE,
+  UC_TWINKLE,
+  UC_TWINKLECLOVER,
   UC_HEART,
   UC_LEGAL,
   UC_CHECK,
+  UC_INFINITY,
+  UC_FLOWER,
+  UC_FLEURDELIS,
+  UC_FLORALSHAMROCK,
+  UC_FLORALVINE,
+  UC_VINEOPEN,
+  UC_VINECLOSE,
+  UC_ARROWFLETCHED,
+  UC_ARROWSOLID,
   UC_ARROWHORIZON,
   UC_ARROWVERTICAL,
   UC_ARROWLEFT,
@@ -242,14 +261,33 @@ const uint32_t unicode_map[] PROGMEM = {
   [UC_INTERROBANG] = 0x203D,  // ‽
   [UC_QUESTION] = 0x00BF,  // ¿
   [UC_EXCLAIM] = 0x00A1,  // ¡
+  [UC_CENTAMERICAN] = 0xA2,  // ¢
+  [UC_EUROEUROPEAN] = 0x20AC,  // €
+  [UC_POUNDBRITISH] = 0xA3,  // £
+  [UC_YENJAPANESE] = 0xA5,  // ¥
   [UC_UNEQUAL] = 0x2260,  // ≠
   [UC_DAGGER] = 0x2020,  // †
   [UC_DAGGERDOUBLE] = 0x2021,  // ‡
+  [UC_SNOWFLAKEIN] = 0x2745,  // ❅
+  [UC_SNOWFLAKEOUT] = 0x2746,  // ❆
   [UC_STAR] = 0x2605,  // ★
   [UC_STARHOLLOW] = 0x2606,  // ☆
+  [UC_STARPINWHEEL] = 0x272F,  // ✯
+  [UC_STAROUTLINE] = 0x272D,  // ✭
+  [UC_TWINKLE] = 0x2748,  // ❈
+  [UC_TWINKLECLOVER] = 0x2725,  // ✥
   [UC_HEART] = 0x2764,  // ❤
   [UC_LEGAL] = 0x00A7,  // §
   [UC_CHECK] = 0x2713,  // ✓
+  [UC_INFINITY] = 0x221E,  // ∞
+  [UC_FLOWER] = 0x2740,  // ❀
+  [UC_FLEURDELIS] = 0x269C,  // ⚜
+  [UC_FLORALSHAMROCK] = 0x2618,  // ☘
+  [UC_FLORALVINE] = 0x2766,  // ❦
+  [UC_VINEOPEN] = 0x2619,  // ☙
+  [UC_VINECLOSE] = 0x2767,  // ❧
+  [UC_ARROWFLETCHED] = 0x27B3,  // ➳
+  [UC_ARROWSOLID] = 0x27B5,  // ➵
   [UC_ARROWHORIZON] = 0x2194,  // ↔
   [UC_ARROWVERTICAL] = 0x2195,  // ↕
   [UC_ARROWLEFT] = 0x2190,  // ←
@@ -324,16 +362,6 @@ void leader_start_user(void) { rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
 void leader_end_user(void) {
   if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
-  else if (leader_sequence_one_key(KC_C)) { register_unicodemap(UC_CEDILLA); }
-  else if (leader_sequence_one_key(KC_N)) { register_unicodemap(UC_NTILDE); }
-  else if (leader_sequence_one_key(KC_S)) { register_unicodemap(UC_SS); }
-  else if (leader_sequence_one_key(KC_B)) { register_unicodemap(UC_BULLET); }
-  else if (leader_sequence_one_key(KC_D)) { register_unicodemap(UC_DAGGER); }
-  else if (leader_sequence_one_key(KC_H)) { register_unicodemap(UC_HEART); }
-  else if (leader_sequence_one_key(KC_K)) { register_unicodemap(UC_CHECK); }
-  else if (leader_sequence_one_key(KC_L)) { register_unicodemap(UC_LEGAL); }
-  else if (leader_sequence_one_key(KC_X)) { register_unicodemap(UC_STAR); }
-  else if (leader_sequence_one_key(KC_EQL)) { register_unicodemap(UC_UNEQUAL); }
   else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(UC_ELLIPSIS); }
   else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(UC_GUILLEMETLEFT); }
   else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(UC_GUILLEMETRIGHT); }
@@ -348,27 +376,27 @@ void leader_end_user(void) {
   else if (leader_sequence_one_key(KC_8)) { register_unicodemap(UC_SUPEIGHT); }
   else if (leader_sequence_one_key(KC_9)) { register_unicodemap(UC_SUPNINE); }
   else if (leader_sequence_one_key(KC_0)) { register_unicodemap(UC_SUPZERO); }
-  else if (leader_sequence_one_key(KC_J)) { tap_code(KC_NOMODE); }
-  else if (leader_sequence_two_keys(KC_O, KC_Z)) { tap_code(KC_AUSS); }
-  else if (leader_sequence_two_keys(KC_J, KC_A)) { tap_code(KC_AUSS); }
-  else if (leader_sequence_two_keys(KC_J, KC_B)) { tap_code(KC_BLCK); }
-  else if (leader_sequence_two_keys(KC_J, KC_C)) { tap_code(KC_COMC); }
-  else if (leader_sequence_two_keys(KC_J, KC_D)) { tap_code(KC_DBSK); }
-  else if (leader_sequence_two_keys(KC_J, KC_F)) { tap_code(KC_FRAK); }
-  else if (leader_sequence_two_keys(KC_J, KC_R)) { tap_code(KC_REG); }
-  else if (leader_sequence_two_keys(KC_J, KC_S)) { tap_code(KC_SCPT); }
-  else if (leader_sequence_two_keys(KC_J, KC_U)) { tap_code(KC_SUPR); }
-  else if (leader_sequence_two_keys(KC_J, KC_W)) { tap_code(KC_WIDE); }
-  else if (leader_sequence_two_keys(KC_J, KC_Z)) { tap_code(KC_ZALG); }
-  else if (leader_sequence_two_keys(KC_A, KC_I)) { register_unicodemap(UC_ARROWUP); }
-  else if (leader_sequence_two_keys(KC_A, KC_J)) { register_unicodemap(UC_ARROWLEFT); }
-  else if (leader_sequence_two_keys(KC_A, KC_K)) { register_unicodemap(UC_ARROWDOWN); }
-  else if (leader_sequence_two_keys(KC_A, KC_L)) { register_unicodemap(UC_ARROWRIGHT); }
-  else if (leader_sequence_two_keys(KC_A, KC_H)) { register_unicodemap(UC_ARROWHORIZON); }
-  else if (leader_sequence_two_keys(KC_A, KC_V)) { register_unicodemap(UC_ARROWVERTICAL); }
-  else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(UC_BULLETHOLLOW); }
-  else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(UC_DAGGERDOUBLE); }
-  else if (leader_sequence_two_keys(KC_X, KC_X)) { register_unicodemap(UC_STARHOLLOW); }
+  else if (leader_sequence_one_key(KC_C)) { register_unicodemap(UC_CEDILLA); }
+  else if (leader_sequence_one_key(KC_N)) { register_unicodemap(UC_NTILDE); }
+  else if (leader_sequence_one_key(KC_S)) { register_unicodemap(UC_SS); }
+  else if (leader_sequence_one_key(KC_B)) { register_unicodemap(UC_BULLET); }
+  else if (leader_sequence_one_key(KC_D)) { register_unicodemap(UC_DAGGER); }
+  else if (leader_sequence_one_key(KC_F)) { register_unicodemap(UC_FLOWER); }
+  else if (leader_sequence_one_key(KC_H)) { register_unicodemap(UC_HEART); }
+  else if (leader_sequence_one_key(KC_I)) { register_unicodemap(UC_INFINITY); }
+  else if (leader_sequence_one_key(KC_K)) { register_unicodemap(UC_CHECK); }
+  else if (leader_sequence_one_key(KC_L)) { register_unicodemap(UC_LEGAL); }
+  else if (leader_sequence_one_key(KC_Q)) { register_unicodemap(UC_UNEQUAL); }
+  else if (leader_sequence_one_key(KC_T)) { register_unicodemap(UC_TWINKLE); }
+  else if (leader_sequence_one_key(KC_V)) { register_unicodemap(UC_VINEOPEN); }
+  else if (leader_sequence_one_key(KC_X)) { register_unicodemap(UC_STAR); }
+  else if (leader_sequence_one_key(KC_Z)) { register_unicodemap(UC_STARPINWHEEL); }
+  else if (leader_sequence_one_key(KC_P)) { send_unicode_string(":þ"); }
+  else if (leader_sequence_two_keys(KC_L, KC_N)) { send_unicode_string("( ͡° ͜ʖ ͡°)"); }
+  else if (leader_sequence_two_keys(KC_C, KC_Y)) { send_unicode_string("ಥ_ಥ"); }
+  else if (leader_sequence_two_keys(KC_D, KC_S)) { send_unicode_string("ಠ_ಠ"); }
+  else if (leader_sequence_two_keys(KC_D, KC_K)) { send_unicode_string("¯\\_(ツ)_/¯"); }
+  else if (leader_sequence_two_keys(KC_D, KC_M)) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); }
   else if (leader_sequence_two_keys(KC_SPC, KC_SPC)) { register_unicodemap(UC_INTERPUNCT); }
   else if (leader_sequence_two_keys(KC_COMM, KC_COMM)) { register_unicodemap(UC_GUILEFTSINGLE); }
   else if (leader_sequence_two_keys(KC_DOT, KC_DOT)) { register_unicodemap(UC_GUIRIGHTSINGLE); }
@@ -390,6 +418,29 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_5, KC_8)) { register_unicodemap(UC_FIVEEIGHTHS); }
   else if (leader_sequence_two_keys(KC_7, KC_8)) { register_unicodemap(UC_SEVENEIGHTHS); }
   else if (leader_sequence_two_keys(KC_0, KC_0)) { register_unicodemap(UC_DEGREE); }
+  else if (leader_sequence_two_keys(KC_A, KC_I)) { register_unicodemap(UC_ARROWUP); }
+  else if (leader_sequence_two_keys(KC_A, KC_J)) { register_unicodemap(UC_ARROWLEFT); }
+  else if (leader_sequence_two_keys(KC_A, KC_K)) { register_unicodemap(UC_ARROWDOWN); }
+  else if (leader_sequence_two_keys(KC_A, KC_L)) { register_unicodemap(UC_ARROWRIGHT); }
+  else if (leader_sequence_two_keys(KC_A, KC_H)) { register_unicodemap(UC_ARROWHORIZON); }
+  else if (leader_sequence_two_keys(KC_A, KC_V)) { register_unicodemap(UC_ARROWVERTICAL); }
+  else if (leader_sequence_two_keys(KC_A, KC_F)) { register_unicodemap(UC_ARROWFLETCHED); }
+  else if (leader_sequence_two_keys(KC_A, KC_S)) { register_unicodemap(UC_ARROWSOLID); }
+  else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(UC_BULLETHOLLOW); }
+  else if (leader_sequence_two_keys(KC_C, KC_A)) { register_unicodemap(UC_CENTAMERICAN); }
+  else if (leader_sequence_two_keys(KC_E, KC_E)) { register_unicodemap(UC_EUROEUROPEAN); }
+  else if (leader_sequence_two_keys(KC_P, KC_B)) { register_unicodemap(UC_POUNDBRITISH); }
+  else if (leader_sequence_two_keys(KC_Y, KC_J)) { register_unicodemap(UC_YENJAPANESE); }
+  else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(UC_DAGGERDOUBLE); }
+  else if (leader_sequence_two_keys(KC_F, KC_D)) { register_unicodemap(UC_FLEURDELIS); }
+  else if (leader_sequence_two_keys(KC_F, KC_S)) { register_unicodemap(UC_FLORALSHAMROCK); }
+  else if (leader_sequence_two_keys(KC_F, KC_V)) { register_unicodemap(UC_FLORALVINE); }
+  else if (leader_sequence_two_keys(KC_S, KC_F)) { register_unicodemap(UC_SNOWFLAKEIN); }
+  else if (leader_sequence_two_keys(KC_S, KC_K)) { register_unicodemap(UC_SNOWFLAKEOUT); }
+  else if (leader_sequence_two_keys(KC_T, KC_T)) { register_unicodemap(UC_TWINKLECLOVER); }
+  else if (leader_sequence_two_keys(KC_V, KC_V)) { register_unicodemap(UC_VINECLOSE); }
+  else if (leader_sequence_two_keys(KC_X, KC_X)) { register_unicodemap(UC_STARHOLLOW); }
+  else if (leader_sequence_two_keys(KC_Z, KC_Z)) { register_unicodemap(UC_STAROUTLINE); }
   else if (leader_sequence_two_keys(KC_C, KC_C)) { register_unicodemap(UC_CEDILLACAP); }
   else if (leader_sequence_two_keys(KC_N, KC_N)) { register_unicodemap(UC_NTILDECAP); }
   else if (leader_sequence_two_keys(KC_S, KC_S)) { register_unicodemap(UC_SSCAP); }
@@ -421,12 +472,6 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_O, KC_S)) { register_unicodemap(UC_OSLASH); }
   else if (leader_sequence_two_keys(KC_A, KC_T)) { register_unicodemap(UC_ATILDE); }
   else if (leader_sequence_two_keys(KC_O, KC_T)) { register_unicodemap(UC_OTILDE); }
-  else if (leader_sequence_two_keys(KC_P, KC_P)) { send_unicode_string(":þ"); }
-  else if (leader_sequence_three_keys(KC_L, KC_E, KC_N)) { send_unicode_string("( ͡° ͜ʖ ͡°)"); }
-  else if (leader_sequence_three_keys(KC_C, KC_R, KC_Y)) { send_unicode_string("ಥ_ಥ"); }
-  else if (leader_sequence_three_keys(KC_D, KC_I, KC_S)) { send_unicode_string("ಠ_ಠ"); }
-  else if (leader_sequence_three_keys(KC_I, KC_D, KC_K)) { send_unicode_string("¯\\_(ツ)_/¯"); }
-  else if (leader_sequence_three_keys(KC_I, KC_D, KC_M)) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); }
   else if (leader_sequence_three_keys(KC_A, KC_A, KC_A)) { register_unicodemap(UC_AACUTECAP); }
   else if (leader_sequence_three_keys(KC_E, KC_A, KC_A)) { register_unicodemap(UC_EACUTECAP); }
   else if (leader_sequence_three_keys(KC_I, KC_A, KC_A)) { register_unicodemap(UC_IACUTECAP); }
@@ -495,59 +540,50 @@ void leader_end_user(void) {
   else if (leader_sequence_three_keys(KC_C, KC_O, KC_N)) { register_unicodemap(UC_CON); }
 rgblight_disable_noeeprom(); }
 
-const uint16_t PROGMEM L_SCR_DN[] = {KC_C, LT(2,KC_V), COMBO_END};
-const uint16_t PROGMEM R_SCR_DN[] = {LT(2,KC_M), KC_COMM, COMBO_END};
-const uint16_t PROGMEM L_SCR_UP[] = {KC_E, KC_R, COMBO_END};
-const uint16_t PROGMEM R_SCR_UP[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM L_VOL_DN[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM R_VOL_DN[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM L_VOL_UP[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM R_VOL_UP[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM SCR_LEFT[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM SCR_RIGHT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM WORD_LEFT[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
-const uint16_t PROGMEM WORD_RIGHT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM CTRL_BS[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
+const uint16_t PROGMEM CTRL_DEL[] = {KC_C, LT(2,KC_V), COMBO_END};
+const uint16_t PROGMEM ESC_ENTER[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM SHIFT_TAB[] = {LT(2,KC_M), KC_COMM, COMBO_END};
+const uint16_t PROGMEM LEADER_KEY[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
-const uint16_t PROGMEM TASK_SWITCH[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM FN_LOCK[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
-const uint16_t PROGMEM GAME_LOCK[] = {KC_C, KC_COMM, COMBO_END};
+const uint16_t PROGMEM TASK_SWITCH[] = {LT(2,KC_V), LT(2,KC_M), COMBO_END};
+const uint16_t PROGMEM APP_MENU[] = {KC_C, KC_COMM, COMBO_END};
+const uint16_t PROGMEM SCR_DN[] = {KC_R, KC_U, COMBO_END};
+const uint16_t PROGMEM SCR_UP[] = {KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM SCR_LEFT[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM SCR_RIGHT[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM L_VOL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
+const uint16_t PROGMEM L_VOL_DN[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM R_VOL_UP[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM R_VOL_DN[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-  COMBO(L_SCR_DN, KC_WH_D),  // 0 (an array begins counting at 0, not 1)
-  COMBO(R_SCR_DN, KC_WH_D),  // 1
-  COMBO(L_SCR_UP, KC_WH_U),  // 2 (disabled on game layer 1 below)
-  COMBO(R_SCR_UP, KC_WH_U),  // 3 (disabled on game layer 1 below)
-  COMBO(L_VOL_DN, KC_VOLD),  // 4 (keep four volume up and down for now)
-  COMBO(R_VOL_DN, KC_VOLD),  // 5 (after we solder the rotary encoder)
-  COMBO(L_VOL_UP, KC_VOLU),  // 6 (we delete all bridge combos and)
-  COMBO(R_VOL_UP, KC_VOLU),  // 7 (cases 2 & 3 in the bool below)
-  COMBO(SCR_LEFT, KC_WH_L),  // 8
-  COMBO(SCR_RIGHT, KC_WH_R),  // 9
-  COMBO(WORD_LEFT, C(KC_LEFT)),  // 10
-  COMBO(WORD_RIGHT, C(KC_RGHT)),  // 11
-  COMBO(CAPS_LOCK, KC_CAPS),  // 12 (only these four combos will remain after solder)
-  COMBO(TASK_SWITCH, LSA(KC_ESC)),  // 13 (update config.h COMBO_COUNT to 4)
-  COMBO(FN_LOCK, DF(2)),  // 14 (delete cases 2 & 3 in the bool below)
-  COMBO(GAME_LOCK, DF(1)), };  // 15 (disabled on game layer 1 below)
+  COMBO(CTRL_BS, KC_BSPC),
+  COMBO(CTRL_DEL, KC_DEL),
+  COMBO(ESC_ENTER, KC_ENT),
+  COMBO(SHIFT_TAB, KC_TAB),
+  COMBO(LEADER_KEY, QK_LEAD),
+  COMBO(CAPS_LOCK, KC_CAPS),
+  COMBO(TASK_SWITCH, LSA(KC_ESC)),
+  COMBO(APP_MENU, KC_APP),
+  COMBO(SCR_DN, KC_WH_D),
+  COMBO(SCR_UP, KC_WH_U),
+  COMBO(SCR_LEFT, KC_WH_L),
+  COMBO(SCR_RIGHT, KC_WH_R),
+  COMBO(L_VOL_UP, KC_VOLU),
+  COMBO(L_VOL_DN, KC_VOLD),
+  COMBO(R_VOL_UP, KC_VOLU),
+  COMBO(R_VOL_DN, KC_VOLD), };
 
-bool combo_should_trigger(uint16_t combo_index, combo_t *combo,
-  uint16_t keycode, keyrecord_t *record) {
-  switch (combo_index) {
-    case 2:  // combo_index wants an integer; the place order in the array above, not combo name
-    case 3:  // delete cases 2 & 3 after soldering; keep case 15, but update the index number
-    case 15: if (IS_LAYER_ON(1)) { return false; } break; } return true; }
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) { return !IS_LAYER_ON(1); }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
-    case 2: tap_code16((!clockwise) ? C(KC_LEFT) : C(KC_RGHT)); break;
+    case 2: tap_code((!clockwise) ? KC_WH_L : KC_WH_R); break;
     case 1: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
     case 0:
       if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y);
       } else if (get_mods() & MOD_MASK_SHIFT) { del_mods(MOD_MASK_SHIFT);
         (!clockwise) ? tap_code16(S(KC_F3)) : tap_code(KC_F3);
-      } else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
-        tap_code16((!clockwise) ? C(KC_MINS) : C(KC_EQL));
-      } else if (get_mods() & MOD_MASK_GUI) { del_mods(MOD_MASK_GUI);
-        tap_code((!clockwise) ? KC_WH_L : KC_WH_R);
       } else tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break;
   } return false; }
 
@@ -563,8 +599,9 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
     case RSFT_T(KC_K):
     case RALT_T(KC_L):
     case KC_BSPC:
-    case KC_TAB:
+    case KC_DEL:
     case KC_ENT:
+    case KC_TAB:
     case KC_BTN1:
     case KC_BTN2:
     case KC_BTN3:
@@ -577,8 +614,9 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
   switch(keycode) {
     case KC_BSPC: register_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
-    case KC_TAB: register_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
+    case KC_DEL: register_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
     case KC_ENT: register_code((!shifted) ? KC_ENT : KC_ESC); break;
+    case KC_TAB: register_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
@@ -592,8 +630,9 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
   switch(keycode) {
     case KC_BSPC: unregister_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
-    case KC_TAB: unregister_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
+    case KC_DEL: unregister_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
     case KC_ENT: unregister_code((!shifted) ? KC_ENT : KC_ESC); break;
+    case KC_TAB: unregister_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case KC_BTN1: unregister_code((!shifted) ? KC_BTN1 : KC_NO); break;
     case KC_BTN2: unregister_code((!shifted) ? KC_BTN2 : KC_NO); break;
     case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
@@ -604,11 +643,15 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 
 typedef enum { TD_NONE, TD_1T, TD_1H, TD_2T, TD_2H, } td_state_t;
 typedef struct { bool is_press_action; td_state_t state; } td_tap_t;
-enum { DASH, HOME, END };
+enum { DASH, HOME, END, LEFT, RIGHT, PGUP, PGDN };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case TD(DASH): return 200;
+    case TD(DASH):
+    case TD(LEFT):
+    case TD(RIGHT):
+    case TD(PGUP):
+    case TD(PGDN): return 200;
     case TD(HOME):
     case TD(END): return 320;
     default: return TAPPING_TERM; } }
@@ -681,20 +724,23 @@ void e_reset(tap_dance_state_t *state, void *user_data) {
 tap_dance_action_t tap_dance_actions[] = {
   [DASH] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, d_finished, d_reset),
   [HOME] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, h_finished, h_reset),
-  [END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset), };
+  [END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset),
+  [LEFT] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, C(KC_LEFT)),
+  [RIGHT] = ACTION_TAP_DANCE_DOUBLE(KC_RGHT, C(KC_RGHT)),
+  [PGUP] = ACTION_TAP_DANCE_DOUBLE(KC_UP, KC_PGUP),
+  [PGDN] = ACTION_TAP_DANCE_DOUBLE(KC_DOWN, KC_PGDN) };
 
 uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD + 2); defer_exec(7500, callback, NULL); }
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5); defer_exec(5000, callback, NULL); }
 
 bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock) {
   caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL + 5); } return true; }
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 4); } return true; }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
   switch (get_highest_layer(state)) {
-  case 2: rgblight_enable_noeeprom(); rgblight_reload_from_eeprom(); autoshift_enable(); break;
-  case 1: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL + 5);
+  case 1: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 2);
     autoshift_disable(); break;
   case 0: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
     autoshift_enable(); break; } return state; }
@@ -708,8 +754,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case DF(1): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
     case DF(0): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
-    case LT(0,KC_DEL): if (!record->tap.count && record->event.pressed)
-      { leader_start(); return false; } return true;
     case CURLY:
       static uint16_t TIMER;
       if (record->event.pressed) { TIMER = timer_read(); }
@@ -724,15 +768,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     default: if (record->event.pressed) { recent = keycode; } return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
-    KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
-    CURLY, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_ENT,
-    LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, LT(0,KC_DEL)),
+  [0] = LAYOUT_ortho_4x12(TD(HOME), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(END),
+    TD(LEFT), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, TD(RIGHT),
+    CURLY, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), TD(PGUP),
+    LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, TD(PGDN)),
   [1] = LAYOUT_ortho_4x12(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
-    KC_BSPC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TAB,
+    KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
     KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
     LT(2,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(0)),
-  [2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
-    KC_LBRC, KC_APP, A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_PGUP, TD(HOME), KC_UP, TD(END), G(KC_PSCR), KC_RBRC,
-    KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_COLN, KC_BSLS,
-    UG_TOGG, UG_PREV, UG_SATD, UG_HUED, C(KC_PGUP), C(KC_PPLS), RCS(KC_ESC), C(KC_PGDN), UG_HUEU, UG_SATU, UG_NEXT, DF(0)) };
+  [2] = LAYOUT_ortho_4x12(KC_EQL, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, TD(DASH),
+    KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
+    KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
+    UG_TOGG, C(KC_EQL), UG_SATD, UG_HUED, C(KC_PGUP), KC_F11, KC_F12, C(KC_PGDN), UG_HUEU, UG_SATU, C(KC_MINS), DF(1)) };
