@@ -15,9 +15,9 @@ Base|Combos||
 Dance|Dash|Quote|Home End|Up Down|Left Right
 ---|---|---|---|---|---
 **Tap**|Hyphen|Right Single|Jump line start or end|Line|Letter
-**Hold**|Underscore|Dialog|**+** Sel line start or end
+**Hold**|Underscore|Dialog|**+** Select line start or end
 **Tap-Tap**|Em Dash|Left Single|**^** Jump file start or end|Page|**^** Word
-**Tap-Hold**|En Dash||**+^** Sel file start or end
+**Tap-Hold**|En Dash||**+^** Select file start or end
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
