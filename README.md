@@ -30,7 +30,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 Custom|Auto|Shift
 ---|---|---
 Ctrl|Backspace|Erase Word
-Ctrl|Delete|Reverse Erase Word
+Ctrl|Delete|Forward Erase Word
 Shift|Tab|Navigate Backwards
 Escape|Enter
 
