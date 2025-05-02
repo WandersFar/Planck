@@ -12,7 +12,7 @@ Base|Combos||
 4|Essential|Backspace, Delete, Tab, Enter/Escape
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Marvel.png)
-Dance|Dash|Quote|Home & End|Up & Down|Left & Right
+Dance|Dash|Quote|Home End|Up Down|Left Right
 ---|---|---|---|---|---
 **Tap**|Hyphen|Right Single|Jump line start or end|Line|Letter
 **Hold**|Underscore|Dialog|**+** Sel line start or end
