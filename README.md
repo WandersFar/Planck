@@ -14,10 +14,10 @@ Base|Combos||
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End|Up & Down|Left & Right
 ---|---|---|---|---|---
-**Tap**|Hyphen|Right Single|Jump line beg/end|Up/Down|Left/Right
-**Hold**|Underscore|Dialog|**+** Select line beg/end
-**Tap-Tap**|Em Dash|Left Single|**^** Jump file beg/end|PgUp/PgDn|Ctrl Left/Right
-**Tap-Hold**|En Dash||**+^** Select file beg/end
+**Tap**|Hyphen|Right Single|Jump line start/end|Up/Down|Left/Right
+**Hold**|Underscore|Dialog|**+** Sel line start/end
+**Tap-Tap**|Em Dash|Left Single|**^** Jump file start/end|PgUp/PgDn|Ctrl Left/Right
+**Tap-Hold**|En Dash||**+^** Sel file start/end
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
