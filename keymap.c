@@ -645,17 +645,6 @@ typedef enum { TD_NONE, TD_1T, TD_1H, TD_2T, TD_2H, } td_state_t;
 typedef struct { bool is_press_action; td_state_t state; } td_tap_t;
 enum { DASH, HOME, END, LEFT, RIGHT, PGUP, PGDN };
 
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case TD(DASH):
-    case TD(LEFT):
-    case TD(RIGHT):
-    case TD(PGUP):
-    case TD(PGDN):
-    case TD(HOME):
-    case TD(END): return 200;
-    default: return TAPPING_TERM; } }
-
 td_state_t cur_dance(tap_dance_state_t *state) {
   if (state->count == 1) {
     if (state->pressed) return TD_1H;
@@ -759,7 +748,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       static uint16_t TIMER;
       if (record->event.pressed) { TIMER = timer_read(); }
       else {
-        if (timer_elapsed(TIMER) > TAPPING_TERM) {
+        if (timer_elapsed(TIMER) > AUTO_SHIFT_TIMEOUT) {
           if(state == OPEN) { register_unicodemap(UC_LDOUBLE); state = CLOSE; }
           else { register_unicodemap(UC_RDOUBLE); state = OPEN; }
         } else {
