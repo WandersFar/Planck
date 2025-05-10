@@ -574,18 +574,16 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(R_VOL_UP, KC_VOLU),
   COMBO(R_VOL_DN, KC_VOLD), };
 
-bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) { return !IS_LAYER_ON(1); }
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record)
+  { return !IS_LAYER_ON(1); }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
     case 2: tap_code((!clockwise) ? KC_WH_L : KC_WH_R); break;
     case 1: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
-    case 0:
-      if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y);
-      } else if (get_mods() & MOD_MASK_SHIFT) { del_mods(MOD_MASK_SHIFT);
-        (!clockwise) ? tap_code16(S(KC_F3)) : tap_code(KC_F3);
-      } else tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break;
-  } return false; }
+    case 0: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
+      else if (get_mods() & MOD_MASK_SHIFT) { (!clockwise) ? tap_code(KC_F3) : tap_code16(S(KC_F3));
+      } else tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break; } return false; }
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
@@ -607,38 +605,28 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
     case KC_BTN3:
     case KC_DQT:
     case KC_TILD:
-    case KC_COLN:
-      return true;
-    default: return false; } }
+    case KC_COLN: return true; default: return false; } }
 
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
   switch(keycode) {
-    case KC_BSPC: register_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
-    case KC_DEL: register_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
-    case KC_ENT: register_code((!shifted) ? KC_ENT : KC_ESC); break;
-    case KC_TAB: register_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
+    case KC_BSPC: tap_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
+    case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
+    case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
+    case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
-    case KC_DQT: register_code16((!shifted) ? KC_DQT : KC_QUOT); break;
-    case KC_TILD: register_code16((!shifted) ? KC_TILD : KC_GRV); break;
-    case KC_COLN: register_code16((!shifted) ? KC_COLN : KC_SCLN); break;
-    default:
-      if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
+    case KC_DQT: tap_code16((!shifted) ? KC_DQT : KC_QUOT); break;
+    case KC_TILD: tap_code16((!shifted) ? KC_TILD : KC_GRV); break;
+    case KC_COLN: tap_code16((!shifted) ? KC_COLN : KC_SCLN); break;
+    default: if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
       register_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); } }
 
 void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
   switch(keycode) {
-    case KC_BSPC: unregister_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
-    case KC_DEL: unregister_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
-    case KC_ENT: unregister_code((!shifted) ? KC_ENT : KC_ESC); break;
-    case KC_TAB: unregister_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case KC_BTN1: unregister_code((!shifted) ? KC_BTN1 : KC_NO); break;
     case KC_BTN2: unregister_code((!shifted) ? KC_BTN2 : KC_NO); break;
     case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
-    case KC_DQT: unregister_code16((!shifted) ? KC_DQT : KC_QUOT); break;
-    case KC_TILD: unregister_code16((!shifted) ? KC_TILD : KC_GRV); break;
-    case KC_COLN: unregister_code16((!shifted) ? KC_COLN : KC_SCLN); break;
     default: unregister_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); clear_weak_mods(); } }
 
 typedef enum { TD_NONE, TD_1T, TD_1H, TD_2T, TD_2H, } td_state_t;
@@ -656,64 +644,40 @@ static td_tap_t dtap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t htap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t etap_state = { .is_press_action = true, .state = TD_NONE };
 
-void d_finished(tap_dance_state_t *state, void *user_data) {
+void d_fn(tap_dance_state_t *state, void *user_data) {
   dtap_state.state = cur_dance(state);
   switch (dtap_state.state) {
-    case TD_1T: register_code(KC_MINS); break;
-    case TD_1H: register_code16(S(KC_MINS)); break;
+    case TD_1T: tap_code(KC_MINS); break;
+    case TD_1H: tap_code16(S(KC_MINS)); break;
     case TD_2T: register_unicodemap(UC_DASHEM); break;
     case TD_2H: register_unicodemap(UC_DASHEN); break;
-    case TD_NONE: break; } }
-
-void d_reset(tap_dance_state_t *state, void *user_data) {
-  switch (dtap_state.state) {
-    case TD_1T: unregister_code(KC_MINS); break;
-    case TD_1H: unregister_code16(S(KC_MINS)); break;
-    case TD_2T: break;
-    case TD_2H: break;
     case TD_NONE: break; }
   dtap_state.state = TD_NONE; }
 
-void h_finished(tap_dance_state_t *state, void *user_data) {
+void h_fn(tap_dance_state_t *state, void *user_data) {
   htap_state.state = cur_dance(state);
   switch (htap_state.state) {
-    case TD_1T: register_code(KC_HOME); break;
-    case TD_1H: register_code16(S(KC_HOME)); break;
-    case TD_2T: register_code16(C(KC_HOME)); break;
-    case TD_2H: register_code16(RCS(KC_HOME)); break;
-    case TD_NONE: break; } }
-
-void h_reset(tap_dance_state_t *state, void *user_data) {
-  switch (htap_state.state) {
-    case TD_1T: unregister_code(KC_HOME); break;
-    case TD_1H: unregister_code16(S(KC_HOME)); break;
-    case TD_2T: unregister_code16(C(KC_HOME)); break;
-    case TD_2H: unregister_code16(RCS(KC_HOME)); break;
+    case TD_1T: tap_code(KC_HOME); break;
+    case TD_1H: tap_code16(S(KC_HOME)); break;
+    case TD_2T: tap_code16(C(KC_HOME)); break;
+    case TD_2H: tap_code16(RCS(KC_HOME)); break;
     case TD_NONE: break; }
   htap_state.state = TD_NONE; }
 
-void e_finished(tap_dance_state_t *state, void *user_data) {
+void e_fn(tap_dance_state_t *state, void *user_data) {
   etap_state.state = cur_dance(state);
   switch (etap_state.state) {
-    case TD_1T: register_code(KC_END); break;
-    case TD_1H: register_code16(S(KC_END)); break;
-    case TD_2T: register_code16(C(KC_END)); break;
-    case TD_2H: register_code16(RCS(KC_END)); break;
-    case TD_NONE: break; } }
-
-void e_reset(tap_dance_state_t *state, void *user_data) {
-  switch (etap_state.state) {
-    case TD_1T: unregister_code(KC_END); break;
-    case TD_1H: unregister_code16(S(KC_END)); break;
-    case TD_2T: unregister_code16(C(KC_END)); break;
-    case TD_2H: unregister_code16(RCS(KC_END)); break;
+    case TD_1T: tap_code(KC_END); break;
+    case TD_1H: tap_code16(S(KC_END)); break;
+    case TD_2T: tap_code16(C(KC_END)); break;
+    case TD_2H: tap_code16(RCS(KC_END)); break;
     case TD_NONE: break; }
   etap_state.state = TD_NONE; }
 
 tap_dance_action_t tap_dance_actions[] = {
-  [DASH] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, d_finished, d_reset),
-  [HOME] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, h_finished, h_reset),
-  [END] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, e_finished, e_reset),
+  [DASH] = ACTION_TAP_DANCE_FN(d_fn),
+  [HOME] = ACTION_TAP_DANCE_FN(h_fn),
+  [END] = ACTION_TAP_DANCE_FN(e_fn),
   [LEFT] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, C(KC_LEFT)),
   [RIGHT] = ACTION_TAP_DANCE_DOUBLE(KC_RGHT, C(KC_RGHT)),
   [PGUP] = ACTION_TAP_DANCE_DOUBLE(KC_UP, KC_PGUP),
@@ -723,8 +687,8 @@ uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeepr
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5); defer_exec(5000, callback, NULL); }
 
-bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock) {
-  caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
+bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock)
+  { caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 4); } return true; }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
@@ -734,33 +698,27 @@ layer_state_t default_layer_state_set_user(layer_state_t state) {
   case 0: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
     autoshift_enable(); break; } return state; }
 
-enum unicode_custom { CURLY = SAFE_RANGE };
-enum states { OPEN, CLOSE };
-enum states state = OPEN;
-static uint16_t recent = KC_NO;
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  if (record->event.pressed)
+    { static bool begin = true; static bool tapped = false; static uint16_t tap_timer = 0;
+    if (keycode == LT(0,KC_0)) { if (!record->tap.count && record->event.pressed)
+        { if (begin) { register_unicodemap(UC_LDOUBLE); begin = false; }
+        else { register_unicodemap(UC_RDOUBLE); begin = true; } }
+      else if (tapped && !timer_expired(record->event.time, tap_timer))
+        { tap_code(KC_BSPC); register_unicodemap(UC_LSINGLE); }
+      else { register_unicodemap(UC_RSINGLE);
+        tapped = true; tap_timer = record->event.time + TAPPING_TERM; } return false; }
+    else { tapped = false; } }
   switch (keycode) {
     case DF(1): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
     case LT(2,KC_0): if (record->tap.count && record->event.pressed)
       { set_single_default_layer(0); defer_exec(500, callback, NULL); } return true;
-    case CURLY:
-      static uint16_t TIMER;
-      if (record->event.pressed) { TIMER = timer_read(); }
-      else {
-        if (timer_elapsed(TIMER) > AUTO_SHIFT_TIMEOUT) {
-          if(state == OPEN) { register_unicodemap(UC_LDOUBLE); state = CLOSE; }
-          else { register_unicodemap(UC_RDOUBLE); state = OPEN; }
-        } else {
-          if (recent == UC_RSINGLE) { tap_code(KC_BSPC); register_unicodemap(UC_LSINGLE); recent = KC_NO; }
-          else { register_unicodemap(UC_RSINGLE); recent = UC_RSINGLE; } }
-      } return false;
-    default: if (record->event.pressed) { recent = keycode; } return true; } };
+    default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ortho_4x12(TD(HOME), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(END),
     TD(LEFT), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, TD(RIGHT),
-    CURLY, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), TD(PGUP),
+    LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), TD(PGUP),
     LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, TD(PGDN)),
   [1] = LAYOUT_ortho_4x12(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
