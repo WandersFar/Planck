@@ -7,7 +7,7 @@ Three|Layers||
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
-8|Bridge|4-Way Scrolling, Volume
+8|Bridge|4-Way Scrolling, Symmetrical Volume
 4|Special|Leader, Caps Lock, App Switch, Menu
 4|Essential|Backspace, Delete, Tab, Enter & Escape
 
