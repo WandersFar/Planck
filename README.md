@@ -8,7 +8,7 @@ Three|Layers||
 Base|Combos||
 ---|---|---
 8|Bridge|Scroll, Volume
-4|Special|Leader, Caps, Switch, Menu
+4|Special|Leader, Caps Lock, App Switch, Menu
 4|Essential|Backspace, Delete, Tab, Enter & Escape
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/MT3%20Marvel.png)
