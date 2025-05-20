@@ -369,6 +369,8 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_M, KC_S)) { set_unicode_typing_mode(UCTM_SCRIPT); }
   else if (leader_sequence_two_keys(KC_M, KC_D)) { set_unicode_typing_mode(UCTM_DOUBLE_STRUCK); }
   else if (leader_sequence_two_keys(KC_M, KC_F)) { set_unicode_typing_mode(UCTM_FRAKTUR); }
+  else if (leader_sequence_two_keys(KC_M, KC_K)) { set_unicode_typing_mode(UCTM_FRAKTUR_BOLD); }
+  else if (leader_sequence_two_keys(KC_M, KC_L)) { set_unicode_typing_mode(UCTM_SCRIPT_BOLD); }
   else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(UC_ELLIPSIS); }
   else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(UC_GUILLEMETLEFT); }
   else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(UC_GUILLEMETRIGHT); }
