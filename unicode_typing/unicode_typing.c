@@ -130,7 +130,7 @@ DEFINE_UNICODE_LUT_TRANSLATOR(unicode_lut_translator_aussie,
                               'n',    // u
                               0x028C, // v
                               0x028D, // w
-                              'x', // x
+                              'x',    // x
                               0x028E, // y
                               'z',    // z
                               0x0269, // 1
