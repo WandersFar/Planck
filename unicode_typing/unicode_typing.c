@@ -145,13 +145,86 @@ DEFINE_UNICODE_LUT_TRANSLATOR(unicode_lut_translator_aussie,
                               '0'     // 0
 );
 
-static bool process_record_aussie(uint16_t keycode, keyrecord_t *record) {
-#ifdef NO_ACTION_ONESHOT
-    uint8_t temp_mods = get_mods();
-#else  // NO_ACTION_ONESHOT
-    uint8_t temp_mods = get_mods() | get_oneshot_mods();
-#endif // NO_ACTION_ONESHOT
+DEFINE_UNICODE_LUT_TRANSLATOR(unicode_lut_translator_fraktur_bold,
+                              0x1D586, // 𝖆
+                              0x1D587, // 𝖇
+                              0x1D588, // 𝖈
+                              0x1D589, // 𝖉
+                              0x1D58A, // 𝖊
+                              0x1D58B, // 𝖋
+                              0x1D58C, // 𝖌
+                              0x1D58D, // 𝖍
+                              0x1D58E, // 𝖎
+                              0x1D58F, // 𝖏
+                              0x1D590, // 𝖐
+                              0x1D591, // 𝖑
+                              0x1D592, // 𝖒
+                              0x1D593, // 𝖓
+                              0x1D594, // 𝖔
+                              0x1D595, // 𝖕
+                              0x1D596, // 𝖖
+                              0x1D597, // 𝖗
+                              0x1D598, // 𝖘
+                              0x1D599, // 𝖙
+                              0x1D59A, // 𝖚
+                              0x1D59B, // 𝖛
+                              0x1D59C, // 𝖜
+                              0x1D59D, // 𝖝
+                              0x1D59E, // 𝖞
+                              0x1D59F, // 𝖟
+                              '1',    // 1
+                              '2',    // 2
+                              '3',    // 3
+                              '4',    // 4
+                              '5',    // 5
+                              '6',    // 6
+                              '7',    // 7
+                              '8',    // 8
+                              '9',    // 9
+                              '0'     // 0
+);
 
+DEFINE_UNICODE_LUT_TRANSLATOR(unicode_lut_translator_script_bold,
+                              0x1D4EA, // 𝓪
+                              0x1D4EB, // 𝓫
+                              0x1D4EC, // 𝓬
+                              0x1D4ED, // 𝓭
+                              0x1D4EE, // 𝓮
+                              0x1D4EF, // 𝓯
+                              0x1D4F0, // 𝓰
+                              0x1D4F1, // 𝓱
+                              0x1D4F2, // 𝓲
+                              0x1D4F3, // 𝓳
+                              0x1D4F4, // 𝓴
+                              0x1D4F5, // 𝓵
+                              0x1D4F6, // 𝓶
+                              0x1D4F7, // 𝓷
+                              0x1D4F8, // 𝓸
+                              0x1D4F9, // 𝓹
+                              0x1D4FA, // 𝓺
+                              0x1D4FB, // 𝓻
+                              0x1D4FC, // 𝓼
+                              0x1D4FD, // 𝓽
+                              0x1D4FE, // 𝓾
+                              0x1D4FF, // 𝓿
+                              0x1D500, // 𝔀
+                              0x1D501, // 𝔁
+                              0x1D502, // 𝔂
+                              0x1D503, // 𝔃
+                              '1',    // 1
+                              '2',    // 2
+                              '3',    // 3
+                              '4',    // 4
+                              '5',    // 5
+                              '6',    // 6
+                              '7',    // 7
+                              '8',    // 8
+                              '9',    // 9
+                              '0'     // 0
+);
+
+static bool process_record_aussie(uint16_t keycode, keyrecord_t *record) {
+    uint8_t temp_mods = get_mods();
     bool is_shifted = temp_mods & MOD_MASK_SHIFT;
     if ((KC_A <= keycode) && (keycode <= KC_0)) {
         if (record->event.pressed) {

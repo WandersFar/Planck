@@ -11,6 +11,8 @@ enum unicode_typing_modes {
     UCTM_SCRIPT,
     UCTM_DOUBLE_STRUCK,
     UCTM_FRAKTUR,
+    UCTM_FRAKTUR_BOLD,
+    UCTM_SCRIPT_BOLD,
     UNCODES_MODE_END,
 };
 
