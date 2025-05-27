@@ -1,3 +1,1 @@
-{
-    "modules": ["qmk/unicode_typing", "qmk/tap_flow"]
-}
+{ "modules": ["qmk/unicode_typing"] }
