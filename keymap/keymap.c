@@ -1,5 +1,4 @@
 #include QMK_KEYBOARD_H
-#include "unicode_typing.h"
 
 enum unicode_names {
   UC_MER,
@@ -363,14 +362,6 @@ void leader_start_user(void) { rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
 void leader_end_user(void) {
   if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
-  else if (leader_sequence_one_key(KC_TAB)) { set_unicode_typing_mode(UCTM_NO_MODE); }
-  else if (leader_sequence_two_keys(KC_O, KC_Z)) { set_unicode_typing_mode(UCTM_AUSSIE); }
-  else if (leader_sequence_two_keys(KC_M, KC_A)) { set_unicode_typing_mode(UCTM_AUSSIE); }
-  else if (leader_sequence_two_keys(KC_M, KC_S)) { set_unicode_typing_mode(UCTM_SCRIPT); }
-  else if (leader_sequence_two_keys(KC_M, KC_D)) { set_unicode_typing_mode(UCTM_DOUBLE_STRUCK); }
-  else if (leader_sequence_two_keys(KC_M, KC_F)) { set_unicode_typing_mode(UCTM_FRAKTUR); }
-  else if (leader_sequence_two_keys(KC_M, KC_K)) { set_unicode_typing_mode(UCTM_FRAKTUR_BOLD); }
-  else if (leader_sequence_two_keys(KC_M, KC_L)) { set_unicode_typing_mode(UCTM_SCRIPT_BOLD); }
   else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(UC_ELLIPSIS); }
   else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(UC_GUILLEMETLEFT); }
   else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(UC_GUILLEMETRIGHT); }
@@ -643,11 +634,8 @@ typedef struct { bool is_press_action; td_state_t state; } td_tap_t;
 enum { DASH, HOME, END, LEFT, RIGHT, PGUP, PGDN };
 
 td_state_t cur_dance(tap_dance_state_t *state) {
-  if (state->count == 1) {
-    if (state->pressed) return TD_1H;
-    else return TD_1T; }
-  else if (state->pressed) return TD_2H;
-  else return TD_2T; }
+  if (state->count == 1) { if (state->pressed) return TD_1H; else return TD_1T; }
+  else if (state->pressed) return TD_2H; else return TD_2T; }
 
 static td_tap_t dtap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t htap_state = { .is_press_action = true, .state = TD_NONE };
