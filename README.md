@@ -1,6 +1,6 @@
 Three|Layers||
 ---|---|---
-0|Base|alphas
+0|Base|alphas, numbers, arrows
 1|Game|disable Auto Shift
 2|Fn|F-keys, symbols, mouse, nav
 
