@@ -582,7 +582,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     case 2: tap_code((!clockwise) ? KC_WH_L : KC_WH_R); break;
     case 1: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
     case 0: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
-      else if (get_mods() & MOD_MASK_SHIFT) { (!clockwise) ? tap_code(KC_F3) : tap_code16(S(KC_F3));
+      else if (get_mods() & MOD_MASK_SHIFT) { (!clockwise) ? tap_code(KC_F3) : tap_code16(S(KC_F3)); }
+      else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
+        (!clockwise) ? tap_code16(C(KC_MINS)) : tap_code16(C(KC_EQL));
       } else tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break; } return false; }
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
@@ -631,7 +633,7 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 
 typedef enum { TD_NONE, TD_1T, TD_1H, TD_2T, TD_2H, } td_state_t;
 typedef struct { bool is_press_action; td_state_t state; } td_tap_t;
-enum { DASH, HOME, END, LEFT, RIGHT, PGUP, PGDN };
+enum { DASH, HOME, END };
 
 td_state_t cur_dance(tap_dance_state_t *state) {
   if (state->count == 1) { if (state->pressed) return TD_1H; else return TD_1T; }
@@ -674,11 +676,7 @@ void e_fn(tap_dance_state_t *state, void *user_data) {
 tap_dance_action_t tap_dance_actions[] = {
   [DASH] = ACTION_TAP_DANCE_FN(d_fn),
   [HOME] = ACTION_TAP_DANCE_FN(h_fn),
-  [END] = ACTION_TAP_DANCE_FN(e_fn),
-  [LEFT] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, C(KC_LEFT)),
-  [RIGHT] = ACTION_TAP_DANCE_DOUBLE(KC_RGHT, C(KC_RGHT)),
-  [PGUP] = ACTION_TAP_DANCE_DOUBLE(KC_UP, KC_PGUP),
-  [PGDN] = ACTION_TAP_DANCE_DOUBLE(KC_DOWN, KC_PGDN) };
+  [END] = ACTION_TAP_DANCE_FN(e_fn) };
 
 uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
@@ -713,15 +711,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT_ortho_4x12(TD(HOME), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(END),
-    TD(LEFT), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, TD(RIGHT),
-    LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), TD(PGUP),
-    LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, TD(PGDN)),
+  [0] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
+    KC_LEFT, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RGHT,
+    LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
+    LT(1,KC_MUTE), KC_Z, KC_X, KC_C, LT(2,KC_V), KC_B, KC_N, LT(2,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
   [1] = LAYOUT_ortho_4x12(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
     KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
     LT(2,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, LT(2,KC_0)),
-  [2] = LAYOUT_ortho_4x12(KC_EQL, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, TD(DASH),
+  [2] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
-    UG_TOGG, C(KC_EQL), UG_SATD, UG_HUED, C(KC_PGUP), KC_F11, KC_F12, C(KC_PGDN), UG_HUEU, UG_SATU, C(KC_MINS), DF(1)) };
+    UG_TOGG, KC_PGUP, TD(HOME), C(KC_LEFT), C(KC_PGUP), UG_HUEU, UG_SATU, C(KC_PGDN), C(KC_RGHT), TD(END), KC_PGDN, DF(1)) };
