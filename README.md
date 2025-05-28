@@ -46,6 +46,7 @@ Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
+Alt|Zoom|Ctrl =/-
 Fn|Horizontal||Light
 Base|Vertical||Mute
 Game|Volume||Mute
