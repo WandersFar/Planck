@@ -436,7 +436,7 @@ void leader_start_user(void) { rgblight_enable_noeeprom();
   rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT); }
 void leader_end_user(void) {
   if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
-  else if (leader_sequence_two_keys(KC_O, KC_Z)) { set_single_default_layer(AUSSIE); }
+  else if (leader_sequence_two_keys(KC_O, KC_Z)) { set_single_default_layer(AUSSIE); return; }
   else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(ELLIPSIS); }
   else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(GUILLEMETLEFT); }
   else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(GUILLEMETRIGHT); }

@@ -152,7 +152,7 @@ layer_state_t default_layer_state_set_user(layer_state_t state) { switch (get_hi
     autoshift_disable(); break;
   case BASE: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
     autoshift_enable(); break;
-  default: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5);
+  default: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 1);
     autoshift_enable(); break; } return state; }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
