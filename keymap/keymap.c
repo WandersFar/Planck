@@ -145,14 +145,14 @@ void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
 
 bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock)
   { caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 4); } return true; }
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5); } return true; }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) { switch (get_highest_layer(state)) {
   case GAME: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 2);
     autoshift_disable(); break;
   case BASE: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
     autoshift_enable(); break;
-  default: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 1);
+  default: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 2);
     autoshift_enable(); break; } return state; }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
