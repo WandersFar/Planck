@@ -38,9 +38,9 @@ Escape|Enter
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
 ---|---
-**VM**|Activate mouse. Only key that is held.
-**RTG/UYH**|Long-press a mouse button to click-hold.
-**ESDF/IJKL**|Drag pointer around.
+**V or M**|Activate mouse. Only key that is held.
+**RTG or UYH**|Long-press a mouse button to click-hold.
+**ESDF or IJKL**|Drag pointer around.
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
