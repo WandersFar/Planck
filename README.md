@@ -40,7 +40,7 @@ Keys|Auto Shift Mouse Dragging
 ---|---
 **V or M**|Activate mouse. Only key that is held.
 **RTG or UYH**|Long-press a mouse button to click-hold.
-**ESDF or IJKL**|Drag pointer around.
+**ESDF or IJKL**|Drag pointer around. Tap mouse button again to release.
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
