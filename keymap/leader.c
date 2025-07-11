@@ -1,6 +1,12 @@
 enum layer_names { BASE, AUSSIE, GAME, FN };
 
 enum unicode_names {
+  Z1,
+  Z2,
+  Z3,
+  Z4,
+  Z5,
+  Z7,
   ZA,
   ZC,
   ZE,
@@ -217,6 +223,12 @@ enum unicode_names {
 };
 
 const uint32_t unicode_map[] PROGMEM = {
+  [Z1] = 0x196,  // Ɩ
+  [Z2] = 0x1614,  // ᘔ
+  [Z3] = 0x190,  // Ɛ
+  [Z4] = 0x4BA,  // Һ
+  [Z5] = 0x3DB,  // ϛ
+  [Z7] = 0x3125,  // ㄥ
   [ZA] = 0x250,  // ɐ
   [ZC] = 0x254,  // ɔ
   [ZE] = 0x1DD,  // ǝ

@@ -174,6 +174,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case LT(1,KC_SLSH): if (record->tap.count && record->event.pressed) { register_unicodemap(QUESTION); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBANG); tap_code(KC_LEFT); } return false;
     case LT(1,KC_MINS): if (record->tap.count && record->event.pressed) { tap_code(KC_MINS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(DASHEM); tap_code(KC_LEFT); } return false;
     case LT(1,KC_QUOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZQS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZQD); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_1): if (record->tap.count && record->event.pressed) { register_unicodemap(Z1); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(EXCLAIM); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_2): if (record->tap.count && record->event.pressed) { register_unicodemap(Z2); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_2)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_3): if (record->tap.count && record->event.pressed) { register_unicodemap(Z3); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_3)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_4): if (record->tap.count && record->event.pressed) { register_unicodemap(Z4); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_4)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_5): if (record->tap.count && record->event.pressed) { register_unicodemap(Z5); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_5)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_6): if (record->tap.count && record->event.pressed) { tap_code(KC_9); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_6)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_7): if (record->tap.count && record->event.pressed) { register_unicodemap(Z7); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAMP); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_8): if (record->tap.count && record->event.pressed) { tap_code(KC_8); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_8)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_9): if (record->tap.count && record->event.pressed) { tap_code(KC_6); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_0)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_0): if (record->tap.count && record->event.pressed) { tap_code(KC_0); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_9)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_A): if (record->tap.count && record->event.pressed) { register_unicodemap(ZA); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAA); tap_code(KC_LEFT); } return false;
     case LT(1,KC_B): if (record->tap.count && record->event.pressed) { tap_code(KC_Q); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBB); tap_code(KC_LEFT); } return false;
     case LT(1,KC_C): if (record->tap.count && record->event.pressed) { register_unicodemap(ZC); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZCC); tap_code(KC_LEFT); } return false;
@@ -215,7 +225,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LEFT, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RGHT,
     LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
     LT(GAME,KC_MUTE), KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
-  [AUSSIE] = LAYOUT_ortho_4x12(DF(BASE), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(1,KC_MINS),
+  [AUSSIE] = LAYOUT_ortho_4x12(DF(BASE), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_MINS),
     KC_LEFT, LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), KC_RGHT,
     LT(1,KC_QUOT), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), LT(FN,KC_SPC), KC_UP,
     LT(GAME,KC_MUTE), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), KC_DOWN),
