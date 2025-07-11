@@ -1,7 +1,7 @@
 Four|Layers
 ---|---
 Base|alphas, numbers, arrows
-Aussie|upside-down text
+Aussie|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Game|disable Auto Shift
 Fn|F-keys, symbols, mouse, nav
 
