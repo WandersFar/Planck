@@ -178,7 +178,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case LT(1,KC_2): if (record->tap.count && record->event.pressed) { register_unicodemap(Z2); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_2)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_3): if (record->tap.count && record->event.pressed) { register_unicodemap(Z3); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_3)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_4): if (record->tap.count && record->event.pressed) { register_unicodemap(Z4); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_4)); tap_code(KC_LEFT); } return false;
-    case LT(1,KC_5): if (record->tap.count && record->event.pressed) { register_unicodemap(Z5); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_5)); tap_code(KC_LEFT); } return false;
+    case LT(1,KC_5): if (record->tap.count && record->event.pressed) { tap_code(KC_5); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_5)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_6): if (record->tap.count && record->event.pressed) { tap_code(KC_9); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_6)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_7): if (record->tap.count && record->event.pressed) { register_unicodemap(Z7); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAMP); tap_code(KC_LEFT); } return false;
     case LT(1,KC_8): if (record->tap.count && record->event.pressed) { tap_code(KC_8); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_8)); tap_code(KC_LEFT); } return false;
