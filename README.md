@@ -11,6 +11,7 @@ Base|Combos||
 8|Bridge|4-Way Scrolling, Symmetrical Volume
 4|Special|Leader, Caps Lock, App Switch, Menu
 4|Essential|Backspace, Delete, Tab, Enter & Escape
+2|Tabs|Ctrl Page Up & Down
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
@@ -48,7 +49,8 @@ Rotary|Spin|Hotkeys|Tap
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
-Fn|Horizontal||Light
+Gui|Horizontal||Light
+Fn|Tabs||Ctrl PgUp/PgDn
 Base|Vertical||Mute
 Game|Volume||Mute
 
