@@ -13,9 +13,11 @@ const uint16_t PROGMEM SCR_DN[] = {KC_R, KC_U, COMBO_END};
 const uint16_t PROGMEM SCR_UP[] = {KC_E, KC_I, COMBO_END};
 const uint16_t PROGMEM SCR_LEFT[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM SCR_RIGHT[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM L_VOL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
+const uint16_t PROGMEM L_VOL_UP[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM TAB_PREV[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM L_VOL_DN[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM R_VOL_UP[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM R_VOL_UP[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM TAB_NEXT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM R_VOL_DN[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(CTRL_BS, KC_BSPC),
@@ -31,8 +33,10 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SCR_LEFT, KC_WH_L),
   COMBO(SCR_RIGHT, KC_WH_R),
   COMBO(L_VOL_UP, KC_VOLU),
+  COMBO(TAB_PREV, C(KC_PGUP)),
   COMBO(L_VOL_DN, KC_VOLD),
   COMBO(R_VOL_UP, KC_VOLU),
+  COMBO(TAB_NEXT, C(KC_PGDN)),
   COMBO(R_VOL_DN, KC_VOLD), };
 
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record)
@@ -40,12 +44,14 @@ bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
-    case FN: tap_code((!clockwise) ? KC_WH_L : KC_WH_R); break;
+    case FN: tap_code16((!clockwise) ? C(KC_PGUP) : C(KC_PGDN)); break;
     case GAME: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
     case BASE: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
-      else if (get_mods() & MOD_MASK_SHIFT) { (!clockwise) ? tap_code(KC_F3) : tap_code16(S(KC_F3)); }
+      else if (get_mods() & MOD_MASK_SHIFT) { tap_code16((!clockwise) ? KC_F3 : S(KC_F3)); }
       else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
-        (!clockwise) ? tap_code16(C(KC_MINS)) : tap_code16(C(KC_EQL)); }
+        tap_code16((!clockwise) ? C(KC_MINS) : C(KC_EQL)); }
+      else if (get_mods() & MOD_MASK_GUI) { del_mods(MOD_MASK_GUI);
+        tap_code((!clockwise) ? KC_WH_L : KC_WH_R); }
     default: tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break; } return false; }
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
@@ -235,4 +241,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [FN] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
-    UG_TOGG, KC_PGUP, UG_SATU, C(KC_PGUP), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), C(KC_PGDN), UG_HUEU, KC_PGDN, DF(GAME)) };
+    UG_TOGG, KC_PGUP, UG_SATU, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUEU, KC_PGDN, DF(GAME)) };
