@@ -45,11 +45,11 @@ Keys|Auto Shift Mouse Dragging
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
-Fn|Tabs|Ctrl PgUpDn
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
-Gui|Horizontal||Light
+Gui|Horizontal
+Fn|Tabs|Ctrl PgUpDn|Light
 Base|Vertical||Mute
 Game|Volume||Mute
 
