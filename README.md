@@ -49,9 +49,9 @@ Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
 Gui|Horizontal
-Fn|Tabs|Ctrl PgUpDn|Light
 Base|Vertical||Mute
 Game|Volume||Mute
+Fn|Tabs|Ctrl PgUpDn|Light
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
