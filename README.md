@@ -8,10 +8,9 @@ Fn|F-keys, symbols, mouse, nav
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
-8|Bridge|4-Way Scrolling, Symmetrical Volume
+10|Bridge|4-Way Scrolling, Symmetrical Volume, Tabs
 4|Special|Leader, Caps Lock, App Switch, Menu
 4|Essential|Backspace, Delete, Tab, Enter & Escape
-2|Tabs|Ctrl Page Up & Down
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
@@ -46,11 +45,11 @@ Keys|Auto Shift Mouse Dragging
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
+Fn|Tabs|Ctrl PgUp/PgDn
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
 Gui|Horizontal||Light
-Fn|Tabs||Ctrl PgUp/PgDn
 Base|Vertical||Mute
 Game|Volume||Mute
 
