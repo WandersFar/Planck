@@ -9,8 +9,8 @@ Fn|F-keys, symbols, mouse, nav
 Base|Combos||
 ---|---|---
 8|Bridge|4-Way Scroll, Mirrored Volume
-6|Special|Leader, Caps, Menu, Switch, Tabs
-4|Essential|Backspace, Delete, Tab, Enter & Escape
+6|Special|Tabs, Switch, Menu, Leader, Caps
+4|Essential|Backspace, Delete, Tab, Enter, Escape
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
