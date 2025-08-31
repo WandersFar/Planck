@@ -8,8 +8,8 @@ Fn|F-keys, symbols, mouse, nav
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
-10|Bridge|4-Way Scroll, Mirrored Volume, Tabs
-4|Special|Leader, Caps Lock, App Switch, Menu
+8|Bridge|4-Way Scroll, Mirrored Volume
+6|Special|Leader, Caps, Menu, Switch, Tabs
 4|Essential|Backspace, Delete, Tab, Enter & Escape
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
