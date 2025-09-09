@@ -8,9 +8,9 @@ Fn|F-keys, symbols, mouse, nav
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos||
 ---|---|---
-8|Bridge|4-Way Scroll, Mirrored Volume
-6|Special|Tabs, Switch, Menu, Leader, Caps
-4|Essential|Backspace, Delete, Tab, Enter, Escape
+6|Bridge|4-Way Scrolling, Volume
+6|Special|Prev & Next Tab, Task Switch, Menu, Leader, Caps
+6|Essential|Backspace, Delete, Tab, Enter/Escape, Page Up & Down
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
