@@ -9,16 +9,16 @@ const uint16_t PROGMEM LEADER_KEY[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
 const uint16_t PROGMEM APP_MENU[] = {KC_C, KC_COMM, COMBO_END};
-const uint16_t PROGMEM SCR_DN[] = {KC_R, KC_U, COMBO_END};
-const uint16_t PROGMEM SCR_UP[] = {KC_E, KC_I, COMBO_END};
-const uint16_t PROGMEM SCR_LEFT[] = {KC_E, KC_R, COMBO_END};
-const uint16_t PROGMEM SCR_RIGHT[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM L_VOL_UP[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM SCR_DN[] = {KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM SCR_UP[] = {KC_W, KC_O, COMBO_END};
+const uint16_t PROGMEM SCR_LEFT[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM SCR_RIGHT[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM VOL_UP[] = {KC_G, KC_H, COMBO_END};
+const uint16_t PROGMEM VOL_DN[] = {KC_B, KC_N, COMBO_END};
 const uint16_t PROGMEM TAB_PREV[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM L_VOL_DN[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM R_VOL_UP[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM TAB_NEXT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM R_VOL_DN[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM PAGE_UP[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM PAGE_DN[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(CTRL_BS, KC_BSPC),
   COMBO(CTRL_DEL, KC_DEL),
@@ -32,12 +32,12 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SCR_UP, KC_WH_U),
   COMBO(SCR_LEFT, KC_WH_L),
   COMBO(SCR_RIGHT, KC_WH_R),
-  COMBO(L_VOL_UP, KC_VOLU),
+  COMBO(VOL_UP, KC_VOLU),
+  COMBO(VOL_DN, KC_VOLD),
   COMBO(TAB_PREV, C(KC_PGUP)),
-  COMBO(L_VOL_DN, KC_VOLD),
-  COMBO(R_VOL_UP, KC_VOLU),
   COMBO(TAB_NEXT, C(KC_PGDN)),
-  COMBO(R_VOL_DN, KC_VOLD), };
+  COMBO(PAGE_UP, KC_PGUP),
+  COMBO(PAGE_DN, KC_PGDN), };
 
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record)
   { return !IS_LAYER_ON(GAME); }
@@ -222,7 +222,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     default: return true; } }
   switch (keycode) {
     case DF(GAME): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
-    case LT(FN,KC_0): if (record->tap.count && record->event.pressed) { set_single_default_layer(BASE); defer_exec(500, callback, NULL); return false; } return true;
+    case DF(BASE): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
     default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -234,11 +234,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LEFT, LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), KC_RGHT,
     LT(1,KC_QUOT), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), LT(FN,KC_SPC), KC_UP,
     LT(GAME,KC_MUTE), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), KC_DOWN),
-  [GAME] = LAYOUT_ortho_4x12(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
+  [GAME] = LAYOUT_ortho_4x12(LT(FN,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_DEL),
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
-    KC_QUOT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
-    LT(FN,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, LT(FN,KC_0)),
+    KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
+    LT(BASE,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(BASE)),
   [FN] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
-    UG_TOGG, KC_PGUP, UG_SATU, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUEU, KC_PGDN, DF(GAME)) };
+    UG_TOGG, UG_SATU, UG_SATD, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUED, UG_HUEU, DF(GAME)) };
