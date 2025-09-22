@@ -10,7 +10,7 @@ Base|Combos||
 ---|---|---
 8|Bridge|4-Way Scrolling, Previous & Next Tab, Volume Up & Down
 6|Essential|Backspace, Delete, Tab, Enter/Escape, Page Up & Down
-4|Special|Caps Lock, Leader, Menu, Task Switch
+4|Special|Caps Lock, Leader, Menu, Task Switcher
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
