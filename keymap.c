@@ -1,6 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "leader.c"
 
+const uint16_t PROGMEM OZ_BS[] = {LT(1,KC_D), LT(1,KC_F), COMBO_END};
+const uint16_t PROGMEM OZ_ENTER[] = {LT(1,KC_J), LT(1,KC_K), COMBO_END};
 const uint16_t PROGMEM CTRL_BS[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM CTRL_DEL[] = {KC_C, LT(FN,KC_V), COMBO_END};
 const uint16_t PROGMEM ESC_ENTER[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
@@ -9,17 +11,19 @@ const uint16_t PROGMEM LEADER_KEY[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
 const uint16_t PROGMEM APP_MENU[] = {KC_C, KC_COMM, COMBO_END};
+const uint16_t PROGMEM PAGE_UP[] = {KC_G, KC_H, COMBO_END};
+const uint16_t PROGMEM PAGE_DN[] = {KC_B, KC_N, COMBO_END};
 const uint16_t PROGMEM SCR_DN[] = {KC_E, KC_I, COMBO_END};
 const uint16_t PROGMEM SCR_UP[] = {KC_W, KC_O, COMBO_END};
 const uint16_t PROGMEM SCR_LEFT[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM SCR_RIGHT[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM VOL_UP[] = {KC_G, KC_H, COMBO_END};
-const uint16_t PROGMEM VOL_DN[] = {KC_B, KC_N, COMBO_END};
 const uint16_t PROGMEM TAB_PREV[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM TAB_NEXT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM PAGE_UP[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM PAGE_DN[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM VOL_DN[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM VOL_UP[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
+  COMBO(OZ_BS, KC_BSPC),
+  COMBO(OZ_ENTER, KC_ENT),
   COMBO(CTRL_BS, KC_BSPC),
   COMBO(CTRL_DEL, KC_DEL),
   COMBO(ESC_ENTER, KC_ENT),
@@ -28,19 +32,16 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(CAPS_LOCK, KC_CAPS),
   COMBO(TASK_SWITCH, LSA(KC_ESC)),
   COMBO(APP_MENU, KC_APP),
+  COMBO(PAGE_UP, KC_PGUP),
+  COMBO(PAGE_DN, KC_PGDN),
   COMBO(SCR_DN, KC_WH_D),
   COMBO(SCR_UP, KC_WH_U),
   COMBO(SCR_LEFT, KC_WH_L),
   COMBO(SCR_RIGHT, KC_WH_R),
-  COMBO(VOL_UP, KC_VOLU),
-  COMBO(VOL_DN, KC_VOLD),
   COMBO(TAB_PREV, C(KC_PGUP)),
   COMBO(TAB_NEXT, C(KC_PGDN)),
-  COMBO(PAGE_UP, KC_PGUP),
-  COMBO(PAGE_DN, KC_PGDN), };
-
-bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record)
-  { return !IS_LAYER_ON(GAME); }
+  COMBO(VOL_DN, KC_VOLD),
+  COMBO(VOL_UP, KC_VOLU), };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
