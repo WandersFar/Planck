@@ -45,14 +45,14 @@ Keys|Auto Shift Mouse Dragging
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
-Ctrl|Undo|Ctrl Z/Y
-Shift|Search|Shift/F3
-Alt|Zoom|Ctrl =/-
-Gui|Horizontal
 Base|Vertical||Mute
 Aussie|Vertical||Mute
 Game|Volume||Mute
 Fn|Tabs|Ctrl PgUpDn|Light
+Ctrl|Undo|Ctrl Z/Y
+Shift|Search|Shift/F3
+Alt|Zoom|Ctrl =/-
+Gui|Horizontal
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
