@@ -50,6 +50,7 @@ Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
 Gui|Horizontal
 Base|Vertical||Mute
+Aussie|Vertical||Mute
 Game|Volume||Mute
 Fn|Tabs|Ctrl PgUpDn|Light
 
