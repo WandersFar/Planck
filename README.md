@@ -43,12 +43,12 @@ Keys|Auto Shift Mouse Dragging
 **ESDF or IJKL**|Drag pointer around. Tap mouse button again to release.
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
-Rotary|Spin|Hotkeys|Tap
----|---|---|---
-Base|Vertical||Mute
-Oz|Vertical||Mute
-Game|Volume||Mute
-Fn|Tabs|Ctrl PgUpDn|Light
+Rotary|Spin|Hotkeys
+---|---|---
+Base|Vertical
+Oz|Vertical
+Game|Volume
+Fn|Tabs|Ctrl PgUpDn
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
