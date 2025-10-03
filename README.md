@@ -1,7 +1,7 @@
 Four|Layers
 ---|---
 Base|alphas, numbers, arrows
-Aussie|¡uʍop-ǝpᴉsdn ǝdʎʇ
+Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Game|disable Auto Shift
 Fn|F-keys, symbols, mouse, nav
 
@@ -46,7 +46,7 @@ Keys|Auto Shift Mouse Dragging
 Rotary|Spin|Hotkeys|Tap
 ---|---|---|---
 Base|Vertical||Mute
-Aussie|Vertical||Mute
+Oz|Vertical||Mute
 Game|Volume||Mute
 Fn|Tabs|Ctrl PgUpDn|Light
 Ctrl|Undo|Ctrl Z/Y
