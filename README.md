@@ -6,7 +6,7 @@ Game|disable Auto Shift
 Fn|F-keys, symbols, mouse, nav
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
-Base|Combos||
+Base|Combos|(2 Oz Combos: Backspace & Enter)
 ---|---|---
 8|Bridge|4-Way Scrolling, Previous & Next Tab, Volume Up & Down
 6|Essential|Backspace, Delete, Tab, Enter/Escape, Page Up & Down
