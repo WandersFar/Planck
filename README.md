@@ -28,10 +28,10 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
-Custom|Auto|Shift
----|---|---
-Ctrl|Backspace|Erase Word
-Ctrl|Delete|Forward Erase Word
+Custom|Auto|Shift|Oz|Combos
+---|---|---|---|---
+Ctrl|Backspace|Erase Word|Ctrl|Backspace
+Ctrl|Delete|Forward Erase Word|Ctrl Delete|Enter
 Shift|Tab|Navigate Backwards
 Escape|Enter
 
