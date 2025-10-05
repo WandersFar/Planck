@@ -156,9 +156,9 @@ bool led_update_user(led_t led_state) { static bool caps = false; if (caps != le
 
 layer_state_t default_layer_state_set_user(layer_state_t state) { switch (get_highest_layer(state)) {
   case GAME: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 2);
-    autoshift_disable(); break;
+    autoshift_disable(); defer_exec(3000, callback, NULL); break;
   case BASE: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-    autoshift_enable(); break;
+    autoshift_enable(); defer_exec(500, callback, NULL); break;
   default: rgblight_enable_noeeprom(); rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 2);
     autoshift_enable(); break; } return state; }
 
@@ -173,7 +173,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       else { register_unicodemap(RSINGLE);
         tapped = true; tap_timer = record->event.time + 240; } return false; }
     else { tapped = false; } }
-  switch (get_highest_layer(layer_state|default_layer_state)) { case AUSSIE: switch (keycode) {
+  switch (get_highest_layer(layer_state|default_layer_state)) { case OZ: switch (keycode) {
     case KC_SPC: if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); return false; } return false;
     case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAMP); tap_code(KC_LEFT); } return false;
     case LT(1,KC_DOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZDOT); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(EXCLAIM); tap_code(KC_LEFT); } return false;
@@ -218,11 +218,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case LT(1,KC_Z): if (record->tap.count && record->event.pressed) { tap_code(KC_Z); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_Z)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_ENTER): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENTER); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
     case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_RGHT); tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
-    case DF(BASE): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
     default: return true; } }
   switch (keycode) {
-    case DF(GAME): if (record->event.pressed) { defer_exec(3000, callback, NULL); } return true;
-    case DF(BASE): if (record->event.pressed) { defer_exec(500, callback, NULL); } return true;
+    case LT(FN,BASE): if (record->tap.count && record->event.pressed) { set_single_default_layer(BASE); return false; }
     default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -230,15 +228,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LEFT, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RGHT,
     LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
     LT(GAME,KC_MUTE), KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
-  [AUSSIE] = LAYOUT_ortho_4x12(DF(BASE), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_MINS),
+  [OZ] = LAYOUT_ortho_4x12(DF(BASE), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_MINS),
     C(KC_LEFT), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), C(KC_RGHT),
     LT(1,KC_QUOT), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), KC_SPC, TD(HOME),
     LT(GAME,KC_MUTE), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), TD(END)),
-  [GAME] = LAYOUT_ortho_4x12(LT(FN,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_DEL),
+  [GAME] = LAYOUT_ortho_4x12(LT(FN,BASE), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_DEL),
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
     KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
-    LT(BASE,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, DF(BASE)),
+    LT(BASE,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ESC),
   [FN] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
-    UG_TOGG, UG_SATU, UG_SATD, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUED, UG_HUEU, DF(GAME)) };
+    KC_MUTE, UG_SATU, UG_SATD, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUED, UG_HUEU, UG_TOGG) };
