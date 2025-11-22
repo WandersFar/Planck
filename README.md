@@ -37,7 +37,7 @@ Escape|Enter
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
----|---
+---:|---
 **V or M**|Activate mouse. Only key that is held.
 **RTG or UYH**|Long-press a mouse button to click-hold.
 **ESDF or IJKL**|Drag pointer around. Tap mouse button again to release.
