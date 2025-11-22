@@ -55,16 +55,6 @@ Alt|Zoom|Ctrl =/-
 Gui|Horizontal
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
-Legend||*e.g., !F4 = Alt F4*||
----:|---|---|---
-**^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
-**Column**|Ctrl NumPlus|Fit Columns
-**TskMngr**|Ctrl Shift Esc|Task Manager
-**\#Print**|Gui PrintScreen|Save Screencap As File
-**Emoji**|Alt Shift|Global Media Hotkeys|AIMP
-
-*Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
-
 RGB Mode|Length|Meaning
 ---:|---|---
 Twinkle 5|5 sec|Startup Disco
@@ -73,3 +63,13 @@ Static|½ sec|Base Blip
 Static|∞|Leader Ready
 Twinkle 2|∞|Oz Typing Mode
 Twinkle 5|∞|Caps Lock
+
+*Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
+
+Legend||*e.g., !F4 = Alt F4*||
+---:|---|---|---
+**^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
+**Column**|Ctrl NumPlus|Fit Columns
+**TskMngr**|Ctrl Shift Esc|Task Manager
+**\#Print**|Gui PrintScreen|Save Screencap As File
+**Emoji**|Alt Shift|Global Media Hotkeys|AIMP
