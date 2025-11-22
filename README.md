@@ -22,7 +22,7 @@ Dance|Dash|Quote|Home & End
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
----|---|---|---|---
+---:|---|---|---|---
 **Home**|Ctrl|Shift †|Alt|Gui
 **Bottom**|Fn
 
