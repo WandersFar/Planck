@@ -14,7 +14,7 @@ Base|Combos|(2 Oz Combos: Backspace & Enter)
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
----|---|---|---
+---:|---|---|---
 **Tap**|Hyphen|Right Single|Jump to line start or end
 **Hold**|Underscore|Dialog|**+** Select to line start or end
 **Tap-Tap**|Em Dash|Left Single|**^** Jump to file start or end
