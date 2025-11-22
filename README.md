@@ -44,7 +44,7 @@ Keys|Auto Shift Mouse Dragging
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 Rotary|Spin|Hotkeys
----|---|---
+---:|---|---
 Base|Vertical
 Oz|Vertical
 Game|Volume
