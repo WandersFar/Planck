@@ -1,5 +1,5 @@
 Four|Layers
----|---
+---:|---
 Base|alphas, numbers, arrows
 Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Game|disable Auto Shift
