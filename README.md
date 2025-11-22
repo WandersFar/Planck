@@ -64,3 +64,12 @@ Legend||*e.g., !F4 = Alt F4*||
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
 *Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
+
+Mode|Length|Meaning
+---:|---|---
+Twinkle 5|5 sec|Startup Disco
+Twinkle 2|3 sec|Game Pew Pew Pew
+Static|½ sec|Base Blip
+Static|∞|Leader Ready
+Twinkle 2|∞|Oz Typing Mode
+Twinkle 5|∞|Caps Lock
