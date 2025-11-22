@@ -56,7 +56,7 @@ Gui|Horizontal
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
----|---|---|---
+---:|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
 **Column**|Ctrl NumPlus|Fit Columns
 **TskMngr**|Ctrl Shift Esc|Task Manager
