@@ -48,8 +48,8 @@ Rotary|Spin|Hotkeys
 ---:|---|---
 Base|Vertical
 Oz|Vertical
-Game|Volume
-Fn|Tabs|Ctrl PgUpDn
+Game|Vertical
+Fn|Volume
 Ctrl|Undo|Ctrl Z/Y
 Shift|Search|Shift/F3
 Alt|Zoom|Ctrl =/-
