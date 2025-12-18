@@ -9,18 +9,20 @@ const uint16_t PROGMEM ESC_ENTER[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM SHIFT_TAB[] = {LT(FN,KC_M), KC_COMM, COMBO_END};
 const uint16_t PROGMEM LEADER_KEY[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {KC_C, KC_COMM, COMBO_END};
-const uint16_t PROGMEM APP_MENU[] = {KC_X, KC_DOT, COMBO_END};
-const uint16_t PROGMEM TASK_SWITCH[] = {KC_Z, KC_SLSH, COMBO_END};
+const uint16_t PROGMEM ALT_ESC[] = {KC_X, KC_DOT, COMBO_END};
+const uint16_t PROGMEM SHIFTALT_ESC[] = {KC_Z, KC_SLSH, COMBO_END};
 const uint16_t PROGMEM PAGE_UP[] = {KC_G, KC_H, COMBO_END};
-const uint16_t PROGMEM PAGE_DN[] = {KC_B, KC_N, COMBO_END};
-const uint16_t PROGMEM SCR_DN[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM SCR_UP[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
-const uint16_t PROGMEM SCR_LEFT[] = {KC_Z, KC_X, COMBO_END};
-const uint16_t PROGMEM SCR_RIGHT[] = {KC_DOT, KC_SLSH, COMBO_END};
-const uint16_t PROGMEM TAB_PREV[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM TAB_NEXT[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM VOL_DN[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM VOL_UP[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM PAGE_DOWN[] = {KC_B, KC_N, COMBO_END};
+const uint16_t PROGMEM CHROMA_UP[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
+const uint16_t PROGMEM HUE_UP[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM HUE_DOWN[] = {LALT_T(KC_S), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM LIGHT_TOGGLE[] = {LGUI_T(KC_A), RGUI_T(KC_SPC), COMBO_END};
+const uint16_t PROGMEM SCROLL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
+const uint16_t PROGMEM SCROLL_DOWN[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM SCROLL_LEFT[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM SCROLL_RIGHT[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM VOLUME_DOWN[] = {KC_Z, KC_X, COMBO_END};
+const uint16_t PROGMEM VOLUME_UP[] = {KC_DOT, KC_SLSH, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(OZ_BS, LT(1,KC_BSPC)),
   COMBO(OZ_ENTER, LT(1,KC_ENTER)),
@@ -30,23 +32,24 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SHIFT_TAB, KC_TAB),
   COMBO(LEADER_KEY, QK_LEAD),
   COMBO(CAPS_LOCK, KC_CAPS),
-  COMBO(APP_MENU, KC_APP),
-  COMBO(TASK_SWITCH, LSA(KC_ESC)),
+  COMBO(ALT_ESC, A(KC_ESC)),
+  COMBO(SHIFTALT_ESC, LSA(KC_ESC)),
   COMBO(PAGE_UP, KC_PGUP),
-  COMBO(PAGE_DN, KC_PGDN),
-  COMBO(SCR_DN, KC_WH_D),
-  COMBO(SCR_UP, KC_WH_U),
-  COMBO(SCR_LEFT, KC_WH_L),
-  COMBO(SCR_RIGHT, KC_WH_R),
-  COMBO(TAB_PREV, C(KC_PGUP)),
-  COMBO(TAB_NEXT, C(KC_PGDN)),
-  COMBO(VOL_DN, KC_VOLD),
-  COMBO(VOL_UP, KC_VOLU), };
+  COMBO(PAGE_DOWN, KC_PGDN),
+  COMBO(CHROMA_UP, UG_SATU),
+  COMBO(HUE_UP, UG_HUEU),
+  COMBO(HUE_DOWN, UG_HUED),
+  COMBO(LIGHT_TOGGLE, UG_TOGG),
+  COMBO(SCROLL_UP, KC_WH_U),
+  COMBO(SCROLL_DOWN, KC_WH_D),
+  COMBO(SCROLL_LEFT, KC_WH_L),
+  COMBO(SCROLL_RIGHT, KC_WH_R),
+  COMBO(VOLUME_DOWN, KC_VOLD),
+  COMBO(VOLUME_UP, KC_VOLU), };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
-    case FN: tap_code16((!clockwise) ? C(KC_PGUP) : C(KC_PGDN)); break;
-    case GAME: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
+    case FN: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
     case BASE: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
       else if (get_mods() & MOD_MASK_SHIFT) { tap_code16((!clockwise) ? KC_F3 : S(KC_F3)); }
       else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
@@ -227,16 +230,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
     KC_LEFT, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RGHT,
     LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
-    LT(GAME,KC_MUTE), KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
+    LT(FN,KC_MUTE), KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
   [OZ] = LAYOUT_ortho_4x12(DF(BASE), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_MINS),
     C(KC_LEFT), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), C(KC_RGHT),
     LT(1,KC_QUOT), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), KC_SPC, TD(HOME),
-    LT(GAME,KC_MUTE), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), TD(END)),
+    LT(FN,KC_MUTE), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), TD(END)),
   [GAME] = LAYOUT_ortho_4x12(LT(FN,BASE), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_DEL),
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC,
     KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, KC_ENT,
-    LT(BASE,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ESC),
+    LT(FN,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ESC),
   [FN] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
-    KC_MUTE, UG_SATU, UG_SATD, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUED, UG_HUEU, UG_TOGG) };
+    KC_MUTE, C(KC_PGUP), RCS(KC_PGUP), RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), RCS(KC_PGDN), C(KC_PGDN), KC_APP) };
