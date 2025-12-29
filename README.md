@@ -10,8 +10,8 @@ Base|Combos|(2 Oz Combos: Backspace & Enter)
 ---:|---:|---
 6|Bridge|4-Way Scrolling, Volume Up & Down
 6|Essential|Backspace, Delete, Tab, Enter/Escape, Page Up & Down
-4|Special|Leader, Caps Lock, Alt Esc, Shift Alt Esc
-4|RGB|Chroma, Hue Up, Hue Down, Light
+4|Special|Leader, Caps Lock, Menu, Switch
+4|Tabs|Move Tab Left, Previous Tab, Next Tab, Move Tab Right
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Dash|Quote|Home & End
