@@ -21,6 +21,7 @@ const uint16_t PROGMEM SCROLL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM SCROLL_DOWN[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM VOLUME_DOWN[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM VOLUME_UP[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM LAUNCHY_INSERT[] = {KC_G, KC_H, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(OZ_BS, LT(1,KC_BSPC)),
   COMBO(OZ_ENTER, LT(1,KC_ENTER)),
@@ -41,7 +42,8 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SCROLL_UP, KC_WH_U),
   COMBO(SCROLL_DOWN, KC_WH_D),
   COMBO(VOLUME_DOWN, KC_VOLD),
-  COMBO(VOLUME_UP, KC_VOLU), };
+  COMBO(VOLUME_UP, KC_VOLU),
+  COMBO(LAUNCHY_INSERT, KC_INS), };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
