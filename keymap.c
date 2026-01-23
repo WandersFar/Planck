@@ -2,18 +2,18 @@
 #include "leader.c"
 
 const uint16_t PROGMEM OZ_BS[] = {LT(1,KC_D), LT(1,KC_F), COMBO_END};
-const uint16_t PROGMEM OZ_ENTER[] = {LT(1,KC_J), LT(1,KC_K), COMBO_END};
+const uint16_t PROGMEM OZ_ENT[] = {LT(1,KC_J), LT(1,KC_K), COMBO_END};
 const uint16_t PROGMEM CTRL_BS[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM CTRL_DEL[] = {KC_C, LT(FN,KC_V), COMBO_END};
-const uint16_t PROGMEM ESC_ENTER[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM ESC_ENT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM SHIFT_TAB[] = {LT(FN,KC_M), KC_COMM, COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {KC_C, KC_COMM, COMBO_END};
 const uint16_t PROGMEM LEADER_KEY[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
 const uint16_t PROGMEM PAGE_UP[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM PAGE_DOWN[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM APP_MENU[] = {KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM INS_MENU[] = {KC_E, KC_I, COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {KC_R, KC_U, COMBO_END};
-const uint16_t PROGMEM TAB_PREVIOUS[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM TAB_PREV[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM TAB_NEXT[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM SCROLL_LEFT[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM SCROLL_RIGHT[] = {KC_I, KC_O, COMBO_END};
@@ -21,29 +21,27 @@ const uint16_t PROGMEM SCROLL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM SCROLL_DOWN[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM VOLUME_DOWN[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM VOLUME_UP[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM LAUNCHY_INSERT[] = {KC_G, KC_H, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(OZ_BS, LT(1,KC_BSPC)),
-  COMBO(OZ_ENTER, LT(1,KC_ENTER)),
+  COMBO(OZ_ENT, LT(1,KC_ENT)),
   COMBO(CTRL_BS, KC_BSPC),
   COMBO(CTRL_DEL, KC_DEL),
-  COMBO(ESC_ENTER, KC_ENT),
+  COMBO(ESC_ENT, KC_ENT),
   COMBO(SHIFT_TAB, KC_TAB),
   COMBO(CAPS_LOCK, KC_CAPS),
   COMBO(LEADER_KEY, QK_LEAD),
   COMBO(PAGE_UP, KC_PGUP),
   COMBO(PAGE_DOWN, KC_PGDN),
-  COMBO(APP_MENU, KC_APP),
+  COMBO(INS_MENU, KC_INS),
   COMBO(TASK_SWITCH, LSA(KC_ESC)),
-  COMBO(TAB_PREVIOUS, C(KC_PGUP)),
+  COMBO(TAB_PREV, C(KC_PGUP)),
   COMBO(TAB_NEXT, C(KC_PGDN)),
   COMBO(SCROLL_LEFT, KC_WH_L),
   COMBO(SCROLL_RIGHT, KC_WH_R),
   COMBO(SCROLL_UP, KC_WH_U),
   COMBO(SCROLL_DOWN, KC_WH_D),
   COMBO(VOLUME_DOWN, KC_VOLD),
-  COMBO(VOLUME_UP, KC_VOLU),
-  COMBO(LAUNCHY_INSERT, KC_INS), };
+  COMBO(VOLUME_UP, KC_VOLU), };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
   switch (get_highest_layer(layer_state|default_layer_state)) {
@@ -68,6 +66,7 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case RALT_T(KC_L):
     case KC_BSPC:
     case KC_DEL:
+    case KC_INS:
     case KC_ENT:
     case KC_TAB:
     case KC_BTN1:
@@ -80,6 +79,7 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) { switch (keycode) {
     case KC_BSPC: tap_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
     case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
+    case KC_INS: tap_code((!shifted) ? KC_INS : KC_APP); break;
     case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
     case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
@@ -217,7 +217,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case LT(1,KC_X): if (record->tap.count && record->event.pressed) { tap_code(KC_X); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_X)); tap_code(KC_LEFT); } return false;
     case LT(1,KC_Y): if (record->tap.count && record->event.pressed) { register_unicodemap(ZY); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZYY); tap_code(KC_LEFT); } return false;
     case LT(1,KC_Z): if (record->tap.count && record->event.pressed) { tap_code(KC_Z); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_Z)); tap_code(KC_LEFT); } return false;
-    case LT(1,KC_ENTER): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENTER); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
+    case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
     case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_RGHT); tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
     default: return true; } }
   switch (keycode) {
