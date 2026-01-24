@@ -64,7 +64,7 @@ Static|∞|Leader Ready
 Twinkle 2|∞|Oz Typing Mode
 Twinkle 5|∞|Caps Lock
 
-*Thanks to u/pgetreuer on r/olkb and smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
+*Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
 
 Legend||*e.g., !F4 = Alt F4*||
 ---:|---|---|---
