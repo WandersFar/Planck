@@ -113,8 +113,8 @@ void d_fn(tap_dance_state_t *state, void *user_data) { dtap_state.state = cur_da
   switch (dtap_state.state) {
     case TD_1T: tap_code(KC_MINS); break;
     case TD_1H: tap_code16(S(KC_MINS)); break;
-    case TD_2T: if (get_mods() & MOD_MASK_CTRL) { tap_code(KC_MINS); tap_code(KC_MINS); break; }
-      else { register_unicodemap(DASHEM); break; }
+    case TD_2T: if (get_mods() & MOD_MASK_CTRL) { tap_code(KC_MINS); tap_code(KC_MINS); }
+      else { register_unicodemap(DASHEM); } break;
     case TD_2H: register_unicodemap(DASHEN); break;
     case TD_NONE: break; }
   dtap_state.state = TD_NONE; }
