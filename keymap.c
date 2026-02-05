@@ -110,12 +110,13 @@ static td_tap_t htap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t etap_state = { .is_press_action = true, .state = TD_NONE };
 
 void d_fn(tap_dance_state_t *state, void *user_data) { dtap_state.state = cur_dance(state);
+  if (get_mods() & MOD_MASK_CTRL) { tap_code(KC_MINS); } else {
   switch (dtap_state.state) {
     case TD_1T: tap_code(KC_MINS); break;
     case TD_1H: tap_code16(S(KC_MINS)); break;
     case TD_2T: register_unicodemap(DASHEM); break;
     case TD_2H: register_unicodemap(DASHEN); break;
-    case TD_NONE: break; }
+    case TD_NONE: break; } }
   dtap_state.state = TD_NONE; }
 
 void h_fn(tap_dance_state_t *state, void *user_data) { htap_state.state = cur_dance(state);
