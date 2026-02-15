@@ -34,6 +34,7 @@ Ctrl|Backspace|Erase Word|Ctrl|Backspace
 Ctrl|Delete|Forward Erase Word|Ctrl Delete|Enter
 Shift|Tab|Navigate Backwards
 Escape|Enter
+Menu|Insert
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
