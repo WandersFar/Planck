@@ -14,12 +14,12 @@ Base|Combos|(2 Oz Combos: Backspace & Enter)
 3|Unicode|Dashes, Single Quotes, Double Quotes
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
-Dance|Dash|Quote|Home & End
----:|---|---|---
-**Tap**|Hyphen|Right Single|Jump to line start or end
-**Hold**|Underscore|Dialog|**+** Select to line start or end
-**Tap-Tap**|Em Dash|Left Single|**^** Jump to file start or end
-**Tap-Hold**|En Dash||**+^** Select to file start or end
+Dance|Home & End
+---:|---
+**Tap**|Jump to line start or end
+**Hold**|**+** Select to line start or end
+**Tap-Tap**|**^** Jump to file start or end
+**Tap-Hold**|**+^** Select to file start or end
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
