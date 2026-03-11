@@ -11,10 +11,13 @@ const uint16_t PROGMEM CAPS_LOCK[] = {KC_C, KC_COMM, COMBO_END};
 const uint16_t PROGMEM LEADER_KEY[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
 const uint16_t PROGMEM PAGE_UP[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM PAGE_DOWN[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM INS_MENU[] = {KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM INSERT_LAUNCHY[] = {KC_E, KC_I, COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {KC_R, KC_U, COMBO_END};
 const uint16_t PROGMEM TAB_PREV[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM TAB_NEXT[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM EMEN_DASH[] = {KC_T, KC_Y, COMBO_END};
+const uint16_t PROGMEM SINGLE_QUOTE[] = {KC_G, KC_H, COMBO_END};
+const uint16_t PROGMEM DOUBLE_QUOTE[] = {KC_B, KC_N, COMBO_END};
 const uint16_t PROGMEM SCROLL_LEFT[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM SCROLL_RIGHT[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM SCROLL_UP[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
@@ -32,10 +35,13 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(LEADER_KEY, QK_LEAD),
   COMBO(PAGE_UP, KC_PGUP),
   COMBO(PAGE_DOWN, KC_PGDN),
-  COMBO(INS_MENU, KC_INS),
+  COMBO(INSERT_LAUNCHY, KC_INS),
   COMBO(TASK_SWITCH, LSA(KC_ESC)),
   COMBO(TAB_PREV, C(KC_PGUP)),
   COMBO(TAB_NEXT, C(KC_PGDN)),
+  COMBO(EMEN_DASH, KC_P1),
+  COMBO(SINGLE_QUOTE, KC_P2),
+  COMBO(DOUBLE_QUOTE, KC_P3),
   COMBO(SCROLL_LEFT, KC_WH_L),
   COMBO(SCROLL_RIGHT, KC_WH_R),
   COMBO(SCROLL_UP, KC_WH_U),
@@ -66,26 +72,28 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case RALT_T(KC_L):
     case KC_BSPC:
     case KC_DEL:
-    case KC_INS:
     case KC_ENT:
     case KC_TAB:
+    case KC_P1:
+    case KC_P2:
+    case KC_P3:
     case KC_BTN1:
     case KC_BTN2:
     case KC_BTN3:
-    case KC_DQT:
     case KC_TILD:
     case KC_COLN: return true; default: return false; } }
 
 void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) { switch (keycode) {
     case KC_BSPC: tap_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
     case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
-    case KC_INS: tap_code((!shifted) ? KC_INS : KC_APP); break;
     case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
     case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
+    case KC_P1: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
+    case KC_P2: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
+    case KC_P3: register_unicodemap((!shifted) ? RDOUBLE : LDOUBLE); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
-    case KC_DQT: tap_code16((!shifted) ? KC_DQT : KC_QUOT); break;
     case KC_TILD: tap_code16((!shifted) ? KC_TILD : KC_GRV); break;
     case KC_COLN: tap_code16((!shifted) ? KC_COLN : KC_SCLN); break;
     default: if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
@@ -99,25 +107,14 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
 
 typedef enum { TD_NONE, TD_1T, TD_1H, TD_2T, TD_2H, } td_state_t;
 typedef struct { bool is_press_action; td_state_t state; } td_tap_t;
-enum { DASH, HOME, END };
+enum { HOME, END };
 
 td_state_t cur_dance(tap_dance_state_t *state) {
-  if (get_mods() & MOD_MASK_CTRL) return TD_1T;
-  else if (state->count == 1) { if (state->pressed) return TD_1H; else return TD_1T; }
+  if (state->count == 1) { if (state->pressed) return TD_1H; else return TD_1T; }
   else if (state->pressed) return TD_2H; else return TD_2T; }
 
-static td_tap_t dtap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t htap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t etap_state = { .is_press_action = true, .state = TD_NONE };
-
-void d_fn(tap_dance_state_t *state, void *user_data) { dtap_state.state = cur_dance(state);
-  switch (dtap_state.state) {
-    case TD_1T: tap_code(KC_MINS); break;
-    case TD_1H: tap_code16(S(KC_MINS)); break;
-    case TD_2T: register_unicodemap(DASHEM); break;
-    case TD_2H: register_unicodemap(DASHEN); break;
-    case TD_NONE: break; }
-  dtap_state.state = TD_NONE; }
 
 void h_fn(tap_dance_state_t *state, void *user_data) { htap_state.state = cur_dance(state);
   switch (htap_state.state) {
@@ -138,12 +135,10 @@ void e_fn(tap_dance_state_t *state, void *user_data) { etap_state.state = cur_da
   etap_state.state = TD_NONE; }
 
 tap_dance_action_t tap_dance_actions[] = {
-  [DASH] = ACTION_TAP_DANCE_FN(d_fn),
   [HOME] = ACTION_TAP_DANCE_FN(h_fn),
   [END] = ACTION_TAP_DANCE_FN(e_fn) };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
-  case TD(DASH):
   case TD(HOME):
   case TD(END): return 240;
   default: return TAPPING_TERM; } }
@@ -165,16 +160,6 @@ layer_state_t default_layer_state_set_user(layer_state_t state) { switch (get_hi
     autoshift_enable(); break; } return state; }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  if (record->event.pressed)
-    { static bool begin = true; static bool tapped = false; static uint16_t tap_timer = 0;
-    if (keycode == LT(0,KC_0)) { if (!record->tap.count && record->event.pressed)
-        { if (begin) { register_unicodemap(LDOUBLE); begin = false; }
-        else { register_unicodemap(RDOUBLE); begin = true; } }
-      else if (tapped && !timer_expired(record->event.time, tap_timer))
-        { tap_code(KC_BSPC); register_unicodemap(LSINGLE); }
-      else { register_unicodemap(RSINGLE);
-        tapped = true; tap_timer = record->event.time + 240; } return false; }
-    else { tapped = false; } }
   switch (get_highest_layer(layer_state|default_layer_state)) { case OZ: switch (keycode) {
     case KC_SPC: if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); return false; } return false;
     case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAMP); tap_code(KC_LEFT); } return false;
@@ -226,9 +211,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [BASE] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, TD(DASH),
+  [BASE] = LAYOUT_ortho_4x12(KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,
     KC_LEFT, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_RGHT,
-    LT(0,KC_0), LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
+    KC_QUOT, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_UP,
     LT(FN,KC_MUTE), KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
   [OZ] = LAYOUT_ortho_4x12(DF(BASE), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_MINS),
     C(KC_LEFT), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), C(KC_RGHT),
@@ -240,5 +225,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LT(FN,KC_MUTE), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ESC),
   [FN] = LAYOUT_ortho_4x12(KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
-    KC_DQT, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
+    KC_TILD, KC_APP, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_BSLS,
     KC_MUTE, UG_SATU, UG_SATD, RCS(KC_LEFT), C(KC_LEFT), TD(HOME), TD(END), C(KC_RGHT), RCS(KC_RGHT), UG_HUED, UG_HUEU, UG_TOGG) };
