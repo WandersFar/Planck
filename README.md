@@ -11,7 +11,7 @@ Base|Combos|(2 Oz Combos: Backspace & Enter)
 6|Bridge|4-Way Scrolling, Volume Up & Down
 6|Essential|Backspace, Delete, Enter/Escape, Tab, Page Up & Down
 6|Special|Caps Lock, Leader, Insert, Switch, Previous & Next Tab
-3|Unicode|Double Quotes, Single Quotes, Em & En Dashes
+6|Unicode|– — ‘ ’ “ ” Double Quotes, Single Quotes, Em & En Dashes
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End
