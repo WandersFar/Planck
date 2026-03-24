@@ -15,18 +15,15 @@ const uint16_t PROGMEM INSERT_LAUNCHY[] = {KC_E, KC_I, COMBO_END};
 const uint16_t PROGMEM TASK_SWITCH[] = {KC_R, KC_U, COMBO_END};
 const uint16_t PROGMEM TAB_PREV[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM TAB_NEXT[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM EN_DASH[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM EM_DASH[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM OPEN_SINGLE[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM CLOSE_SINGLE[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM OPEN_DOUBLE[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM CLOSE_DOUBLE[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM SCROLL_RIGHT[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM SCROLL_LEFT[] = {KC_Q, KC_W, COMBO_END};
-const uint16_t PROGMEM SCROLL_RIGHT[] = {KC_O, KC_P, COMBO_END};
-const uint16_t PROGMEM SCROLL_UP[] = {RALT_T(KC_L), RGUI_T(KC_SPC), COMBO_END};
-const uint16_t PROGMEM SCROLL_DOWN[] = {KC_DOT, KC_SLSH, COMBO_END};
-const uint16_t PROGMEM VOLUME_UP[] = {LGUI_T(KC_A), LALT_T(KC_S), COMBO_END};
+const uint16_t PROGMEM SCROLL_DOWN[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
+const uint16_t PROGMEM SCROLL_UP[] = {LGUI_T(KC_A), LALT_T(KC_S), COMBO_END};
+const uint16_t PROGMEM VOLUME_UP[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM VOLUME_DOWN[] = {KC_Z, KC_X, COMBO_END};
+const uint16_t PROGMEM DASHES[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM SINGLES[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
+const uint16_t PROGMEM DOUBLES[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(OZ_BS, LT(1,KC_BSPC)),
   COMBO(OZ_ENT, LT(1,KC_ENT)),
@@ -42,29 +39,15 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(TASK_SWITCH, LSA(KC_ESC)),
   COMBO(TAB_PREV, C(KC_PGUP)),
   COMBO(TAB_NEXT, C(KC_PGDN)),
-  COMBO(EN_DASH, UM(DASHEN)),
-  COMBO(EM_DASH, UM(DASHEM)),
-  COMBO(OPEN_SINGLE, UM(LSINGLE)),
-  COMBO(CLOSE_SINGLE, UM(RSINGLE)),
-  COMBO(OPEN_DOUBLE, UM(LDOUBLE)),
-  COMBO(CLOSE_DOUBLE, UM(RDOUBLE)),
-  COMBO(SCROLL_LEFT, KC_WH_L),
   COMBO(SCROLL_RIGHT, KC_WH_R),
-  COMBO(SCROLL_UP, KC_WH_U),
+  COMBO(SCROLL_LEFT, KC_WH_L),
   COMBO(SCROLL_DOWN, KC_WH_D),
+  COMBO(SCROLL_UP, KC_WH_U),
   COMBO(VOLUME_UP, KC_VOLU),
-  COMBO(VOLUME_DOWN, KC_VOLD), };
-
-bool encoder_update_user(uint8_t index, bool clockwise) {
-  switch (get_highest_layer(layer_state|default_layer_state)) {
-    case FN: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
-    case BASE: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
-      else if (get_mods() & MOD_MASK_SHIFT) { tap_code16((!clockwise) ? KC_F3 : S(KC_F3)); }
-      else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
-        tap_code16((!clockwise) ? C(KC_MINS) : C(KC_EQL)); }
-      else if (get_mods() & MOD_MASK_GUI) { del_mods(MOD_MASK_GUI);
-        tap_code((!clockwise) ? KC_WH_L : KC_WH_R); }
-    default: tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break; } return false; }
+  COMBO(VOLUME_DOWN, KC_VOLD),
+  COMBO(DASHES, KC_P1),
+  COMBO(SINGLES, KC_P2),
+  COMBO(DOUBLES, KC_P3), };
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
     case LT(FN,KC_V):
@@ -80,6 +63,9 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case KC_DEL:
     case KC_ENT:
     case KC_TAB:
+    case KC_P1:
+    case KC_P2:
+    case KC_P3:
     case KC_BTN1:
     case KC_BTN2:
     case KC_BTN3:
@@ -91,6 +77,9 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
     case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
     case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
+    case KC_P1: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
+    case KC_P2: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
+    case KC_P3: register_unicodemap((!shifted) ? RDOUBLE : LDOUBLE); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
@@ -142,6 +131,17 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) { switch (keyco
   case TD(HOME):
   case TD(END): return 240;
   default: return TAPPING_TERM; } }
+
+bool encoder_update_user(uint8_t index, bool clockwise) {
+  switch (get_highest_layer(layer_state|default_layer_state)) {
+    case FN: (!clockwise) ? tap_code_delay(KC_VOLD, 10) : tap_code_delay(KC_VOLU, 10); break;
+    case BASE: if (get_mods() & MOD_MASK_CTRL) { tap_code((!clockwise) ? KC_Z : KC_Y); }
+      else if (get_mods() & MOD_MASK_SHIFT) { tap_code16((!clockwise) ? KC_F3 : S(KC_F3)); }
+      else if (get_mods() & MOD_MASK_ALT) { del_mods(MOD_MASK_ALT);
+        tap_code16((!clockwise) ? C(KC_MINS) : C(KC_EQL)); }
+      else if (get_mods() & MOD_MASK_GUI) { del_mods(MOD_MASK_GUI);
+        tap_code((!clockwise) ? KC_WH_L : KC_WH_R); }
+    default: tap_code((!clockwise) ? KC_WH_U : KC_WH_D); break; } return false; }
 
 uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
