@@ -21,9 +21,9 @@ const uint16_t PROGMEM SCROLL_DOWN[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM SCROLL_UP[] = {LGUI_T(KC_A), LALT_T(KC_S), COMBO_END};
 const uint16_t PROGMEM VOLUME_UP[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM VOLUME_DOWN[] = {KC_Z, KC_X, COMBO_END};
-const uint16_t PROGMEM DASHES[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM DOUBLES[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM SINGLES[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
-const uint16_t PROGMEM DOUBLES[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM DASHES[] = {KC_COMM, KC_DOT, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(OZ_BS, LT(1,KC_BSPC)),
   COMBO(OZ_ENT, LT(1,KC_ENT)),
@@ -45,9 +45,9 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SCROLL_UP, KC_WH_U),
   COMBO(VOLUME_UP, KC_VOLU),
   COMBO(VOLUME_DOWN, KC_VOLD),
-  COMBO(DASHES, KC_P1),
+  COMBO(DOUBLES, KC_P1),
   COMBO(SINGLES, KC_P2),
-  COMBO(DOUBLES, KC_P3), };
+  COMBO(DASHES, KC_P3), };
 
 bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
     case LT(FN,KC_V):
@@ -77,9 +77,9 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
     case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
     case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
-    case KC_P1: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
+    case KC_P1: register_unicodemap((!shifted) ? RDOUBLE : LDOUBLE); break;
     case KC_P2: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
-    case KC_P3: register_unicodemap((!shifted) ? RDOUBLE : LDOUBLE); break;
+    case KC_P3: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
