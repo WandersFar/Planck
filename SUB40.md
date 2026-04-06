@@ -8,4 +8,4 @@
 *6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/KLE/Split.png)
-*direct wire, monolayer, 30 combos*
+*direct wire, monolayer, 32 combos*
