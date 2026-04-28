@@ -6,9 +6,9 @@ Game|disable Auto Shift
 Fn|F-keys, symbols, mouse
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
-Base|Combos|(2 Oz Combos: Backspace & Enter)
+Base|Combos|(2 Oz Combos: Backspace & Enter, 1 Game Combo: Base)
 ---:|---:|---
-8|Special|Caps Lock, Leader, Insert, Switch, Previous & Next Tab, Layer, Light
+7|Special|Light, Caps Lock, Leader, Insert, Switch, Previous & Next Tab
 6|Essential|Backspace, Delete, Enter/Escape, Tab, Page Up & Down
 4|Unicode|Dashes, Apostrophes, Open & Close Quotes
 
