@@ -3,15 +3,14 @@ Four|Layers
 Base|alphas, numbers, arrows
 Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Game|disable Auto Shift
-Fn|F-keys, symbols, mouse, nav
+Fn|F-keys, symbols, mouse
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz Combos: Backspace & Enter)
 ---:|---:|---
-6|Bridge|4-Way Scrolling, Volume Up & Down
+8|Special|Caps Lock, Leader, Insert, Switch, Previous & Next Tab, Layer, Light
 6|Essential|Backspace, Delete, Enter/Escape, Tab, Page Up & Down
-6|Special|Caps Lock, Leader, Insert, Switch, Previous & Next Tab
-3|Unicode|Double Quotes, Single Quotes, Em & En Dashes
+4|Unicode|Dashes, Apostrophes, Open & Close Quotes
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End
@@ -44,18 +43,6 @@ Keys|Auto Shift Mouse Dragging
 **ESDF or IJKL**|Drag pointer around. Tap mouse button again to release.
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
-Rotary|Spin|Hotkeys
----:|---|---
-Base|Vertical
-Oz|Vertical
-Game|Vertical
-Fn|Volume
-Ctrl|Undo|Ctrl Z/Y
-Shift|Search|Shift/F3
-Alt|Zoom|Ctrl =/-
-Gui|Horizontal
-
-![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 RGB Mode|Length|Meaning
 ---:|---|---
 Twinkle 5|5 sec|Startup Disco
@@ -66,7 +53,7 @@ Twinkle 2|∞|Oz Typing Mode
 Twinkle 5|∞|Caps Lock
 
 *Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
-
+![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Legend||*e.g., !F4 = Alt F4*||
 ---:|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
