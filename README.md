@@ -31,7 +31,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 Custom|Auto|Shift|Oz|Combos
 ---:|---|---|---:|---
 Ctrl|Bksp|Erase Word|Ctrl|Bksp
-Ctrl|Delete|Forward Erase Word|Ctrl Delete|Enter
+Ctrl|Delete|Fwd Erase Word|Ctrl Delete|Enter
 Shift|Tab|Tab Backwards
 Escape|Enter
 
