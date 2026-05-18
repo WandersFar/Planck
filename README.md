@@ -10,7 +10,7 @@ Base|Combos|(2 Oz: Backspace & Enter, 1 Game: Base)
 ---:|---:|---
 5|Special|Caps Lock, Leader, Insert, Switch, Light
 4|Essential|Backspace, Delete, Enter/Escape, Tab
-4|Unicode|Dashes, Apostrophes, Open & Close Quotes
+4|Unicode|Dashes, Apostrophes, Open & Close Dialog
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End|Mod|Page Up Down
