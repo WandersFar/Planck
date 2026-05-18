@@ -30,7 +30,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Custom|Auto|Shift|Oz|Combos
 ---:|---|---|---:|---
-Ctrl|Backspace|Erase Word|Ctrl|Backspace
+Ctrl|Bksp|Erase Word|Ctrl|Bksp
 Ctrl|Delete|Forward Erase Word|Ctrl Delete|Enter
 Shift|Tab|Tab Backwards
 Escape|Enter
