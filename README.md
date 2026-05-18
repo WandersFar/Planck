@@ -17,8 +17,8 @@ Dance|Home & End|Mod|Page Up & Down
 ---:|---|---:|---
 **Tap**|Jump to line start or end|**Tap**|**^** Prev or Next Tab
 **Hold**|**+** Select to line start or end|**Hold**|Page Up or Down
-**Tap-Tap**|**^** Jump to file start or end|**Ctrl**|**^-=** Zoom Out or In
-**Tap-Hold**|**+^** Select to file start or end|**Shift**|**+^** Move Tab Up or Down
+**Tap-Tap**|**^** Jump to file start or end|**Ctrl**|**^-=** Zoom
+**Tap-Hold**|**+^** Select to file start or end|**Shift**|**+^** Move Tab
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
