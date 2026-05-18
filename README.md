@@ -15,10 +15,10 @@ Base|Combos|(2 Oz: Backspace & Enter, 1 Game: Base)
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End|Page Up & Down|Modifier
 ---:|---|---:|---
-**Tap**|Jump to line start or end|Prev or Next Tab|**Tap**
+**Tap**|Jump to line start or end|**^** Prev or Next Tab|**Tap**
 **Hold**|**+** Select to line start or end|Page Up or Down|**Hold**
-**Tap-Tap**|**^** Jump to file start or end|Zoom Out or In|**Ctrl**
-**Tap-Hold**|**+^** Select to file start or end|Move Tab Up or Down|**Shift**
+**Tap-Tap**|**^** Jump to file start or end|**^-=** Zoom Out or In|**Ctrl**
+**Tap-Hold**|**+^** Select to file start or end|**+^** Move Tab Up or Down|**Shift**
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
