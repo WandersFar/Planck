@@ -13,12 +13,12 @@ Base|Combos|(2 Oz: Backspace & Enter, 1 Game: Base)
 4|Unicode|Dashes, Apostrophes, Open & Close Quotes
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
-Dance|Home & End|Page Up & Down|Modifier
+Dance|Home & End|Mod|Page Up & Down
 ---:|---|---:|---
-**Tap**|Jump to line start or end|**^** Prev or Next Tab|**Tap**
-**Hold**|**+** Select to line start or end|Page Up or Down|**Hold**
-**Tap-Tap**|**^** Jump to file start or end|**^-=** Zoom Out or In|**Ctrl**
-**Tap-Hold**|**+^** Select to file start or end|**+^** Move Tab Up or Down|**Shift**
+**Tap**|Jump to line start or end|**Tap**|**^** Prev or Next Tab
+**Hold**|**+** Select to line start or end|**Hold**|Page Up or Down
+**Tap-Tap**|**^** Jump to file start or end|**Ctrl**|**^-=** Zoom Out or In
+**Tap-Hold**|**+^** Select to file start or end|**Shift**|**+^** Move Tab Up or Down
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
