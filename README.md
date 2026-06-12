@@ -5,7 +5,7 @@ Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Game|disable Auto Shift
 Fn|F-keys, symbols, mouse
 
-*In Game mode Volume keys are Fn on hold while holding opposite hand Ctrl activates Base.*
+*In Game mode Volume is Fn on hold while opposite hand Ctrl is Base.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
