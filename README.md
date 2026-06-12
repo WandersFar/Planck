@@ -2,7 +2,7 @@ Four|Layers
 ---:|---
 Base|alphas, numbers, arrows
 Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
-Game †|disable Auto Shift
+† Game|disable Auto Shift
 Fn|F-keys, symbols, mouse
 
 † *Game: Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
