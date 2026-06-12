@@ -6,9 +6,9 @@ Game|disable Auto Shift
 Fn|F-keys, symbols, mouse
 
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
-Base|Combos|(2 Oz: Backspace & Enter, 1 Game: Base)
+Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
-5|Special|Caps Lock, Leader, Insert, Switch, Light
+4|Special|Caps Lock, Leader, Insert/Menu, Switch/Light
 4|Essential|Backspace, Delete, Enter/Escape, Tab
 4|Unicode|Dashes, Quotes, Open & Close Dialog
 
@@ -34,6 +34,8 @@ Ctrl|Bksp|Erase Word|Ctrl|Bksp
 Ctrl|Del|Fwd Erase Word|Ctrl Del|Enter
 Shift|Tab|Tab Backwards
 Escape|Enter
+Menu|Insert
+Light|Switch
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
