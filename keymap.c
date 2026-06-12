@@ -9,10 +9,8 @@ const uint16_t PROGMEM ESC_ENT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
 const uint16_t PROGMEM SHIFT_TAB[] = {LT(FN,KC_M), KC_COMM, COMBO_END};
 const uint16_t PROGMEM CAPS_LOCK[] = {KC_C, KC_COMM, COMBO_END};
 const uint16_t PROGMEM LEADER_KEY[] = {LT(FN,KC_V), LT(FN,KC_M), COMBO_END};
-const uint16_t PROGMEM INSERT_LAUNCHY[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
-const uint16_t PROGMEM TASK_SWITCH[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
-const uint16_t PROGMEM LIGHT[] = {KC_X, KC_DOT, COMBO_END};
-const uint16_t PROGMEM BASE_RETURN[] = {KC_VOLU, KC_VOLD, COMBO_END};
+const uint16_t PROGMEM MENU_INSERT[] = {LSFT_T(KC_D), RSFT_T(KC_K), COMBO_END};
+const uint16_t PROGMEM LIGHT_SWITCH[] = {LCTL_T(KC_F), RCTL_T(KC_J), COMBO_END};
 const uint16_t PROGMEM DOUBLE_OPEN[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM DOUBLE_CLOSE[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM SINGLES[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
@@ -26,10 +24,8 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(SHIFT_TAB, KC_TAB),
   COMBO(CAPS_LOCK, KC_CAPS),
   COMBO(LEADER_KEY, QK_LEAD),
-  COMBO(INSERT_LAUNCHY, KC_INS),
-  COMBO(TASK_SWITCH, LSA(KC_ESC)),
-  COMBO(LIGHT, UG_TOGG),
-  COMBO(BASE_RETURN, DF(BASE)),
+  COMBO(MENU_INSERT, KC_INS),
+  COMBO(LIGHT_SWITCH, LT(0,KC_NO)),
   COMBO(DOUBLE_OPEN, UM(LDOUBLE)),
   COMBO(DOUBLE_CLOSE, UM(RDOUBLE)),
   COMBO(SINGLES, KC_P1),
@@ -51,6 +47,7 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case KC_TAB:
     case C(KC_PGUP):
     case C(KC_PGDN):
+    case KC_INS:
     case KC_P1:
     case KC_P2:
     case KC_BTN1:
@@ -66,6 +63,7 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case KC_TAB: tap_code16((!shifted) ? KC_TAB : S(KC_TAB)); break;
     case C(KC_PGUP): tap_code16((!shifted) ? C(KC_PGUP) : KC_PGUP); break;
     case C(KC_PGDN): tap_code16((!shifted) ? C(KC_PGDN) : KC_PGDN); break;
+    case KC_INS: tap_code((!shifted) ? KC_INS : KC_APP); break;
     case KC_P1: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
     case KC_P2: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
@@ -82,12 +80,28 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
     case KC_BTN3: unregister_code((!shifted) ? KC_BTN3 : KC_NO); break;
     default: unregister_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); clear_weak_mods(); } }
 
+const key_override_t ctrl_voldn_pgup_override = ko_make_basic(MOD_MASK_CTRL, LT(FN,KC_VOLD), KC_PGUP);
+const key_override_t ctrl_volup_pgdn_override = ko_make_basic(MOD_MASK_CTRL, LT(FN,KC_VOLU), KC_PGDN);
+const key_override_t ctrl_tab_home_override = ko_make_basic(MOD_BIT(KC_RCTL), LALT_T(KC_TAB), KC_HOME);
+const key_override_t ctrl_del_end_override = ko_make_basic(MOD_BIT(KC_LCTL), RALT_T(KC_DEL), KC_END);
+const key_override_t ctrl_enter_left_override = ko_make_basic(MOD_BIT(KC_RCTL), LSFT_T(KC_ENT), KC_LEFT);
+const key_override_t ctrl_bksp_right_override = ko_make_basic(MOD_BIT(KC_LCTL), RSFT_T(KC_BSPC), KC_RGHT);
+const key_override_t ctrl_esc_up_override = ko_make_basic(MOD_MASK_CTRL, LCTL_T(KC_ESC), KC_UP);
+const key_override_t ctrl_base_down_override = ko_make_basic(MOD_MASK_CTRL, RCTL_T(BASE), KC_DOWN);
 const key_override_t left_shift_pgup_override = ko_make_basic(MOD_MASK_SHIFT, C(KC_PGUP), RCS(KC_PGUP));
 const key_override_t left_shift_pgdn_override = ko_make_basic(MOD_MASK_SHIFT, C(KC_PGDN), RCS(KC_PGDN));
 const key_override_t zoom_out_override = ko_make_basic(MOD_MASK_CTRL, C(KC_PGUP), C(KC_MINS));
 const key_override_t zoom_in_override = ko_make_basic(MOD_MASK_CTRL, C(KC_PGDN), C(KC_EQL));
 
 const key_override_t *key_overrides[] = {
+    &ctrl_voldn_pgup_override,
+    &ctrl_volup_pgdn_override,
+    &ctrl_tab_home_override,
+    &ctrl_del_end_override,
+    &ctrl_enter_left_override,
+    &ctrl_bksp_right_override,
+    &ctrl_esc_up_override,
+    &ctrl_base_down_override,
     &left_shift_pgup_override,
     &left_shift_pgdn_override,
     &zoom_out_override,
@@ -133,7 +147,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) { switch (keyco
 
 uint32_t callback(uint32_t trigger_time, void *cb_arg) { rgblight_disable_noeeprom(); return 0; }
 void keyboard_post_init_user(void) { rgblight_enable_noeeprom();
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5); defer_exec(5000, callback, NULL); }
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_TWINKLE + 5); defer_exec(10000, callback, NULL); }
 
 bool led_update_user(led_t led_state) { static bool caps = false; if (caps != led_state.caps_lock)
   { caps = led_state.caps_lock; (!caps) ? rgblight_disable_noeeprom() : rgblight_enable_noeeprom();
@@ -193,6 +207,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycod
   case LT(1,KC_Z): if (record->tap.count && record->event.pressed) { tap_code(KC_Z); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_Z)); tap_code(KC_LEFT); } return false;
   case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
   case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_RGHT); tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
+  case LT(0,KC_NO): if (record->tap.count && record->event.pressed) { tap_code16(LSA(KC_ESC)); } else if (record->event.pressed) { rgblight_toggle_noeeprom(); } return false;
+  case RCTL_T(BASE): if (record->tap.count && record->event.pressed) { clear_mods(); set_single_default_layer(BASE); return false; }
   default: return true; } };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -204,11 +220,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TD(HOME), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), TD(END),
     LT(1,KC_BSLS), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), LT(1,KC_SPC), LT(1,KC_QUOT),
     C(KC_LEFT), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), C(KC_RGHT)),
-  [GAME] = LAYOUT_ortho_4x12(LT(FN,KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_ENT),
-    KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, RALT_T(KC_BSPC),
-    KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, RCTL_T(KC_DEL),
-    KC_VOLD, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_VOLU),
+  [GAME] = LAYOUT_ortho_4x12(LT(FN,KC_VOLD), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_VOLU),
+    LALT_T(KC_TAB), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, RALT_T(KC_DEL),
+    LSFT_T(KC_ENT), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, RSFT_T(KC_BSPC),
+    LCTL_T(KC_ESC), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, RCTL_T(BASE)),
   [FN] = LAYOUT_ortho_4x12(KC_MINS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQL,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_BSLS, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_QUOT,
-    KC_MUTE, KC_F11, UG_SATU, KC_VOLD, KC_WH_U, KC_WH_L, KC_WH_R, KC_WH_D, KC_VOLU, UG_HUEU, KC_F12, KC_APP) };
+    KC_F11, KC_MUTE, KC_VOLD, KC_VOLU, KC_WH_U, KC_WH_L, KC_WH_R, KC_WH_D, UG_HUED, UG_HUEU, UG_SATU, KC_F12) };
