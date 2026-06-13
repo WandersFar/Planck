@@ -1,5 +1,5 @@
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Butterstick.png)
-*direct wire, 3 layers, 22 combos*
+*direct wire, 3 layers, 16 combos*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Gherkin.png)
 *13 matrix, 2 layers, 24 combos*
