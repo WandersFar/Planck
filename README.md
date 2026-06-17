@@ -65,3 +65,17 @@ Legend||*e.g., !F4 = Alt F4*||
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
 *Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
+
+*Music hotkeys are handled by AIMP, not QMK firmware, but here’s my scheme for reference:*
+
+Hotkey|Emoji|Function
+---:|---|---
+Alt+Shift|🎵|global prefix
+G|🔂|repeat toggle
+H|🔀|shuffle toggle
+F|⏮️|previous song
+J|⏭️|next song
+M|⏯️|play pause
+N|⏹️|exit AIMP
+V|🔼|view playlist
+B|⏺️|buttons settings
