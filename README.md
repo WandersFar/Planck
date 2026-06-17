@@ -77,5 +77,5 @@ F|⏮️|previous song
 J|⏭️|next song
 M|⏯️|play pause
 N|⏹️|exit AIMP
-V|🔼|view playlist
+V|🔼|view player
 B|⏺️|buttons settings
