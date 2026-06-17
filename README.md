@@ -59,7 +59,7 @@ Twinkle 5|∞|Caps Lock
 Keys|†|Music||||
 ---:|---|---|---:|---|---
 Alt+Shift|🎵|global prefix
-F|⏮️|previous song|J|⏭️|next song
+F|⏮️|prev song|J|⏭️|next song
 G|🔂|repeat toggle|H|🔀|shuffle toggle
 V|🔼|view player|M|⏯️|play pause
 B|⏺️|button settings|N|⏹️|exit AIMP
