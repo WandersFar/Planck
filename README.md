@@ -60,7 +60,7 @@ Keys|†|Music||||
 ---:|---|---|---:|---|---
 Alt+Shift|🎵|global prefix
 F|⏮️|prev song|J|⏭️|next song
-G|🔂|repeat toggle|H|🔀|shuffle toggle
+G|🔂|repeat|H|🔀|shuffle
 V|🔼|view player|M|⏯️|play pause
 B|⏺️|button settings|N|⏹️|exit AIMP
 
