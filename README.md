@@ -70,6 +70,8 @@ N|⏹️|exit AIMP
 B|⏺️|buttons settings
 V|🔼|view player
 
+*Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
+
 Legend||*e.g., !F4 = Alt F4*||
 ---:|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
@@ -77,5 +79,3 @@ Legend||*e.g., !F4 = Alt F4*||
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
-
-*Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
