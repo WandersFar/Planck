@@ -56,7 +56,7 @@ Twinkle 2|∞|Oz Typing Mode
 Twinkle 5|∞|Caps Lock
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
-*Music hotkeys are handled by AIMP, not QMK firmware, but here’s my scheme for reference:*
+*Music hotkeys are handled by AIMP, not QMK firmware, but for reference:*
 
 Hotkey||Function
 ---:|---|---
