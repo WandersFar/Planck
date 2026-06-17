@@ -76,6 +76,5 @@ Legend||*e.g., !F4 = Alt F4*||
 **Column**|Ctrl NumPlus|Fit Columns
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
-**Emoji**|Alt Shift|Global Media Hotkeys|AIMP
 
 *Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
