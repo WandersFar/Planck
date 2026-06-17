@@ -68,7 +68,7 @@ Legend||*e.g., !F4 = Alt F4*||
 
 *Music hotkeys are handled by AIMP, not QMK firmware, but here’s my scheme for reference:*
 
-Hotkey|Emoji|Function
+Hotkey||Function
 ---:|---|---
 Alt+Shift|🎵|global prefix
 G|🔂|repeat toggle
