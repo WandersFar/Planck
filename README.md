@@ -71,11 +71,11 @@ Legend||*e.g., !F4 = Alt F4*||
 Hotkey||Function
 ---:|---|---
 Alt+Shift|🎵|global prefix
+F|⏮️|previous song
 G|🔂|repeat toggle
 H|🔀|shuffle toggle
-F|⏮️|previous song
 J|⏭️|next song
 M|⏯️|play pause
 N|⏹️|exit AIMP
-V|🔼|view player
 B|⏺️|buttons settings
+V|🔼|view player
