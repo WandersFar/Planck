@@ -56,17 +56,13 @@ Twinkle 2|∞|Oz Typing Mode
 Twinkle 5|∞|Caps Lock
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
-Keys|†|Music
----:|---|---
+Keys|†|Music|Keys|†|Music
+---:|---|---|---:|---|---
 Alt+Shift|🎵|global prefix
-F|⏮️|previous song
-G|🔂|repeat toggle
-H|🔀|shuffle toggle
-J|⏭️|next song
-M|⏯️|play pause
-N|⏹️|exit AIMP
-B|⏺️|buttons settings
-V|🔼|view player
+F|⏮️|previous song|J|⏭️|next song
+G|🔂|repeat toggle|H|🔀|shuffle toggle
+V|🔼|view player|M|⏯️|play pause
+B|⏺️|buttons settings|N|⏹️|exit AIMP
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
