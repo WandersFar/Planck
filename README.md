@@ -6,7 +6,7 @@ Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Fn|F-keys, symbols, mouse
 
 † *Game: Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
-![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
+![MT3 Dashner.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dashner.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
 4|Essential|Backspace, Delete, Enter/Escape, Tab
@@ -70,8 +70,7 @@ N|⏹️|exit AIMP
 B|⏺️|buttons settings
 V|🔼|view player
 
-*Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
-
+![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Legend||*e.g., !F4 = Alt F4*||
 ---:|---|---|---
 **^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
@@ -79,3 +78,5 @@ Legend||*e.g., !F4 = Alt F4*||
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
 **Emoji**|Alt Shift|Global Media Hotkeys|AIMP
+
+*Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
