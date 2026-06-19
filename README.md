@@ -72,5 +72,7 @@ Legend||*e.g., !F4 = Alt F4*||
 **Column**|Ctrl NumPlus|Fit Columns
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
+**Ins**|Insert|Launchy
+**Switch**|Alt Shift Esc|Switch Apps
 
 *Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
