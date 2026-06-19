@@ -35,7 +35,7 @@ Ctrl|Bksp|Erase Word|Ctrl|Bksp
 Ctrl|Del|Fwd Erase Word|Ctrl Del|Enter
 Shift|Tab|Tab Backwards
 Escape|Enter
-Menu|Insert|Launcher
+Menu|Insert|Launchy
 Light|Switch|Alt Shift Esc
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
