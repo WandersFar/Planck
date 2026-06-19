@@ -74,6 +74,6 @@ Legend||*e.g., !F4 = Alt F4*||
 **\#Print**|Gui PrintScreen|Screencap To File
 **Switch**|Alt Shift Esc|Switch Apps
 **Ins**|Insert|Launchy
-**Lt**|Light|RGB
+**Lt**|Light|Toggle RGB
 
 *Thanks to u/pgetreuer on r/olkb and kerotonic, smog, ceriinas, drashna, elpekeñin, & plodah on Discord.*
