@@ -6,7 +6,7 @@ Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 Fn|F-keys, symbols, mouse
 
 † *Game: Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
-![MT3 Dashner.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dashner.png)
+![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
 4|Essential|Backspace, Delete, Enter/Escape, Tab
