@@ -62,7 +62,7 @@ Keys|†|Music||||
 F|⏮️|prev song|J|⏭️|next song
 G|🔂|repeat|H|🔀|shuffle
 V|🔼|view player|M|⏯️|pause
-B|⏺️|button settings|N|⏹️|exit AIMP
+B|⏺️|buttons|N|⏹️|exit
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
