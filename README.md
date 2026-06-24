@@ -59,7 +59,7 @@ Twinkle 5|∞|Caps Lock
 Keys|†|Music||||
 ---:|---|---|---:|---|---
 Alt Shift|🎵|Prefix
-F|⏮️|Prev Song|J|⏭️|Next
+F|⏮️|Previous|J|⏭️|Next
 G|🔂|Repeat|H|🔀|Shuffle
 V|🔼|View|M|⏯️|Pause
 B|⏺️|Buttons|N|⏹️|Exit
