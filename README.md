@@ -16,7 +16,7 @@ Base|Combos|(2 Oz: Backspace & Enter)
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End|Mod|Page Up Down
 ---:|---|---:|---
-**Tap**|Jump line start end|**Tap**|**^** Prev Next Tab
+**Tap**|Jump line start end|**Tap**|**^** Nav Tab
 **Hold**|**+** Select line start end|**Hold**|Page Up Down
 **Tap-Tap**|**^** Jump file start end|**Ctrl**|**^-=** Zoom
 **Tap-Hold**|**+^** Select file start end|**Shift**|**+^** Move Tab
