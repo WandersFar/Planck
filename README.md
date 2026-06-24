@@ -66,9 +66,9 @@ B|⏺️|button settings|N|⏹️|exit AIMP
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
-Legend||*e.g., !F4 = Alt F4*||
----:|---|---|---
-**^** Ctrl|**+** Shift|**!** Alt|**\#** Gui
+Legend|**^** Ctrl|**+** Shift
+---:|---|---
+||**!** Alt|**\#** Gui
 **Column**|Ctrl NumPlus|Fit Columns
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
