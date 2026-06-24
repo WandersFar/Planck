@@ -17,7 +17,7 @@ Base|Combos|(2 Oz: Backspace & Enter)
 Dance|Home & End|Mod|Page Up Down
 ---:|---|---:|---
 **Tap**|Jump line start end|**Tap**|**^** Nav Tab
-**Hold**|**+** Select line start end|**Hold**|Page Up Down
+**Hold**|**+** Select line start end|**Hold**|Pg Up Down
 **Tap-Tap**|**^** Jump file start end|**Ctrl**|**^-=** Zoom
 **Tap-Hold**|**+^** Select file start end|**Shift**|**+^** Move Tab
 
