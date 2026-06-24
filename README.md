@@ -59,9 +59,9 @@ Twinkle 5|∞|Caps Lock
 Keys|†|Music||||
 ---:|---|---|---:|---|---
 Alt Shift|🎵|Prefix
-F|⏮️|Prev Song|J|⏭️|Next Song
+F|⏮️|Prev Song|J|⏭️|Next
 G|🔂|Repeat|H|🔀|Shuffle
-V|🔼|View Player|M|⏯️|Pause
+V|🔼|View|M|⏯️|Pause
 B|⏺️|Buttons|N|⏹️|Exit
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
