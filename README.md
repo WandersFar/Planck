@@ -42,8 +42,8 @@ Light|Switch
 Keys|Auto Shift Mouse Dragging
 ---:|---
 **V or M**|Activate mouse. Only key that is held.
-**RTG or UYH**|Long-press mouse button to click-hold.
-**ESDF or IJKL**|Drag pointer. Tap button again to release.
+**RTG or UYH**|Long-press button to click-hold.
+**ESDF or IJKL**|Drag pointer. Tap button to release.
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 RGB Mode|Length|Meaning
