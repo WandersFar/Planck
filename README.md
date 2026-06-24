@@ -17,9 +17,9 @@ Base|Combos|(2 Oz: Backspace & Enter)
 Dance|Home & End|Mod|Page Up Down
 ---:|---|---:|---
 **Tap**|Line Jump|**Tap**|**^** Nav Tab
-**Hold**|**+** Line End Select|**Hold**|Page Up Down
+**Hold**|**+** Line Select|**Hold**|Page Up Down
 **Tap-Tap**|**^** File Jump|**Ctrl**|**^-=** Zoom
-**Tap-Hold**|**+^** File End Select|**Shift**|**+^** Move Tab
+**Tap-Hold**|**+^** File Select|**Shift**|**+^** Move Tab
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
