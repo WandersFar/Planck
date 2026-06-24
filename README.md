@@ -33,7 +33,7 @@ Custom|Auto|Shift|Oz|Combos
 ---:|---|---|---:|---
 Ctrl|Bksp|Erase Word|Ctrl|Bksp
 Ctrl|Del|Fwd Erase Word|Ctrl Del|Enter
-Shift|Tab|Tab Backwards
+Shift|Tab|Tab Back
 Escape|Enter
 Menu|Insert
 Light|Switch
