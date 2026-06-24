@@ -9,9 +9,9 @@ Fn|F-keys, symbols, mouse
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
-4|Essential|Bksp, Delete, Enter/Escape, Tab
+4|Essential|Backspace, Delete, Enter, Tab
 4|Unicode|Dash, Quote, Open & Close Dialog
-4|Special|Caps, Leader, Ins/Menu, Switch/Light
+4|Special|Caps, Leader, Insert, Switch
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home & End|Mod|Page Up Down
