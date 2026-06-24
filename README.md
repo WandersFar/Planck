@@ -34,7 +34,7 @@ Custom|Auto|Shift|Oz|Combos
 Ctrl|Bksp|Del Word|Ctrl|Bksp
 Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
 Shift|Tab|Tab Back
-Escape|Enter
+Esc|Enter
 Menu|Insert
 Light|Switch
 
