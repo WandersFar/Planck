@@ -61,7 +61,7 @@ Keys|†|Music||||
 !+|🎵|global prefix
 F|⏮️|prev song|J|⏭️|next song
 G|🔂|repeat|H|🔀|shuffle
-V|🔼|view player|M|⏯️|play pause
+V|🔼|view|M|⏯️|play pause
 B|⏺️|button settings|N|⏹️|exit AIMP
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
