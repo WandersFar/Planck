@@ -5,7 +5,7 @@ Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
 † Game|disable Auto Shift
 Fn|F-keys, symbols, mouse
 
-† *Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
+† *On Hold: Volume is Fn. Opposite Ctrl is Base.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
