@@ -32,7 +32,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 Auto|Shift|Combos||Oz
 ---:|---|---|---:|---
 Ctrl|Bksp|Del Word|Ctrl|Bksp
-Ctrl|Del|Fwd Erase Word|Ctrl Del|Enter
+Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
 Shift|Tab|Tab Back
 Esc|Enter
 Menu|Insert
