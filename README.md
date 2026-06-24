@@ -58,7 +58,7 @@ Twinkle 5|∞|Caps Lock
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Keys|†|Music||||
 ---:|---|---|---:|---|---
-!+|🎵|Global Prefix
+Alt Shift|🎵|Prefix
 F|⏮️|Prev Song|J|⏭️|Next Song
 G|🔂|Repeat|H|🔀|Shuffle
 V|🔼|View Player|M|⏯️|Pause
