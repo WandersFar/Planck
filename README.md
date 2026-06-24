@@ -58,11 +58,11 @@ Twinkle 5|∞|Caps Lock
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 Keys|†|Music||||
 ---:|---|---|---:|---|---
-!+|🎵|global prefix
-F|⏮️|prev song|J|⏭️|next song
-G|🔂|repeat|H|🔀|shuffle
-V|🔼|view player|M|⏯️|pause
-B|⏺️|buttons|N|⏹️|exit
+!+|🎵|Global Prefix
+F|⏮️|Prev Song|J|⏭️|Next Song
+G|🔂|Repeat|H|🔀|Shuffle
+V|🔼|View Player|M|⏯️|Pause
+B|⏺️|Buttons|N|⏹️|Exit
 
 † *Music hotkeys are handled by AIMP, not QMK firmware.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
