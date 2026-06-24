@@ -31,8 +31,8 @@ Mod Taps|Index|Middle|Ring|Pinky
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Custom|Auto|Shift|Oz|Combos
 ---:|---|---|---:|---
-Ctrl|Bksp|Erase Word|Ctrl|Bksp
-Ctrl|Del|Fwd Erase Word|Ctrl Del|Enter
+Ctrl|Bksp|Del Word|Ctrl|Bksp
+Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
 Shift|Tab|Tab Back
 Escape|Enter
 Menu|Insert
