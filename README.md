@@ -9,7 +9,7 @@ Fn|F-keys, symbols, mouse
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
-4|Main|Bksp, Delete, Enter/Escape, Tab
+4|Essential|Bksp, Delete, Enter/Escape, Tab
 4|Unicode|Dash, Quote, Open & Close Dialog
 4|Special|Caps, Leader, Ins/Menu, Switch/Light
 
