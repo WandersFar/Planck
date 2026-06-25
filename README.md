@@ -7,6 +7,13 @@ Fn|F-keys, symbols, mouse
 
 † *Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
+Mod Taps|Index|Middle|Ring|Pinky
+---:|---|---|---|---
+**Home**|Ctrl|Shift †|Alt|Gui
+**Bottom**|Fn
+
+† *Shift is only for hotkeys. For caps I use Auto Shift.*
+![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Base|Combos|(2 Oz: Backspace & Enter)
 ---:|---:|---
 4|Essential|Backspace, Delete, Enter, Tab
@@ -23,13 +30,6 @@ Esc|Enter
 Menu|Insert
 Light|Switch
 
-![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
-Mod Taps|Index|Middle|Ring|Pinky
----:|---|---|---|---
-**Home**|Ctrl|Shift †|Alt|Gui
-**Bottom**|Fn
-
-† *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Dance|Home End|Mod|Page Up Down
 ---:|---|---:|---
