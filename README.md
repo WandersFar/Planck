@@ -20,7 +20,7 @@ Base|Combos|(2 Oz: Backspace & Enter)
 4|Unicode|Dash, Quote, Open & Close Dialog
 4|Special|Caps Lock, Leader, Insert, Switch
 
-![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
+![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Auto|Shift|Combos||Oz
 ---:|---|---|---:|---
 Ctrl|Bksp|Del Word|Ctrl|Bksp
@@ -30,7 +30,7 @@ Esc|Enter
 Menu|Insert
 Light|Switch
 
-![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
+![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home End|Mod|Page Up Down
 ---:|---|---:|---
 **Tap**|Line Jump|**Tap**|**^** Nav Tab
