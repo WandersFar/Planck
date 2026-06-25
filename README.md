@@ -31,7 +31,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
-Dance|Home & End|Mod|Page Up Down
+Dance|Home End|Mod|Page Up Down
 ---:|---|---:|---
 **Tap**|Line Jump|**Tap**|**^** Nav Tab
 **Hold**|**+** Line Select|**Hold**|Page Up Down
