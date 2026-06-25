@@ -40,7 +40,7 @@ Dance|Home End|Mod|Page Up Down
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
----:|---
+---:|:---
 **V or M**|Activate mouse. Only key that is held.
 **RTG or UYH**|Long-press button to start dragging.
 **ESDF or IJKL**|Drag pointer. Tap button to release.
