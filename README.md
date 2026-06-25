@@ -68,9 +68,9 @@ B|⏺️|Buttons|N|⏹️|Exit
 Legend|**^** Ctrl **+** Shift|**!** Alt **\#** Gui
 ---:|---|---
 **Column**|Ctrl NumPlus|Fit Columns
+**\#Print**|Gui PrintScreen|Screencap To File
 **!F4**|Alt F4|Close Window
 **TskMngr**|Ctrl Shift Esc|Task Manager
-**\#Print**|Gui PrintScreen|Screencap To File
 **Switch**|Alt Shift Esc|Switch Apps
 **Lt**|Light|Toggle RGB
 **Ins**|Insert|Launchy
