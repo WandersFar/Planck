@@ -14,12 +14,14 @@ Base|Combos|(2 Oz: Backspace & Enter)
 4|Special|Caps Lock, Leader, Insert, Switch
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
-Dance|Home & End|Mod|Page Up Down
----:|---|---:|---
-**Tap**|Line Jump|**Tap**|**^** Nav Tab
-**Hold**|**+** Line Select|**Hold**|Page Up Down
-**Tap-Tap**|**^** File Jump|**Ctrl**|**^-=** Zoom
-**Tap-Hold**|**+^** File Select|**Shift**|**+^** Move Tab
+Auto|Shift|Combos||Oz
+---:|---|---|---:|---
+Ctrl|Bksp|Del Word|Ctrl|Bksp
+Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
+Shift|Tab|Tab Back
+Esc|Enter
+Menu|Insert
+Light|Switch
 
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 Mod Taps|Index|Middle|Ring|Pinky
@@ -29,14 +31,12 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
-Auto|Shift|Combos||Oz
----:|---|---|---:|---
-Ctrl|Bksp|Del Word|Ctrl|Bksp
-Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
-Shift|Tab|Tab Back
-Esc|Enter
-Menu|Insert
-Light|Switch
+Dance|Home & End|Mod|Page Up Down
+---:|---|---:|---
+**Tap**|Line Jump|**Tap**|**^** Nav Tab
+**Hold**|**+** Line Select|**Hold**|Page Up Down
+**Tap-Tap**|**^** File Jump|**Ctrl**|**^-=** Zoom
+**Tap-Hold**|**+^** File Select|**Shift**|**+^** Move Tab
 
 ![SA Dreameater.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Dreameater.png)
 Keys|Auto Shift Mouse Dragging
