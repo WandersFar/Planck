@@ -22,7 +22,7 @@ Base|Combos|(2 Oz: Backspace & Enter)
 
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Auto|Shift|Combos||Oz
----:|---|:---:|---:|---
+---:|:---|:---:|---:|---
 Ctrl|Bksp|Del Word|Ctrl|Bksp
 Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
 Shift|Tab|Tab Back
