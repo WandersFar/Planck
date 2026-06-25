@@ -68,6 +68,7 @@ B|⏺️|Buttons|N|⏹️|Exit
 Legend|**^** Ctrl **+** Shift|**!** Alt **\#** Gui
 ---:|---|---
 **Column**|Ctrl NumPlus|Fit Columns
+**!F4**|Alt F4|Close Window
 **TskMngr**|Ctrl Shift Esc|Task Manager
 **\#Print**|Gui PrintScreen|Screencap To File
 **Switch**|Alt Shift Esc|Switch Apps
