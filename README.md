@@ -47,7 +47,7 @@ Keys|Auto Shift Mouse Dragging
 
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 RGB Mode|Length|Meaning
----:|:---:|---
+---:|:---:|:---
 Twinkle 5|10 sec|Startup Disco
 Twinkle 2|3 sec|Game Pew Pew Pew
 Static|½ sec|Base Blip
