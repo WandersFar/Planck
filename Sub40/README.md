@@ -1,6 +1,9 @@
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Split.png)
 *direct wire, monolayer, 24 combos*
 
+**Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Treasure.png)
+*15 matrix, 2 layers, 14 combos*
+
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Gherkin.png)
 *13 matrix, 2 layers, 24 combos*
 
