@@ -14,4 +14,4 @@
 *24 keys, 26 combos, 3 layers, 14 pin matrix*
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/Butterstick.png)
-*20 keys, 16 combos, 3 layers, direct wire*
+*20 keys, 26 combos, 3 layers, direct wire*
