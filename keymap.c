@@ -53,6 +53,8 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case KC_BTN1:
     case KC_BTN2:
     case KC_BTN3:
+    case KC_PIPE:
+    case KC_DQT:
     case KC_TILD:
     case KC_COLN: return true; default: return false; } }
 
@@ -69,6 +71,8 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
+    case KC_PIPE: tap_code16((!shifted) ? KC_PIPE : KC_BSLS); break;
+    case KC_DQT: tap_code16((!shifted) ? KC_DQT : KC_QUOT); break;
     case KC_TILD: tap_code16((!shifted) ? KC_TILD : KC_GRV); break;
     case KC_COLN: tap_code16((!shifted) ? KC_COLN : KC_SCLN); break;
     default: if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
@@ -226,5 +230,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCTL_T(KC_ESC), KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, RCTL_T(BASE)),
   [FN] = LAYOUT_ortho_4x12(KC_MINS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQL,
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
-    KC_BSLS, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_QUOT,
+    KC_PIPE, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_DQT,
     KC_F11, KC_MUTE, KC_VOLD, KC_VOLU, KC_WH_U, KC_WH_L, KC_WH_R, KC_WH_D, UG_HUED, UG_HUEU, UG_SATU, KC_F12) };
