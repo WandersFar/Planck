@@ -64,7 +64,7 @@ G|🔂|Repeat|H|🔀|Shuffle
 V|🔼|View|M|⏯️|Pause
 B|⏺️|Buttons|N|⏹️|Exit
 
-![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
+![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Susuwatari%20Oz.png)
 Legend|**^** Ctrl **+** Shift|**!** Alt **\#** Gui
 ---:|---|---
 **Column**|Ctrl NumPlus|Fit Columns
