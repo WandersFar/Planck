@@ -1,9 +1,9 @@
-Four|Layers
----:|:---
-Base|alphas, numbers, arrows
-Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ
-† Game|disable Auto Shift
-Fn|F-keys, symbols, mouse
+Four|Layers|Access
+---:|:---|---
+Base|alphas, numbers, arrows|default
+Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ|combo VM o
+† Game|disable Auto Shift|combo VM g
+Fn|F-keys, symbols, mouse|hold V or M
 
 † *Volume is Fn on hold. Opposite Ctrl is Base for arrows.*
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
