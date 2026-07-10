@@ -1,8 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "leader.c"
 
-const uint16_t PROGMEM OZ_BS[] = {LT(1,KC_D), LT(1,KC_F), COMBO_END};
-const uint16_t PROGMEM OZ_ENT[] = {LT(1,KC_J), LT(1,KC_K), COMBO_END};
 const uint16_t PROGMEM CTRL_BS[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM CTRL_DEL[] = {KC_C, LT(FN,KC_V), COMBO_END};
 const uint16_t PROGMEM ESC_ENT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
@@ -16,8 +14,6 @@ const uint16_t PROGMEM DOUBLE_CLOSE[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM SINGLES[] = {RSFT_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM DASHES[] = {LALT_T(KC_S), LSFT_T(KC_D), COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-  COMBO(OZ_BS, LT(1,KC_BSPC)),
-  COMBO(OZ_ENT, LT(1,KC_ENT)),
   COMBO(CTRL_BS, KC_BSPC),
   COMBO(CTRL_DEL, KC_DEL),
   COMBO(ESC_ENT, KC_ENT),
@@ -166,13 +162,17 @@ layer_state_t default_layer_state_set_user(layer_state_t state) { switch (get_hi
     autoshift_enable(); break; } return state; }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
-  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZAMP); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_DOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZDOT); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(EXCLAIM); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_SLSH): if (record->tap.count && record->event.pressed) { register_unicodemap(QUESTION); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBANG); tap_code(KC_LEFT); } return false;
   case LT(1,KC_MINS): if (record->tap.count && record->event.pressed) { tap_code(KC_MINS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(DASHEM); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } return false;
+  case LT(1,KC_HOME): if (record->tap.count && record->event.pressed) { tap_code16(C(KC_LEFT)); } else if (record->event.pressed) { tap_code(KC_HOME); } return false;
+  case LT(1,KC_END): if (record->tap.count && record->event.pressed) { tap_code16(C(KC_RGHT)); } else if (record->event.pressed) { tap_code(KC_END); } return false;
+  case LT(1,KC_DEL): if (record->tap.count && record->event.pressed) { tap_code(KC_DEL); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
   case LT(1,KC_QUOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZQS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZQD); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_BSLS): if (record->tap.count && record->event.pressed) { register_unicodemap(ZEL); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZELL); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
+  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZEL); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_DOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZDOT); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZELL); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_SLSH): if (record->tap.count && record->event.pressed) { register_unicodemap(QUESTION); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBANG); tap_code(KC_LEFT); } return false;
   case LT(1,KC_1): if (record->tap.count && record->event.pressed) { register_unicodemap(Z1); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(EXCLAIM); tap_code(KC_LEFT); } return false;
   case LT(1,KC_2): if (record->tap.count && record->event.pressed) { register_unicodemap(Z2); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_2)); tap_code(KC_LEFT); } return false;
   case LT(1,KC_3): if (record->tap.count && record->event.pressed) { register_unicodemap(Z3); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_3)); tap_code(KC_LEFT); } return false;
@@ -209,8 +209,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycod
   case LT(1,KC_X): if (record->tap.count && record->event.pressed) { tap_code(KC_X); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_X)); tap_code(KC_LEFT); } return false;
   case LT(1,KC_Y): if (record->tap.count && record->event.pressed) { register_unicodemap(ZY); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZYY); tap_code(KC_LEFT); } return false;
   case LT(1,KC_Z): if (record->tap.count && record->event.pressed) { tap_code(KC_Z); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(S(KC_Z)); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
-  case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_RGHT); tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
   case LT(0,KC_NO): if (record->tap.count && record->event.pressed) { tap_code16(LSA(KC_ESC)); } else if (record->event.pressed) { rgblight_toggle_noeeprom(); } return false;
   case RCTL_T(BASE): if (record->tap.count && record->event.pressed) { clear_mods(); set_single_default_layer(BASE); return false; }
   default: return true; } };
@@ -220,10 +218,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TD(HOME), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, TD(END),
     KC_LEFT, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G, KC_H, RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RGUI_T(KC_SPC), KC_RGHT,
     KC_UP, KC_Z, KC_X, KC_C, LT(FN,KC_V), KC_B, KC_N, LT(FN,KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_DOWN),
-  [OZ] = LAYOUT_ortho_4x12(LT(1,KC_MINS), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), DF(BASE),
-    TD(HOME), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), TD(END),
-    LT(1,KC_BSLS), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), LT(1,KC_SPC), LT(1,KC_QUOT),
-    C(KC_LEFT), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), C(KC_RGHT)),
+  [OZ] = LAYOUT_ortho_4x12(LT(1,KC_MINS), LT(1,KC_1), LT(1,KC_2), LT(1,KC_3), LT(1,KC_4), LT(1,KC_5), LT(1,KC_6), LT(1,KC_7), LT(1,KC_8), LT(1,KC_9), LT(1,KC_0), LT(1,KC_ENT),
+    LT(1,KC_HOME), LT(1,KC_Q), LT(1,KC_W), LT(1,KC_E), LT(1,KC_R), LT(1,KC_T), LT(1,KC_Y), LT(1,KC_U), LT(1,KC_I), LT(1,KC_O), LT(1,KC_P), LT(1,KC_END),
+    LT(1,KC_DEL), LT(1,KC_A), LT(1,KC_S), LT(1,KC_D), LT(1,KC_F), LT(1,KC_G), LT(1,KC_H), LT(1,KC_J), LT(1,KC_K), LT(1,KC_L), LT(1,KC_SPC), LT(1,KC_QUOT),
+    LT(1,KC_BSPC), LT(1,KC_Z), LT(1,KC_X), LT(1,KC_C), LT(1,KC_V), LT(1,KC_B), LT(1,KC_N), LT(1,KC_M), LT(1,KC_COMM), LT(1,KC_DOT), LT(1,KC_SLSH), DF(BASE)),
   [GAME] = LAYOUT_ortho_4x12(LT(FN,KC_VOLD), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, LT(FN,KC_VOLU),
     LALT_T(KC_TAB), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, RALT_T(KC_DEL),
     LSFT_T(KC_ENT), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SPC, RSFT_T(KC_BSPC),
