@@ -1,5 +1,5 @@
 Four|Layers|Access
----:|:---|---
+---:|:---|:---:
 Base|alphas, numbers, arrows|default
 Oz|¡uʍop-ǝpᴉsdn ǝdʎʇ|combo VM o
 † Game|disable Auto Shift|combo VM g
