@@ -21,10 +21,10 @@ Mod Taps|Index|Middle|Ring|Pinky
 4|Special|Caps Lock, Leader, Insert, Switch
 
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
-Auto|Shift|Combos||Oz
----:|:---|:---:|---:|---
-Ctrl|Bksp|Del Word|Ctrl|Bksp
-Ctrl|Del|Fwd Del Word|Ctrl Del|Enter
+Auto|Shift|Combos
+---:|:---|:---:
+Ctrl|Bksp|Del Word
+Ctrl|Del|Fwd Del Word
 Shift|Tab|Tab Back
 Esc|Enter
 Menu|Insert
