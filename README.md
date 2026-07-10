@@ -14,7 +14,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 
 † *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
-Base|Combos|(2 Oz: Backspace & Enter)
+Base|Combos||
 ---:|---:|---
 4|Essential|Backspace, Delete, Enter, Tab
 4|Unicode|Dash, Quote, Open & Close Dialog
