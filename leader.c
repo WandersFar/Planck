@@ -13,6 +13,8 @@ enum unicode_names {
   ZG,
   ZH,
   ZI,
+  ZJ,
+  ZJDOT,
   ZK,
   ZL,
   ZM,
@@ -236,6 +238,8 @@ const uint32_t unicode_map[] PROGMEM = {
   [ZG] = 0x253,  // ɓ
   [ZH] = 0x265,  // ɥ
   [ZI] = 0x1D09,  // ᴉ
+  [ZJ] = 0x17F,  // ſ
+  [ZJDOT] = 0x323,  //̣
   [ZK] = 0x29E,  // ʞ
   [ZL] = 0xE45,  // ๅ
   [ZM] = 0x26F,  // ɯ
