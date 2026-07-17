@@ -9,10 +9,10 @@ Fn|F-keys, symbols, mouse|hold V or M
 ![MT3 Dansher.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Dansher.png)
 Mod Taps|Index|Middle|Ring|Pinky
 ---:|---|---|---|---
-**Home**|Ctrl|Shift †|Alt|Gui
+**Home**|Ctrl|Shift ‡|Alt|Gui
 **Bottom**|Fn
 
-† *Shift is only for hotkeys. For caps I use Auto Shift.*
+‡ *Shift is only for hotkeys. For caps I use Auto Shift.*
 ![SA 1976.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%201976.png)
 ||Base|Combos
 ---:|---:|---
