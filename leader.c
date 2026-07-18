@@ -126,15 +126,15 @@ enum unicode_names {
   INTERROBANG,
   QUESTION,
   EXCLAIM,
-  CENTAMERICAN,
-  EUROEUROPEAN,
-  POUNDBRITISH,
-  YENJAPANESE,
+  AMERICANCENT,
+  EURO,
+  GBP,
+  YEN,
   UNEQUAL,
   DAGGER,
   DAGGERDOUBLE,
-  SNOWFLAKEIN,
-  SNOWFLAKEOUT,
+  SNOW,
+  SNOWFLAKE,
   STAR,
   STARHOLLOW,
   STARPINWHEEL,
@@ -147,8 +147,8 @@ enum unicode_names {
   INFINITY,
   FLOWER,
   FLEURDELIS,
-  FLORALSHAMROCK,
-  FLORALVINE,
+  IRISHSHAMROCK,
+  VINE,
   VINEOPEN,
   VINECLOSE,
   ARROWFLETCHED,
@@ -239,7 +239,7 @@ const uint32_t unicode_map[] PROGMEM = {
   [ZH] = 0x265,  // ɥ
   [ZI] = 0x1D09,  // ᴉ
   [ZJ] = 0x17F,  // ſ
-  [ZJDOT] = 0x323,  //̣
+  [ZJDOT] = 0x323,  // ̣
   [ZK] = 0x29E,  // ʞ
   [ZL] = 0xE45,  // ๅ
   [ZM] = 0x26F,  // ɯ
@@ -351,15 +351,15 @@ const uint32_t unicode_map[] PROGMEM = {
   [INTERROBANG] = 0x203D,  // ‽
   [QUESTION] = 0xBF,  // ¿
   [EXCLAIM] = 0xA1,  // ¡
-  [CENTAMERICAN] = 0xA2,  // ¢
-  [EUROEUROPEAN] = 0x20AC,  // €
-  [POUNDBRITISH] = 0xA3,  // £
-  [YENJAPANESE] = 0xA5,  // ¥
+  [AMERICANCENT] = 0xA2,  // ¢
+  [EURO] = 0x20AC,  // €
+  [GBP] = 0xA3,  // £
+  [YEN] = 0xA5,  // ¥
   [UNEQUAL] = 0x2260,  // ≠
   [DAGGER] = 0x2020,  // †
   [DAGGERDOUBLE] = 0x2021,  // ‡
-  [SNOWFLAKEIN] = 0x2745,  // ❅
-  [SNOWFLAKEOUT] = 0x2746,  // ❆
+  [SNOW] = 0x2745,  // ❅
+  [SNOWFLAKE] = 0x2746,  // ❆
   [STAR] = 0x2605,  // ★
   [STARHOLLOW] = 0x2606,  // ☆
   [STARPINWHEEL] = 0x272F,  // ✯
@@ -372,8 +372,8 @@ const uint32_t unicode_map[] PROGMEM = {
   [INFINITY] = 0x221E,  // ∞
   [FLOWER] = 0x2740,  // ❀
   [FLEURDELIS] = 0x269C,  // ⚜
-  [FLORALSHAMROCK] = 0x2618,  // ☘
-  [FLORALVINE] = 0x2766,  // ❦
+  [IRISHSHAMROCK] = 0x2618,  // ☘
+  [VINE] = 0x2766,  // ❦
   [VINEOPEN] = 0x2619,  // ☙
   [VINECLOSE] = 0x2767,  // ❧
   [ARROWFLETCHED] = 0x27B3,  // ➳
@@ -479,18 +479,23 @@ void leader_end_user(void) {
   else if (leader_sequence_one_key(KC_H)) { register_unicodemap(HEART); }
   else if (leader_sequence_one_key(KC_I)) { register_unicodemap(INFINITY); }
   else if (leader_sequence_one_key(KC_K)) { register_unicodemap(CHECK); }
-  else if (leader_sequence_one_key(KC_L)) { register_unicodemap(LEGAL); }
-  else if (leader_sequence_one_key(KC_Q)) { register_unicodemap(UNEQUAL); }
+  else if (leader_sequence_one_key(KC_Q)) { register_unicodemap(VINE); }
   else if (leader_sequence_one_key(KC_T)) { register_unicodemap(TWINKLE); }
+  else if (leader_sequence_one_key(KC_U)) { register_unicodemap(UNEQUAL); }
   else if (leader_sequence_one_key(KC_V)) { register_unicodemap(VINEOPEN); }
+  else if (leader_sequence_one_key(KC_W)) { register_unicodemap(SNOW); }
   else if (leader_sequence_one_key(KC_X)) { register_unicodemap(STAR); }
   else if (leader_sequence_one_key(KC_Z)) { register_unicodemap(STARPINWHEEL); }
+  else if (leader_sequence_one_key(KC_A)) { register_unicodemap(AMERICANCENT); }
+  else if (leader_sequence_one_key(KC_E)) { register_unicodemap(EURO); }
+  else if (leader_sequence_one_key(KC_L)) { register_unicodemap(GBP); }
+  else if (leader_sequence_one_key(KC_Y)) { register_unicodemap(YEN); }
+  else if (leader_sequence_one_key(KC_J)) { send_unicode_string("ಠ_ಠ"); }
+  else if (leader_sequence_one_key(KC_M)) { send_unicode_string("¯\\_(ツ)_/¯"); }
   else if (leader_sequence_one_key(KC_P)) { send_unicode_string(":þ"); }
-  else if (leader_sequence_two_keys(KC_L, KC_N)) { send_unicode_string("( ͡° ͜ʖ ͡°)"); }
-  else if (leader_sequence_two_keys(KC_C, KC_Y)) { send_unicode_string("ಥ_ಥ"); }
-  else if (leader_sequence_two_keys(KC_D, KC_S)) { send_unicode_string("ಠ_ಠ"); }
-  else if (leader_sequence_two_keys(KC_D, KC_K)) { send_unicode_string("¯\\_(ツ)_/¯"); }
-  else if (leader_sequence_two_keys(KC_D, KC_M)) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); }
+  else if (leader_sequence_two_keys(KC_J, KC_J)) { send_unicode_string("ಥ_ಥ"); }
+  else if (leader_sequence_two_keys(KC_M, KC_M)) { send_unicode_string("¯\\\\\\_(ツ)\\_/¯"); }
+  else if (leader_sequence_two_keys(KC_P, KC_P)) { send_unicode_string("( ͡° ͜ʖ ͡°)"); }
   else if (leader_sequence_two_keys(KC_SPC, KC_SPC)) { register_unicodemap(INTERPUNCT); }
   else if (leader_sequence_two_keys(KC_COMM, KC_COMM)) { register_unicodemap(GUILEFTSINGLE); }
   else if (leader_sequence_two_keys(KC_DOT, KC_DOT)) { register_unicodemap(GUIRIGHTSINGLE); }
@@ -521,18 +526,13 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_A, KC_F)) { register_unicodemap(ARROWFLETCHED); }
   else if (leader_sequence_two_keys(KC_A, KC_S)) { register_unicodemap(ARROWSOLID); }
   else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(BULLETHOLLOW); }
-  else if (leader_sequence_two_keys(KC_C, KC_A)) { register_unicodemap(CENTAMERICAN); }
-  else if (leader_sequence_two_keys(KC_E, KC_E)) { register_unicodemap(EUROEUROPEAN); }
-  else if (leader_sequence_two_keys(KC_P, KC_B)) { register_unicodemap(POUNDBRITISH); }
-  else if (leader_sequence_two_keys(KC_Y, KC_J)) { register_unicodemap(YENJAPANESE); }
   else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(DAGGERDOUBLE); }
-  else if (leader_sequence_two_keys(KC_F, KC_D)) { register_unicodemap(FLEURDELIS); }
-  else if (leader_sequence_two_keys(KC_F, KC_S)) { register_unicodemap(FLORALSHAMROCK); }
-  else if (leader_sequence_two_keys(KC_F, KC_V)) { register_unicodemap(FLORALVINE); }
-  else if (leader_sequence_two_keys(KC_S, KC_F)) { register_unicodemap(SNOWFLAKEIN); }
-  else if (leader_sequence_two_keys(KC_S, KC_K)) { register_unicodemap(SNOWFLAKEOUT); }
+  else if (leader_sequence_two_keys(KC_F, KC_F)) { register_unicodemap(FLEURDELIS); }
+  else if (leader_sequence_two_keys(KC_I, KC_I)) { register_unicodemap(IRISHSHAMROCK); }
+  else if (leader_sequence_two_keys(KC_L, KC_L)) { register_unicodemap(LEGAL); }
   else if (leader_sequence_two_keys(KC_T, KC_T)) { register_unicodemap(TWINKLECLOVER); }
   else if (leader_sequence_two_keys(KC_V, KC_V)) { register_unicodemap(VINECLOSE); }
+  else if (leader_sequence_two_keys(KC_W, KC_W)) { register_unicodemap(SNOWFLAKE); }
   else if (leader_sequence_two_keys(KC_X, KC_X)) { register_unicodemap(STARHOLLOW); }
   else if (leader_sequence_two_keys(KC_Z, KC_Z)) { register_unicodemap(STAROUTLINE); }
   else if (leader_sequence_two_keys(KC_C, KC_C)) { register_unicodemap(CEDILLACAP); }
