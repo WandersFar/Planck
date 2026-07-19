@@ -1,5 +1,3 @@
-enum layer_names { BASE, OZ, GAME, FN };
-
 enum unicode_names {
   Z1,
   Z2,
@@ -456,6 +454,14 @@ void leader_end_user(void) {
   if (leader_sequence_one_key(KC_R)) { reset_keyboard(); }
   else if (leader_sequence_one_key(KC_G)) { set_single_default_layer(GAME); return; }
   else if (leader_sequence_one_key(KC_O)) { set_single_default_layer(OZ); return; }
+  else if (leader_sequence_one_key(C(KC_PGUP))) { register_unicodemap(ARROWSOLID); }
+  else if (leader_sequence_one_key(C(KC_PGDN))) { register_unicodemap(ARROWFLETCHED); }
+  else if (leader_sequence_one_key(KC_HOME)) { register_unicodemap(ARROWHORIZON); }
+  else if (leader_sequence_one_key(KC_END)) { register_unicodemap(ARROWVERTICAL); }
+  else if (leader_sequence_one_key(KC_LEFT)) { register_unicodemap(ARROWLEFT); }
+  else if (leader_sequence_one_key(KC_RGHT)) { register_unicodemap(ARROWRIGHT); }
+  else if (leader_sequence_one_key(KC_UP)) { register_unicodemap(ARROWUP); }
+  else if (leader_sequence_one_key(KC_DOWN)) { register_unicodemap(ARROWDOWN); }
   else if (leader_sequence_one_key(KC_SPC)) { register_unicodemap(ELLIPSIS); }
   else if (leader_sequence_one_key(KC_COMM)) { register_unicodemap(GUILLEMETLEFT); }
   else if (leader_sequence_one_key(KC_DOT)) { register_unicodemap(GUILLEMETRIGHT); }
@@ -517,14 +523,6 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_5, KC_8)) { register_unicodemap(FIVEEIGHTHS); }
   else if (leader_sequence_two_keys(KC_7, KC_8)) { register_unicodemap(SEVENEIGHTHS); }
   else if (leader_sequence_two_keys(KC_0, KC_0)) { register_unicodemap(DEGREE); }
-  else if (leader_sequence_two_keys(KC_A, KC_I)) { register_unicodemap(ARROWUP); }
-  else if (leader_sequence_two_keys(KC_A, KC_J)) { register_unicodemap(ARROWLEFT); }
-  else if (leader_sequence_two_keys(KC_A, KC_K)) { register_unicodemap(ARROWDOWN); }
-  else if (leader_sequence_two_keys(KC_A, KC_L)) { register_unicodemap(ARROWRIGHT); }
-  else if (leader_sequence_two_keys(KC_A, KC_H)) { register_unicodemap(ARROWHORIZON); }
-  else if (leader_sequence_two_keys(KC_A, KC_V)) { register_unicodemap(ARROWVERTICAL); }
-  else if (leader_sequence_two_keys(KC_A, KC_F)) { register_unicodemap(ARROWFLETCHED); }
-  else if (leader_sequence_two_keys(KC_A, KC_S)) { register_unicodemap(ARROWSOLID); }
   else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(BULLETHOLLOW); }
   else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(DAGGERDOUBLE); }
   else if (leader_sequence_two_keys(KC_F, KC_F)) { register_unicodemap(FLEURDELIS); }

@@ -1,3 +1,4 @@
+enum layer_names { BASE, OZ, GAME, FN };
 #include QMK_KEYBOARD_H
 #include "leader.c"
 
