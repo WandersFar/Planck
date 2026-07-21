@@ -456,7 +456,7 @@ void leader_end_user(void) {
   else if (leader_sequence_one_key(KC_O)) { set_single_default_layer(OZ); return; }
   else if (leader_sequence_one_key(C(KC_PGUP))) { register_unicodemap(ARROWSOLID); }
   else if (leader_sequence_one_key(C(KC_PGDN))) { register_unicodemap(ARROWFLETCHED); }
-  else if (leader_sequence_one_key(TD(HOME))) { register_unicodemap(ARROWHORIZON); }
+  else if (leader_sequence_one_key(TD(HOME))) { tap_code(KC_END); register_unicodemap(ARROWHORIZON); }
   else if (leader_sequence_one_key(TD(END))) { register_unicodemap(ARROWVERTICAL); }
   else if (leader_sequence_one_key(KC_LEFT)) { register_unicodemap(ARROWLEFT); }
   else if (leader_sequence_one_key(KC_RGHT)) { register_unicodemap(ARROWRIGHT); }
