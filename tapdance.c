@@ -10,21 +10,21 @@ static td_tap_t htap_state = { .is_press_action = true, .state = TD_NONE };
 static td_tap_t etap_state = { .is_press_action = true, .state = TD_NONE };
 
 void h_fn(tap_dance_state_t *state, void *user_data) { htap_state.state = cur_dance(state);
-  switch (htap_state.state) {
+  if (!leader_sequence_active()) { switch (htap_state.state) {
     case TD_1T: tap_code(KC_HOME); break;
     case TD_1H: tap_code16(S(KC_HOME)); break;
     case TD_2T: tap_code16(C(KC_HOME)); break;
     case TD_2H: tap_code16(RCS(KC_HOME)); break;
-    case TD_NONE: break; }
+    case TD_NONE: break; } }
   htap_state.state = TD_NONE; }
 
 void e_fn(tap_dance_state_t *state, void *user_data) { etap_state.state = cur_dance(state);
-  switch (etap_state.state) {
+  if (!leader_sequence_active()) { switch (etap_state.state) {
     case TD_1T: tap_code(KC_END); break;
     case TD_1H: tap_code16(S(KC_END)); break;
     case TD_2T: tap_code16(C(KC_END)); break;
     case TD_2H: tap_code16(RCS(KC_END)); break;
-    case TD_NONE: break; }
+    case TD_NONE: break; } }
   etap_state.state = TD_NONE; }
 
 tap_dance_action_t tap_dance_actions[] = {
