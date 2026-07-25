@@ -42,8 +42,7 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case KC_DQT: tap_code16((!shifted) ? KC_DQT : KC_QUOT); break;
     case KC_TILD: tap_code16((!shifted) ? KC_TILD : KC_GRV); break;
     case KC_COLN: tap_code16((!shifted) ? KC_COLN : KC_SCLN); break;
-    default: if (shifted && leader_sequence_active()) { leader_sequence_add(get_tap_keycode(keycode)); }
-      else if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
+    default: if (shifted) { add_weak_mods(MOD_BIT(KC_RSFT)); }
       register_code16((IS_RETRO(keycode)) ? keycode & 0xFF : keycode); } }
 
 void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record) { switch (keycode) {
