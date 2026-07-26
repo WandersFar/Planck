@@ -25,10 +25,10 @@
 
 Left|Rotary|Right
 ---:|:---:|:---
-←→|Base|↑↓
-Normal Zoom|Green|Mute Volume
-Find|Red|Undo Redo
-↔ Scroll|Blue|↕ Scroll
+←→|Base, Oz|↑↓
+Normal Zoom|Game|Mute Volume
+Find|Num|Undo Redo
+↔ Scroll|Nav|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
 
