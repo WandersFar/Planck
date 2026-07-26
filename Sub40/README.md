@@ -4,6 +4,9 @@
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *36 keys, 14 combos, 2 layers, 15 pin matrix*
 
+**Split Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
+*30 keys, 14 combos, 2 knobs, direct wire*
+
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 24 combos, 2 layers, 13 pin matrix*
 
