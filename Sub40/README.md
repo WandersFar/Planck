@@ -18,3 +18,29 @@
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
 *20 keys, 26 combos, 3 layers, direct wire*
+
+---
+
+Left|Rotary|Right
+---:|:---:|:---
+←→|Base|↑↓
+Normal Zoom|Green|Mute Volume
+Find|Red|Undo Redo
+↔ Scroll|Blue|↕ Scroll
+
+No Animations|Length|Meaning
+---:|:---:|---
+Purple|∞|Leader
+Yellow|∞|Caps Lock
+Yellow|½ sec|Base
+Green|∞|Oz
+Green|3 sec|Game
+Red|∞|Num
+Blue|∞|Nav
+
+Pin|Direct Wire
+---:|---
+15|keys
+3|encoder
+1|RGB
+?|TRRS jack
