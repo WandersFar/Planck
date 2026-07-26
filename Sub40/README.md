@@ -21,7 +21,7 @@
 
 ---
 
-##Split Gherkin Details
+#Split Gherkin Details
 
 Left|Rotary|Right
 ---:|:---:|:---
