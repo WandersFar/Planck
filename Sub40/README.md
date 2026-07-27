@@ -28,7 +28,7 @@ Tap|Left|Rotary|Right|Tap
 ||←→|Base, Oz|↑↓
 ^0|Zoom|Game|Volume|Mute
 ||Find|Number|Undo
-||↔ Scroll|Nav|↕ Scroll
+||↔ Scroll|Mouse|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
 
@@ -40,7 +40,7 @@ Yellow|½ sec|Base
 Green|∞|Oz
 Green|3 sec|Game
 Red|∞|Number
-Blue|∞|Nav
+Blue|∞|Mouse
 
 Pin|Direct Wire
 ---:|---
