@@ -26,7 +26,7 @@
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 ||←→|Base, Oz|↑↓
-Normal|Zoom|Game|Volume|Mute
+^0|Zoom|Game|Volume|Mute
 ||Find|Num|Undo Redo
 ||↔ Scroll|Nav|↕ Scroll
 
