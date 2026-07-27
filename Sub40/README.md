@@ -27,7 +27,7 @@ Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 ||←→|Base, Oz|↑↓
 ^0|Zoom|Game|Volume|Mute
-||Find|Num|Undo Redo
+||Find|Num|Undo
 ||↔ Scroll|Nav|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
