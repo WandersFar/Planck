@@ -19,6 +19,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 4|Essential|Backspace, Delete, Enter, Tab
 4|Unicode|Dash, Quote, Open & Close Dialog
 4|Special|Caps Lock, Leader, Insert, Switch
+3|Settings|Hue, Chroma, Debug
 
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Auto|Shift|Combos
@@ -29,6 +30,8 @@ Shift|Tab|Tab Back
 Esc|Enter
 Menu|Insert
 Light|Switch
+Lower Chroma|Raise Chroma
+Prev Hue|Next Hue
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home End|Mod|Page Up Down
