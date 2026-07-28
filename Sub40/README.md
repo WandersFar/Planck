@@ -32,10 +32,3 @@ Tap|Left|Rotary|Right|Tap
 ||↔ Scroll|Mouse|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
-
-Pin|Direct Wire
----:|---
-15|keys
-3|encoder
-1|RGB
-?|TRRS jack
