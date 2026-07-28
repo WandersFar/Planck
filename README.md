@@ -31,7 +31,7 @@ Esc|Enter
 Menu|Insert
 Light|Switch
 Lower Chroma|Raise Chroma
-Prev Hue|Next Hue
+Previous Hue|Next Hue
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home End|Mod|Page Up Down
