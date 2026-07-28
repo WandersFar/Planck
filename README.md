@@ -27,7 +27,7 @@ Auto|Shift|Combos
 Ctrl|Bksp|Del Word
 Ctrl|Del|Fwd Del Word
 Shift|Tab|Tab Back
-Esc|Enter
+Escape|Enter
 Menu|Insert
 Light|Switch
 Lower Chroma|Raise Chroma
