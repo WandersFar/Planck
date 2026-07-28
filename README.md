@@ -24,14 +24,14 @@ Mod Taps|Index|Middle|Ring|Pinky
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Auto|Shift|Combos
 ---:|:---|:---:
-Ctrl|Bksp|Del Word
-Ctrl|Del|Fwd Del Word
+Ctrl|Backspace|Del Word
+Ctrl|Delete|Fwd Del Word
 Shift|Tab|Tab Back
 Escape|Enter
 Menu|Insert
 Light|Switch
-Lower Chroma|Raise Chroma
-Previous Hue|Next Hue
+Lower Chroma|Raise Chroma|RGB
+Previous Hue|Next Hue|RGB
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home End|Mod|Page Up Down
