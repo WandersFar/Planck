@@ -29,6 +29,6 @@ Tap|Left|Rotary|Right|Tap
 ^Bksp|←→|Oz|↑↓|^Del
 ^0|Zoom|Game|Volume|Mute
 ^F|Search|Number|Undo|^S
-||↔ Scroll|Mouse|↕ Scroll
+||Scroll ↔|Mouse|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
