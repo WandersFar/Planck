@@ -33,16 +33,6 @@ Tap|Left|Rotary|Right|Tap
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Split.png)
 
-No Animations|Length|Meaning
----:|:---:|---
-Purple|∞|Leader
-Yellow|∞|Caps Lock
-Yellow|½ sec|Base
-Green|∞|Oz
-Green|3 sec|Game
-Red|∞|Number
-Blue|∞|Mouse
-
 Pin|Direct Wire
 ---:|---
 15|keys
