@@ -48,12 +48,11 @@ Keys|Auto Shift Mouse Dragging
 ![DSA Astrolokeys.png](https://github.com/WandersFar/Planck/blob/main/KLE/DSA%20Astrolokeys.png)
 RGB Mode|Length|Meaning
 ---:|:---:|:---
-Twinkle 5|10 sec|Startup Disco
 Twinkle 2|3 sec|Game Pew Pew Pew
 Static|½ sec|Base Blip
 Static|∞|Leader Ready
 Twinkle 2|∞|Oz Typing Mode
-Twinkle 5|∞|Caps Lock
+Twinkle 5|∞|Caps Lock Disco
 
 ![MT3 Piano.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Piano.png)
 AIMP||Globals||||
