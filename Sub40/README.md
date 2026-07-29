@@ -2,7 +2,7 @@
 *40 keys, 2 knobs, 16 combos, monolayer, matrix*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
-*40 keys, 24 combos, monolayer, direct wire*
+*40 keys, 27 combos, monolayer, direct wire*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *36 keys, 14 combos, 2 layers, 15 pin matrix*
