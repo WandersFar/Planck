@@ -11,7 +11,7 @@
 *30 keys, 2 knobs, 16 combos, 2 layers, direct wire*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
-*30 keys, 24 combos, 2 layers, 13 pin matrix*
+*30 keys, 27 combos, 2 layers, 13 pin matrix*
 
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
 *30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
