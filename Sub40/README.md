@@ -30,7 +30,7 @@ Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 ^0|←→|Base|↑↓|Mute
 ^0|Zoom|Game|Volume|Mute
-^F|↔ Scroll|Fn|↕ Scroll|^S
+^F|Scroll ↔|Fn|↕ Scroll|^S
 ^Bksp|Search|Oz|Undo|^Del
 
 ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
