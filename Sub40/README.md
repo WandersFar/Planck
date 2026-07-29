@@ -17,10 +17,10 @@
 *30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
 
 **Ruler** ![Ruler](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/24Ruler.png)
-*24 keys, 26 combos, 3 layers, 14 pin matrix*
+*24 keys, 30 combos, 3 layers, 14 pin matrix*
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
-*20 keys, 26 combos, 3 layers, direct wire*
+*20 keys, 30 combos, 3 layers, direct wire*
 
 ---
 
