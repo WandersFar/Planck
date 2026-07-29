@@ -1,3 +1,6 @@
+[**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
+*40 keys, 2 knobs, 16 combos, monolayer, matrix*
+
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *40 keys, 24 combos, monolayer, direct wire*
 
@@ -18,6 +21,19 @@
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
 *20 keys, 26 combos, 3 layers, direct wire*
+
+---
+
+### Knobs
+
+Tap|Left|Rotary|Right|Tap
+---:|---:|:---:|:---|:---
+^0|←→|Base|↑↓|Mute
+^0|Zoom|Game|Volume|Mute
+^F|↔ Scroll|Fn|↕ Scroll|^S
+^Bksp|Search|Oz|Undo|^Del
+
+![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
 
 ---
 
