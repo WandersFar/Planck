@@ -8,7 +8,7 @@
 *36 keys, 18 combos, 2 layers, 15 pin matrix*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
-*30 keys, 2 knobs, 14 combos, 2 layers, direct wire*
+*30 keys, 2 knobs, 16 combos, 2 layers, direct wire*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 24 combos, 2 layers, 13 pin matrix*
