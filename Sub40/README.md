@@ -29,7 +29,7 @@
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 ^0|←→|Base|↑↓|Mute
-^0|Zoom|Game|Volume|Mute
+^0|Volume|Game|Zoom|Mute
 ^F|Scroll ↔|Fn|↕ Scroll|^S
 ^Bksp|Search|Oz|Undo|^Del
 
@@ -43,7 +43,7 @@ Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 ^0|←→|Base|↑↓|Mute
 ^Bksp|←→|Oz|↑↓|^Del
-^0|Zoom|Game|Volume|Mute
+^0|Volume|Game|Zoom|Mute
 ^F|Search|Number|Undo|^S
 ||Scroll ↔|Mouse|↕ Scroll
 
