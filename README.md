@@ -19,7 +19,7 @@ Mod Taps|Index|Middle|Ring|Pinky
 4|Essential|Backspace, Delete, Enter, Tab
 4|Unicode|Dash, Quote, Open & Close Dialog
 4|Special|Caps Lock, Leader, Insert, Switch
-5|Settings|Hue, Chroma, Oz Base, Game Base, Debug
+4|Settings|Hue, Chroma, Oz Base, Game Base
 
 ![SA Vilebloom.png](https://github.com/WandersFar/Planck/blob/main/KLE/SA%20Vilebloom.png)
 Auto|Shift|Combos
