@@ -30,8 +30,6 @@ Shift|Tab|Tab Backwards
 Escape|Enter
 Menu|Insert
 Light|Switch
--Chroma|+Chroma|RGB
--Hue|+Hue|RGB
 
 ![MT3 Marvel.png](https://github.com/WandersFar/Planck/blob/main/KLE/MT3%20Marvel.png)
 Dance|Home End|Mod|Page Up Down
