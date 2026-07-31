@@ -1,26 +1,26 @@
 [**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*40 keys, 2 knobs, 16 combos, monolayer, matrix*
+*40 keys, 2 knobs, 18 combos, monolayer, matrix*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
-*40 keys, 27 combos, monolayer, direct wire*
+*40 keys, 29 combos, monolayer, direct wire*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
-*36 keys, 18 combos, 2 layers, 15 pin matrix*
+*36 keys, 20 combos, 2 layers, 15 pin matrix*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
-*30 keys, 2 knobs, 16 combos, 2 layers, direct wire*
+*30 keys, 2 knobs, 18 combos, 2 layers, direct wire*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
-*30 keys, 27 combos, 2 layers, 13 pin matrix*
+*30 keys, 29 combos, 2 layers, 13 pin matrix*
 
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
 *30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
 
 **Ruler** ![Ruler](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/24Ruler.png)
-*24 keys, 30 combos, 3 layers, 14 pin matrix*
+*24 keys, 32 combos, 3 layers, 14 pin matrix*
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
-*20 keys, 27 combos, 3 layers, direct wire*
+*20 keys, 29 combos, 3 layers, direct wire*
 
 ---
 
