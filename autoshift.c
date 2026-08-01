@@ -25,7 +25,9 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) { switch
     case KC_TILD:
     case KC_COLN: return true; default: return false; } }
 
-void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) { switch (keycode) {
+void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
+  if (shifted && leader_sequence_active()) { leader_sequence_add(get_tap_keycode(keycode)); leader_sequence_add(get_tap_keycode(keycode)); }
+  switch (keycode) {
     case KC_BSPC: tap_code16((!shifted) ? KC_BSPC : C(KC_BSPC)); break;
     case KC_DEL: tap_code16((!shifted) ? KC_DEL : C(KC_DEL)); break;
     case KC_ENT: tap_code((!shifted) ? KC_ENT : KC_ESC); break;
@@ -33,8 +35,8 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
     case C(KC_PGUP): tap_code16((!shifted) ? C(KC_PGUP) : KC_PGUP); break;
     case C(KC_PGDN): tap_code16((!shifted) ? C(KC_PGDN) : KC_PGDN); break;
     case KC_INS: tap_code((!shifted) ? KC_INS : KC_APP); break;
-    case KC_P1: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
-    case KC_P2: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
+    case KC_P1: register_unicodemap((!shifted) ? DASHEM : DASHEN); break;
+    case KC_P2: register_unicodemap((!shifted) ? RSINGLE : LSINGLE); break;
     case KC_BTN1: register_code((!shifted) ? KC_BTN1 : KC_BTN1); break;
     case KC_BTN2: register_code((!shifted) ? KC_BTN2 : KC_BTN2); break;
     case KC_BTN3: register_code((!shifted) ? KC_BTN3 : KC_BTN3); break;
