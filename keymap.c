@@ -11,6 +11,12 @@ enum layer_names { BASE, OZ, GAME, FN };
 
 #include "print.h"
 
+bool leader_add_user(uint16_t keycode) {
+  dprintf("leader_add_user: keycode=%s\n",
+          get_keycode_string(keycode));
+  return false;
+}
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ortho_4x12(C(KC_PGUP), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, C(KC_PGDN),
     TD(HOME), KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, TD(END),
@@ -28,9 +34,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LBRC, C(KC_PPLS), A(KC_F4), KC_MS_U, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_MS_U, RCS(KC_ESC), G(KC_PSCR), KC_RBRC,
     KC_PIPE, KC_TILD, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_COLN, KC_DQT,
     KC_F11, KC_MUTE, KC_VOLD, KC_VOLU, KC_WH_U, KC_WH_L, KC_WH_R, KC_WH_D, KC_VOLU, KC_VOLD, KC_MUTE, KC_F12) };
-
-bool leader_add_user(uint16_t keycode) {
-  dprintf("leader_add_user: keycode=%s\n",
-          get_keycode_string(keycode));
-  return false;
-}

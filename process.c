@@ -6,8 +6,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycod
   case LT(1,KC_DEL): if (record->tap.count && record->event.pressed) { tap_code(KC_DEL); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
   case LT(1,KC_QUOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZQS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZQD); tap_code(KC_LEFT); } return false;
   case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
-  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } return false;
   case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } return false;
+  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } return false;
   case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZEL); tap_code(KC_LEFT); } return false;
   case LT(1,KC_DOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZDOT); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZELL); tap_code(KC_LEFT); } return false;
   case LT(1,KC_SLSH): if (record->tap.count && record->event.pressed) { register_unicodemap(QUESTION); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBANG); tap_code(KC_LEFT); } return false;
@@ -51,5 +51,4 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycod
   case LT(1,KC_NO): if (record->tap.count && record->event.pressed) { rgblight_increase_hue_noeeprom(); } else if (record->event.pressed) { rgblight_decrease_hue_noeeprom(); } return false;
   case LT(2,KC_NO): if (record->tap.count && record->event.pressed) { rgblight_increase_sat_noeeprom(); } else if (record->event.pressed) { rgblight_decrease_sat_noeeprom(); } return false;
   case DF(BASE): if (record->event.pressed) { clear_mods(); } return true;
-  case DB_TOGG: if (record->event.pressed) { rgblight_toggle_noeeprom(); } return true;
   default: return true; } };
