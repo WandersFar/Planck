@@ -42,7 +42,7 @@ Mute|Volume|Game|Zoom|^0
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 Mute|←→|Base|↑↓|^0
-^Bksp|←→|Oz|↑↓|^Del
+^Bksp|←→|Oz|+←+→|^Del
 Mute|Volume|Game|Zoom|^0
 ^F|Search|Number|Undo|^S
 ||Scroll ↔|Mouse|↕ Scroll
