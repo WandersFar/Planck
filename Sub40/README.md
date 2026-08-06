@@ -31,7 +31,7 @@ Tap|Left|Rotary|Right|Tap
 Mute|←→|Base|↑↓|^0
 Mute|Volume|Game|Zoom|^0
 ^F|Scroll ↔|Fn|↕ Scroll|^S
-^Bksp|Search|Oz|Undo|^Del
+‚|Search|Oz|Undo|„
 
 ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
 
