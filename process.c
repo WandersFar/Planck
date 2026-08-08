@@ -1,13 +1,13 @@
 bool process_record_user(uint16_t keycode, keyrecord_t *record) { switch (keycode) {
   case LT(1,KC_MINS): if (record->tap.count && record->event.pressed) { tap_code(KC_MINS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(DASHEM); tap_code(KC_LEFT); } return false;
-  case LT(1,KC_END): if (record->tap.count && record->event.pressed) { tap_code(KC_END); } else if (record->event.pressed) { tap_code(KC_HOME); } return false;
+  case LT(1,KC_QUOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZQS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZQD); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_HOME): if (record->tap.count && record->event.pressed) { tap_code(KC_HOME); } else if (record->event.pressed) { tap_code16(S(KC_HOME)); } return false;
+  case LT(1,KC_END): if (record->tap.count && record->event.pressed) { tap_code(KC_END); } else if (record->event.pressed) { tap_code16(S(KC_END)); } return false;
   case LT(1,KC_LEFT): if (record->tap.count && record->event.pressed) { tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code16(C(KC_LEFT)); } return false;
   case LT(1,KC_RGHT): if (record->tap.count && record->event.pressed) { tap_code(KC_RGHT); } else if (record->event.pressed) { tap_code16(C(KC_RGHT)); } return false;
-  case LT(1,KC_DEL): if (record->tap.count && record->event.pressed) { tap_code(KC_DEL); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
-  case LT(1,KC_QUOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZQS); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZQD); tap_code(KC_LEFT); } return false;
   case LT(1,KC_BSPC): if (record->tap.count && record->event.pressed) { tap_code(KC_BSPC); } else if (record->event.pressed) { tap_code16(C(KC_BSPC)); } return false;
-  case LT(1,KC_ENT): if (record->tap.count && record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } else if (record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } return false;
-  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } return false;
+  case LT(1,KC_DEL): if (record->tap.count && record->event.pressed) { tap_code(KC_DEL); } else if (record->event.pressed) { tap_code16(C(KC_DEL)); } return false;
+  case LT(1,KC_SPC): if (record->tap.count && record->event.pressed) { tap_code(KC_SPC); tap_code(KC_LEFT); } else if (record->event.pressed) { tap_code(KC_END); tap_code(KC_ENT); } return false;
   case LT(1,KC_COMM): if (record->tap.count && record->event.pressed) { register_unicodemap(LSINGLE); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZEL); tap_code(KC_LEFT); } return false;
   case LT(1,KC_DOT): if (record->tap.count && record->event.pressed) { register_unicodemap(ZDOT); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZELL); tap_code(KC_LEFT); } return false;
   case LT(1,KC_SLSH): if (record->tap.count && record->event.pressed) { register_unicodemap(QUESTION); tap_code(KC_LEFT); } else if (record->event.pressed) { register_unicodemap(ZBANG); tap_code(KC_LEFT); } return false;
