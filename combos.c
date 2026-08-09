@@ -1,4 +1,3 @@
-const uint16_t PROGMEM DEBUG[] = {KC_R, KC_U, COMBO_END};
 const uint16_t PROGMEM CTRL_BS[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
 const uint16_t PROGMEM CTRL_DEL[] = {KC_C, LT(FN,KC_V), COMBO_END};
 const uint16_t PROGMEM ESC_ENT[] = {RCTL_T(KC_J), RSFT_T(KC_K), COMBO_END};
@@ -16,7 +15,6 @@ const uint16_t PROGMEM CHROMA[] = {KC_X, KC_DOT, COMBO_END};
 const uint16_t PROGMEM OZ_BASE[] = {LT(1,KC_V), LT(1,KC_M), COMBO_END};
 const uint16_t PROGMEM GAME_BASE[] = {KC_V, KC_M, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-  COMBO(DEBUG, DB_TOGG),
   COMBO(CTRL_BS, KC_BSPC),
   COMBO(CTRL_DEL, KC_DEL),
   COMBO(ESC_ENT, KC_ENT),
