@@ -57,18 +57,14 @@ Only one knob top mounted opposite the RP2040-Zero.
 
 RJ45 ports mounted on the bottom corners.
 
-***Bold Italic indicates a Key Override***
-
-*Italic indicates an OS Native Function*
-
 Mod|Layer|Rotary|Tap
 ---:|:---:|:---:|:---:
 ||Oz|←→|*native Shift on hold*
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T( C(KC_S) )
-***Hold***|Red|Undo|***override meh***
-***Gui***|Red|Search|***override gui***
+***Hold***|Red|Undo|***override Meh***
+***Gui***|Red|Search|***override Gui***
 ||Blue|Scroll ↕|SFT_T( C(KC_0) )
 *Hold*|Blue|Scroll ↔|*native Shift*
 *Ctrl*|Blue|Zoom|*native Ctrl*
