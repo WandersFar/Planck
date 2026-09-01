@@ -68,7 +68,7 @@ Mod|Layer|Rotary|Tap
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T( C(KC_S) )
 ***Hold***|Red|Undo|***meh***
-***Gui***|Red|Search|C(KC_F)
+***Gui***|Red|Search|***gui*** C(KC_F)
 ||Blue|Scroll ↕|SFT_T( C(KC_0) )
 *Hold*|Blue|Scroll ↔|*native*
 *Ctrl*|Blue|Zoom|*native*
