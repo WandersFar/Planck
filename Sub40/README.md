@@ -59,7 +59,7 @@ Mod|Layer|Rotary|Tap|QMK
 ---:|:---:|:---:|:---:|:---
 ||Base|←→|Mute
 Gui Alt|Base|↑↓|Mute|Override
-||Oz|↑↓|Mute
+||Oz|←→|Mute
 ||Game|Volume|Mute
 ||Blue|Scroll ↕|^0
 Ctrl|Blue|Zoom|^0|Native
