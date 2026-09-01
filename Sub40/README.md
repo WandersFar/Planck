@@ -66,8 +66,8 @@ Mod|Layer|Rotary|Tap
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
-||Red|↑↓|MEH_T(kc)
-***Hold***|Red|Undo|C(KC_S)
+||Red|↑↓|MEH_T( C(KC_S) )
+***Hold***|Red|Undo|***meh***
 ***Gui***|Red|Search|C(KC_F)
 ||Blue|Scroll ↕|SFT_T( C(KC_0) )
 *Hold*|Blue|Scroll ↔|*native*
