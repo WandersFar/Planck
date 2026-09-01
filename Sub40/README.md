@@ -69,6 +69,6 @@ Mod|Layer|Rotary|Tap
 ||Red|↑↓|MEH_T(kc)
 ***Hold***|Red|Undo|C(KC_S)
 ***Gui***|Red|Search|C(KC_F)
-||Blue|Scroll ↕|C(KC_0)
-*Hold*|Blue|Scroll ↔|SFT_T(kc)
+||Blue|Scroll ↕|SFT_T(kc)
+*Hold*|Blue|Scroll ↔|C(KC_0)
 *Ctrl*|Blue|Zoom|C(KC_0)
