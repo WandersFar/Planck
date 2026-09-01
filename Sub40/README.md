@@ -66,5 +66,5 @@ Mod|Layer|Rotary|Tap
 Hold|Red|Undo|***override Meh***
 Gui|Red|Search|***override Gui***
 ||Blue|Scroll ↕|SFT_T( C(KC_0) )
-Hold|Blue|Scroll ↔|*native Shift*
+Hold|Blue|Scroll ↔|*native Shift on hold*
 Ctrl|Blue|Zoom|*native Ctrl*
