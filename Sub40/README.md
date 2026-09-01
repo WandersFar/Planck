@@ -62,8 +62,5 @@ Game|None|Volume|Default
 Blue|None|Scroll ↕|Default
 Blue|Ctrl|Zoom|Native
 Blue|Shift|Scroll ↔|Native
-Blue|Alt||Override
 Red|None|Undo|Default
 Red|Shift|Search|Override
-Red|Alt||Override
-Red|Gui||Override
