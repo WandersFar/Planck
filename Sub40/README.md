@@ -55,18 +55,17 @@ Mute|Volume|Game|Zoom|^0
 
 Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners. 
 
-Use Ctrl Shift Alt overrides on Blue and Red layers to cover the functions of the absent second knob.
+Use mod overrides on Blue and Red layers to cover the functions of the absent second knob.
 
 Layer|Mod|Function|Implementation
 ---:|---:|:---:|:---
 Base|None|←→|Default (all native mod functions are useful) 
 Base|Hold|Volume|Mute on Tap
 Blue|None|Scroll ↕|Default
-Blue|Shift|Scroll ↔|Native
 Blue|Ctrl|Zoom|Native
+Blue|Shift|Scroll ↔|Native
 Blue|Alt||Override
-
-Ctrl Scroll may Zoom by default.
-Shift Scroll may Horizontal by default. 
-Alt Scroll could be 
-Shift Undo could be Search.
+Red|None|Undo|Default
+Red|Shift|Search|Override
+Red|Alt||Override
+Red|Gui||Override
