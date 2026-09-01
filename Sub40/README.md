@@ -55,7 +55,7 @@ Mute|Volume|Game|Zoom|^0
 
 Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners. 
 
-Use Ctrl and Shift key overrides on Blue and Red layers to cover the functions of the absent second knob.
+Use Ctrl Shift Alt overrides on Blue and Red layers to cover the functions of the absent second knob.
 
 Ctrl Scroll may Zoom by default.
 Shift Scroll may Horizontal by default. 
