@@ -58,10 +58,10 @@ Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bo
 Mod|Layer|Rotary|Tap|QMK
 ---:|---:|:---:|:---:|:---
 ||Base|←→|Mute
-||Oz|↑↓
+||Oz|↑↓|Mute
 ||Game|Volume|Mute
 ||Blue|Scroll ↕|^0
 Ctrl|Blue|Zoom|^0|Native
-Shift|Blue|Scroll ↔||Native
+Shift|Blue|Scroll ↔|^0|Native
 ||Red|Undo|^S
 Shift|Red|Search|^F|Override
