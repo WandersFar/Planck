@@ -57,9 +57,9 @@ Only one knob top mounted opposite the RP2040-Zero.
 
 RJ45 ports mounted on the bottom corners.
 
-N: OS Native Function
+*Italic indicates an OS Native Function*
 
-O: Key Override
+**Bold indicates a Key Override**
 
 Mod|Layer|Rotary|Tap||
 ---:|:---:|:---:|:---:|:---
@@ -67,8 +67,8 @@ Mod|Layer|Rotary|Tap||
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T(kc)
-Hold|Red|Undo|C(KC_S)|O
-Gui|Red|Search|^F|O
+*Hold*|Red|Undo|C(KC_S)|O
+*Gui*|Red|Search|^F|O
 ||Blue|Scroll ↕|^0
-Hold|Blue|Scroll ↔|KC_RSFT|N
-Ctrl|Blue|Zoom|^0|N
+*Hold*|Blue|Scroll ↔|KC_RSFT|N
+*Ctrl*|Blue|Zoom|^0|N
