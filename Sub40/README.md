@@ -59,8 +59,12 @@ Use Ctrl Shift Alt overrides on Blue and Red layers to cover the functions of th
 
 Layer|Mod|Function|Implementation
 ---:|---:|:---:|:---
-Base|None|←→|Default (leave all mods as is for editing, nav, window management) 
+Base|None|←→|Default (all native mod functions are useful) 
 Base|Hold|Volume|Mute on Tap
+Blue|None|Scroll ↕|Default
+Blue|Shift|Scroll ↔|Native
+Blue|Ctrl|Zoom|Native
+Blue|Alt||Override
 
 Ctrl Scroll may Zoom by default.
 Shift Scroll may Horizontal by default. 
