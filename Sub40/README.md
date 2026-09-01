@@ -55,14 +55,14 @@ Mute|Volume|Game|Zoom|^0
 
 Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners.
 
-Mod|Layer|Rotary|Tap|QMK
+Mod|Layer|Rotary|Tap||
 ---:|:---:|:---:|:---:|:---
 ||Base|←→|LT(FN,KC_MUTE)
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T(kc)
-Hold|Red|Undo|C(KC_S)|Ov
+Hold|Red|Undo|C(KC_S)|Ovr
 Gui|Red|Search|^F|Ov
 ||Blue|Scroll ↕|^0
-Hold|Blue|Scroll ↔|Shift|Nv
-Ctrl|Blue|Zoom|^0|Nv
+Hold|Blue|Scroll ↔|Shift|Ntv
+Ctrl|Blue|Zoom|^0|Ntv
