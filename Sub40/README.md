@@ -61,14 +61,14 @@ RJ45 ports mounted on the bottom corners.
 
 *Italic indicates an OS Native Function*
 
-Mod|Layer|Rotary|Tap||
----:|:---:|:---:|:---:|:---
+Mod|Layer|Rotary|Tap
+---:|:---:|:---:|:---:
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T(kc)
-***Hold***|Red|Undo|C(KC_S)|O
-***Gui***|Red|Search|C(KC_F)|O
+***Hold***|Red|Undo|C(KC_S)
+***Gui***|Red|Search|C(KC_F)
 ||Blue|Scroll ↕|C(KC_0)
-*Hold*|Blue|Scroll ↔|KC_RSFT|N
-*Ctrl*|Blue|Zoom|C(KC_0)|N
+*Hold*|Blue|Scroll ↔|SFT_T(kc)
+*Ctrl*|Blue|Zoom|C(KC_0)
