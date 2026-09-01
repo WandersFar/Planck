@@ -57,7 +57,7 @@ Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bo
 
 Mod|Layer|Rotary|Tap||
 ---:|:---:|:---:|:---:|:---
-||Base|←→|LT(FN,KC_MUTE)
+||Base|←→|LT(GAME,KC_MUTE)
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T(kc)
