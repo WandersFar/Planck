@@ -57,8 +57,8 @@ Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bo
 
 Layer|Mod|Function|Implementation
 ---:|---:|:---:|:---
-Base|None|←→|Default (all native mod functions are useful) 
-Base|Hold|Volume|Mute on Tap
+Base|None|←→|Default
+Game|None|Volume|Default
 Blue|None|Scroll ↕|Default
 Blue|Ctrl|Zoom|Native
 Blue|Shift|Scroll ↔|Native
