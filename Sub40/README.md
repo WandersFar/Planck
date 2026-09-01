@@ -53,9 +53,7 @@ Mute|Volume|Game|Zoom|^0
 
 ### RJ45 Knob
 
-Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners. 
-
-Use mod overrides on Blue and Red layers to cover the functions of the absent second knob.
+Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners.
 
 Layer|Mod|Function|Implementation
 ---:|---:|:---:|:---
