@@ -70,5 +70,5 @@ Mod|Layer|Rotary|Tap||
 Hold|Red|Undo|C(KC_S)|O
 Gui|Red|Search|^F|O
 ||Blue|Scroll ↕|^0
-Hold|Blue|Scroll ↔|Shift|N
+Hold|Blue|Scroll ↔|KC_RSFT|N
 Ctrl|Blue|Zoom|^0|N
