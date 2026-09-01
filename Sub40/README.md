@@ -61,8 +61,8 @@ Mod|Layer|Rotary|Tap|QMK
 ||Oz|←→|KC_RSFT
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T(kc)
-Hold|Red|Undo|C(KC_S)|Over
-Gui|Red|Search|^F|Over
+Hold|Red|Undo|C(KC_S)|Ovr
+Gui|Red|Search|^F|Ovr
 ||Blue|Scroll ↕|^0
-Hold|Blue|Scroll ↔|Shift|Natv
-Ctrl|Blue|Zoom|^0|Natv
+Hold|Blue|Scroll ↔|Shift|Ntv
+Ctrl|Blue|Zoom|^0|Ntv
