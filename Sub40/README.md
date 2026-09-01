@@ -58,7 +58,7 @@ Only one knob top mounted opposite the RP2040-Zero.
 RJ45 ports mounted on the bottom corners.
 
 Mod|Layer|Rotary|Tap
----:|:---:|:---:|:---:
+---:|:---:|:---:|:---
 ||Oz|←→|*native Shift on hold*
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Game|Volume|KC_MUTE
