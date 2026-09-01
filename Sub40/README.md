@@ -48,3 +48,11 @@ Mute|Volume|Game|Zoom|^0
 ||Scroll ↔|Mouse|↕ Scroll
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
+
+---
+
+### RJ45 Knob
+
+Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners. 
+
+Use Ctrl and Shift key overrides on Blue and Red layers to cover the functions of the absent second knob.
