@@ -61,7 +61,7 @@ Mod|Layer|Rotary|Tap|QMK
 ||Oz|←→|Shift
 ||Game|Volume|Mute
 ||Red|↑↓|^S
-Hold|Red|Undo|Dummy Mod|Override
+Hold|Red|Undo|Gui|Override
 Shift|Red|Search|^F|Override
 ||Blue|Scroll ↕|^0
 Hold|Blue|Scroll ↔|Shift|Native
