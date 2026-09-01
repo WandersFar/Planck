@@ -63,7 +63,7 @@ RJ45 ports mounted on the bottom corners.
 
 Mod|Layer|Rotary|Tap
 ---:|:---:|:---:|:---:
-||Oz|←→|TD S(END,HOME)
+||Oz|←→|*native Shift on hold*
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Game|Volume|KC_MUTE
 ||Red|↑↓|MEH_T( C(KC_S) )
