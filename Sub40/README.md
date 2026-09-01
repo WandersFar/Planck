@@ -59,4 +59,5 @@ Use Ctrl and Shift key overrides on Blue and Red layers to cover the functions o
 
 Ctrl Scroll may Zoom by default.
 Shift Scroll may Horizontal by default. 
-Alt Scroll could be overridden
+Alt Scroll could be 
+Shift Undo could be Search.
