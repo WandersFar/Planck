@@ -60,6 +60,7 @@ Mod|Layer|Rotary|Tap|QMK
 ||Base|←→|Mute
 ||Oz|↑↓|Mute
 ||Game|Volume|Mute
+Ctrl|Game|↑↓|Mute|Override
 ||Blue|Scroll ↕|^0
 Ctrl|Blue|Zoom|^0|Native
 Shift|Blue|Scroll ↔|^0|Native
