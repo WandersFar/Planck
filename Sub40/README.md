@@ -57,6 +57,11 @@ Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bo
 
 Use Ctrl Shift Alt overrides on Blue and Red layers to cover the functions of the absent second knob.
 
+Layer|Mod|Function|Implementation
+---:|---:|:---:|:---
+Base|None|←→|Default (leave all mods as is for editing, nav, window management) 
+Base|Hold|Volume|Mute on Tap
+
 Ctrl Scroll may Zoom by default.
 Shift Scroll may Horizontal by default. 
 Alt Scroll could be 
