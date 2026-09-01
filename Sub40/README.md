@@ -64,5 +64,5 @@ Mod|Layer|Rotary|Tap|QMK
 Hold|Red|Undo|C(KC_S)|Over
 Gui|Red|Search|^F|Over
 ||Blue|Scroll ↕|^0
-Hold|Blue|Scroll ↔|Shift|Native
-Ctrl|Blue|Zoom|^0|Native
+Hold|Blue|Scroll ↔|Shift|Natv
+Ctrl|Blue|Zoom|^0|Natv
