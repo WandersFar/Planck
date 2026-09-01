@@ -53,10 +53,13 @@ Mute|Volume|Game|Zoom|^0
 
 ### RJ45 Knob
 
-O: Key Override
+Only one knob top mounted opposite the RP2040-Zero.
+
+RJ45 ports mounted on the bottom corners.
+
 N: OS Native Function
 
-Only one knob top mounted opposite the RP2040-Zero. RJ45 ports mounted on the bottom corners.
+O: Key Override
 
 Mod|Layer|Rotary|Tap||
 ---:|:---:|:---:|:---:|:---
