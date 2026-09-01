@@ -60,9 +60,9 @@ Mod|Layer|Rotary|Tap|QMK
 ||Base|←→|Mute
 ||Oz|←→|Shift
 ||Game|Volume|Mute
-||Blue|Scroll ↕|^0
-Ctrl|Blue|Zoom|^0|Native
-Shift|Blue|Scroll ↔|^0|Native
-||Red|↑↓|Mute
-Ctrl|Red|Undo|^S|Override
+||Red|↑↓|^S
+Hold|Red|Undo|Dummy Mod|Override
 Shift|Red|Search|^F|Override
+||Blue|Scroll ↕|^0
+Hold|Blue|Scroll ↔|Shift|Native
+Ctrl|Blue|Zoom|^0|Native
