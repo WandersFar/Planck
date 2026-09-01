@@ -70,5 +70,5 @@ Mod|Layer|Rotary|Tap
 ***Hold***|Red|Undo|***meh***
 ***Gui***|Red|Search|***gui*** C(KC_F)
 ||Blue|Scroll ↕|SFT_T( C(KC_0) )
-*Hold*|Blue|Scroll ↔|*native*
-*Ctrl*|Blue|Zoom|*native*
+*Hold*|Blue|Scroll ↔|*native Shift*
+*Ctrl*|Blue|Zoom|*native Ctrl*
