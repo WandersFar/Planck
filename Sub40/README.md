@@ -11,7 +11,7 @@
 *30 keys, 2 knobs, 18 combos, 2 layers, direct wire*
 
 [**Cheaperino**](#cheaperino)
-*30 keys, 1 knob, 22 combos (including 6 Oz), 2 layers, left master 8 pin matrix = RJ45 = right slave 8 pin Japanese columnar duplex*
+*30 keys, 1 knob, 22 combos (14 base + 7 oz + 1 game), 2 layers, left master 8 pin matrix = RJ45 = right slave 8 pin Japanese columnar duplex including rotary tap and spins*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 29 combos, 2 layers, 13 pin matrix*
