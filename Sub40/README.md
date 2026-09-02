@@ -11,7 +11,7 @@
 *30 keys, 2 knobs, 18 combos, 2 layers, direct wire*
 
 [**Cheaperino**](#cheaperino)
-*30 keys, 1 knob, 22 combos (including 6 Oz), 2 layers, 8 pin regular matrix and 8 pin Japanese columnar duplex matrix, RJ45*
+*30 keys, 1 knob, 22 combos (including 6 Oz), 2 layers, left master 8 pin matrix = RJ45 = right slave 8 pin Japanese columnar duplex*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 29 combos, 2 layers, 13 pin matrix*
@@ -55,16 +55,6 @@ Mute|Volume|Game|Zoom|^0
 ---
 
 ### Cheaperino
-
-Only one knob top mounted opposite the RP2040-Zero.
-
-RJ45 ports mounted on the bottom corners.
-
-Regular matrix on the left master half.
-
-Japanese duplex column matrix on the right slave.
-
-Both halves use 8 pins each, including the rotary.
 
 Mod|Layer|Rotary|Tap
 ---:|:---:|:---:|:---
