@@ -92,3 +92,13 @@ Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
 ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
+
+RP2040-Zero has an integrated RGB LED on GP16. 
+
+Hue|Duration|Meaning
+---:|:---:|:---
+Red|Blip|Game
+Red|∞|Caps
+Green|Blip|Base
+Green|∞|Leader
+Blue|∞|Oz
