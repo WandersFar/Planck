@@ -82,12 +82,12 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 CTL_T(KC_HOME)|KC_BSPC KC_DEL|Oz|←→|SFT_T(KC_END)
-||Base|←→|LT(GAME,KC_MUTE)
+LT(GAME,KC_MUTE)|←→|Base|↑↓|SFT_T( C(KC_0) )
 ||Game|Volume|KC_MUTE
 ||Number|↑↓|MEH_T( C(KC_S) )
 Hold|Number|Undo|***override Meh***
 Gui|Number|Search|***override Gui***
-||Mouse|Scroll ↕|SFT_T( C(KC_0) )
+||Mouse|Scroll ↕|
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
