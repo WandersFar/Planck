@@ -81,7 +81,7 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
-←→|SFT_T(KC_HOME)|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
+SFT_T(KC_HOME)|←→|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
 LT(GAME,KC_MUTE)|←→|Base|↑↓|SFT_T( C(KC_0) )
 ||Game|Volume|KC_MUTE
 ||Number|↑↓|MEH_T( C(KC_S) )
