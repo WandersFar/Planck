@@ -85,7 +85,7 @@ SFT_T(KC_HOME)|←→|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
 LT(GAME,KC_MUTE)|←→|Base|↑↓|SFT_T( C(KC_0) )
 KC_MUTE|Volume|Game|Zoom|C(KC_0)
 C(KC_F)|Search|Number|Undo|C(KC_S)
-|Scroll ↔|Mouse|Scroll ↕
+||Scroll ↔|Mouse|Scroll ↕
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
