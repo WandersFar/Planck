@@ -83,8 +83,8 @@ Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 SFT_T(KC_HOME)|←→|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
 LT(GAME,KC_MUTE)|←→|Base|↑↓|LT( GAME, C(KC_0) )
-KC_MUTE|Volume|Game|Zoom|C(KC_0)
-C(KC_F)|Search|Number|Undo|C(KC_S)
+KC_MUTE|KC_VOLD KC_VOLU|Game|C(KC_MINS) C(KC_EQL)|C(KC_0)
+C(KC_F)|S(KC_F3) KC_F3|Number|C(KC_Z) C(KC_Y)|C(KC_S)
 ||Scroll ↔|Mouse|Scroll ↕
 
 ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
