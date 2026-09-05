@@ -11,13 +11,13 @@
 *30 keys, 2 knobs, 18 combos, 2 layers, direct wire*
 
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-*master 8 pin matrix = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 30 keys, 1 knob, 16 combos (+ 6 oz), 2 layers*
+*master 8 pin 5x3 matrix = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 30 keys, 1 knob, 16 combos (+ 6 oz), 2 layers*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 29 combos, 2 layers, 13 pin matrix*
 
 [**Shortwave Knobs**](#shortwave-knobs) ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
-*30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
+*2 spin pins + master 9 pin 6x3 matrix including rotary tap = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 30 keys, 1 knob, 16 combos (+ 6 oz), 2 layers, 30 keys: 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
 
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
 *30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
