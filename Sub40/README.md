@@ -77,9 +77,9 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 ### Shortwave Knobs
 
-Mod|Layer|Rotary|Tap
----:|:---:|:---:|:---
-||Oz|←→|*native Shift on hold*
+Tap|Mod|Layer|Rotary|Tap
+---:|---:|:---:|:---|:---
+Home|Oz|←→|*native Shift on hold*|End
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Game|Volume|KC_MUTE
 ||Number|↑↓|MEH_T( C(KC_S) )
