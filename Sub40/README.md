@@ -81,7 +81,7 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
-Home|Oz|←→|*native Shift on hold*|End
+Home|Oz|←→|*native Shift on hold*|SFT_T(KC_END)
 ||Base|←→|LT(GAME,KC_MUTE)
 ||Game|Volume|KC_MUTE
 ||Number|↑↓|MEH_T( C(KC_S) )
