@@ -10,8 +10,7 @@
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 *30 keys, 2 knobs, 18 combos, 2 layers, direct wire*
 
-[**Cheaperino**](#cheaperino)
-
+[**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 *master 8 pin matrix = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 30 keys, 1 knob, 16 combos (+ 6 oz), 2 layers*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
