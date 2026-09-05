@@ -84,10 +84,8 @@ Tap|Left|Rotary|Right|Tap
 SFT_T(KC_HOME)|←→|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
 LT(GAME,KC_MUTE)|←→|Base|↑↓|SFT_T( C(KC_0) )
 KC_MUTE|Volume|Game|Zoom|C(KC_0)
-||Number|↑↓|MEH_T( C(KC_S) )
 C(KC_F)|Search|Number|Undo|C(KC_S)
-Gui|Number|Search|***override Gui***
-|Scroll ↔|Mouse|Scroll ↕|
+|Scroll ↔|Mouse|Scroll ↕
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
