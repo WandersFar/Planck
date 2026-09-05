@@ -67,3 +67,5 @@ Gui|Number|Search|***override Gui***
 ||Mouse|Scroll ↕|SFT_T( C(KC_0) )
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
+
+![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
