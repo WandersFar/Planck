@@ -14,7 +14,9 @@
 *master 8 pin 5x3 matrix = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 30 keys, 1 knob, 16 combos (+ 6 oz), 2 layers*
 
 [**Shortwave Knobs**](#shortwave-knobs) ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
-*master 11 pin 6x3 matrix including rotary tap + 2 spin pins = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins: 2 knobs, 12 combos (+ 4 oz), 2 layers, 31 keys: 6 1.75U, 4 1.5U, 4 1.25U, 16 1U, 1 artisan*
+*master 11 pin 6x3 matrix including rotary tap + 2 spin pins = RJ45 = slave 8 pin Japanese columnar duplex including rotary tap + 2 spin pins*
+***
+*2 knobs, 12 combos (+ 4 oz), 2 layers, 31 keys: 6 1.75U, 4 1.5U, 4 1.25U, 16 1U, 1 artisan*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 29 combos, 2 layers, 13 pin matrix*
