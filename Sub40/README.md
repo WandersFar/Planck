@@ -16,6 +16,9 @@
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *30 keys, 29 combos, 2 layers, 13 pin matrix*
 
+[**Shortwave Knobs**](#shortwave-knobs) ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
+*30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
+
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
 *30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
 
@@ -69,3 +72,21 @@ Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
+
+---
+
+### Shortwave Knobs
+
+Mod|Layer|Rotary|Tap
+---:|:---:|:---:|:---
+||Oz|←→|*native Shift on hold*
+||Base|←→|LT(GAME,KC_MUTE)
+||Game|Volume|KC_MUTE
+||Number|↑↓|MEH_T( C(KC_S) )
+Hold|Number|Undo|***override Meh***
+Gui|Number|Search|***override Gui***
+||Mouse|Scroll ↕|SFT_T( C(KC_0) )
+Hold|Mouse|Scroll ↔|*native Shift on hold*
+Ctrl|Mouse|Zoom|*native Ctrl*
+
+![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
