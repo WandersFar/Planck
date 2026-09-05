@@ -87,7 +87,7 @@ LT(GAME,KC_MUTE)|←→|Base|↑↓|SFT_T( C(KC_0) )
 ||Number|↑↓|MEH_T( C(KC_S) )
 Hold|Number|Undo|***override Meh***
 Gui|Number|Search|***override Gui***
-||Mouse|Scroll ↕|
+|Scroll ↔|Mouse|Scroll ↕|
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
