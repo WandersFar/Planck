@@ -74,6 +74,15 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 ***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
+22|Combos||
+---:|:---:|:---
+**2**|Function|F11, F12
+**2**|Exit|Oz to Base, Game to Base
+**4**|Basic|Backspace, Delete, Enter, Tab
+**4**|Special|Insert, Switch, Caps Lock, Leader
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**6**|Oz|Backspace, Delete, Home, End, Dash, Quote
+
 ---
 
 ### Split Wave
