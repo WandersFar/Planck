@@ -81,7 +81,7 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 ### Splitwave
 
-Tap|Left Knob|Layer|Right Knob|Tap
+Tap|Left|Layer|Right|Tap
 ---:|---:|:---:|:---|:---
 SFT_T(KC_HOME)|KC_LEFT KC_RGHT|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
 LT(GAME,KC_MUTE)|KC_LEFT KC_RGHT|Base|KC_UP KC_DOWN|LT( GAME, C(KC_0) )
