@@ -72,7 +72,7 @@ Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
+***8 pins*** *5x3 =* ***RJ45*** *= 6 Jap column, tap + 2 spin* ***8 pins***
 
 22|Combos||
 ---:|:---:|:---
@@ -96,7 +96,7 @@ Game|🔇|←→|**Base**|↑↓|^0|Game
 |||↔|**Blue**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
+***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Jap column, tap + 2 spin* ***8 pins***
 
 14|Combos||
 ---:|:---:|:---
