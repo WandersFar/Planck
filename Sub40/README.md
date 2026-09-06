@@ -89,7 +89,7 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
-Shift|Home|←→|**Oz**|BS Del|End|Ctrl
+Shift|Home|←→|**Oz**|BS DL|End|Ctrl
 Game|Mute|←→|**Base**|↑↓|^0|Game
 ||Mute|Vol|**Game**|Zoom|^0
 ||^F|Find|**Red**|Undo|^S
