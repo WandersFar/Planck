@@ -81,7 +81,7 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 **4**|Basic|Backspace, Delete, Enter, Tab
 **4**|Special|Insert, Switch, Caps Lock, Leader
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**6**|Oz|Backspace, Delete, Home, End, Dash, Quote
+**6**|Oz|Bs, Delete, Home, End, Dash, Quote
 
 ---
 
