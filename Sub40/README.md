@@ -81,14 +81,6 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 ### Split Wave
 
-Tap|Left|Layer|Right|Tap
----:|---:|:---:|:---|:---
-SFT_T(KC_HOME)|KC_LEFT KC_RGHT|Oz|KC_BSPC KC_DEL|CTL_T(KC_END)
-LT(GAME,KC_MUTE)|KC_LEFT KC_RGHT|Base|KC_UP KC_DOWN|LT( GAME, C(KC_0) )
-KC_MUTE|KC_VOLD KC_VOLU|Game|C(KC_MINS) C(KC_EQL)|C(KC_0)
-C(KC_F)|S(KC_F3) KC_F3|Number|C(KC_Z) C(KC_Y)|C(KC_S)
-||KC_WH_L KC_WH_R|Mouse|KC_WH_U KC_WH_D
-
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
 Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
