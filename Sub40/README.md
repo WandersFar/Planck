@@ -16,7 +16,7 @@
 ***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
-*2 layers, 2 knobs, 31 keys (6 1.75U, 4 1.5U, 4 1.25U, 16 1U, 1 novelty) 12 combos (+ 2 oz -— '")*
+*2 layers, 2 knobs, 31 keys, 14 combos*
 
 ***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
