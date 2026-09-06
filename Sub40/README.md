@@ -107,18 +107,10 @@ Gm|🔇|←→|**Base**|↑↓|^0|Gm
 
 RP2040-Zero **GP16** RGB LED
 
-Color|Length|Meaning
----:|:---:|:---
-**Red**|Blip|Game
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|∞|Oz
-
-31|Keycaps
----:|:---
-**6**|1.75 U
-**4**|1.5 U
-**4**|1.25 U
-**16**|1 U
-**1**|1, 1.25, or 1.5 U
+Color|Length|Meaning|31|Keycaps
+---:|:---:|:---|---:|:---
+**Red**|Blip|Game|**6**|1.75 U
+**Red**|∞|Caps|**4**|1.5 U
+**Green**|Blip|Base|**4**|1.25 U
+**Green**|∞|Leader|**16**|1 U
+**Blue**|∞|Oz|**1**|1, 1.25, or 1.5 U
