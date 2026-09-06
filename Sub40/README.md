@@ -101,6 +101,13 @@ Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
 
 RP2040-Zero **GP16** RGB LED
 
+14|Combos||
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter, Tab
+**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**2**|Oz|Hyphen Em Dash, Straight Quotes
+
 Color|Length|Meaning
 ---:|:---:|:---
 **Red**|Blip|Game
@@ -108,13 +115,6 @@ Color|Length|Meaning
 **Green**|Blip|Base
 **Green**|∞|Leader
 **Blue**|∞|Oz
-
-14|Combos||
----:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**2**|Oz|Hyphen Em Dash, Straight Quotes
 
 31|Keycaps
 ---:|:---
