@@ -1,11 +1,8 @@
-[**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*monolayer, 2 knobs, 40 keys, 18 combos, matrix*
-
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *monolayer, 40 keys, 29 combos, direct wire*
 
-**Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
-*2 layers, 36 keys, 20 combos, 15 pin matrix*
+[**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
+*monolayer, 2 knobs, 40 keys, 18 combos, matrix*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 *2 layers, 2 knobs, 30 keys, 18 combos, direct wire*
@@ -15,6 +12,9 @@
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 *2 layers, 2 knobs, 31 keys, 14 combos*
+
+**Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
+*2 layers, 36 keys, 20 combos, 15 pin matrix*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 13 pin matrix*
