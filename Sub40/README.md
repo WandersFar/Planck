@@ -105,11 +105,11 @@ Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
 Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
 Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
-|Mute|Volume|**Game**|Zoom|Ctrl 0
-|Ctrl F|Find|**Number**|Undo|Ctrl S
-||↔|**Mouse**|↕
+||Mute|Volume|**Game**|Zoom|Ctrl 0
+||Ctrl F|Find|**Number**|Undo|Ctrl S
+|||↔|**Mouse**|↕
 
-14|Combos|
+14|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter, Tab
 **4**|Special|Menu, Insert, Caps Lock, Switch
