@@ -18,8 +18,6 @@
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 *2 layers, 2 knobs, 31 keys, 14 combos*
 
-***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
-
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 13 pin matrix*
 
@@ -90,6 +88,7 @@ Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
 |||↔|**Mouse**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
+***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
 14|Combos||
 ---:|:---:|:---
