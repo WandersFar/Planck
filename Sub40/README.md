@@ -91,7 +91,7 @@ Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
 Shift|Hm|←→|**Oz**|BsDel|End|Ctrl
 Game|🔇|←→|**Base**|↑↓|^0|Game
-||🔇|Vol|**Game**|Zoom|^0
+Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 ||^F|Find|**Red**|Undo|^S
 |||↔|**Blue**|↕
 
