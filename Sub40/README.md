@@ -92,8 +92,8 @@ Hold|Tap|Left|Layer|Right|Tap|Hold
 Shift|Home|← →|**Oz**|BS Del|End|Ctrl
 Game|Mute|← →|**Base**|↑ ↓|^0|Game
 ||Mute|Volume|**Game**|Zoom|^0
-||^F|Find|**Number**|Undo|^S
-|||↔|**Mouse**|↕
+||^F|Find|**Red**|Undo|^S
+|||↔|**Blue**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 ***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
