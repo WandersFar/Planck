@@ -1,6 +1,3 @@
-**Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
-*monolayer, 40 keys, 29 combos, direct wire*
-
 [**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
 *2 mcu, 2 knobs, monolayer, 40 keys, 18 combos, matrix*
 
@@ -12,6 +9,9 @@
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Japanese*
+
+**Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
+*monolayer, 40 keys, 29 combos, direct wire*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *2 layers, 36 keys, 20 combos, 15 pin matrix*
