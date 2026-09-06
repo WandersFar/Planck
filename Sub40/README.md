@@ -15,7 +15,7 @@
 
 *master 8 pin 5x3 matrix = RJ45 = slave 8 pin Japanese columnar duplex, rotary tap + 2 spins*
 
-[**Shortwave Knobs**](#shortwave-knobs) ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
+[**Shortwave Knobs**](#shortwave-knobs) ![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Shortwave.png)
 *2 layers, 2 knobs, 31 keys (6 1.75U, 4 1.5U, 4 1.25U, 16 1U, 1 artisan) 12 combos (+ 2 oz -— '")*
 
 *master 11 pin 6x3 matrix, rotary tap + 2 spins = RJ45 = slave 8 pin Japanese columnar duplex, rotary tap + 2 spins*
@@ -89,7 +89,7 @@ KC_MUTE|KC_VOLD KC_VOLU|Game|C(KC_MINS) C(KC_EQL)|C(KC_0)
 C(KC_F)|S(KC_F3) KC_F3|Number|C(KC_Z) C(KC_Y)|C(KC_S)
 ||Scroll ↔|Mouse|Scroll ↕
 
-![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30ShortwaveKnobs.png)
+![Shortwave Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Shortwave.png)
 
 RP2040-Zero has an integrated RGB LED on GP16. 
 
