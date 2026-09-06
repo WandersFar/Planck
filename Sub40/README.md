@@ -89,10 +89,10 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
-Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
-Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
-||Mute|Volume|**Game**|Zoom|Ctrl 0
-||Ctrl F|Find|**Number**|Undo|Ctrl S
+Shift|Home|← →|**Oz**|BS Del|End|Ctrl
+Game|Mute|← →|**Base**|↑ ↓|^0|Game
+||Mute|Volume|**Game**|Zoom|^0
+||^F|Find|**Number**|Undo|^S
 |||↔|**Mouse**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
