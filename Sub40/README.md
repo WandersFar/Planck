@@ -11,7 +11,7 @@
 *2 layers, 2 knobs, 30 keys, 18 combos, direct wire*
 
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-*2 layers, 1 knob, 30 keys, 16 combos (+ 6 oz)*
+*2 layers, 1 knob, 30 keys, 22 combos*
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 *2 layers, 2 knobs, 31 keys, 14 combos*
