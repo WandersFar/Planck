@@ -13,12 +13,12 @@
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 *2 layers, 1 knob, 30 keys, 16 combos (+ 6 oz)*
 
-*master 8 pin 5x3 matrix = RJ45 = slave 8 pin Japanese columnar duplex, rotary tap + 2 spins*
+***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 *2 layers, 2 knobs, 31 keys (6 1.75U, 4 1.5U, 4 1.25U, 16 1U, 1 novelty) 12 combos (+ 2 oz -— '")*
 
-*master 11 pin 6x3 matrix, rotary tap + 2 spins = RJ45 = slave 8 pin Japanese columnar duplex, rotary tap + 2 spins*
+***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 13 pin matrix*
@@ -91,12 +91,12 @@ C(KC_F)|S(KC_F3) KC_F3|Number|C(KC_Z) C(KC_Y)|C(KC_S)
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 
-RP2040-Zero has an integrated RGB LED on GP16. 
+RP2040-Zero **GP16** RGB LED
 
-Hue|Duration|Meaning
+Color|Length|Meaning
 ---:|:---:|:---
-Red|Blip|Game
-Red|∞|Caps
-Green|Blip|Base
-Green|∞|Leader
-Blue|∞|Oz
+**Red**|Blip|Game
+**Red**|∞|Caps
+**Green**|Blip|Base
+**Green**|∞|Leader
+**Blue**|∞|Oz
