@@ -89,6 +89,14 @@ KC_MUTE|KC_VOLD KC_VOLU|Game|C(KC_MINS) C(KC_EQL)|C(KC_0)
 C(KC_F)|S(KC_F3) KC_F3|Number|C(KC_Z) C(KC_Y)|C(KC_S)
 ||KC_WH_L KC_WH_R|Mouse|KC_WH_U KC_WH_D
 
+Hold|Tap|Left|Layer|Right|Tap|Hold
+---:|---:|---:|:---:|:---|:---|:---
+Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
+Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
+||Mute|Volume|**Game**|Zoom|Ctrl 0
+||Ctrl F|Find|**Number**|Undo|Ctrl S
+|||↔|**Mouse**|↕
+
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 
 RP2040-Zero **GP16** RGB LED
@@ -100,14 +108,6 @@ Color|Length|Meaning
 **Green**|Blip|Base
 **Green**|∞|Leader
 **Blue**|∞|Oz
-
-Hold|Tap|Left|Layer|Right|Tap|Hold
----:|---:|---:|:---:|:---|:---|:---
-Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
-Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
-||Mute|Volume|**Game**|Zoom|Ctrl 0
-||Ctrl F|Find|**Number**|Undo|Ctrl S
-|||↔|**Mouse**|↕
 
 14|Combos||
 ---:|:---:|:---
