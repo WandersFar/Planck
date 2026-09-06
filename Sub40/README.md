@@ -99,14 +99,14 @@ Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 
-RP2040-Zero **GP16** RGB LED
-
 14|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter, Tab
 **4**|Special|Menu, Insert, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
+
+RP2040-Zero **GP16** RGB LED
 
 Color|Length|Meaning
 ---:|:---:|:---
