@@ -100,3 +100,26 @@ Color|Length|Meaning
 **Green**|Blip|Base
 **Green**|∞|Leader
 **Blue**|∞|Oz
+
+Hold|Tap|Left|Layer|Right|Tap|Hold
+---:|---:|---:|:---:|:---|:---|:---
+Shift|Home|← →|**Oz**|Bksp Del|End|Ctrl
+Game|Mute|← →|**Base**|↑ ↓|Ctrl 0|Game
+|Mute|Volume|**Game**|Zoom|Ctrl 0
+|Ctrl F|Find|**Number**|Undo|Ctrl S
+||↔|**Mouse**|↕
+
+14|Combos|
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter, Tab
+**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**2**|Oz|Hyphen Em Dash, Straight Quotes
+
+31|Keycaps
+---:|:---
+**6**|1.75 U
+**4**|1.5 U
+**4**|1.25 U
+**16**|1 U
+**1**|1, 1.25, or 1.5 U Novelty
