@@ -13,8 +13,6 @@
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 *2 layers, 1 knob, 30 keys, 16 combos (+ 6 oz)*
 
-***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
-
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Splitwave.png)
 *2 layers, 2 knobs, 31 keys, 14 combos*
 
@@ -74,6 +72,7 @@ Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
+***8 pins*** *5x3 =* ***RJ45*** *= 6 Japanese column, tap + 2 spin* ***8 pins***
 
 ---
 
