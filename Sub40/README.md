@@ -2,16 +2,16 @@
 *monolayer, 40 keys, 29 combos, direct wire*
 
 [**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*monolayer, 2 knobs, 40 keys, 18 combos, matrix*
+*2 mcu, monolayer, 2 knobs, 40 keys, 18 combos, matrix*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
-*2 layers, 2 knobs, 30 keys, 18 combos, direct wire*
+*2 mcu, 2 layers, 2 knobs, 30 keys, 18 combos, direct wire*
 
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-*2 layers, 1 knob, 30 keys, 22 combos*
+*1 mcu, 2 layers, 1 knob, 30 keys, 22 combos, half Japanese*
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-*2 layers, 2 knobs, 31 keys, 14 combos*
+*1 mcu, 2 layers, 2 knobs, 31 keys, 14 combos, half Japanese*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *2 layers, 36 keys, 20 combos, 15 pin matrix*
@@ -20,7 +20,7 @@
 *2 layers, 30 keys, 29 combos, 13 pin matrix*
 
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
-*30 keys, 6 1.75U, 4 1.5U, 4 1.25U, 16 1U*
+*2 layers, 30 keys, 29 combos, 13 pin matrix*
 
 **Ruler** ![Ruler](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/24Ruler.png)
 *3 layers, 24 keys, 32 combos, 14 pin matrix*
