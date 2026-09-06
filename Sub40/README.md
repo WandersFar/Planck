@@ -96,7 +96,7 @@ Game|🔇|←→|**Base**|↑↓|^0|Game
 |||↔|**Blue**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-***11 pins*** *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Jap column, tap + 2 spin* ***8 pins***
+***11*** = *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Jap column, tap + 2 spin* = ***8***
 
 14|Combos||
 ---:|:---:|:---
