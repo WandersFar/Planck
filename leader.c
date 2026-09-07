@@ -522,6 +522,7 @@ void leader_end_user(void) {
   else if (leader_sequence_two_keys(KC_5, KC_6)) { register_unicodemap(FIVESIXTHS); }
   else if (leader_sequence_two_keys(KC_5, KC_8)) { register_unicodemap(FIVEEIGHTHS); }
   else if (leader_sequence_two_keys(KC_7, KC_8)) { register_unicodemap(SEVENEIGHTHS); }
+  else if (leader_sequence_two_keys(KC_7, KC_7)) { register_unicodemap(ZAMP); }
   else if (leader_sequence_two_keys(KC_0, KC_0)) { register_unicodemap(DEGREE); }
   else if (leader_sequence_two_keys(KC_B, KC_B)) { register_unicodemap(BULLETHOLLOW); }
   else if (leader_sequence_two_keys(KC_D, KC_D)) { register_unicodemap(DAGGERDOUBLE); }
