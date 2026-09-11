@@ -121,3 +121,33 @@ Color|Length|Meaning|31|Keycaps
 ---
 
 ### Trackpoint
+
+5 tp: data, clock, left, right, middle. Steal a pin from the back.
+
+***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
+
+RP2040-Zero **GP16** RGB LED
+
+Color|Length|Meaning|*Keycaps*|31|Sizes
+---:|:---:|:---|---|---:|:---
+**Red**|Blip|Game||**6**|1.75 U
+**Red**|∞|Caps||**4**|1.5 U
+**Green**|Blip|Base||**4**|1.25 U
+**Green**|∞|Leader||**16**|1 U
+**Blue**|∞|Oz||**1**|1, 1.25, 1.5, or 1.75 U
+
+Hold|Tap|Left|Layer|Right|Tap|Hold
+---:|---:|---:|:---:|:---|:---|:---
+Shift|Home|←→|**Oz**|Bspc Del|End|Ctrl
+Game|Mute|←→|**Base**|↑↓|^0|Game
+Fn|Mute|Volume|**Game**|Zoom|^0|Fn
+Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
+
+21|Combos|
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter, Tab
+**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
+**3**|OS|Close Window, Task Manager, Column
+**2**|Oz|Hyphen Em Dash, Straight Quotes
