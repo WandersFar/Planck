@@ -138,7 +138,7 @@ Color|Length|Meaning|31|Sizes
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
-Shift|Home|←→|**Oz**|Bspc Del|End|Ctrl
+Shift|Home|←→|**Oz**|BsDel|End|Ctrl
 Game|Mute|←→|**Base**|↑↓|^0|Game
 Fn|Mute|Volume|**Game**|Zoom|^0|Fn
 Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
