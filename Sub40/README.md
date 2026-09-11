@@ -134,7 +134,7 @@ Color|Length|Meaning|31|Sizes
 **Red**|∞|Caps|**4**|1.5 U
 **Green**|Blip|Base|**4**|1.25 U
 **Green**|∞|Leader|**16**|1 U
-**Blue**|∞|Oz|**1**|1, 1.25, 1.5, or 1.75 U
+**Blue**|∞|Oz|**1**|1–1.75 U
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
