@@ -128,13 +128,13 @@ Color|Length|Meaning|31|Keycaps
 
 RP2040-Zero **GP16** RGB LED
 
-Color|Length|Meaning|*Keycaps*|31|Sizes
----:|:---:|:---|---|---:|:---
-**Red**|Blip|Game||**6**|1.75 U
-**Red**|∞|Caps||**4**|1.5 U
-**Green**|Blip|Base||**4**|1.25 U
-**Green**|∞|Leader||**16**|1 U
-**Blue**|∞|Oz||**1**|1, 1.25, 1.5, or 1.75 U
+Color|Length|Meaning|31|Sizes
+---:|:---:|:---|---:|:---
+**Red**|Blip|Game|**6**|1.75 U
+**Red**|∞|Caps|**4**|1.5 U
+**Green**|Blip|Base|**4**|1.25 U
+**Green**|∞|Leader|**16**|1 U
+**Blue**|∞|Oz|**1**|1, 1.25, 1.5, or 1.75 U
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
@@ -143,7 +143,7 @@ Game|Mute|←→|**Base**|↑↓|^0|Game
 Fn|Mute|Volume|**Game**|Zoom|^0|Fn
 Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
 
-21|Combos|
+21|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter, Tab
 **4**|Special|Menu, Insert, Caps Lock, Switch
