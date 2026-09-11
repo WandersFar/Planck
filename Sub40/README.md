@@ -149,5 +149,5 @@ Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
 **4**|Special|Menu, Insert, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
-**3**|OS|Close Window, Task Manager, Column
+**3**|OS|Alt F4, Task Manager, Column
 **2**|Oz|Hyphen Em Dash, Straight Quotes
