@@ -10,6 +10,9 @@
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Japanese*
 
+[**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
+*1 mcu, 1 trackpoint, 2 knobs, 1 layer, 31 keys, 21 combos, full Japanese*
+
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *monolayer, 40 keys, 29 combos, direct wire*
 
@@ -114,3 +117,7 @@ Color|Length|Meaning|31|Keycaps
 **Green**|∞|Leader|**4**|1.25 U
 **Blue**|Blip|Game|**16**|1 U
 **Blue**|∞|Oz|**1**|1, 1.25, or 1.5 U
+
+---
+
+### Trackpoint
