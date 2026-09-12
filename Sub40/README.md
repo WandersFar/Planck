@@ -130,10 +130,10 @@ RP2040-Zero **GP16** RGB LED
 
 Color|Length|Meaning|31|Sizes
 ---:|:---:|:---|---:|:---
-**Red**|Blip|Game|**6**|1.75 U
-**Red**|∞|Caps|**4**|1.5 U
-**Green**|Blip|Base|**4**|1.25 U
-**Green**|∞|Leader|**16**|1 U
+**Red**|∞|Caps|**6**|1.75 U
+**Green**|Blip|Base|**4**|1.5 U
+**Green**|∞|Leader|**4**|1.25 U
+**Blue**|Blip|Game|**16**|1 U
 **Blue**|∞|Oz|**1**|1–1.75 U
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
