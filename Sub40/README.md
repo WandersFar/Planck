@@ -11,7 +11,7 @@
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Japanese*
 
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 trackpoint, 2 knobs, 1 layer, 31 keys, 21 combos, full Japanese*
+*1 mcu, 1 trackpoint, 2 knobs, monolayer, 31 keys, 21 combos, full Japanese*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *monolayer, 40 keys, 29 combos, direct wire*
