@@ -120,6 +120,7 @@ Fn|🔇|Vol|**Game**|Zoom|^0|Fn
 Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
+
 ***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
 
 5 tp: data, clock, left, right, middle. Steal 1 back pin.
