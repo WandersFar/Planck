@@ -121,6 +121,7 @@ Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 ***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
+
 5 tp: data, clock, left, right, middle. Steal a pin from the back.
 
 21|Combos||
@@ -134,7 +135,7 @@ Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
 
 RP2040-Zero **GP16** RGB LED
 
-Color|Length|Meaning|31|Sizes
+Color|Length|Meaning|31|Keycaps
 ---:|:---:|:---|---:|:---
 **Red**|∞|Caps|**6**|1.75 U
 **Green**|Blip|Base|**4**|1.5 U
