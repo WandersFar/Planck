@@ -1,5 +1,5 @@
 [**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*2 mcu, 2 knobs, monolayer, 40 keys, 18 combos, matrix*
+*2 mcu, 2 knobs, 1 layer, 40 keys, 18 combos, matrix*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 *2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct wire*
@@ -11,10 +11,10 @@
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Japanese*
 
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 tp, 2 knobs, monolayer, 31 keys, 21 combos, full Japanese*
+*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 21 combos, full Japanese*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
-*monolayer, 40 keys, 29 combos, direct wire*
+*1 layer, 40 keys, 29 combos, direct wire*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *2 layers, 36 keys, 20 combos, 15 pin matrix*
