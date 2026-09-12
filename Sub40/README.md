@@ -108,23 +108,29 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
-RP2040-Zero **GP16** RGB LED
-
-Color|Length|Meaning|31|Keycaps
----:|:---:|:---|---:|:---
-**Red**|∞|Caps|**6**|1.75 U
-**Green**|Blip|Base|**4**|1.5 U
-**Green**|∞|Leader|**4**|1.25 U
-**Blue**|Blip|Game|**16**|1 U
-**Blue**|∞|Oz|**1**|1, 1.25, or 1.5 U
-
 ---
 
 ### Trackpoint
 
+Hold|Tap|Left|Layer|Right|Tap|Hold
+---:|---:|---:|:---:|:---|:---|:---
+Shift|Home|←→|**Oz**|BsDel|End|Ctrl
+Game|Mute|←→|**Base**|↑↓|^0|Game
+Fn|Mute|Volume|**Game**|Zoom|^0|Fn
+Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
+
+![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
+***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
 5 tp: data, clock, left, right, middle. Steal a pin from the back.
 
-***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
+21|Combos||
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter, Tab
+**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
+**3**|OS|Close, Task Manager, Column
+**2**|Oz|Hyphen Em Dash, Straight Quotes
 
 RP2040-Zero **GP16** RGB LED
 
@@ -135,19 +141,3 @@ Color|Length|Meaning|31|Sizes
 **Green**|∞|Leader|**4**|1.25 U
 **Blue**|Blip|Game|**16**|1 U
 **Blue**|∞|Oz|**1**|1–1.75 U
-
-Hold|Tap|Left|Layer|Right|Tap|Hold
----:|---:|---:|:---:|:---|:---|:---
-Shift|Home|←→|**Oz**|BsDel|End|Ctrl
-Game|Mute|←→|**Base**|↑↓|^0|Game
-Fn|Mute|Volume|**Game**|Zoom|^0|Fn
-Find|^F|Meh↔|**Fn**|Meh↕|^S|Undo
-
-21|Combos||
----:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
-**3**|OS|Close, Task Manager, Column
-**2**|Oz|Hyphen Em Dash, Straight Quotes
