@@ -99,7 +99,7 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 |||↔|**Blue**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-***11*** = *9 6x3, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin* = ***8***
+***11*** *= 9 6x3 tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 14|Combos||
 ---:|:---:|:---
@@ -123,7 +123,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
-***+ 5 tp*** = *data, clock, left, right, middle. Steal 1 back pin.*
+***+ 5 tp*** = *data, clock, left, right, middle.* Steal 1 back pin.
 
 21|Combos||
 ---:|:---:|:---
