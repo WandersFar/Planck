@@ -121,7 +121,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 
-***8*** *= 6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin =* ***8***
+***8*** *= 6 Jap clm tap + 2 spin =* ***RJ45*** *= 6 Jap clm tap + 2 spin =* ***8***
 
 ***+ 5 tp*** = *data, clock, left, right, middle. Steal 1 back pin.*
 
