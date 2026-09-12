@@ -117,7 +117,7 @@ Hold|Tap|Left|Layer|Right|Tap|Hold
 Shift|Hm|←→|**Oz**|BsDel|End|Ctrl
 Game|🔇|←→|**Base**|↑↓|^0|Game
 Fn|🔇|Vol|**Game**|Zoom|^0|Fn
-Find|^F|G↔|**Fn**|G↕|^S|Undo
+Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 ***8*** = *6 Jap clm, tap + 2 spin =* ***RJ45*** *= 6 Jap clm, tap + 2 spin + 5 tp* = ***13***
