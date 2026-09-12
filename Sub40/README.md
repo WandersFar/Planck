@@ -75,7 +75,7 @@ Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
 
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-***8*** = *5x3 =* ***RJ45*** *= 6 Jap clm, tap + 2 spin* = ***8***
+***8*** *= 5x3 =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 22|Combos||
 ---:|:---:|:---
