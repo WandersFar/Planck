@@ -5,13 +5,13 @@
 *2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct wire*
 
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-*1 mcu, 1 knob, 2 layers, 30 keys, 22 combos, half Japanese*
+*1 mcu, 1 knob, 2 layers, 30 keys, 22 combos, half Jap*
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-*1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Japanese*
+*1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Jap*
 
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 21 combos, full Japanese*
+*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 21 combos, full Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
