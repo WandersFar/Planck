@@ -11,7 +11,7 @@
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Jap*
 
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 21 combos, full Jap*
+*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
@@ -125,13 +125,12 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ***+ 5 tp*** = *data, clock, left, right, middle.* Steal 1 back pin.
 
-21|Combos||
+18|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Special|!F4 Tsk, Ins Menu, Caps Clm, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
-**3**|OS|Close, Task Manager, Column
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
 RP2040-Zero **GP16** RGB LED
