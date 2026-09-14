@@ -162,7 +162,7 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-***7*** *= Japclm tap =* ***RJ45*** *= 7 Japclm tap + 2 spin + 4 tp =* ***13***
+***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 4 tp =* ***13***
 
 ***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***
 
