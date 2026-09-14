@@ -168,8 +168,8 @@ Layer|Spin|Tap|Implementation
 
 14|Combos||Keycaps|37
 ---:|:---:|:---|---:|:---
-**4**|Basic|Backspace, Delete, Enter, Tab|1.75 U|**4**
-**4**|Special|!F4, Insert Menu, Caps, Switch|1.5 U|**4**
+**4**|Basic|Backspace, Delete, Enter Escape, Tab|1.75 U|**4**
+**4**|Special|!F4, Insert Menu, Caps Lock, Switch|1.5 U|**4**
 **4**|Unicode|Dash, Quote, Open & Close Dialog|1.25 U|**4**
 **2**|Oz|Hyphen Em Dash, Straight Quotes|1 U|**25**
 
