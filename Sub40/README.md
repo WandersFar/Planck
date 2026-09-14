@@ -166,19 +166,19 @@ Layer|Spin|Tap|Implementation
 
 ***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***
 
-14|Combos||Keycaps|37
----:|:---:|:---|---:|:---
-**4**|Basic|Backspace, Delete, Enter Escape, Tab|1.75 U|**4**
-**4**|Special|!F4, Insert Menu, Caps Lock, Switch|1.5 U|**4**
-**4**|Unicode|Dash, Quote, Open & Close Dialog|1.25 U|**4**
-**2**|Oz|Hyphen Em Dash, Straight Quotes|1 U|**25**
+14|Combos|
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter Escape, Tab
+**4**|Special|!F4, Insert Menu, Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**2**|Oz|Hyphen Em Dash, Straight Quotes
 
 RP2040-Zero **GP16** RGB LED
 
-Color|Length|Meaning
----:|:---:|:---
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|Blip|Game
+Color|Length|Meaning|Keycaps|37
+---:|:---:|:---|---:|:---
+**Red**|∞|Caps|1.75 U|**4**
+**Green**|Blip|Base|1.5 U|**4**
+**Green**|∞|Leader|1.25 U|**4**
+**Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
