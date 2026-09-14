@@ -158,6 +158,7 @@ Layer|Spin|Tap|Implementation
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
 ***Alt***|***Find***||override spin
+***Gui***|***Ctrl Shift ←→***||override spin
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
