@@ -13,6 +13,9 @@
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 *1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
+[**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 14 combos, full Jap*
+
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
 
@@ -123,7 +126,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
-***+ 5 tp*** = *data, clock, left, right, middle.* Steal 1 back pin.
+***+ 6 tp*** = *data, clock, reset, left, right, middle.* Steal 2 back pins. ***+ 2 pwr, gnd***
 
 18|Combos||
 ---:|:---:|:---
@@ -142,3 +145,39 @@ Color|Length|Meaning|31|Keycaps
 **Green**|∞|Leader|**4**|1.25 U
 **Blue**|Blip|Game|**16**|1 U
 **Blue**|∞|Oz|**1**|1–1.75 U
+
+---
+
+### Arrows
+
+Layer|Spin|Tap|Implementation
+---:|:---:|:---|:---
+**Base Oz**|↕|Mute|Game on hold
+**Game**|Volume|Mute|Base on hold
+**Fn**|Undo|^S
+*Ctrl*|*Zoom*|***^0***|override tap
+*Shift*|↔||*native*
+***Alt***|***Find***||override spin
+
+![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+
+***7*** *= Japclm tap =* ***RJ45*** *= 7 Japclm tap + 2 spin + 4 tp =* ***13***
+
+***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***
+
+14|Combos||Keycaps|37
+---:|:---:|:---|---:|:---
+**4**|Basic|Backspace, Delete, Enter, Tab|1.75 U|**4**
+**4**|Special|!F4, Insert Menu, Caps, Switch|1.5 U|**4**
+**4**|Unicode|Dash, Quote, Open & Close Dialog|1.25 U|**4**
+**2**|Oz|Hyphen Em Dash, Straight Quotes|1 U|**25**
+
+RP2040-Zero **GP16** RGB LED
+
+Color|Length|Meaning
+---:|:---:|:---
+**Red**|∞|Caps
+**Green**|Blip|Base
+**Green**|∞|Leader
+**Blue**|Blip|Game
+**Blue**|∞|Oz
