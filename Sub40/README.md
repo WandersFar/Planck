@@ -166,7 +166,7 @@ Layer|Spin|Tap|Implementation
 
 ***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***
 
-14|Combos|
+14|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter Escape, Tab
 **4**|Special|!F4, Insert Menu, Caps Lock, Switch
