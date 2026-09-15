@@ -164,7 +164,7 @@ Layer|Spin|Tap|Implementation
 
 ***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 4 tp =* ***13***
 
-***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***
+[***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***](https://holykeebs.com/products/sk8707-01-trackpoint-sensor)
 
 14|Combos||
 ---:|:---:|:---
