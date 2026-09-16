@@ -185,4 +185,4 @@ Color|Length|Meaning|Keycaps|37
 
 ***
 
-*You may be able to add RGB to the split keyboards to compensate for the trackpoint module layering over the RP2040, obscuring the WS2812. However you need both data and pwr, and Arrows already uses 7 of the 8 available RJ45 wires on the slave. The master would share the same data and pwr pins. If you do get RGB working, choose 3D printed translucent cases and plates to show off the lighting. Twinkle and Gradient lighting effects.*
+*You may be able to add RGB to the split keyboards to compensate for the trackpoint module layering over the RP2040, obscuring the WS2812 on GP16. However you need both data and pwr, and Arrows already uses 7 of the 8 available RJ45 wires on the slave. The master would share the same data and pwr pins. If you do get RGB working, choose 3D printed translucent cases and plates to show off the lighting. Twinkle and Gradient lighting effects.*
