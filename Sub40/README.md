@@ -182,3 +182,7 @@ Color|Length|Meaning|Keycaps|37
 **Green**|∞|Leader|1.25 U|**4**
 **Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
+
+***
+
+*You may be able to add RGB to the split keyboards. However you need both data and pwr, and Arrows already uses 7 of the 8 available RJ45 wires on the slave. The master would share the same data and pwr pins. If you do get RGB working, choose 3D printed translucent cases and plates to show off the lighting. Twinkle and Gradient lighting effects.*
