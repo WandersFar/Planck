@@ -16,6 +16,9 @@
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 14 combos, full Jap*
 
+[**Pointless**](#pointless) ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
+*1 mcu, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
+
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
 
@@ -182,3 +185,28 @@ Color|Length|Meaning|Keycaps|37
 **Green**|∞|Leader|1.25 U|**4**
 **Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
+
+---
+
+### Pointless
+
+Layer|Spin|Tap|Implementation
+---:|:---:|:---|:---
+**Base Oz**|↕|Mute|Game on hold
+**Game Mouse**|Volume|Mute|Base on hold
+**Fn**|Undo|^S
+*Ctrl*|*Zoom*|***^0***|override tap
+*Shift*|↔||*native*
+***Alt***|***Find***|***^F***|override spin & tap
+***Gui***|***^+←→***|***←***|override spin & tap
+
+![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
+
+***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin =* ***9***
+
+12|Combos||
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter Esc, Tab
+**2**|Special|Caps Lock, Switch
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**2**|Oz|Hyphen Em Dash, Straight Quotes
