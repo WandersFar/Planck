@@ -207,6 +207,6 @@ Layer|Spin|Tap|Implementation
 12|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
-**2**|Special|Caps Lock, Switch
+**2**|Special|Caps Lock, Switch Windows
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
