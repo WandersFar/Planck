@@ -193,12 +193,12 @@ Color|Length|Meaning|Keycaps|37
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Base Oz**|↕|Mute|Game on hold
-**Game Mouse**|Volume|Mute|Base on hold
+**GameMouse**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin & tap
-***Gui***|***^+←→***|***←***|override spin & tap
+***Alt***|***Find***|***^F***|override spin tap
+***Gui***|***^+←→***|***←***|override spin tap
 
 ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
 
