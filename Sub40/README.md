@@ -193,7 +193,7 @@ Color|Length|Meaning|Keycaps|37
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Base Oz**|↕|Mute|Game on hold
-**GameMouse**|Volume|Mute|Base on hold
+**Game Mouse**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
