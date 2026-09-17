@@ -190,6 +190,8 @@ Color|Length|Meaning|Keycaps|37
 
 ### Pointless
 
+Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
+
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Base Oz**|↕|Mute|Game on hold
