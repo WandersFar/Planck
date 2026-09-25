@@ -17,7 +17,7 @@
 *1 mcu, 1 knob, 2 layers, 37 keys, 12 combos, full Jap*
 
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 14 combos, full Jap*
+*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 15 combos, full Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
