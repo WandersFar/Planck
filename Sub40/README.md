@@ -139,15 +139,13 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
-RP2040-Zero **GP16** RGB LED
-
-Color|Length|Meaning|31|Keycaps
----:|:---:|:---|---:|:---
-**Red**|∞|Caps|**6**|1.75 U
-**Green**|Blip|Base|**4**|1.5 U
-**Green**|∞|Leader|**4**|1.25 U
-**Blue**|Blip|Game|**16**|1 U
-**Blue**|∞|Oz|**1**|1–1.75 U
+31|Keycaps
+---:|:---
+**6**|1.75 U
+**4**|1.5 U
+**4**|1.25 U
+**16**|1 U
+**1**|1–1.75 U
 
 ---
 
@@ -202,8 +200,6 @@ Layer|Spin|Tap|Implementation
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
-
-RP2040-Zero **GP16** RGB LED
 
 Color|Length|Meaning|Keycaps|37
 ---:|:---:|:---|---:|:---
