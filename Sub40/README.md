@@ -127,9 +127,9 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 
-***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
+***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***11***
 
-***+ 6 tp*** = *data, clock, reset, left, right, middle.* Steal 2 back pins. ***+ 2 pwr, gnd***
+***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
 18|Combos||
 ---:|:---:|:---
@@ -165,9 +165,9 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-[***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 4 tp =* ***13***](https://docs.holykeebs.com/guides/trackpoint-module/)
+[***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***12***](https://reddit.com/u/WandersFar)
 
-[***6 tp*** *= data, clock, reset, left (middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 14|Combos||
 ---:|:---:|:---
