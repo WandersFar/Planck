@@ -127,7 +127,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 
-***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***11***
+***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
@@ -192,7 +192,7 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***12***](https://reddit.com/u/WandersFar)
+[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 led =* ***12***](https://reddit.com/u/WandersFar)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
