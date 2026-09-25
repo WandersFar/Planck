@@ -13,11 +13,11 @@
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 *1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
-[**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 14 combos, full Jap*
-
 [**Pointless**](#pointless) ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
 *1 mcu, 1 knob, 2 layers, 37 keys, 12 combos, full Jap*
+
+[**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 14 combos, full Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
@@ -151,43 +151,6 @@ Color|Length|Meaning|31|Keycaps
 
 ---
 
-### Arrows
-
-Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
-**Base Oz**|↕|Mute|Game on hold
-**Game**|Volume|Mute|Base on hold
-**Fn**|Undo|^S
-*Ctrl*|*Zoom*|***^0***|override tap
-*Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin & tap
-***Gui***|***^+←→***|***←***|override spin & tap
-
-![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-
-[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***12***](https://reddit.com/u/WandersFar)
-
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
-
-14|Combos||
----:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter Esc, Tab
-**4**|Special|!F4, Insert Menu, Caps Lock, Switch
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**2**|Oz|Hyphen Em Dash, Straight Quotes
-
-RP2040-Zero **GP16** RGB LED
-
-Color|Length|Meaning|Keycaps|37
----:|:---:|:---|---:|:---
-**Red**|∞|Caps|1.75 U|**4**
-**Green**|Blip|Base|1.5 U|**4**
-**Green**|∞|Leader|1.25 U|**4**
-**Blue**|Blip|Game|1 U|**25**
-**Blue**|∞|Oz
-
----
-
 ### Pointless
 
 Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
@@ -212,3 +175,40 @@ Layer|Spin|Tap|Implementation
 **2**|Special|Caps Lock, Switch Windows
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
+
+---
+
+### Arrows
+
+Layer|Spin|Tap|Implementation
+---:|:---:|:---|:---
+**Base Oz**|↕|Mute|Game on hold
+**Game**|Volume|Mute|Base on hold
+**Fn**|Undo|^S
+*Ctrl*|*Zoom*|***^0***|override tap
+*Shift*|↔||*native*
+***Alt***|***Find***|***^F***|override spin & tap
+***Gui***|***^+←→***|***←***|override spin & tap
+
+![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+
+[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 WS2812 =* ***12***](https://reddit.com/u/WandersFar)
+
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
+
+14|Combos||
+---:|:---:|:---
+**4**|Basic|Backspace, Delete, Enter Esc, Tab
+**5**|Special|!F4, Insert Menu, Caps Lock, Switch, Middle
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**2**|Oz|Hyphen Em Dash, Straight Quotes
+
+RP2040-Zero **GP16** RGB LED
+
+Color|Length|Meaning|Keycaps|37
+---:|:---:|:---|---:|:---
+**Red**|∞|Caps|1.75 U|**4**
+**Green**|Blip|Base|1.5 U|**4**
+**Green**|∞|Leader|1.25 U|**4**
+**Blue**|Blip|Game|1 U|**25**
+**Blue**|∞|Oz
