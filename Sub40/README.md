@@ -199,7 +199,7 @@ Layer|Spin|Tap|Implementation
 14|Combos||
 ---:|:---:|:---
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
-**5**|Special|!F4, Ins Menu, Caps Lock, Switch, Middle
+**5**|Special|!F4, Ins Menu, Caps, Switch, Middle
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
