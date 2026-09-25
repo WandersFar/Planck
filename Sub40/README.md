@@ -196,10 +196,10 @@ Layer|Spin|Tap|Implementation
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-14|Combos||
+15|Combos||
 ---:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter Esc, Tab
 **5**|Special|!F4, Ins Menu, Caps, Switch, Middle
+**4**|Basic|Backspace, Delete, Enter Esc, Tab
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
