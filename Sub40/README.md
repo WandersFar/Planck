@@ -208,3 +208,7 @@ Color|Length|Meaning|Keycaps|37
 **Green**|∞|Leader|1.25 U|**4**
 **Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
+
+![Alt](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Alt.png)
+
+An alternative layout, taking advantage of layer activation on trackpoint movement.
