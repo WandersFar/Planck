@@ -190,6 +190,8 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
+![Alt](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Alt.png)
+
 [***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 led =* ***12***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
@@ -208,5 +210,3 @@ Color|Length|Meaning|Keycaps|37
 **Green**|∞|Leader|1.25 U|**4**
 **Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
-
-![Alt](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Alt.png)
