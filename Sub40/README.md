@@ -211,4 +211,4 @@ Color|Length|Meaning|Keycaps|37
 
 ![Alt](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Alt.png)
 
-An alternative layout, taking advantage of [layer activation on trackpoint movement.](https://redd.it/qh9h5g)
+An alternative layout, utilizing [layer activation on trackpoint movement.](https://redd.it/qh9h5g)
