@@ -190,7 +190,7 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 led =* ***12***](https://reddit.com/u/WandersFar)
+[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 led =* ***12***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
@@ -210,5 +210,3 @@ Color|Length|Meaning|Keycaps|37
 **Blue**|∞|Oz
 
 ![Alt](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Alt.png)
-
-An alternative layout, utilizing [layer activation on trackpoint movement.](https://redd.it/qh9h5g)
