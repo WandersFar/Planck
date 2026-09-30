@@ -248,7 +248,7 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override spin & tap
 ***Gui***|***^+←→***|***←***|override spin & tap
 
-26|Combos|
+26|Combos||
 ---:|:---:|:---
 **2**|Fn|F11, F12
 **2**|Symbol|Tilde, Colon
