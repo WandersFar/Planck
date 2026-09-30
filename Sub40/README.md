@@ -211,3 +211,50 @@ Color|Length|Meaning|Keycaps|37
 **Green**|∞|Leader|1.25 U|**4**
 **Blue**|Blip|Game|1 U|**25**
 **Blue**|∞|Oz
+
+---
+
+### Minimalist
+
+Trackpoint activates Fn with the one mouse key on Leader.
+
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
+
+***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 8 matrix + 2 tp + 1 WS2812 =* ***11***
+
+***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***
+
+Color|Length|Meaning
+---:|:---:|:---
+**Red**|∞|Caps
+**Green**|Blip|Base
+**Green**|∞|Leader
+**Blue**|Blip|Game
+**Blue**|∞|Oz
+
+Layer|Spin|Tap|Implementation
+---:|:---:|:---|:---
+**Base**|↕|Mute|Game on hold
+**Oz**|←→|Shift
+**Game**|Volume|Mute|Base on hold
+**Fn**|Undo|^S
+*Ctrl*|*Zoom*|***^0***|override tap
+*Shift*|↔||*native*
+***Alt***|***Find***|***^F***|override spin & tap
+***Gui***|***^+←→***|***←***|override spin & tap
+
+26|Combos|
+---:|:---:|:---
+**2**|Fn|F11, F12
+**2**|Symbol|Tilde, Colon
+**2**|Misc|Column, #Print
+**4**|Arrows|Up, Left, Right, Down
+**4**|Special|!F4 Tskmngr, Insert Menu, Caps Lock, Switch
+**4**|Basic|Backspace, Delete, Enter Escape, Tab
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Oz|Dash, Quote, Backspace, Delete
