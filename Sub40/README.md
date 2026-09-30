@@ -225,7 +225,7 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 8 matrix + 2 tp + 1 WS2812 =* ***11***
+***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 8 matrix + 2 tp + 1 led =* ***11***
 
 ***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***
 
