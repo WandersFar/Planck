@@ -231,13 +231,15 @@ Dance|Mouse|Home End
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-Color|Length|Meaning
+26|Combos||
 ---:|:---:|:---
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|Blip|Game
-**Blue**|∞|Oz
+**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+**4**|Basic|Backspace, Delete, Enter Esc, Tab
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Oz|Dash, Quote, Backspace, Delete
+**4**|Symbol|Tilde, Colon, Quote, Pipe
+**4**|Arrows|Up, Left, Right, Down
+**2**|Misc|Column, #Print
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
@@ -250,12 +252,10 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override spin & tap
 ***Gui***|***^+←→***|***←***|override spin & tap
 
-26|Combos||
+Color|Length|Meaning
 ---:|:---:|:---
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
-**4**|Basic|Backspace, Delete, Enter Esc, Tab
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Oz|Dash, Quote, Backspace, Delete
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Arrows|Up, Left, Right, Down
-**2**|Misc|Column, #Print
+**Red**|∞|Caps
+**Green**|Blip|Base
+**Green**|∞|Leader
+**Blue**|Blip|Game
+**Blue**|∞|Oz
