@@ -20,7 +20,7 @@
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 15 combos, full Jap*
 
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 26 combos, half Jap*
+*1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 25 combos, half Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
@@ -231,7 +231,7 @@ Dance|Mouse|Home End
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-26|Combos||
+25|Combos||
 ---:|:---:|:---
 **2**|Misc|Column, #Print
 **4**|Arrows|Up, Left, Right, Down
@@ -239,7 +239,7 @@ Dance|Mouse|Home End
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Oz|Dash, Quote, Backspace, Delete
+**3**|Oz|Quote, Backspace, Delete
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
