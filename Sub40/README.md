@@ -233,13 +233,13 @@ Dance|Mouse|Home End
 
 26|Combos||
 ---:|:---:|:---
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+**2**|Misc|Column, #Print
+**4**|Arrows|Up, Left, Right, Down
+**4**|Symbol|Tilde, Colon, Quote, Pipe
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
+**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Oz|Dash, Quote, Backspace, Delete
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Arrows|Up, Left, Right, Down
-**2**|Misc|Column, #Print
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
