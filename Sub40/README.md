@@ -243,8 +243,8 @@ Dance|Mouse|Home End
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Base**|↕|Mute|Game on hold
 **Oz**|←→|Shift
+**Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
