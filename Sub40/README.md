@@ -1,5 +1,5 @@
 [**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*2 mcu, 2 knobs, 1 layer, 40 keys, 18 combos, matrix*
+*2 mcu, 2 knobs, 1 layer, 40 keys, 18 combos, 4x6 + 2 spin*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 *2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct wire*
