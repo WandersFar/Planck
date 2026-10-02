@@ -231,7 +231,7 @@ Dance|Mouse|Home End
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-25|Combos||
+24|Combos||
 ---:|:---:|:---
 **2**|Misc|Column, #Print
 **4**|Arrows|Up, Left, Right, Down
@@ -239,7 +239,7 @@ Dance|Mouse|Home End
 **4**|Basic|Backspace, Delete, Enter Esc, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**3**|Oz|Quote, Backspace, Delete
+**2**|Oz|Backspace, Delete
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
