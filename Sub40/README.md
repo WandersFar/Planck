@@ -216,8 +216,6 @@ Color|Length|Meaning|Keycaps|37
 
 ### Minimalist
 
-Trackpoint activates Fn with the one mouse key on Leader.
-
 Dance|Mouse|Home End
 ---:|:---:|:---
 **Tap**|Tap Left Click|Line Jump
