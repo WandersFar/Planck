@@ -235,7 +235,7 @@ Dance|Mouse|Home End
 **4**|Arrows|Up, Left, Right, Down
 **4**|Symbol|Tilde, Colon, Quote, Pipe
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Escape, Delete, Tab
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
 Layer|Spin|Tap|Implementation
