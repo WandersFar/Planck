@@ -130,7 +130,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
 
-***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin + 2 tp + 1 led =* ***11***
+***8*** *= 6 Japtap + 2 spin =* ***RJ45*** *= 6 Japtap + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
