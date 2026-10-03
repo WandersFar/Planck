@@ -11,13 +11,13 @@
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Jap*
 
 [**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
+*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 16 combos, full Jap*
 
 [**Pointless**](#pointless) ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
-*1 mcu, 1 knob, 2 layers, 37 keys, 12 combos, full Jap*
+*1 mcu, 1 knob, 2 layers, 37 keys, 10 combos, full Jap*
 
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 15 combos, full Jap*
+*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
@@ -108,13 +108,13 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 |||↔|**Blue**|↕
 
 ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-***11*** *= 9 6x3 tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
+***11*** *= 6x3 tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 14|Combos||
 ---:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
 **4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|Menu, Insert, Caps Lock, Switch
 **2**|Oz|Hyphen Em Dash, Straight Quotes
 
 ---
@@ -123,7 +123,7 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
-Shift|Hm|←→|**Oz**|BsDel|End|Ctrl
+Shift|Dash|←→|**Oz**|BsDel|Quote|Ctrl
 Game|🔇|←→|**Base**|↑↓|^0|Game
 Fn|🔇|Vol|**Game**|Zoom|^0|Fn
 Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
@@ -134,13 +134,12 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
-18|Combos||
+16|Combos||
 ---:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Clm, Switch
-**4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
-**2**|Oz|Hyphen Em Dash, Straight Quotes
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Escape, Delete, Tab
+**4**|Special|!F4 Tsk, Ins Menu, Caps Clm, Switch
 
 31|Keycaps
 ---:|:---
@@ -158,7 +157,8 @@ Mouse layer is only on the knob, HRM and the row below. Everything else is trans
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Base Oz**|↕|Mute|Game on hold
+**Oz**|BS Del|Quote
+**Base**|↕|Mute|Game on hold
 **Game Mouse**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
@@ -170,12 +170,11 @@ Layer|Spin|Tap|Implementation
 
 ***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin =* ***9***
 
-12|Combos||
+10|Combos||
 ---:|:---:|:---
-**4**|Basic|Backspace, Delete, Enter Esc, Tab
-**2**|Special|Caps Lock, Switch Windows
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**2**|Oz|Hyphen Em Dash, Straight Quotes
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**2**|Special|Caps Lock, Switch
 
 ---
 
@@ -183,7 +182,8 @@ Layer|Spin|Tap|Implementation
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Base Oz**|↕|Mute|Game on hold
+**Oz**|BS Del|Quote
+**Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
@@ -193,16 +193,15 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-[***7*** *Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin + 2 tp + 1 led =* ***12***](https://redd.it/qh9h5g)
+[***8*** *Japrow =* ***RJ45*** *= 6 reuse Japrow tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-15|Combos||
+12|Combos||
 ---:|:---:|:---
-**5**|Special|!F4, Ins Menu, Caps, Switch, Middle
-**4**|Basic|Backspace, Delete, Enter Esc, Tab
 **4**|Unicode|Dash, Quote, Open & Close Dialog
-**2**|Oz|Hyphen Em Dash, Straight Quotes
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tsk, Ins Menu, Caps, Switch
 
 Color|Length|Meaning|Keycaps|37
 ---:|:---:|:---|---:|:---
