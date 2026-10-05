@@ -183,17 +183,6 @@ Layer|Spin|Tap|Implementation
 
 ### Arrows
 
-Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
-**Oz**|BS Del|Quote
-**Base**|↕|Mute|Game on hold
-**Game**|Volume|Mute|Base on hold
-**Fn**|Undo|^S
-*Ctrl*|*Zoom*|***^0***|override tap
-*Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin & tap
-***Gui***|***^+←→***|***←***|override spin & tap
-
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
 [***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
