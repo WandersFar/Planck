@@ -21,9 +21,6 @@
 **Shortwave** ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Shortwave.png)
 *2 layers, 30 keys, 29 combos, 3x10*
 
-**Ruler** ![Ruler](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/24Ruler.png)
-*3 layers, 24 keys, 32 combos, 2x12*
-
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
 *3 layers, 20 keys, 29 combos, direct*
 
