@@ -4,7 +4,7 @@
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
 *tp, knob, 31 keys, 22 combos, half Jap*
 
-**Maximalist** ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
+**Lazy** ![Lazy](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Lazy.png)
 *tp, knob, 43 keys, no combos, full Jap*
 
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 1 led + 2 tp =* ***11***
