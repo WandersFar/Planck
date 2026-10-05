@@ -19,11 +19,11 @@
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
-[**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
-
 [**Maximalist**](#maximalist) ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 43 keys, no combos, full Japrow*
+
+[**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
+*1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
@@ -216,6 +216,23 @@ Color|Length|Meaning|Keycaps|37
 
 ---
 
+### Maximalist
+
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
+
+![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
+
+[***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
+
+---
+
 ### Minimalist
 
 Dance|Mouse|Home End
@@ -239,42 +256,6 @@ Dance|Mouse|Home End
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
-
-Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
-**Oz**|BS Del|Quote
-**Base**|↕|Mute|Game on hold
-**Game**|Volume|Mute|Base on hold
-**Fn**|Undo|^S
-*Ctrl*|*Zoom*|***^0***|override tap
-*Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin & tap
-***Gui***|***^+←→***|***←***|override spin & tap
-
-Color|Length|Meaning
----:|:---:|:---
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|Blip|Game
-**Blue**|∞|Oz
-
----
-
-### Maximalist
-
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
-
-![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-
-[***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
-
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
