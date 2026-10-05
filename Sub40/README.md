@@ -8,7 +8,7 @@
 *tp, knob, 31 keys, 22 combos, half Jap*
 
 **Maximalist** ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-*tp, knob, 43 keys, no combos*
+*tp, knob, 43 keys, no combos, full Jap*
 
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
