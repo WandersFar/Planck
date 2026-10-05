@@ -19,11 +19,13 @@
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
-[**Maximalist**](#maximalist) ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 43 keys, no combos, full Japrow*
-
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
+
+**Maximalist** ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
+*1 mcu, 1 tp, 1 knob, 1 layer, 43 keys, no combos*
+
+***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
 *1 layer, 40 keys, 29 combos, direct wire*
@@ -47,6 +49,8 @@
 
 ### Knobs
 
+![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
+
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
 Mute|←→|Base|↑↓|^0
@@ -54,11 +58,11 @@ Mute|Volume|Game|Zoom|^0
 ^F|Scroll ↔|Fn|↕ Scroll|^S
 ‚|Search|Oz|Undo|„
 
-![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-
 ---
 
 ### Split Gherkin
+
+![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 
 Tap|Left|Rotary|Right|Tap
 ---:|---:|:---:|:---|:---
@@ -68,11 +72,12 @@ Mute|Volume|Game|Zoom|^0
 ^F|Search|Number|Undo|^S
 ||Scroll ↔|Mouse|↕ Scroll
 
-![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
-
 ---
 
 ### Cheaperino
+
+![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
+***8*** *= 5x3 =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 Mod|Layer|Rotary|Tap
 ---:|:---:|:---:|:---
@@ -85,9 +90,6 @@ Gui|Number|Search|***override Gui***
 ||Mouse|Scroll ↕|SFT_T( C(KC_0) )
 Hold|Mouse|Scroll ↔|*native Shift on hold*
 Ctrl|Mouse|Zoom|*native Ctrl*
-
-![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-***8*** *= 5x3 =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 22|Combos||
 ---:|:---:|:---
@@ -102,6 +104,9 @@ Ctrl|Mouse|Zoom|*native Ctrl*
 
 ### Split Wave
 
+![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
+***11*** *= 6x3 tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
+
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
 Shift|Hm|←→|**Oz**|BsDel|End|Ctrl
@@ -109,9 +114,6 @@ Game|🔇|←→|**Base**|↑↓|^0|Game
 Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 ||^F|Find|**Red**|Undo|^S
 |||↔|**Blue**|↕
-
-![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-***11*** *= 6x3 tap + 2 spin =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
 14|Combos||
 ---:|:---:|:---
@@ -124,18 +126,15 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 
 ### Curve
 
+![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
+***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 2 tp + 1 led =* ***11***
+
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
 Shift|Dash|←→|**Oz**|BsDel|Quote|Ctrl
 Game|🔇|←→|**Base**|↑↓|^0|Game
 Fn|🔇|Vol|**Game**|Zoom|^0|Fn
 Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
-
-![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
-
-***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 2 tp + 1 led =* ***11***
-
-***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
 18|Combos||
 ---:|:---:|:---
@@ -159,7 +158,6 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
 
 ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
-
 ***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin =* ***9***
 
 10|Combos||
@@ -173,10 +171,7 @@ Mouse layer is only on the knob, HRM and the row below. Everything else is trans
 ### Arrows
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-
 [***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
-
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 12|Combos||
 ---:|:---:|:---
@@ -193,23 +188,12 @@ Keycaps|37
 
 ---
 
-### Maximalist
-
-![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-
-[***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
-
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
-
----
-
 ### Minimalist
 
 ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-
 [***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 3x5 + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 22|Combos||
 ---:|:---:|:---
