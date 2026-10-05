@@ -270,7 +270,7 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Maximalist.png)
+![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
 
 [***8*** *= Japrow =* ***RJ45*** *= 6 reuse Japrow + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
