@@ -1,13 +1,13 @@
+**Lazy** ![Lazy](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Lazy.png)
+*43 keys, no combos, full Jap*
+
+***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 1 led + 2 tp =* ***11***
+
 [**Shortwave**](#shortwave) ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Shortwave.png)
 *37 keys, 12 combos, full Jap*
 
 [**Minmax**](#minmax) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minmax.png)
 *31 keys, 22 combos, half Jap*
-
-**Lazy** ![Lazy](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Lazy.png)
-*43 keys, no combos, full Jap*
-
-***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 1 led + 2 tp =* ***11***
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 3x10*
