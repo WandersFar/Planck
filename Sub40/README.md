@@ -1,7 +1,7 @@
-[**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+[**Shortwave**](#shortwave) ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Shortwave.png)
 *tp, knob, 37 keys, 12 combos, full Jap*
 
-[**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
+[**Minmax**](#minmax) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minmax.png)
 *tp, knob, 31 keys, 22 combos, half Jap*
 
 **Lazy** ![Lazy](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Lazy.png)
@@ -17,9 +17,9 @@
 
 ---
 
-### Arrows
+### Shortwave
 
-![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
+![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Shortwave.png)
 ***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 1 led + 2 tp =* ***11***
 
 12|Combos||
@@ -37,9 +37,9 @@
 
 ---
 
-### Minimalist
+### Minmax
 
-![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
+![Minmax](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minmax.png)
 [***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
