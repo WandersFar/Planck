@@ -2,7 +2,7 @@
 *2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct*
 
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-*1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Jap*
+*1 mcu, 2 knobs, 2 layers, 31 keys, 12 combos, half Jap*
 
 [**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 *1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
@@ -41,8 +41,8 @@
 
 Tap|Left|Layer|Right|Tap
 ---:|---:|:---:|:---|:---
-Mute|←→|Base|↑↓|^0
 ‚|←→|Oz|+←→|„
+Mute|←→|Base|↑↓|^0
 Mute|Volume|Game|Zoom|^0
 ^F|Search|Number|Undo|^S
 ||Scroll ↔|Mouse|↕ Scroll
@@ -56,18 +56,17 @@ Mute|Volume|Game|Zoom|^0
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
-Shift|Hm|←→|**Oz**|BsDel|End|Ctrl
+Shift|Dash|←→|**Oz**|BsDel|Quote|Ctrl
 Game|🔇|←→|**Base**|↑↓|^0|Game
 Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 ||^F|Find|**Red**|Undo|^S
 |||↔|**Blue**|↕
 
-14|Combos||
+12|Combos||
 ---:|:---:|:---
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|Menu, Insert, Caps Lock, Switch
-**2**|Oz|Hyphen Em Dash, Straight Quotes
 
 ---
 
