@@ -158,17 +158,6 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
 
-Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
-**Oz**|BS Del|Quote
-**Base**|↕|Mute|Game on hold
-**Game Mouse**|Volume|Mute|Base on hold
-**Fn**|Undo|^S
-*Ctrl*|*Zoom*|***^0***|override tap
-*Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin tap
-***Gui***|***^+←→***|***←***|override spin tap
-
 ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
 
 ***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin =* ***9***
