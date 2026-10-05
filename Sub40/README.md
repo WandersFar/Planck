@@ -12,9 +12,6 @@
 
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
-**Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
-*2 layers, 36 keys, 20 combos, 3x12*
-
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 3x10*
 
