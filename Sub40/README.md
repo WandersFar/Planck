@@ -171,7 +171,7 @@ Mouse layer is only on the knob, HRM and the row below. Everything else is trans
 ### Arrows
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-[***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 2 tp + 1 led =* ***11***
 
 12|Combos||
 ---:|:---:|:---
