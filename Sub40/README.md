@@ -2,16 +2,16 @@
 *2 knobs, 2 layers, 31 keys, 12 combos, half Jap*
 
 [**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
-*1 tp, 2 knobs, 31 keys, 18 combos, full Jap*
+*tp, 2 knobs, 31 keys, 18 combos, full Jap*
 
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-*1 tp, 1 knob, 37 keys, 12 combos, full Jap*
+*tp, knob, 37 keys, 12 combos, full Jap*
 
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-*1 tp, 1 knob, 31 keys, 22 combos, half Jap*
+*tp, knob, 31 keys, 22 combos, half Jap*
 
 **Maximalist** ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-*1 tp, 1 knob, 43 keys, no combos*
+*tp, knob, 43 keys, no combos*
 
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
