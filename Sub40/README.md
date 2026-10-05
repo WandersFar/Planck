@@ -133,7 +133,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 
-***8*** *= Japrow =* ***RJ45*** *= 6 reuse Japrow + 2 spin + 2 tp + 1 led =* ***11***
+***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
@@ -196,7 +196,7 @@ Layer|Spin|Tap|Implementation
 
 ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 
-[***8*** *Japrow =* ***RJ45*** *= 6 reuse Japrow tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+[***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
