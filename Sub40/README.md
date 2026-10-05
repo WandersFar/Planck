@@ -10,8 +10,8 @@
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
 *1 mcu, 2 knobs, 2 layers, 31 keys, 14 combos, half Jap*
 
-[**Trackpoint**](#trackpoint) ![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
-*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 16 combos, full Jap*
+[**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
+*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
 [**Pointless**](#pointless) ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
 *1 mcu, 1 knob, 2 layers, 37 keys, 10 combos, full Jap*
@@ -119,7 +119,7 @@ Blue|🔇|Vol|**Game**|Zoom|^0|Blue
 
 ---
 
-### Trackpoint
+### Curve
 
 Hold|Tap|Left|Layer|Right|Tap|Hold
 ---:|---:|---:|:---:|:---|:---|:---
@@ -128,14 +128,15 @@ Game|🔇|←→|**Base**|↑↓|^0|Game
 Fn|🔇|Vol|**Game**|Zoom|^0|Fn
 Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
-![Trackpoint](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Trackpoint.png)
+![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 
 ***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
-16|Combos||
+18|Combos||
 ---:|:---:|:---
+**2**|Misc|Column, #Print
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Escape, Delete, Tab
