@@ -177,12 +177,12 @@ Mouse layer is only on the knob, HRM and the row below. Everything else is trans
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps, Switch
 
-Keycaps|37
+37|Keycaps
 ---:|:---
-1.75 U|**4**
-1.5 U|**4**
-1.25 U|**4**
-1 U|**25**
+**4**|1.75 U
+**4**|1.5 U
+**4**|1.25 U
+**25**|1 U
 
 ---
 
