@@ -51,7 +51,7 @@
 
 ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
 
-Tap|Left|Rotary|Right|Tap
+Tap|Left|Layer|Right|Tap
 ---:|---:|:---:|:---|:---
 Mute|←→|Base|↑↓|^0
 Mute|Volume|Game|Zoom|^0
@@ -64,7 +64,7 @@ Mute|Volume|Game|Zoom|^0
 
 ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 
-Tap|Left|Rotary|Right|Tap
+Tap|Left|Layer|Right|Tap
 ---:|---:|:---:|:---|:---
 Mute|←→|Base|↑↓|^0
 ‚|←→|Oz|+←→|„
@@ -79,7 +79,7 @@ Mute|Volume|Game|Zoom|^0
 ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 ***8*** *= 5x3 =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
 
-Mod|Layer|Rotary|Tap
+Mod|Layer|Spin|Tap
 ---:|:---:|:---:|:---
 ||Oz|←→|*native Shift on hold*
 ||Base|←→|LT(GAME,KC_MUTE)
