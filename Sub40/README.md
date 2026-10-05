@@ -7,9 +7,6 @@
 [**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 *1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
-[**Pointless**](#pointless) ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
-*1 mcu, 1 knob, 2 layers, 37 keys, 10 combos, full Jap*
-
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
@@ -100,19 +97,6 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 **4**|1.5 U
 **4**|1.25 U
 **16**|1 U
-
----
-
-### Pointless
-
-![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
-Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
-
-10|Combos||
----:|:---:|:---
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**2**|Special|Caps Lock, Switch
 
 ---
 
