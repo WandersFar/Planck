@@ -207,7 +207,7 @@ Keycaps|37
 
 ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
 
-[***8*** *= 6 Jap tap + 2 spin =* ***RJ45*** *= 3x5 + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+[***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 3x5 + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
