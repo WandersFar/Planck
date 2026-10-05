@@ -1,6 +1,3 @@
-[**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
-*tp, 2 knobs, 31 keys, 18 combos, full Jap*
-
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *tp, knob, 37 keys, 12 combos, full Jap*
 
@@ -17,35 +14,6 @@
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
 *3 layers, 20 keys, 29 combos, direct*
-
----
-
-### Curve
-
-![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
-***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 1 led + 2 tp =* ***11***
-
-Hold|Tap|Left|Layer|Right|Tap|Hold
----:|---:|---:|:---:|:---|:---|:---
-Shift|Dash|←→|**Oz**|BsDel|Quote|Ctrl
-Game|🔇|←→|**Base**|↑↓|^0|Game
-Fn|🔇|Vol|**Game**|Zoom|^0|Fn
-Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
-
-18|Combos||
----:|:---:|:---
-**2**|Misc|Column, #Print
-**4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
-
-31|Keycaps
----:|:---
-**7**|1.75 U
-**4**|1.5 U
-**4**|1.25 U
-**16**|1 U
 
 ---
 
