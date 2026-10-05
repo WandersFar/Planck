@@ -140,7 +140,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 **4**|Symbol|Tilde, Colon, Straight Quotes, Pipe
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Escape, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Clm, Switch
+**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
 31|Keycaps
 ---:|:---
