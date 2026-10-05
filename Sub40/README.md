@@ -2,7 +2,7 @@
 *2 mcu, 2 knobs, 1 layer, 40 keys, 18 combos, 4x6 + 2 spin*
 
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
-*2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct wire*
+*2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct*
 
 [**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
 *1 mcu, 1 knob, 2 layers, 30 keys, 22 combos, half Jap*
@@ -28,7 +28,7 @@
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
 **Split** ![Split](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Split.png)
-*1 layer, 40 keys, 29 combos, direct wire*
+*1 layer, 40 keys, 29 combos, direct*
 
 **Treasure** ![Treasure](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/36Treasure.png)
 *2 layers, 36 keys, 20 combos, 3x12*
@@ -43,7 +43,7 @@
 *3 layers, 24 keys, 32 combos, 2x12*
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
-*3 layers, 20 keys, 29 combos, direct wire*
+*3 layers, 20 keys, 29 combos, direct*
 
 ---
 
