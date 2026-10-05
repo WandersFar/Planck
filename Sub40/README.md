@@ -13,9 +13,6 @@
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
-[**Cheaperino**](#cheaperino) ![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-*1 mcu, 1 knob, 2 layers, 30 keys, 22 combos, half Jap*
-
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
 *1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
 
@@ -136,34 +133,6 @@ Mouse layer is only on the knob, HRM and the row below. Everything else is trans
 **4**|1.5 U
 **4**|1.25 U
 **25**|1 U
-
----
-
-### Cheaperino
-
-![Cheaperino](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Cheaperino.png)
-***8*** *= 5x3 =* ***RJ45*** *= 6 Japclm tap + 2 spin =* ***8***
-
-Mod|Layer|Spin|Tap
----:|:---:|:---:|:---
-||Oz|←→|*native Shift on hold*
-||Base|←→|LT(GAME,KC_MUTE)
-||Game|Volume|KC_MUTE
-||Number|↑↓|MEH_T( C(KC_S) )
-Hold|Number|Undo|***override Meh***
-Gui|Number|Search|***override Gui***
-||Mouse|Scroll ↕|SFT_T( C(KC_0) )
-Hold|Mouse|Scroll ↔|*native Shift on hold*
-Ctrl|Mouse|Zoom|*native Ctrl*
-
-22|Combos||
----:|:---:|:---
-**2**|Function|F11, F12
-**2**|Exit|Oz to Base, Game to Base
-**4**|Basic|Backspace, Delete, Enter, Tab
-**4**|Special|Insert, Switch, Caps Lock, Leader
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**6**|Oz|Bspc, Del, Home, End, Dash, Quote
 
 ---
 
