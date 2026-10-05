@@ -1,6 +1,3 @@
-[**Knobs**](#knobs) ![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-*2 mcu, 2 knobs, 1 layer, 40 keys, 18 combos, 4x6 + 2 spin*
-
 [**Split Gherkin**](#split-gherkin) ![Split Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Knobs.png)
 *2 mcu, 2 knobs, 2 layers, 30 keys, 18 combos, direct*
 
@@ -41,19 +38,6 @@
 
 **Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
 *3 layers, 20 keys, 29 combos, direct*
-
----
-
-### Knobs
-
-![Knobs](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/40Knobs.png)
-
-Tap|Left|Layer|Right|Tap
----:|---:|:---:|:---|:---
-Mute|←→|Base|↑↓|^0
-Mute|Volume|Game|Zoom|^0
-^F|Scroll ↔|Fn|↕ Scroll|^S
-‚|Search|Oz|Undo|„
 
 ---
 
