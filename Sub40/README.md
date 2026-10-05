@@ -217,13 +217,6 @@ Keycaps|37
 
 ### Maximalist
 
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
-
 ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
 
 [***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
