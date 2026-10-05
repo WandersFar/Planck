@@ -1,5 +1,5 @@
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-*2 knobs, 2 layers, 31 keys, 12 combos, half Jap*
+*2 layers, 2 knobs, 31 keys, 12 combos, half Jap*
 
 [**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 *tp, 2 knobs, 31 keys, 18 combos, full Jap*
