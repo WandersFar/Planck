@@ -206,13 +206,12 @@ Layer|Spin|Tap|Implementation
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps, Switch
 
-Color|Length|Meaning|Keycaps|37
----:|:---:|:---|---:|:---
-**Red**|∞|Caps|1.75 U|**4**
-**Green**|Blip|Base|1.5 U|**4**
-**Green**|∞|Leader|1.25 U|**4**
-**Blue**|Blip|Game|1 U|**25**
-**Blue**|∞|Oz
+Keycaps|37
+---:|:---
+1.75 U|**4**
+1.5 U|**4**
+1.25 U|**4**
+1 U|**25**
 
 ---
 
