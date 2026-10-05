@@ -155,10 +155,8 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ### Pointless
 
-Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
-
 ![Pointless](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Pointless.png)
-***7*** *= Japclm =* ***RJ45*** *= 7 Japclm tap + 2 spin =* ***9***
+Mouse layer is only on the knob, HRM and the row below. Everything else is transparent to Fn.
 
 10|Combos||
 ---:|:---:|:---
