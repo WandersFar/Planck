@@ -1,17 +1,17 @@
 [**Split Wave**](#split-wave) ![Split Wave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31SplitWave.png)
-*1 mcu, 2 knobs, 2 layers, 31 keys, 12 combos, half Jap*
+*2 knobs, 2 layers, 31 keys, 12 combos, half Jap*
 
 [**Curve**](#curve) ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
-*1 mcu, 1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
+*1 tp, 2 knobs, 1 layer, 31 keys, 18 combos, full Jap*
 
 [**Arrows**](#arrows) ![Arrows](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Arrows.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
+*1 tp, 1 knob, 1 layer, 37 keys, 12 combos, full Jap*
 
 [**Minimalist**](#minimalist) ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
+*1 tp, 1 knob, 1 layer, 31 keys, 22 combos, half Jap*
 
 **Maximalist** ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
-*1 mcu, 1 tp, 1 knob, 1 layer, 43 keys, no combos*
+*1 tp, 1 knob, 1 layer, 43 keys, no combos*
 
 ***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***
 
