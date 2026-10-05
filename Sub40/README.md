@@ -51,6 +51,13 @@
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
+
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Oz**|BS Del|Quote
@@ -59,15 +66,8 @@ Layer|Spin|Tap|Implementation
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override spin & tap
-***Gui***|***^+←→***|***←***|override spin & tap
-
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
+***Alt***|***Find***|***^F***|override both
+***Gui***|***^+←→***|***←***|override both
 
 Color|Length|Meaning
 ---:|:---:|:---
