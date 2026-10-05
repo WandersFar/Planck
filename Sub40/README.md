@@ -133,7 +133,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 
-***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6 Japclm + 2 spin + 2 tp + 1 led =* ***11***
+***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
