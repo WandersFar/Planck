@@ -72,7 +72,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 ### Minimalist
 
 ![Minimalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minimalist.png)
-[***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 3x5 + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+[***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
