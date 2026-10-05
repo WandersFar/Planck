@@ -272,7 +272,7 @@ Dance|Mouse|Home End
 
 ![Maximalist](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/43Maximalist.png)
 
-[***8*** *= Japrow =* ***RJ45*** *= 6 reuse Japrow + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
+[***8*** *= Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 2 tp + 1 led =* ***11***](https://redd.it/qh9h5g)
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 pwr, gnd***](https://store.sprintek.com/Checkout.aspx)
 
