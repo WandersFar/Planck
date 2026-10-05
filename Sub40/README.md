@@ -130,7 +130,7 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 ![Curve](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Curve.png)
 
-***8*** *= 6 Jap + 2 spin =* ***RJ45*** *= 6 Jap + 2 spin + 2 tp + 1 led =* ***11***
+***8*** *= Japrow =* ***RJ45*** *= 6 reuse Japrow + 2 spin + 2 tp + 1 led =* ***11***
 
 ***2 tp*** = *data, clock (reset, left, right, middle)* ***+ 2 3v3, gnd***
 
@@ -144,11 +144,10 @@ Find|^F|Gui↔|**Fn**|Gui↕|^S|Undo
 
 31|Keycaps
 ---:|:---
-**6**|1.75 U
+**7**|1.75 U
 **4**|1.5 U
 **4**|1.25 U
 **16**|1 U
-**1**|1–1.75 U
 
 ---
 
