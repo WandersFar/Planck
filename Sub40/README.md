@@ -7,9 +7,6 @@
 [**Minmax**](#minmax) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minmax.png)
 *31 keys, 22 combos, half Japanese duplex matrix*
 
-**Butterstick** ![Butterstick](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/20Butterstick.png)
-*3 layers, 20 keys, 29 combos, direct wire*
-
 ---
 
 ### Shortwave
