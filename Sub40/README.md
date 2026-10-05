@@ -2,10 +2,10 @@
 *43 key* ***8*** *Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 1 led + 2 tp =* ***11***
 
 [**Shortwave**](#shortwave) ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/37Shortwave.png)
-*37 keys, 12 combos, full Jap*
+*37 keys, 12 combos, full Japanese*
 
 [**Minmax**](#minmax) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/31Minmax.png)
-*31 keys, 22 combos, half Jap*
+*31 keys, 22 combos, half Japanese*
 
 **Gherkin** ![Gherkin](https://github.com/WandersFar/Planck/blob/main/Sub40/KLE/30Gherkin.png)
 *2 layers, 30 keys, 29 combos, 3x10*
