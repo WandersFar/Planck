@@ -36,20 +36,20 @@ Color|Length|Meaning
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveLeft.png)
 
+12|Combos||
+---:|:---:|:---
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveRight.png)
+
 37|Keycaps
 ---:|:---
 **4**|1.75 U
 **4**|1.5 U
 **4**|1.25 U
 **25**|1 U
-
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveRight.png)
-
-12|Combos||
----:|:---:|:---
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
 ---
 
