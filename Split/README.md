@@ -7,9 +7,9 @@
 [**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 [***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***](https://redd.it/qh9h5g)
 
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
-
 ---
+
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
