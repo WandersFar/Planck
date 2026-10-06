@@ -42,6 +42,8 @@ Color|Length|Meaning
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
+![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
+
 37|Keycaps
 ---:|:---
 **4**|1.75 U
@@ -63,6 +65,8 @@ Color|Length|Meaning
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+
+![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 
 Dance|Mouse|Home End
 ---:|:---:|:---
