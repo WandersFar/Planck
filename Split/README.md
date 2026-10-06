@@ -1,4 +1,4 @@
-**Lazy** *43 keys* ![Lazy](https://github.com/WandersFar/Planck/blob/main/Split/KLE/43Lazy.png)
+**Lazy** *43 keys, no combos, full Jap* ![Lazy](https://github.com/WandersFar/Planck/blob/main/Split/KLE/43Lazy.png)
 ***8*** *Japrow =* ***RJ45*** *= 6 reuse + 2 spin + 1 led + 2 tp =* ***11***
 
 [**Shortwave**](#shortwave) *37 keys, 12 combos, full Jap* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
