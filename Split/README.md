@@ -34,7 +34,7 @@ Color|Length|Meaning
 
 ### Shortwave
 
-![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
+![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveLeft.png)
 
 12|Combos||
 ---:|:---:|:---
@@ -42,7 +42,7 @@ Color|Length|Meaning
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
-![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveRight.png)
 
 37|Keycaps
 ---:|:---
@@ -55,7 +55,7 @@ Color|Length|Meaning
 
 ### Minmax
 
-![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxLeft.png)
 
 22|Combos||
 ---:|:---:|:---
@@ -66,7 +66,7 @@ Color|Length|Meaning
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
 
-![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxRight.png)
 
 Dance|Mouse|Home End
 ---:|:---:|:---
