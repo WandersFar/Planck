@@ -11,6 +11,27 @@
 
 ---
 
+Layer|Spin|Tap|Implementation
+---:|:---:|:---|:---
+**Oz**|BS Del|Quote
+**Base**|↕|Mute|Game on hold
+**Game**|Volume|Mute|Base on hold
+**Fn**|Undo|^S
+*Ctrl*|*Zoom*|***^0***|override tap
+*Shift*|↔||*native*
+***Alt***|***Find***|***^F***|override both
+***Gui***|***^+←→***|***←***|override both
+
+Color|Length|Meaning
+---:|:---:|:---
+**Red**|∞|Caps
+**Green**|Blip|Base
+**Green**|∞|Leader
+**Blue**|Blip|Game
+**Blue**|∞|Oz
+
+---
+
 ### Shortwave
 
 ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
@@ -49,22 +70,3 @@ Dance|Mouse|Home End
 **Hold**|Register Left Drag|**+** Line Select
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
-
-Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
-**Oz**|BS Del|Quote
-**Base**|↕|Mute|Game on hold
-**Game**|Volume|Mute|Base on hold
-**Fn**|Undo|^S
-*Ctrl*|*Zoom*|***^0***|override tap
-*Shift*|↔||*native*
-***Alt***|***Find***|***^F***|override both
-***Gui***|***^+←→***|***←***|override both
-
-Color|Length|Meaning
----:|:---:|:---
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|Blip|Game
-**Blue**|∞|Oz
