@@ -36,14 +36,6 @@ Color|Length|Meaning
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveLeft.png)
 
-12|Combos||
----:|:---:|:---
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
-
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveRight.png)
-
 37|Keycaps
 ---:|:---
 **4**|1.75 U
@@ -51,11 +43,28 @@ Color|Length|Meaning
 **4**|1.25 U
 **25**|1 U
 
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37ShortwaveRight.png)
+
+12|Combos||
+---:|:---:|:---
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+
 ---
 
 ### Minmax
 
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxLeft.png)
+
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
+
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxRight.png)
 
 22|Combos||
 ---:|:---:|:---
@@ -65,12 +74,3 @@ Color|Length|Meaning
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
-
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxRight.png)
-
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
