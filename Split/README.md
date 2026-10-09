@@ -8,6 +8,8 @@
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
+[Trackpoint movement activates Fn mouse Tap Dance](https://redd.it/qh9h5g)
+
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Oz**|BS Del|Quote
@@ -54,7 +56,7 @@ Color|Length|Meaning
 
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxLeft.png)
 
-Dance|[Mouse](https://redd.it/qh9h5g)|Home End
+Dance|Mouse|Home End
 ---:|:---:|:---
 **Tap**|Tap Left Click|Line Jump
 **Hold**|Register Left Drag|**+** Line Select
