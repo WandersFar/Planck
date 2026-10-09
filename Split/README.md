@@ -8,7 +8,7 @@
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-[Trackpoint movement activates Fn mouse Tap Dance](https://redd.it/qh9h5g)
+[Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
