@@ -6,11 +6,11 @@
 
 ---
 
+[Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
+
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
 [RJ45 sockets and all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
-
-[Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
