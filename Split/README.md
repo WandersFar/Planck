@@ -8,7 +8,7 @@
 
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-[Layer|Spin|Tap|Implementation](https://redd.it/qh9h5g)
+Layer|Spin|Tap|[Implementation](https://redd.it/qh9h5g)
 ---:|:---:|:---|:---
 **Oz**|BS Del|Quote
 **Base**|↕|Mute|Game on hold
