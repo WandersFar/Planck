@@ -1,6 +1,3 @@
-[**Lazy**](https://store.sprintek.com/Checkout.aspx) *43 keys, no combos, full Japanese duplex rows* ![Lazy](https://github.com/WandersFar/Planck/blob/main/Split/KLE/43Lazy.png)
-***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 1 led + 2 tp =* ***11***
-
 [**Shortwave**](#shortwave) *37 keys, 12 combos, full Japanese duplex rows* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
 ***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 1 led + 2 tp =* ***11***
 
@@ -9,9 +6,9 @@
 
 ---
 
-[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://redd.it/qh9h5g)
+[***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
-Layer|Spin|Tap|Implementation
+[Layer|Spin|Tap|Implementation](https://redd.it/qh9h5g)
 ---:|:---:|:---|:---
 **Oz**|BS Del|Quote
 **Base**|↕|Mute|Game on hold
