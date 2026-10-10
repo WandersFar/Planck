@@ -12,7 +12,7 @@
 
 [RJ45 sockets and all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
 
-[**RJ50** *ten wires* could potentially have regular RGB on both halves of the Shortwave with **Japclm** on the slave half instead of Japrow.](https://www.winford.com/products/cbm10.php)
+[**RJ50** *ten wires*: RGB on both Shortwave halves with **Japclm** on slave instead of Japrow.](https://www.winford.com/products/cbm10.php)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
