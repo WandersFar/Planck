@@ -12,6 +12,8 @@
 
 [RJ45 sockets and all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
 
+With the ten wires of an RJ50 you could potentially have regular RGB on both halves of the Shortwave if you do Japclm on the slave half instead of Japrow.
+
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Oz**|BS Del|Quote
