@@ -11,7 +11,7 @@ Stack RJ50 too big for ¾ u under top inner key switch and RP2040-Zero, for a 10
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-RJ50 < 14.5 mm will fit in ¾ u space. Or make it fit. For a 16 mm socket that’s only an extra .75 mm between each row. The thickness of a credit card.
+RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows. Thickness of a credit card.
 
 [**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***
