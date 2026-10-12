@@ -11,7 +11,7 @@ If RJ50 sockets are too fat to fit in ¾ u space below trackpoint stack them und
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-If RJ50 < 14.5 mm, it will fit in the ¾ u space. If not, make it fit. For a 16 mm socket that’s only an extra .75 mm between each row. Or mount it sideways?
+If RJ50 < 14.5 mm, it will fit in the ¾ u space. If not, make it fit. For a 16 mm socket that’s only an extra .75 mm between each row.
 
 [**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***
