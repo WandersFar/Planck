@@ -5,13 +5,13 @@
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-Use this design if RJ50 socket is too fat to fit in ¾ u space below trackpoint. Stack them under the inner key switches and RP2040-Zero, forming a 10–30° tenting angle.
+Use this design if RJ50 socket is too fat to fit in ¾ u space below trackpoint. Stack them under the top inner key switch and RP2040-Zero, for a 10–20° tenting angle.
 
 [**Slim**](#slim) *32 keys, 22 combos, half Japanese duplex columns* ![Slim](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Slim.png)
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-If the RJ50 socket is 14.5 mm or less, it will fit in the ¾ u space below the trackpoint. You can also tweak the dimensions to make it fit. For a 16 mm socket that’s only an extra .75 mm between each row.
+If the RJ50 socket is 14.5 mm or less, it will fit in the ¾ u space below the trackpoint. Or tweak the dimensions to make it fit. For a 16 mm socket that’s only an extra .75 mm between each row.
 
 [**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***
