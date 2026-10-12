@@ -5,7 +5,7 @@
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-RJ50 too fat for ¾ u space below trackpoint can be stacked under top inner key switch and RP2040-Zero, for a 10–20° tenting angle.
+RJ50 too big for ¾ u space below trackpoint can be stacked under top inner key switch and RP2040-Zero, for a 10–20° tenting angle.
 
 [**Slim**](#slim) *32 keys, 22 combos, half Japanese duplex columns* ![Slim](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Slim.png)
 
