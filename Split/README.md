@@ -1,6 +1,10 @@
 [**Shortwave**](#shortwave) *37 keys, 12 combos, full Japanese duplex rows* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
 ***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 1 led + 2 tp =* ***11***
 
+[**Wedge**](#wedge) *33 keys, 18 combos, half Japanese duplex columns* ![Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Wedge.png)
+
+[**Slim**](#slim) *32 keys, 22 combos, half Japanese duplex columns* ![Slim](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Slim.png)
+
 [**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
 ***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***
 
