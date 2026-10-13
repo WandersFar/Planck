@@ -22,11 +22,11 @@ RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows.
 
 [Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
 
+[RJ45 *8 wire* sockets and all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
+
 [**RJ50** *10 wire* sockets for RGB on both halves.](https://www.winford.com/products/cbm10.php)
 
 [**Slave RJ50** *= 7 gpio + 1 pwr + 1 gnd =* **9 of 10 wires**](https://www.aliexpress.us/item/3256805122853582.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.1.5d7d4d661SV7r3&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=1e78915b-48e1-495b-bd8d-294133d55988&_t=gps-id%3ApcDetailTopMoreOtherSeller%2Cscm-url%3A1007.40050.354490.0%2Cpvid%3A1e78915b-48e1-495b-bd8d-294133d55988%2Ctpp_buckets%3A668%232846%238109%231935&pdp_ext_f=%7B%22order%22%3A%2212%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%2C%22fromPage%22%3A%22recommend%22%7D&pdp_npi=6%40dis%21USD%2110.24%2110.24%21%21%2168.19%2168.19%21%402103292b17917541504425173e0f4d%2112000032578122657%21rec%21US%21%21ABX%211%210%21n_tag%3A-29910%3Bd%3A1645713%3Bm03_new_user%3A-29895&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A%7Cx_object_id%3A1005005309168334%7C_p_origin_prod%3A#nav-specification)
-
-[RJ45 *8 wire* sockets and all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
