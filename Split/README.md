@@ -1,20 +1,10 @@
 [**Shortwave**](#shortwave) *37 keys, 12 combos, full Japanese duplex rows* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
 ***8*** *Japrow =* ***RJ45*** *= 6 reuse tap + 2 spin + 1 led + 2 tp =* ***11***
 
-[**Wedge**](#wedge) *33 keys, 18 combos, half Japanese duplex columns* ![Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Wedge.png)
-
-**7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
-
-If RJ50 > ¾ u, stack sockets under top inner key switch and RP2040-Zero. Bonus: 10–20° tenting angle.
-
-[**Slim**](#slim) *32 keys, 22 combos, half Japanese duplex columns* ![Slim](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Slim.png)
-
+[**Minmax**](#minmax) *32 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
 RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows. Thickness of a credit card.
-
-[**Minmax**](#minmax) *31 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Minmax.png)
-***8*** *= 6 Japclm tap + 2 spin =* ***RJ45*** *= 3x5 + 1 led + 2 tp =* ***11***
 
 ---
 
@@ -72,7 +62,7 @@ Color|Length|Meaning
 
 ### Minmax
 
-![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxLeft.png)
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxLeft.png)
 
 Dance|Mouse|Home End
 ---:|:---:|:---
@@ -81,7 +71,7 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31MinmaxRight.png)
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxRight.png)
 
 22|Combos||
 ---:|:---:|:---
@@ -90,4 +80,4 @@ Dance|Mouse|Home End
 **4**|Symbol|Tilde, Colon, Quote, Pipe
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+**4**|Special|Menu, Insert, Caps Lock, Switch
