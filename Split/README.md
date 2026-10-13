@@ -1,5 +1,5 @@
 [**Shortwave**](#shortwave) *38 keys, 10 combos, full Japanese duplex rows* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/37Shortwave.png)
-***8*** *= 7 Japclm + 1 rgb =* ***RJ45*** *= 6 reuse row + 2 spin + 2 tp =* ***10***
+***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 reuse row + 2 spin + 2 tp =* ***10***
 
 [**Minmax**](#minmax) *32 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
