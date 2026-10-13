@@ -18,9 +18,9 @@ RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows.
 
 ---
 
-[Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
-
 [***2 tp*** *= data, clock (reset, left, middle, right)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
+
+[Trackpoint movement activates Fn mouse buttons](https://redd.it/qh9h5g)
 
 [**RJ50** *10 wire* sockets for RGB on both halves.](https://www.winford.com/products/cbm10.php)
 
