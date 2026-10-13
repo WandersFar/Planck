@@ -5,7 +5,7 @@
 
 **7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
 
-Stack RJ50 too big for ¾ u under top inner key switch and RP2040-Zero, for a 10–20° tenting angle.
+If RJ50 > ¾ u, stack sockets under top inner key switch and RP2040-Zero. Bonus: 10–20° tenting angle.
 
 [**Slim**](#slim) *32 keys, 22 combos, half Japanese duplex columns* ![Slim](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Slim.png)
 
