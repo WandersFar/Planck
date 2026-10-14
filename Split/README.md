@@ -2,7 +2,7 @@
 ***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 re-rows + 2 spin + 2 tp =* ***10***
 
 [**Minmax**](#minmax) *32 keys, 22 combos, left Japanese columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
-**7** *= 6 Japclm + 1 rgb =* **RJ50** *= 6x3 + 2 spin + 2 tp =* **13**
+***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
 ---
 
