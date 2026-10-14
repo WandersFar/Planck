@@ -14,7 +14,7 @@ RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows.
 
 [all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
 
-[***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
+[**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
 [Trackpoint activates Fn mouse button](https://redd.it/qh9h5g)
 
