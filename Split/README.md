@@ -1,4 +1,4 @@
-[**Shortwave**](#shortwave) *38 keys, 10 combos, full Japanese duplex rows* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
+[**Shortwave**](#shortwave) *38 keys, 10 combos, half Japanese duplex columns* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
 ***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 reuse + 2 spin + 2 tp =* ***10***
 
 [**Minmax**](#minmax) *32 keys, 22 combos, half Japanese duplex columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
@@ -43,19 +43,19 @@ Color|Length|Meaning
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38ShortwaveLeft.png)
 
-12|Combos||
+10|Combos||
 ---:|:---:|:---
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tsk, Ins Menu, Caps Lock, Switch
+**4**|Special|Insert, Switch
 
 ![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38ShortwaveRight.png)
 
-37|Keycaps
+38|Keycaps
 ---:|:---
 **4**|1.75 U
 **4**|1.5 U
-**4**|1.25 U
+**5**|1.25 U
 **25**|1 U
 
 ---
