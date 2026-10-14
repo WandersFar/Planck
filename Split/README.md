@@ -12,7 +12,7 @@ RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows.
 
 [**RJ50 10P10C**](https://www.winford.com/products/cbm10.php) *slave: 7/8 gpio + 1 pwr + 1 gnd =* **9/10 wires**
 
-[All other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
+[all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md)
 
 [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://store.sprintek.com/Checkout.aspx)
 
