@@ -2,7 +2,7 @@
 ***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 re-rows + 2 spin + 2 tp =* ***10***
 
 [**Minmax**](#minmax) *32 keys, 22 combos, left Japanese columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
-**7** *= 6 Japclm + 1 rgb =* **RJ50** *= 3x6 + 2 spin + 2 tp =* **13**
+**7** *= 6 Japclm + 1 rgb =* **RJ50** *= 6x3 + 2 spin + 2 tp =* **13**
 
 RJ50 < 14.5 mm = ¾ u. Or make it fit. For 16 mm socket add .75 mm between rows. Thickness of a credit card.
 
