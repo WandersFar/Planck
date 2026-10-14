@@ -37,6 +37,13 @@ Color|Length|Meaning
 **Blue**|Blip|Game
 **Blue**|∞|Oz
 
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
+
 ---
 
 ### Shortwave
@@ -64,15 +71,6 @@ Color|Length|Meaning
 
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxLeft.png)
 
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
-
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxRight.png)
-
 22|Combos||
 ---:|:---:|:---
 **2**|Misc|Column, #Print
@@ -81,3 +79,5 @@ Dance|Mouse|Home End
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|Menu, Insert, Caps Lock, Switch
+
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxRight.png)
