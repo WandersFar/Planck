@@ -25,7 +25,7 @@ Dance|Mouse|Home End
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Oz**|BS Del|Quote
+**Oz**|BS Del||Kill = Quote
 **Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
