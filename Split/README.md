@@ -1,10 +1,10 @@
-[**Shortwave**](#shortwave) *38 keys, 10 combos, left Japanese columns* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
+[**Shortwave**](#shortwave) *38 keys, 10 combos* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
 ***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 re-rows + 2 spin + 2 tp =* ***10***
 
-[**Tatami**](#tatami) *33 keys, 18 combos, left Japanese columns* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
+[**Tatami**](#tatami) *33 keys, 18 combos* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
-[**Minmax**](#minmax) *32 keys, 22 combos, left Japanese columns* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
+[**Minmax**](#minmax) *32 keys, 22 combos* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
 ---
