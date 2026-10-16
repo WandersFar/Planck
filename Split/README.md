@@ -78,7 +78,7 @@ Color|Length|Meaning
 **4**|Symbol|Tilde, Colon, Quote, Pipe
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
+**4**|Special|!F4 Task Manager, Insert Menu, Caps Lock, Switch
 
 ![Tatami Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33TatamiRight.png)
 
