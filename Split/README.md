@@ -65,21 +65,6 @@ Color|Length|Meaning
 
 ---
 
-### Tatami
-
-![Tatami Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33TatamiLeft.png)
-
-![Tatami Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33TatamiRight.png)
-
-33|Keycaps
----:|:---
-**6**|1.75 U
-**4**|1.5 U
-**4**|1.25 U
-**19**|1 U
-
----
-
 ### Minmax
 
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
