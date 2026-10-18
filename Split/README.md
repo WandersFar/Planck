@@ -67,8 +67,8 @@ Color|Length|Meaning
 
 ### Minmax
 
+RJ50 under top inner corners, 30–40 mm height. Outer corners are flush. 15–20° tenting angle.
+
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
 
 ![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
-
-RJ50 under top inner corners, 30–40 mm height. Outer corners are flush. 15–20° tenting angle.
