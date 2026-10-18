@@ -48,22 +48,14 @@ Color|Length|Meaning
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
 
-18|Combos||
----:|:---:|:---
-**2**|Arrows|Left, Right
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|Menu, Insert, Caps, Switch
-
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
-
 34|Keycaps
 ---:|:---
 **7**|1.75 U
 **5**|1.5 U
 **4**|1.25 U
 **18**|1 U
+
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
 
 ---
 
