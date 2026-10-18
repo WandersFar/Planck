@@ -12,7 +12,7 @@
 
 [**RJ50 10P10C**](https://www.winford.com/products/cbm10.php) *slave: 7 gpio + 1 pwr + 1 gnd =* **9 wires**
 
-[all other materials](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
+[everything else](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
