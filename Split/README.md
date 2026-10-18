@@ -1,6 +1,9 @@
 [**Shortwave**](#shortwave) *38 keys, 10 combos* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
 ***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 re-rows + 2 spin + 2 tp =* ***10***
 
+[**Tatami Wedge**](#tatami-wedge) *34 keys, 18 combos* ![Tatami Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34TatamiWedge.png)
+***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
+
 [**Tatami**](#tatami) *33 keys, 18 combos* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
@@ -68,6 +71,29 @@ Color|Length|Meaning
 **4**|1.5 U
 **5**|1.25 U
 **25**|1 U
+
+---
+
+### Tatami Wedge
+
+![Tatami Wedge Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34TatamiWedgeLeft.png)
+
+18|Combos||
+---:|:---:|:---
+**2**|Arrows|Left, Right
+**4**|Symbol|Tilde, Colon, Quote, Pipe
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|Menu, Insert, Caps, Switch
+
+![Tatami Wedge Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34TatamiWedgeRight.png)
+
+34|Keycaps
+---:|:---
+**7**|1.75 U
+**5**|1.5 U
+**4**|1.25 U
+**18**|1 U
 
 ---
 
