@@ -2,9 +2,7 @@
 
 [**Tatami**](#tatami) *33 keys, 18 combos* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
 
-[**Wedge**](#wedge) *33 keys, 18 combos* ![Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Wedge.png)
-
-[**Minmax**](#minmax) *32 keys, 22 combos* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
+[**Minmax**](#minmax) *33 keys, 18 combos* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
 
 ---
 
@@ -92,9 +90,9 @@ Color|Length|Meaning
 
 ---
 
-### Wedge
+### Minmax
 
-![Wedge Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeLeft.png)
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
 
 18|Combos||
 ---:|:---:|:---
@@ -104,23 +102,6 @@ Color|Length|Meaning
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
 
-![Wedge Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeRight.png)
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
 
 RJ50 under top inner corners, 30–40 mm height. Outer corners are flush. 15–20° tenting angle.
-
----
-
-### Minmax
-
-![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxLeft.png)
-
-22|Combos||
----:|:---:|:---
-**2**|Misc|Column, #Print
-**4**|Arrows|Up, Left, Right, Down
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|Menu, Insert, Caps Lock, Switch
-
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32MinmaxRight.png)
