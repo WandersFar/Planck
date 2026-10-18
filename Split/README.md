@@ -106,7 +106,7 @@ Color|Length|Meaning
 
 ![Wedge Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeRight.png)
 
-RJ50 under top inner corners, 30–40 mm height. Outer corners are flush. 15–20° tenting angle reduces forearm pronation.
+RJ50 under top inner corners, 30–40 mm height. Outer corners are flush. 15–20° tenting angle.
 
 ---
 
