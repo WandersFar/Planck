@@ -110,7 +110,7 @@ Color|Length|Meaning
 
 RJ50 is buried under the top inner corners, which have a height 30–40 mm while the outer corners are flush to the ground.
 
-That produces a tenting angle 15–20° which is recommended to prevent proration.
+That produces a tenting angle 15–20° which is recommended to prevent pronation.
 
 ---
 
