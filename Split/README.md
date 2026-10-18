@@ -1,6 +1,3 @@
-[**Shortwave**](#shortwave) *38 keys, 10 combos* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38Shortwave.png)
-***8*** *= 7 Japclm + 1 rgb =* ***RJ50*** *= 6 re-rows + 2 spin + 2 tp =* ***10***
-
 [**Tatami Wedge**](#tatami-wedge) *34 keys, 18 combos* ![Tatami Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34TatamiWedge.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
@@ -50,27 +47,6 @@ Color|Length|Meaning
 **Green**|∞|Leader
 **Blue**|Blip|Game
 **Blue**|∞|Oz
-
----
-
-### Shortwave
-
-![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38ShortwaveLeft.png)
-
-10|Combos||
----:|:---:|:---
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**2**|Special|Insert, Switch
-
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/38ShortwaveRight.png)
-
-38|Keycaps
----:|:---
-**4**|1.75 U
-**4**|1.5 U
-**5**|1.25 U
-**25**|1 U
 
 ---
 
