@@ -1,8 +1,8 @@
-[**Shortwave**](#shortwave) *34 keys, 18 combos* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
+[**Shortwave**](#shortwave) *34 keys, 18 combos, 15–20° tenting angle* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
 
-[**Tatami**](#tatami) *33 keys, 18 combos* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
+[**Tatami**](#tatami) *33 keys, 18 combos, flat* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
 
-[**Minmax**](#minmax) *33 keys, 18 combos* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
+[**Minmax**](#minmax) *33 keys, 18 combos, 15–20° tenting angle* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
 
 ---
 
