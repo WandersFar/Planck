@@ -42,11 +42,21 @@ Color|Length|Meaning
 **Blue**|Blip|Game
 **Blue**|∞|Oz
 
+18|Combos||
+---:|:---:|:---
+**2**|Arrows|Left, Right
+**4**|Symbol|Tilde, Colon, Quote, Pipe
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
+
 ---
 
 ### Shortwave
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
+
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
 
 34|Keycaps
 ---:|:---
@@ -55,21 +65,11 @@ Color|Length|Meaning
 **4**|1.25 U
 **18**|1 U
 
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
-
 ---
 
 ### Tatami
 
 ![Tatami Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33TatamiLeft.png)
-
-18|Combos||
----:|:---:|:---
-**2**|Arrows|Left, Right
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
 
 ![Tatami Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33TatamiRight.png)
 
@@ -85,14 +85,6 @@ Color|Length|Meaning
 ### Minmax
 
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
-
-18|Combos||
----:|:---:|:---
-**2**|Arrows|Left, Right
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
-**4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
 
 ![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
 
