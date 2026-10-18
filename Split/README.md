@@ -106,9 +106,9 @@ Color|Length|Meaning
 
 ![Wedge Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeRight.png)
 
-RJ50 is buried under the top inner corners, which have a height of 30–40 mm while the outer corners are flush to the ground.
+RJ50 is buried under top inner corners, with a height of 30–40 mm while the outer corners are flush.
 
-That produces a tenting angle of 15–20° which is recommended to reduce forearm pronation.
+That yields a tenting angle of 15–20° which reduces forearm pronation.
 
 ---
 
