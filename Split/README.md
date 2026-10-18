@@ -1,6 +1,6 @@
-[**Minmax**](#minmax) *33 keys* [Trackpoint movement activates Fn mouse button](https://redd.it/qh9h5g) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
+[**Minmax**](#minmax) *33 keys* [Trackpoint activates Fn mouse dance](https://redd.it/qh9h5g) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
 
-[**Shortwave**](#shortwave) *34 keys* dedicated mouse button with Fn numlock ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
+[**Shortwave**](#shortwave) *34 keys* Base mouse dance with Fn numlock ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
 
 ---
 
