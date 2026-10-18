@@ -4,6 +4,9 @@
 [**Tatami**](#tatami) *33 keys, 18 combos* ![Tatami](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Tatami.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
+[**Wedge**](#wedge) *33 keys, 18 combos* ![Wedge](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Wedge.png)
+***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
+
 [**Minmax**](#minmax) *32 keys, 22 combos* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/32Minmax.png)
 ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13***
 
@@ -88,6 +91,22 @@ Color|Length|Meaning
 **4**|1.5 U
 **4**|1.25 U
 **19**|1 U
+
+---
+
+### Wedge
+
+![Wedge Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeLeft.png)
+
+18|Combos||
+---:|:---:|:---
+**2**|Arrows|Left, Right
+**4**|Symbol|Tilde, Colon, Quote, Pipe
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
+
+![Wedge Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33WedgeRight.png)
 
 ---
 
