@@ -38,13 +38,13 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
 
-Color|Length|Meaning
----:|:---:|:---
-**Red**|∞|Caps
-**Green**|Blip|Base
-**Green**|∞|Leader
-**Blue**|Blip|Game
-**Blue**|∞|Oz
+Color|Length|Meaning|Effect
+---:|:---:|:---|:---
+**Red**|∞|Caps|**Disco**
+**Green**|Blip|Base|**Blip**
+**Green**|∞|Leader|**Steady**
+**Blue**|Blip|Game|**Pew**
+**Blue**|∞|Oz|**Twinkle**
 
 ---
 
