@@ -40,11 +40,11 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning|Effect
 ---:|:---:|:---|:---
-**Red**|∞|Caps|**Disco**
-**Green**|Blip|Base|**Blip**
-**Green**|∞|Leader|**Steady**
-**Blue**|Blip|Game|**Pew**
-**Blue**|∞|Oz|**Twinkle**
+**Red**|∞|Caps|**Twinkle Rainbow**
+**Green**|Blip|Base|**Gradient Blip**
+**Green**|∞|Leader|**Gradient Steady**
+**Blue**|Blip|Game|**Twinkle Pew**
+**Blue**|∞|Oz|**Twinkle Solid**
 
 ---
 
