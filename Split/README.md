@@ -42,7 +42,7 @@ Color|Length|Meaning|Effect
 ---:|:---:|:---|:---
 **Red**|∞|Caps|**Twinkle Disco**
 **Green**|Blip|Base|**Gradient Blip**
-**Green**|∞|Leader|**Gradient Steady**
+**Green**|∞|Leader|**Gradient**
 **Blue**|Blip|Game|**Twinkle Pew**
 **Blue**|∞|Oz|**Twinkle Solid**
 
