@@ -1,6 +1,6 @@
-[**Minmax**](#minmax) *33 keys* [Trackpoint activates Fn mouse dance](https://redd.it/qh9h5g) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
-
 [**Shortwave**](#shortwave) *34 keys* Base mouse dance with Fn numlock ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
+
+[**Minmax**](#minmax) *33 keys* [Trackpoint activates Fn mouse dance](https://redd.it/qh9h5g) ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
 
 ---
 
@@ -48,19 +48,7 @@ Color|Length|Meaning|Effect
 
 ---
 
-### Minmax
-
-![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
-
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
-
----
-
 ### Shortwave
-
-![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
-
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
 
 34|Keycaps
 ---:|:---
@@ -68,3 +56,15 @@ Color|Length|Meaning|Effect
 **5**|1.5 U
 **4**|1.25 U
 **18**|1 U
+
+![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
+
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
+
+---
+
+### Minmax
+
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
+
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
