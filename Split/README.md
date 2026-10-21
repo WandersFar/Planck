@@ -27,11 +27,13 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-Oz|Tap|Hold
-:---:|:---:|:---:
-↑|‚|„
-↓|-|—
-.|˙|¡
+Color|Length|Meaning|Effect
+---:|:---:|:---|:---
+**Red**|∞|Caps|**Twinkle Disco**
+**Green**|Blip|Base|**Gradient Blip**
+**Green**|∞|Leader|**Gradient**
+**Blue**|Blip|Game|**Twinkle Pew**
+**Blue**|∞|Oz|**Twinkle**
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
@@ -44,13 +46,11 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
 
-Color|Length|Meaning|Effect
----:|:---:|:---|:---
-**Red**|∞|Caps|**Twinkle Disco**
-**Green**|Blip|Base|**Gradient Blip**
-**Green**|∞|Leader|**Gradient**
-**Blue**|Blip|Game|**Twinkle Pew**
-**Blue**|∞|Oz|**Twinkle**
+Oz|Tap|Hold
+:---:|:---:|:---:
+↑|‚|„
+↓|-|—
+.|˙|¡
 
 ---
 
