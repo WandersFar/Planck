@@ -28,7 +28,7 @@ Dance|Mouse|Home End
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
 Oz|Tap|Hold
----:|:---:|:---
+:---:|:---:|:---:
 ↑|‚|„
 ↓|-|—
 .|˙|¡
