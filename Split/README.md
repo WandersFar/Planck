@@ -53,9 +53,9 @@ Color|Length|Meaning|Effect
 34|Keycaps
 ---:|:---
 **7**|1.75 U
-**5**|1.5 U
+**4**|1.5 U
 **4**|1.25 U
-**18**|1 U
+**19**|1 U
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
 
