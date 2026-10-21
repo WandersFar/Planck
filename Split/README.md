@@ -27,9 +27,15 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
+Oz|Tap|Hold
+---:|:---:|:---
+↑|‚|„
+↓|-|—
+.|˙|¡
+
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Oz**|BS Del|Mute|Game on hold, ↑Quote ↓Dash .¡
+**Oz**|BS Del|Mute|Game on hold
 **Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
