@@ -27,10 +27,10 @@ Dance|Mouse|Home End
 
 RJ45|Length|Meaning|RJ50
 ---:|:---:|:---:|:---
-**Red**|∞|Caps|**Twinkle Disco**
-**Green**|Blip|Base|**Gradient Blip**
+**Red**|∞|Caps|**Disco**
+**Green**|Blip|Base|**Gradient**
 **Green**|∞|Leader|**Gradient**
-**Blue**|Blip|Game|**Twinkle Pew**
+**Blue**|Blip|Game|**Twinkle**
 **Blue**|∞|Oz|**Twinkle**
 
 Layer|Spin|Tap|Implementation
