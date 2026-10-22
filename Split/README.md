@@ -1,4 +1,4 @@
-[**RJ45**](#RJ45) ***8*** *= 6 Japclm + 2 spin =* ***RJ50*** *= 6x3 + 1 rgb + 2 tp =* ***12*** ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png)
+[**RJ45**](#RJ45) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12*** ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png)
 
 [**RJ50**](#RJ50) ***7*** *= 6 Japclm + 1 rgb =* ***RJ50*** *= 6x3 + 2 spin + 2 tp =* ***13*** ![RJ50](https://github.com/WandersFar/Planck/blob/main/Split/RJ50.png)
 
