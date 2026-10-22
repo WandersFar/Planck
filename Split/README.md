@@ -25,14 +25,6 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-RJ45|Length|Meaning|RJ50
----:|:---:|:---:|:---
-**Red**|∞|Caps|**Disco**
-**Green**|Blip|Base|**Gradient**
-**Green**|∞|Leader|**Gradient**
-**Blue**|Blip|Game|**Twinkle**
-**Blue**|∞|Oz|**Twinkle**
-
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Oz**|BS Del|Mute|Game on hold
@@ -43,6 +35,14 @@ Layer|Spin|Tap|Implementation
 *Shift*|↔||*native*
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
+
+RJ45|Length|Meaning|RJ50
+---:|:---:|:---:|:---
+**Red**|∞|Caps|**Disco**
+**Green**|Blip|Base|**Gradient**
+**Green**|∞|Leader|**Gradient**
+**Blue**|Blip|Game|**Twinkle**
+**Blue**|∞|Oz|**Twinkle**
 
 Oz|Tap|Hold
 :---:|:---:|:---:
