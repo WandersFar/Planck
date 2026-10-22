@@ -1,4 +1,4 @@
-[**RJ45**](#RJ45) *34 keys, 18 combos, 3.75 u high* ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
+[**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/34Shortwave.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 25–35 mm height. Outer corners flush. 15–20° tenting angle.* ***≤ 14.5 mm = ¾ u***
 
@@ -30,10 +30,10 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
 
-RJ45|Length|Meaning
+Color|Length|Meaning
 ---:|:---:|:---
-**Red**|Blip|Num
-**Red**|∞|Caps
+**Red**|Blip|Number Lock
+**Red**|∞|Caps Lock
 **Green**|Blip|Base
 **Green**|∞|Leader
 **Blue**|Blip|Game
@@ -52,8 +52,8 @@ Oz|Tap|Hold
 **4**|1.25 U
 **19**|1 U
 
-### RJ45
+### Shortwave
 
-![RJ45 Left](https://github.com/WandersFar/Planck/blob/main/Split/RJ45Left.png)
+![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/34ShortwaveLeft.png)
 
-![RJ45 Right](https://github.com/WandersFar/Planck/blob/main/Split/RJ45Right.png)
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/34ShortwaveRight.png)
