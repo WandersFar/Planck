@@ -1,5 +1,4 @@
-[**RJ45**](#RJ45) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12*** ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png)
-*34 keys, 18 combos, 3.75 u high*
+[**RJ45**](#RJ45) *34 keys, 18 combos, 3.75 u high* ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 25–35 mm height. Outer corners flush. 15–20° tenting angle.* ***≤ 14.5 mm = ¾ u***
 
