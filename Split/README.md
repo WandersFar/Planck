@@ -1,3 +1,5 @@
+[**RJ45**](#RJ45) *34 keys, 18 combos, 3.75 u high* ![RJ45](https://github.com/WandersFar/Planck/blob/main/Split/RJ45.png)
+
 [**RJ50**](#RJ50) *34 keys, 18 combos, 3.75 u high* ![RJ50](https://github.com/WandersFar/Planck/blob/main/Split/RJ50.png)
 
 [**RJ50 sockets**](https://www.aliexpress.us/item/3256805122853582.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.1.5d7d4d661SV7r3&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=1e78915b-48e1-495b-bd8d-294133d55988&_t=gps-id%3ApcDetailTopMoreOtherSeller%2Cscm-url%3A1007.40050.354490.0%2Cpvid%3A1e78915b-48e1-495b-bd8d-294133d55988%2Ctpp_buckets%3A668%232846%238109%231935&pdp_ext_f=%7B%22order%22%3A%2212%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%2C%22fromPage%22%3A%22recommend%22%7D&pdp_npi=6%40dis%21USD%2110.24%2110.24%21%21%2168.19%2168.19%21%402103292b17917541504425173e0f4d%2112000032578122657%21rec%21US%21%21ABX%211%210%21n_tag%3A-29910%3Bd%3A1645713%3Bm03_new_user%3A-29895&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A%7Cx_object_id%3A1005005309168334%7C_p_origin_prod%3A#nav-specification) *under top inner corners, 25–35 mm height. Outer corners flush. 15–20° tenting angle.* ***≤ 14.5 mm = ¾ u***
@@ -23,8 +25,8 @@ Dance|Mouse|Home End
 **Tap-Tap**|Tap Middle Click|**^** File Jump
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
-Color|Length|Meaning|Effect
----:|:---:|:---|:---
+RJ45|Length|Meaning|RJ50
+---:|:---:|:---:|:---
 **Red**|∞|Caps|**Twinkle Disco**
 **Green**|Blip|Base|**Gradient Blip**
 **Green**|∞|Leader|**Gradient**
@@ -54,6 +56,12 @@ Oz|Tap|Hold
 **4**|1.5 U
 **4**|1.25 U
 **19**|1 U
+
+### RJ45
+
+![RJ45 Left](https://github.com/WandersFar/Planck/blob/main/Split/RJ45Left.png)
+
+![RJ45 Right](https://github.com/WandersFar/Planck/blob/main/Split/RJ45Right.png)
 
 ### RJ50
 
