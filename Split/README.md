@@ -38,6 +38,7 @@ Layer|Spin|Tap|Implementation
 
 RJ45|Length|Meaning|RJ50
 ---:|:---:|:---:|:---
+**Red**|Blip|Num|**Disco**
 **Red**|∞|Caps|**Disco**
 **Green**|Blip|Base|**Gradient**
 **Green**|∞|Leader|**Gradient**
