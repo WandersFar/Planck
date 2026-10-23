@@ -36,7 +36,7 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning
 ---:|:---:|:---
-**Red**|Blip|Fn Number Lock
+**Red**|Blip|Fn Num Lock
 **Red**|∞|Caps Lock
 **Green**|Blip|Base Alphas
 **Green**|∞|Leader Ready
