@@ -1,6 +1,6 @@
 [**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/34Shortwave.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
-[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 25–35 mm height. Outer corners flush. 15–20° tenting angle.*
+[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 24–38 mm height. Outer corners flush. 15–20° tenting angle.*
 
 *10–15° negative tilt with Z row 12–19 mm higher than Q row.*
 
