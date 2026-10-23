@@ -36,12 +36,12 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning
 ---:|:---:|:---
-**Red**|Blip|Number Lock
+**Red**|Blip|Fn Number Lock
 **Red**|∞|Caps Lock
-**Green**|Blip|Alphas
+**Green**|Blip|Base Alphas
 **Green**|∞|Leader
-**Blue**|Blip|Game
-**Blue**|∞|Oz
+**Blue**|Blip|Game Lock
+**Blue**|∞|Oz Lock
 
 Oz|Tap|Hold
 :---:|:---:|:---:
