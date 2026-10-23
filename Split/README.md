@@ -38,7 +38,7 @@ Color|Length|Meaning
 ---:|:---:|:---
 **Red**|Blip|Number Lock
 **Red**|∞|Caps Lock
-**Green**|Blip|Base
+**Green**|Blip|Alphas
 **Green**|∞|Leader
 **Blue**|Blip|Game
 **Blue**|∞|Oz
