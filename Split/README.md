@@ -2,7 +2,7 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 25–35 mm height. Outer corners flush. 15–20° tenting angle.*
 
-*Negative tilt of 5—12° also recommended, with Z row higher than Q row.*
+*Negative tilt of 5—12° with Z row higher than Q row.*
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
