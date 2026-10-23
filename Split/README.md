@@ -39,7 +39,7 @@ Color|Length|Meaning
 **Red**|Blip|Fn Number Lock
 **Red**|∞|Caps Lock
 **Green**|Blip|Base Alphas
-**Green**|∞|Leader
+**Green**|∞|Leader Ready
 **Blue**|Blip|Game Lock
 **Blue**|∞|Oz Lock
 
