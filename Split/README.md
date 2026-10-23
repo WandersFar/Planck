@@ -4,7 +4,7 @@
 
 *10–15° negative tilt with Z row 12–19 mm higher than Q row.*
 
-*Magnets along bottom edges? Halves form a cable storage box.*
+*Magnets along bottom edges, join halves for storage box.*
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
