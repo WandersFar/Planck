@@ -50,6 +50,7 @@ Oz|Tap|Hold
 ,|‘|⋯
 .|˙|¡
 /|¿|⸘
+Space|Space|Enter
 
 34|Keycaps
 ---:|:---
