@@ -43,15 +43,6 @@ Color|Length|Meaning
 **Blue**|Blip|Game Lock
 **Blue**|∞|Oz Lock
 
-Oz|Tap|Hold
-:---:|:---:|:---:
-↑|‚|„
-↓|-|—
-,|‘|⋯
-.|˙|¡
-/|¿|⸘
-Space|Space|Enter
-
 34|Keycaps
 ---:|:---
 **7**|1.75 U
