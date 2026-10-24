@@ -2,7 +2,7 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 32–48 mm height. Outer edges flat. 20–30° tenting angle. (33.33 mm = 1.75 u)*
 
-*optional 10–15° negative tilt: Z row 12–19 mm higher than Q row.*
+*optional 10–15° negative tilt: Z row 12–19 mm higher than Q.*
 
 *Magnets along bottom edges, join halves for cable storage.*
 
