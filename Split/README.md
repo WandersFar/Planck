@@ -6,10 +6,10 @@
 
 *Magnets along bottom edges, join halves for cable storage.*
 
-Top Outer|Bottom Outer|Top Inner|Bottom Inner|+38mm 2 MX
-:---:|:---:|:---:|:---:|:---:
-0|12 mm|20 mm|32 mm|70 mm
-0|12 mm|33 mm|45 mm|83 mm
+Bottom Outer|Top Inner|Bottom Inner|+38mm 2 MX
+:---:|:---:|:---:|:---:
+12 mm|20 mm|32 mm|70 mm
+12 mm|33 mm|45 mm|83 mm
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
