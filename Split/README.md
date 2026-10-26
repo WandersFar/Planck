@@ -6,6 +6,8 @@
 
 *Magnets along bottom edges, join halves for cable storage.*
 
+*e.g., 0 mm top outer, 12 mm bottom outer, 20 mm top inner, 32 mm bottom inner = all sides are 32 mm when magnetically joined back to back*
+
 *e.g., 0 mm top outer, 12 mm bottom outer, 33 mm top inner, 45 mm bottom inner = all sides are 45 mm when magnetically joined back to back*
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
