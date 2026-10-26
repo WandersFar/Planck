@@ -13,6 +13,8 @@ Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 12 mm|20 mm|32 mm|70 mm
 12 mm|33 mm|45 mm|83 mm
 
+Even at the lowest tenting angles, the final stacked thickness is essentially the same as the width. The overall shape is a squat rectangular prism, like a small tea tin.
+
 18|Combos||
 ---:|:---:|:---
 **2**|Arrows|Left, Right
