@@ -8,8 +8,8 @@
 
 Top Outer|Bottom Outer|Top Inner|Bottom Inner|+38 MX double
 :---:|:---:|:---:|:---:|:---:
-0|12|20|32|70 mm thick
-0|12|33|45|83 mm thick
+0|12|20|32|70 mm
+0|12|33|45|83 mm
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
