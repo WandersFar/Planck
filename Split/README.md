@@ -8,8 +8,8 @@
 
 Top Outer|Bottom Outer|Top Inner|Bottom Inner|+38 MX double
 :---:|:---:|:---:|:---:|:---:
-0mm|12 mm|20 mm|32 mm|70 mm
-0mm|12 mm|33 mm|45 mm|83 mm
+0mm|12mm|20mm|32mm|70mm
+0mm|12mm|33mm|45mm|83mm
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
