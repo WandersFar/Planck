@@ -15,6 +15,8 @@ Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 
 Even at the lowest tenting angles, the final stacked thickness is essentially the same as the width. The overall shape is a squat rectangular prism, like a small tea tin.
 
+Wrap in a square cloth like a bento to save keycaps from scratches before packing in your purse.
+
 18|Combos||
 ---:|:---:|:---
 **2**|Arrows|Left, Right
