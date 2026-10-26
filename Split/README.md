@@ -1,5 +1,7 @@
 [**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/34Shortwave.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
+[**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
+
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 32–48 mm height. Outer edges flat. 20–30° tenting angle. (33.33 mm = 1.75 u)*
 
 *Neg tilt? Z row 12–19 mm taller than Q row = 10–15°*
@@ -10,8 +12,6 @@ Bottom Outer|Top Inner|Bottom Inner|+38 mm 2xMX
 :---:|:---:|:---:|:---:
 12 mm|20 mm|32 mm|70 mm
 12 mm|33 mm|45 mm|83 mm
-
-[**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
 18|Combos||
 ---:|:---:|:---
