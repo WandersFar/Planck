@@ -6,7 +6,7 @@
 
 *Magnets along bottom edges, join halves for cable storage.*
 
-Top Outer|Bottom Outer|Top Inner|Bottom Inner|+38 MX double
+Top Outer|Bottom Outer|Top Inner|Bottom Inner|+38mm 2 MX
 :---:|:---:|:---:|:---:|:---:
 0mm|12mm|20mm|32mm|70mm
 0mm|12mm|33mm|45mm|83mm
