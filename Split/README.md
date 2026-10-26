@@ -6,7 +6,7 @@
 
 *Magnets along bottom edges, join halves for cable storage.*
 
-Top Out|Btm Out|Top In|Btm In|+38 MX double
+Top Outer|Bottom Out|Top Inner|Bottom Inner|+38 MX double
 :---:|:---:|:---:|:---:|:---:
 0|12|20|32|70 mm thick
 0|12|33|45|83 mm thick
