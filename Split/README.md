@@ -6,9 +6,7 @@
 
 *32 mm height = 20° tenting. 12 mm Z > Q = 10° negative tilt.*
 
-*Magnets along bottom edges, join halves for cable storage. Wrap in cloth like a bento to prevent scratches.*
-
-*Stacked thickness ~ width. Max height 33.33 mm = 1.75 u.*
+*Magnets along bottom edges, join halves for cable storage. Wrap in cloth like a bento to prevent scratches. Stacked thickness ~ width.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
