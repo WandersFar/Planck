@@ -4,13 +4,11 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners.*
 
-*32 mm height = 20° tenting. (33.33 mm = 1.75 u)*
-
-*12 mm Z > Q = 10° negative tilt.*
+*32 mm height = 20° tenting. 12 mm Z > Q = 10° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage. Wrap in cloth like a bento to prevent scratches.*
 
-*Stacked thickness ~ width. Like a square tea tin.*
+*Stacked thickness ~ width. Like a square tea tin. Max height 33.33 mm = 1.75 u.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
