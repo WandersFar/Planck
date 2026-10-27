@@ -2,7 +2,9 @@
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
-[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 32 mm height = 20° tenting. (33.33 mm = 1.75 u)*
+[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners.*
+
+*32 mm height = 20° tenting. (33.33 mm = 1.75 u)*
 
 *Z row 12 mm taller than Q row = 10° negative tilt.*
 
