@@ -2,18 +2,17 @@
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
 
-[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 32–48 mm height. Outer edges flat. 20–30° tenting angle. (33.33 mm = 1.75 u)*
+[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners, 32 mm height = 20° tenting. (33.33 mm = 1.75 u)*
 
-*10° negative tilt = Z row 12 mm taller than Q row.*
+*Z row 12 mm taller than Q row = 10° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
 12 mm|20 mm|32 mm|70 mm
-12 mm|33 mm|45 mm|83 mm
 
-Even at the lowest tenting angles, the final stacked thickness is essentially the same as the width. The overall shape is a squat rectangular prism, like a small tea tin.
+The final stacked thickness is essentially the same as the width. Overall shape is a squat rectangular prism, like a small tea tin.
 
 Wrap in a square cloth like a bento to save keycaps from scratches before packing in your purse.
 
