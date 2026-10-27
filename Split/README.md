@@ -4,7 +4,7 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
-*30 mm height ~ 20° tenting. 10 mm Z > Q ~ 10° negative tilt.*
+*30 mm height = 18° tenting. 10 mm Z > Q ~ 10° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height = width.*
 
