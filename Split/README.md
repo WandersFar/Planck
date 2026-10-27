@@ -6,7 +6,7 @@
 
 *32 mm height = 20° tenting. 12 mm Z > Q = 10° negative tilt.*
 
-*Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height ~ width.*
+*Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height = width.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
