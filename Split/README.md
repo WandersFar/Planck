@@ -6,7 +6,7 @@
 
 *32 mm height = 20° tenting. (33.33 mm = 1.75 u)*
 
-*Z row 12 mm taller than Q row = 10° negative tilt.*
+*12 mm Z > Q = 10° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage. Wrap in cloth like a bento to prevent scratches.*
 
