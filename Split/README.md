@@ -14,7 +14,7 @@ Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 
 Stacked thickness ~ width. Like a square tea tin.
 
-Wrap in cloth like a bento to prevent keycap scratches in purse.
+Wrap like a bento to prevent keycap scratches in purse.
 
 18|Combos||
 ---:|:---:|:---
