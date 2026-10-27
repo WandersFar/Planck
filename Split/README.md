@@ -4,13 +4,13 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
-*32 mm height = 20° tenting. 12 mm Z > Q = 10° negative tilt.*
+*30 mm height = 20° tenting. 10 mm Z > Q = 10° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height = width.*
 
-Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
+Bottom Outer|Top Inner|Bottom Inner|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
-12 mm|20 mm|32 mm|70 mm
+10 mm|20 mm|30 mm|70 mm
 
 18|Combos||
 ---:|:---:|:---
