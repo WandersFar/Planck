@@ -6,15 +6,13 @@
 
 *Z row 12 mm taller than Q row = 10° negative tilt.*
 
-*Magnets along bottom edges, join halves for cable storage.*
+*Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
 12 mm|20 mm|32 mm|70 mm
 
 Stacked thickness ~ width. Like a square tea tin.
-
-Wrap like a bento to prevent scratches in purse.
 
 18|Combos||
 ---:|:---:|:---
