@@ -12,7 +12,7 @@ Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
 12 mm|20 mm|32 mm|70 mm
 
-The final stacked thickness is essentially the same as the width. Overall shape is a squat rectangular prism, like a small tea tin.
+Final stacked thickness ~ width. Overall shape is a squat rectangular prism, like a small tea tin.
 
 Wrap in a square cloth like a bento to save keycaps from scratches before packing in your purse.
 
