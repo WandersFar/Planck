@@ -4,13 +4,13 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
-*3 cm height = 18° tenting. 1 cm Z > Q = 8° negative tilt.*
+*3 cm Outer > Inner height = 18° tenting. 1 cm Z > Q = 8° negative tilt.*
 
 *Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height = width.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
-1 cm|2 cm|3 cm|7 cm
+1 cm|3 cm|4 cm|10 cm
 
 18|Combos||
 ---:|:---:|:---
