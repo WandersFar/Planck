@@ -8,11 +8,11 @@
 
 *Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches.*
 
+*Stacked thickness ~ width. Like a square tea tin.*
+
 Bottom Outer|Top Inner|Bottom Inner|+ 38 mm 2xMX
 :---:|:---:|:---:|:---:
 12 mm|20 mm|32 mm|70 mm
-
-Stacked thickness ~ width. Like a square tea tin.
 
 18|Combos||
 ---:|:---:|:---
