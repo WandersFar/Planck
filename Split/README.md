@@ -10,7 +10,7 @@
 
 Bottom Outer|Top Inner|Bottom Inner|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
-1 cm|3 cm|4 cm|10 cm
+1 cm|3 cm|4 cm|8 cm
 
 18|Combos||
 ---:|:---:|:---
