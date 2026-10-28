@@ -4,9 +4,9 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
-***3 cm*** *Inner > Outer =* ***18°*** *tent.* ***1 cm*** *Bottom > Top =* ***-8°*** *tilt.*
-
 *Magnets along bottom edges, join halves for cable storage. Wrap like a bento to prevent scratches. Total height = width.*
+
+***3 cm*** *Inner > Outer =* ***18°*** *tent.* ***1 cm*** *Bottom > Top =* ***-8°*** *tilt.*
 
 Bottom Outer|Top Inner|Bottom Inner|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
