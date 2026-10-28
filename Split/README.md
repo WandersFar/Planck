@@ -4,7 +4,7 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
-*[Magnets along bottom edges.](https://www.amazon.com/s?k=adhesive+magnets) Join halves for cable storage.*
+*[Magnets](https://www.amazon.com/s?k=adhesive+magnets) to join halves for cable storage.*
 
 *[Wrap like a bento](https://www.amazon.com/s?k=reversible+furoshiki) to prevent scratches. Total height = width.*
 
