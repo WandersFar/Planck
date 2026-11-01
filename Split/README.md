@@ -1,6 +1,6 @@
 [**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/34Shortwave.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
-[**Trackpoint**](https://store.sprintek.com/Checkout.aspx) ***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***
+[**Trackpoint**](https://store.sprintek.com/Checkout.aspx) [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://redd.it/1wln421)
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
 
