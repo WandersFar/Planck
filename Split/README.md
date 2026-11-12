@@ -42,14 +42,14 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
 
-Color|Length|Meaning
----:|:---:|:---
-**Red**|Blip|Fn Num Lock (Shortwave only)
-**Red**|∞|Caps Lock
-**Green**|Blip|Base Alphas
-**Green**|∞|Leader Ready
-**Blue**|Blip|Game Lock
-**Blue**|∞|Oz Lock
+Color|Length|Meaning||
+---:|:---:|:---|---:|:---
+**Red**|Blip|Fn Num Lock|*Shortwave*|*Only*
+**Red**|∞|Caps Lock|**34**|**Keycaps**
+**Green**|Blip|Base Alphas|**7**|1.75 U
+**Green**|∞|Leader Ready|**4**|1.5 U
+**Blue**|Blip|Game Lock|**4**|1.25 U
+**Blue**|∞|Oz Lock|**19**|1 U
 
 34|Keycaps
 ---:|:---
