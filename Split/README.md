@@ -44,19 +44,12 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
-**Red**|Blip|Fn Num Lock|*Just*|*Shortwave*
+**Red**|*Blip*|*Fn Num Lock*|*Just*|*Shortwave*
 **Red**|∞|Caps Lock|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
 **Green**|∞|Leader Ready|**4**|1.5 U
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
-
-34|Keycaps
----:|:---
-**7**|1.75 U
-**4**|1.5 U
-**4**|1.25 U
-**19**|1 U
 
 ### Minmax
 
