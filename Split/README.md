@@ -47,7 +47,7 @@ Color|Length|Meaning|||
 ***Red***|*Blip*|*Fn Numlock*|*Just*|*Shortwave*
 **Red**|∞|Caps Lock|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
-**Green**|∞|Leader Ready|**4**|1.5 U
+**Green**|∞|Leader Go|**4**|1.5 U
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
 
