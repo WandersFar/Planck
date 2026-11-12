@@ -8,7 +8,7 @@
 
 *[Magnets](https://www.amazon.com/s?k=adhesive+magnets) to join halves. Use hollow space for cable storage.*
 
-*[Wrap like a bento](https://www.amazon.com/s?k=reversible+furoshiki) to prevent scratches. Total height = width.*
+*[Wrap like a bento](https://www.amazon.com/s?k=reversible+furoshiki) to protect keycaps. Total height = width.*
 
 ***3 cm*** *Inner > Outer =* ***18°*** *tent.* ***1 cm*** *Bottom > Top =* ***-8–10°*** *tilt.*
 
