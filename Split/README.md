@@ -1,6 +1,6 @@
-[**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png)
+[**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
 
-[**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
+[**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://redd.it/1wln421)
 
@@ -51,14 +51,14 @@ Color|Length|Meaning|||
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
 
-### Minmax
-
-![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
-
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
-
 ### Shortwave
 
 ![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
 
 ![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
+
+### Minmax
+
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
+
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
