@@ -59,6 +59,6 @@ Color|Length|Meaning|||
 
 ### Shortwave
 
-![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/34ShortwaveLeft.png)
+![Shortwave Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveLeft.png)
 
-![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/34ShortwaveRight.png)
+![Shortwave Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34ShortwaveRight.png)
