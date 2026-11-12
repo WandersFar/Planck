@@ -42,7 +42,7 @@ Layer|Spin|Tap|Implementation
 ***Alt***|***Find***|***^F***|override both
 ***Gui***|***^+←→***|***←***|override both
 
-Color|Length|Meaning||
+Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
 **Red**|Blip|Fn Num Lock|*Shortwave*|*Only*
 **Red**|∞|Caps Lock|**34**|**Keycaps**
