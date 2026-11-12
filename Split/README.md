@@ -44,7 +44,7 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
-**Red**|Blip|Fn Num Lock|*Shortwave*|*Only*
+**Red**|Blip|Fn Num Lock|*Just*|*Shortwave*
 **Red**|∞|Caps Lock|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
 **Green**|∞|Leader Ready|**4**|1.5 U
