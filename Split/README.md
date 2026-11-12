@@ -4,15 +4,15 @@
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://redd.it/1wln421)
 
-[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inner corners. Top outer flat.*
+[**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inside corners. Top outside flat.*
 
 *[Magnets](https://www.amazon.com/s?k=adhesive+magnets) to join halves. Use hollow space for cable storage.*
 
 *[Wrap like a bento](https://www.amazon.com/s?k=reversible+furoshiki) to protect keycaps. Total height = width.*
 
-***3 cm*** *Inner > Outer =* ***18°*** *tent.* ***1 cm*** *Bottom > Top =* ***-8–10°*** *tilt.*
+***3 cm*** *In > Out =* ***18°*** *tent.* ***1 cm*** *Bottom > Top =* ***-8–10°*** *tilt.*
 
-Bottom Outer|Top Inner|Bottom Inner|+ 2 layers Cherry MX
+Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
