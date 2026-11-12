@@ -50,7 +50,7 @@ Keys|Auto Shift Mouse Dragging
 RGB Mode|Length|Meaning
 ---:|:---:|:---
 Static|½ sec|Base Blip
-Static|∞|Leader Ready
+Static|∞|Leader Go
 Twinkle 5|∞|Caps Lock Disco
 Twinkle 2|∞|Oz Typing Mode
 Twinkle 2|3 sec|Game Pew Pew Pew
