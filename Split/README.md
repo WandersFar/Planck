@@ -2,6 +2,8 @@
 
 [**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 rgb + 2 tp =* ***12***
 
+[**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *8 mm 50 pcs is best deal, frosted or clear*
+
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://redd.it/1wln421)
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inside corners. Top outside flat.*
