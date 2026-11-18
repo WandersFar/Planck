@@ -35,9 +35,9 @@ Dance|Mouse|Home End
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
-**Oz**|BS Del|Mute|C/G on hold
-**Base**|↕|Mute|C/G on hold
-**Calc**|Volume|Mute|*Minmax only*
+**Oz**|BS Del|Mute|Calc on hold
+**Base**|↕|Mute|Calc on hold
+**Calc**|Volume|Mute
 **Game**|Volume|Mute|Base on hold
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
@@ -48,7 +48,7 @@ Layer|Spin|Tap|Implementation
 Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
 ***Red***|*∞*|*Mouse Dance*|*Fn*|*Minmax*
-***Red***|*Blip*|*Number Lock*|*Fn*|*Shortwave*
+***Red***|*Blip*|*Calc Lock*|*Fn*|*Shortwave*
 **Red**|∞|Caps Lock|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
 **Green**|∞|Leader Go|**4**|1.5 U
