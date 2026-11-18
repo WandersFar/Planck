@@ -48,7 +48,7 @@ Layer|Spin|Tap|Implementation
 Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
 ***Red***|*∞*|*Mouse Dance*|*Fn*|*Minmax*
-**Red**|Blip|Calc Lock
+**Red**|∞|Calc Lock
 **Red**|∞|Caps Lock|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
 **Green**|∞|Leader Go|**4**|1.5 U
