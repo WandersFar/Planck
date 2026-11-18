@@ -47,13 +47,13 @@ Layer|Spin|Tap|Implementation
 
 Color|Length|Meaning|||
 ---:|:---:|:---|---:|:---
-**Yellow**|∞|Mouse Dance|Fn|Minmax
-**Red**|∞|Calc Lock
-**Red**|∞|Caps Lock|**34**|**Keycaps**
+**Green**|∞|Leader Go|**34**|**Keycaps**
 **Green**|Blip|Base Alphas|**7**|1.75 U
-**Green**|∞|Leader Go|**4**|1.5 U
+**Green**|∞|Caps Lock|**4**|1.5 U
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
+**Red**|∞|Calc Lock
+**Yellow**|∞|Mouse Dance|Fn|Minmax
 
 ### Shortwave
 
