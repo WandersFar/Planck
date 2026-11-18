@@ -53,7 +53,7 @@ Color|Length|Meaning|||
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
 **Red**|∞|Calc Lock
-**Yellow**|∞|Mouse Dance|Fn|Minmax
+**Yellow**|∞|Fn 🖱LMR||Minmax
 
 ### Shortwave
 
