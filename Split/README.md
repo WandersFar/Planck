@@ -36,9 +36,9 @@ Dance|Mouse|Home End
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---|:---
 **Oz**|BS Del|Mute|Game on hold
-**Calc**|←→|BS|Game on hold
 **Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
+**Calc**|←→|BS
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
