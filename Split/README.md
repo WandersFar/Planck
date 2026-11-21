@@ -38,7 +38,7 @@ Layer|Spin|Tap|Implementation
 **Oz**|BS Del|Mute|Game on hold
 **Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
-**Calc**|←→|BS
+**Calc**|←→|+
 **Fn**|Undo|^S
 *Ctrl*|*Zoom*|***^0***|override tap
 *Shift*|↔||*native*
