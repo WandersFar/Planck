@@ -34,7 +34,7 @@ Dance|Mouse|Home End
 **Tap-Hold**|Tap Right Click|**+^** File Select
 
 Layer|Spin|Tap|Implementation
----:|:---:|:---|:---
+---:|:---:|:---:|:---
 **Oz**|BS Del|Mute|Game on hold
 **Base**|↕|Mute|Game on hold
 **Game**|Volume|Mute|Base on hold
