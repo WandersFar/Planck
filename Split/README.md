@@ -8,7 +8,7 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inside corners. Top outside flat.*
 
-*[Gasket-mounted](https://m.youtube.com/watch?v=W4mXZvFGHDg) with Poron foam.*
+*[Gasket-mounted](https://m.youtube.com/watch?v=W4mXZvFGHDg) with [Poron foam.](https://www.aliexpress.us/item/3256805558411314.html?spm=a2g0n.productlist.0.0.509cjIJxjIJxMr&browser_id=0f164ffa0d8e4f1d9e58f3c6cf44baff&aff_platform=msite&m_page_id=upsli63jgcawjxdd1a20a2bcf3e14e360a4315d865&pdp_ext_f={"order"%3A"22"%2C"eval"%3A"1"%2C"fromPage"%3A"search"}&pdp_npi=6%40dis!USD!8.68!1.68!!!8.68!1.68!%402101e7a317954669729665116e1094!12000034189759391!sea!US!0!ABX!1!0!n_tag%3A-29910%3Bd%3A8e0e7696%3Bm03_new_user%3A-29895%3BpisId%3A5000000218165431&algo_pvid=5f3cd30e-1e40-4e05-95be-c51d1f3a7ef1&utparam-url=scene%3Asearch|query_from%3A|x_object_id%3A1005005744726066|_p_origin_prod%3A&gatewayAdapt=glo2usa)*
 
 *[Magnets](https://www.amazon.com/s?k=adhesive+magnets) to join halves. Use hollow space for cable storage.*
 
