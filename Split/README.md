@@ -8,6 +8,8 @@
 
 [**RJ45 sockets**](https://github.com/tompi/cheapino/blob/master/doc/orderingguide.md) *under top inside corners. Top outside flat.*
 
+*[Gasket-mounted](https://m.youtube.com/watch?v=W4mXZvFGHDg) with Poron foam.*
+
 *[Magnets](https://www.amazon.com/s?k=adhesive+magnets) to join halves. Use hollow space for cable storage.*
 
 *[Wrap like a bento](https://www.amazon.com/s?k=reversible+furoshiki) to protect keycaps. Total height = width.*
