@@ -22,7 +22,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
-18|Combos||+ Meme|44
+18|Combos||+|44
 ---:|:---:|:---|---:|:---
 **2**|Arrows|Left, Right|Up, Down|**4**
 **4**|Symbol|Tilde, Colon, Quote, Pipe|Fn|**14**
