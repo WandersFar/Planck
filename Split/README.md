@@ -22,20 +22,20 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
-18|Combos||
----:|:---:|:---
-**2**|Arrows|Left, Right
-**4**|Symbol|Tilde, Colon, Quote, Pipe
-**4**|Unicode|Dash, Quote, Open & Close Dialog
+18|Combos||Meme|44
+---:|:---:|:---|---:|:---
+**2**|Arrows|Left, Right|Up, Down|**4**
+**4**|Symbol|Tilde, Colon, Quote, Pipe|Function|**10**
+**4**|Unicode|Dash, Quote, Open & Close Dialog|Numbers|**10**
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
-**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
+**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|Switch, Caps, Insert, Menu, !F4, Tskmngr|**6**
 
-Dance|Mouse|Home End
----:|:---:|:---
-**Tap**|Tap Left Click|Line Jump
-**Hold**|Register Left Drag|**+** Line Select
-**Tap-Tap**|Tap Middle Click|**^** File Jump
-**Tap-Hold**|Tap Right Click|**+^** File Select
+Dance|Mouse|Home End|Oz
+---:|:---:|:---|:---
+**Tap**|Tap Left Click|Line Jump|Comma, Period
+**Hold**|Register Left Drag|**+** Line Select|Ellipsis, Exclaim
+**Tap-Tap**|Tap Middle Click|**^** File Jump|Apostrophe, Hyphen
+**Tap-Hold**|Tap Right Click|**+^** File Select|Quote, Dash
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---:|:---
