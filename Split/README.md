@@ -28,7 +28,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Symbol|Tilde, Colon, Quote, Pipe|Function|**14**
 **4**|Unicode|Dash, Quote, Open & Close Dialog|Numbers|**14**
 **4**|Basic|Backspace, Enter Esc, Delete, Tab|Clm, Print|**6**
-**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|no Auto Shift|**6**
+**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|no AutoShift|**6**
 
 Dance|Mouse|Home End|Oz
 ---:|:---:|:---|:---
