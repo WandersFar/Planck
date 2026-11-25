@@ -25,9 +25,9 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 18|Combos||+ Meme|44
 ---:|:---:|:---|---:|:---
 **2**|Arrows|Left, Right|Up, Down|**4**
-**4**|Symbol|Tilde, Colon, Quote, Pipe|Function|**10**
-**4**|Unicode|Dash, Quote, Open & Close Dialog|Numbers|**10**
-**4**|Basic|Backspace, Enter Esc, Delete, Tab|Column, Print|**2**
+**4**|Symbol|Tilde, Colon, Quote, Pipe|Function|**14**
+**4**|Unicode|Dash, Quote, Open & Close Dialog|Numbers|**14**
+**4**|Basic|Backspace, Enter Esc, Delete, Tab|Column, Print|**6**
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|no Auto Shift|**6**
 
 Dance|Mouse|Home End|Oz
