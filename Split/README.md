@@ -2,7 +2,7 @@
 
 [**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***12***
 
-[**Meme**](#meme) *21 keys, 44 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/21Meme.png) ***7*** *= 5 Japclm + 2 spin =* ***RJ45*** *= 10 direct + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***13***
+[**Meme**](#meme) *21 keys, 44 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/21Meme.png) ***7*** *= 5 Japclm + 2 spin =* ***RJ45*** *= 10 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***13***
 
 [**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *50 pcs best deal, 8 mm frosted: hides imperfections*
 
