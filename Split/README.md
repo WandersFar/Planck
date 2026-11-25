@@ -34,8 +34,8 @@ Dance|Mouse|Home End|Oz
 ---:|:---:|:---|:---
 **Tap**|Tap Left Click|Line Jump|Comma, Period
 **Hold**|Register Left Drag|**+** Line Select|Ellipsis, Exclaim
-**Tap-Tap**|Tap Middle Click|**^** File Jump|Apostrophe, Hyphen
-**Tap-Hold**|Tap Right Click|**+^** File Select|Quote, Dash
+**Tap-Tap**|Tap Middle Click|**^** File Jump|Single, Hyphen
+**Tap-Hold**|Tap Right Click|**+^** File Select|Double, Dash
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---:|:---
