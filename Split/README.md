@@ -30,12 +30,12 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Basic|Backspace, Enter Esc, Delete, Tab|Clm, Print|**6**
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|no 2x|**6**
 
-Dance|Mouse|Home End|Oz
----:|:---:|:---|:---
-**Tap**|Tap Left Click|Line Jump|Comma, Period
-**Hold**|Register Left Drag|**+** Line Select|Ellipsis, Exclaim
-**Tap-Tap**|Tap Middle Click|**^** File Jump|Single, Hyphen
-**Tap-Hold**|Tap Right Click|**+^** File Select|Double, Dash
+Dance|Mouse|Home End
+---:|:---:|:---
+**Tap**|Tap Left Click|Line Jump
+**Hold**|Register Left Drag|**+** Line Select
+**Tap-Tap**|Tap Middle Click|**^** File Jump
+**Tap-Hold**|Tap Right Click|**+^** File Select
 
 Layer|Spin|Tap|Implementation
 ---:|:---:|:---:|:---
