@@ -2,7 +2,7 @@
 
 [**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***12***
 
-[**Meme**](#meme) *22 keys, 44 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm (reuse 2 rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
+[**Meme**](#meme) *22 keys, 55 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm (reuse 2 rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
 
 [**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *50 pcs best deal, 8 mm frosted: hides imperfections*
 
@@ -22,9 +22,9 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
-18|Combos||+|44
+18|Combos||+|55
 ---:|:---:|:---|---:|:---
-**2**|Arrows|Left, Right||**2**
+**2**|Arrows|Left, Right|Oz 11|**13**
 **4**|Symbol|Tilde, Colon, Quote, Pipe|Fn|**14**
 **4**|Unicode|Dash, Quote, Open & Close Dialog|0–9|**14**
 **4**|Basic|Backspace, Enter Esc, Delete, Tab|Clm, Print|**6**
