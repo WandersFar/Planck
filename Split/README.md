@@ -2,9 +2,9 @@
 
 [**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***12***
 
-[**Asymmetry**](#asymmetry) *31 keys, 26 combos, 3 u high* ![Asymmetry](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Asymmetry.png) ***8*** *= 5x3 =* ***RJ45*** *= 6 clm (reuse rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
+[**Asymmetry**](#asymmetry) *31 keys, 26 combos, 3 u high* ![Asymmetry](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Asymmetry.png) ***8*** *= 5x3 =* ***RJ45*** *= 6 clm only (no rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
 
-[**Meme**](#meme) *22 keys, 55 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm (reuse rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
+[**Meme**](#meme) *22 keys, 55 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm only (no rows) + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
 
 [**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *50 pcs best deal, 8 mm frosted: hides imperfections*
 
