@@ -25,7 +25,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 18|Combos||+|55
 ---:|:---:|:---|---:|:---
 **2**|Arrows|Left, Right|Oz 11|**13**
-**4**|Symbol|Tilde, Colon, Quote, Pipe|Fn|**14**
+**4**|Symbol|Tilde, Colon, Quote, Pipe|Fn 10|**14**
 **4**|Unicode|Dash, Quote, Open & Close Dialog|0–9|**14**
 **4**|Basic|Backspace, Enter Esc, Delete, Tab|Clm, Print|**6**
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|no 2x, Lead, Base|**8**
