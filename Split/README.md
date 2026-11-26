@@ -32,6 +32,14 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Basic|Backspace, Enter Esc, Delete, Tab|ClPn|**6**
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|LdBs|**8**
 
+55|Combos|Meme
+---:|:---:|:---
+**11**|Oz|Home Row, Base
+**10**|Fn|F1–F10
+**10**|Numbers 
+**2**|Misc|Column, #Print
+**4**|Special|Menu, Tskmngr, Lead, Base
+
 Dance|Mouse|Home End
 ---:|:---:|:---
 **Tap**|Tap Left Click|Line Jump
