@@ -32,19 +32,17 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
 
-24|Combos|Asymmetry
+22|Combos|Asymmetry
 ---:|:---:|:---
 **2**|Arrows|Up, Down
-**2**|Misc|Column, #Print
-**2**|Special|Tskmngr, Menu
+**2**|Special|Column, #Print
 
 55|Combos|Meme
 ---:|:---:|:---
 **11**|Alphas|Home Row, Lead
 **11**|Oz|Home Row, Oz Base
 **10**|Fn|F1–F10
-**2**|Misc|Column, #Print
-**3**|Special|Tskmngr, Menu, Game Base
+**5**|Special|Column, #Print, Tskmngr, Menu, Game Base
 
 Dance|Mouse|Home End
 ---:|:---:|:---
