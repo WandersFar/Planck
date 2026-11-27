@@ -42,7 +42,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **11**|Alphas|Home Row, Lead
 **11**|Oz|Home Row, Oz Base
 **10**|Fn|F1–F10
-**5**|Special|Column, #Print, Tskmngr, Menu, Game Base
+**5**|Special|Clm, #Print, Tskmn, Menu, Game Base
 
 Dance|Mouse|Home End
 ---:|:---:|:---
