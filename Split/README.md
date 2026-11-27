@@ -36,7 +36,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 ---:|:---:|:---
 **2**|Arrows|Up, Down
 **2**|Misc|Column, #Print
-**4**|Special|Tskmngr, Menu, Lead, Base
+**2**|Special|Tskmngr, Menu
 
 55|Combos|Meme
 ---:|:---:|:---
