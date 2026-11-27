@@ -40,11 +40,11 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 
 55|Combos|Meme
 ---:|:---:|:---
-**11**|Oz|Home Row, Base
+**11**|Oz|Home Row, Oz Base
 **10**|Fn|F1–F10
-**10**|Numbers
+**11**|Alphas|Home Row, Lead
 **2**|Misc|Column, #Print
-**4**|Special|Tskmngr, Menu, Lead, Base
+**3**|Special|Tskmngr, Menu, Game Base
 
 Dance|Mouse|Home End
 ---:|:---:|:---
