@@ -24,13 +24,13 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
-18|Combos||+|55
----:|:---:|:---|---:|:---
-**2**|Arrows|Left, Right|Oz11|**13**
-**4**|Symbol|Tilde, Colon, Quote, Pipe|Fn10|**14**
-**4**|Unicode|Dash, Quote, Open & Close Dialog|0–9|**14**
-**4**|Basic|Backspace, Enter Esc, Delete, Tab|ClPn|**6**
-**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch|LdBs|**8**
+18|Combos||
+---:|:---:|:---
+**2**|Arrows|Left, Right
+**4**|Symbol|Tilde, Colon, Quote, Pipe
+**4**|Unicode|Dash, Quote, Open & Close Dialog
+**4**|Basic|Backspace, Enter Esc, Delete, Tab
+**4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
 
 55|Combos|Meme
 ---:|:---:|:---
@@ -38,7 +38,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **10**|Fn|F1–F10
 **10**|Numbers 
 **2**|Misc|Column, #Print
-**4**|Special|Menu, Tskmngr, Lead, Base
+**4**|Special|Tskmngr, Menu, Lead, Base
 
 Dance|Mouse|Home End
 ---:|:---:|:---
