@@ -64,7 +64,7 @@ Color|Length|Meaning|||
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
 **Red**|∞|Calc Lock
-**Red**|∞|OSL Fn 🖱LMR||Minmax
+**Red**|∞|OSL Fn 🖱LDMR||Meme
 
 ### Shortwave
 
