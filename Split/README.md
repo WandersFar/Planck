@@ -62,8 +62,8 @@ Color|Length|Meaning|34|Keycaps
 **Green**|Blip|Base Alphas|**4**|1.5 U
 **Blue**|Blip|Game Lock|**4**|1.25 U
 **Blue**|∞|Oz Lock|**19**|1 U
-**Red**|∞|Caps Lock
 **Red**|∞|Calc Lock
+**Red**|∞|Caps Lock
 **Red**|∞|OSL Fn 🖱LDMR||Meme
 
 ### Shortwave
