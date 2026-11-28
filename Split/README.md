@@ -2,8 +2,6 @@
 
 [**Minmax**](#minmax) *34 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + 2 tp =* ***12***
 
-[**Meme**](#meme) *22 keys, 55 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm only + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
-
 [**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *50 pcs best deal, 8 mm frosted: hides imperfections*
 
 [**Trackpoint**](https://store.sprintek.com/Checkout.aspx) [***2 tp*** *= data, clock (rst, l, m, r)* ***+ 2 3v3, gnd***](https://redd.it/1wln421)
@@ -29,13 +27,6 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
-
-55|Combos|Meme
----:|:---:|:---
-**11**|Alphas|Home Row, Lead
-**11**|Oz|Home Row, OzBase
-**10**|Fn|F1–F10
-**5**|Special|Clm, #Print, Tskmn, Menu, GmBase
 
 Dance|Mouse|Home End
 ---:|:---:|:---
@@ -64,7 +55,6 @@ Color|Length|Meaning|34|Keycaps
 **Blue**|∞|Oz Lock|**19**|1 U
 **Red**|∞|Calc Lock
 **Red**|∞|Caps Lock
-**Red**|∞|OSL Fn 🖱LDMR||Meme
 
 ### Shortwave
 
@@ -77,9 +67,3 @@ Color|Length|Meaning|34|Keycaps
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxLeft.png)
 
 ![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxRight.png)
-
-### Meme
-
-![Meme Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22MemeLeft.png)
-
-![Meme Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22MemeRight.png)
