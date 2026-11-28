@@ -1,6 +1,6 @@
 [**Shortwave**](#shortwave) *34 keys, 18 combos, 3.75 u high* ![Shortwave](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Shortwave.png)
 
-[**Minmax**](#minmax) *33 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***12***
+[**Minmax**](#minmax) *34 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + [2 tp](https://redd.it/qh9h5g) =* ***12***
 
 [**Asymmetry**](#asymmetry) *31 keys, 22 combos, 3 u high* ![Asymmetry](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Asymmetry.png) ***8*** *= 5x3 =* ***RJ45*** *= 6 clm only + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
 
@@ -81,9 +81,9 @@ Color|Length|Meaning|||
 
 ### Minmax
 
-![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxLeft.png)
+![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxLeft.png)
 
-![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/33MinmaxRight.png)
+![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxRight.png)
 
 ### Asymmetry
 
