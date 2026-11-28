@@ -2,8 +2,6 @@
 
 [**Minmax**](#minmax) *34 keys, 18 combos, 3 u high* ![Minmax](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34Minmax.png) ***8*** *= 6 Japclm + 2 spin =* ***RJ45*** *= 6x3 + 1 5v rgb + 2 tp =* ***12***
 
-[**Asymmetry**](#asymmetry) *31 keys, 22 combos, 3 u high* ![Asymmetry](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31Asymmetry.png) ***8*** *= 5x3 =* ***RJ45*** *= 6 clm only + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
-
 [**Meme**](#meme) *22 keys, 55 combos, 2 u high* ![Meme](https://github.com/WandersFar/Planck/blob/main/Split/KLE/22Meme.png) ***8*** *= 6x2 =* ***RJ45*** *= 6 clm only + 2 spin + [2 tp](https://redd.it/qh9h5g) + 1 5v rgb =* ***11***
 
 [**RGB**](https://www.aliexpress.us/item/3256805596856612.html) *50 pcs best deal, 8 mm frosted: hides imperfections*
@@ -31,11 +29,6 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 **4**|Unicode|Dash, Quote, Open & Close Dialog
 **4**|Basic|Backspace, Enter Esc, Delete, Tab
 **4**|Special|!F4 Tskmngr, Ins Menu, Caps, Switch
-
-22|Combos|Asymmetry
----:|:---:|:---
-**2**|Arrows|Up, Down
-**2**|Special|Column, #Print
 
 55|Combos|Meme
 ---:|:---:|:---
@@ -84,12 +77,6 @@ Color|Length|Meaning|||
 ![Minmax Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxLeft.png)
 
 ![Minmax Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/34MinmaxRight.png)
-
-### Asymmetry
-
-![Asymmetry Left](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31AsymmetryLeft.png)
-
-![Asymmetry Right](https://github.com/WandersFar/Planck/blob/main/Split/KLE/31AsymmetryRight.png)
 
 ### Meme
 
