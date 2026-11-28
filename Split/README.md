@@ -20,7 +20,7 @@ Bottom Outside|Top Inside|Bottom Inside|+ 2 layers Cherry MX
 :---:|:---:|:---:|:---:
 1 cm|3 cm|4 cm|8 cm
 
-18|Combos|Shortwave and Minmax
+18|Combos|Base Layer
 ---:|:---:|:---
 **2**|Arrows|Left, Right
 **4**|Symbol|Tilde, Colon, Quote, Pipe
